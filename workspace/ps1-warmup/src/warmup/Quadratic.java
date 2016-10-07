@@ -47,11 +47,12 @@ public class Quadratic {
     }
     
     /*
-     * from here: http://stackoverflow.com/questions/9898512/how-to-test-if-a-double-is-an-integer
+     * adapted from here: http://stackoverflow.com/questions/9898512/how-to-test-if-a-double-is-an-integer
      */
     private static boolean isInteger(Double variable) {
         if (   variable.equals(Math.floor(variable)) && 
                 !Double.isInfinite(variable)         &&
+                !Double.isNaN(variable)              &&
                 variable <= Integer.MAX_VALUE        &&
                 variable >= Integer.MIN_VALUE) {
             return true;
