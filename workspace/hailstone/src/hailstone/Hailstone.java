@@ -1,8 +1,8 @@
-package testing;
+package hailstone;
 
 public class Hailstone {
     public static void main(String[] args) {
-        int n = 3;
+        int n = 1;
         while (n != 1) {
             if (n % 2 == 0) {
                 n = n / 2;
