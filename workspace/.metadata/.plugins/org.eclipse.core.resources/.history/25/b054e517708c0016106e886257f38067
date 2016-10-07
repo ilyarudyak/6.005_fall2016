@@ -1,0 +1,104 @@
+package warmup;
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class Quadratic {
+
+    /**
+     * Find the integer roots of a quadratic equation, ax^2 + bx + c = 0.
+     * @param a coefficient of x^2
+     * @param b coefficient of x
+     * @param c constant term.  Requires that a, b, and c are not ALL zero.
+     * @return all integers x such that ax^2 + bx + c = 0.
+     */
+    public static Set<Integer> roots(int a, int b, int c) {
+        
+        if (a == 0 && b == 0 && c == 0) {
+            throw new IllegalArgumentException("a, b, and c are ALL zero");
+        }
+        
+        Set<Integer> rootSet = new HashSet<>();
+        
+        Double discriminant = Math.pow(b, 2) - 4 * a * c;
+        System.out.println("discriminant=" + discriminant);
+        
+        if (discriminant < 0) {
+            return rootSet;
+        }
+        
+        // we don't check explicitly case == 0, we use sets
+        Set<Double> rootDoubleSet = new HashSet<>();
+        rootDoubleSet.add((-b + Math.sqrt(discriminant)) / (2 * a));
+        rootDoubleSet.add((-b - Math.sqrt(discriminant)) / (2 * a));
+        
+        System.out.println(rootDoubleSet);
+        
+        for (Double root : rootDoubleSet) {
+            if (isInteger(root)) {
+                rootSet.add(root.intValue());
+            }
+        }
+        
+        return rootSet;
+    }
+    
+    /*
+     * from here: http://stackoverflow.com/questions/9898512/how-to-test-if-a-double-is-an-integer
+     */
+    private static boolean isInteger(Double variable) {
+        if (   variable.equals(Math.floor(variable)) && 
+                !Double.isInfinite(variable)         &&
+                variable <= Integer.MAX_VALUE        &&
+                variable >= Integer.MIN_VALUE) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    
+    /**
+     * Main function of program.
+     * @param args command-line arguments
+     */
+    public static void main(String[] args) {
+//        System.out.println("For the equation x^2 - 4x + 3 = 0, the possible solutions are:");
+//        Set<Integer> result = roots(1, -4, 3);
+//        System.out.println(result);
+        
+        int r1 =  45;
+        int r2 =  -45;
+        System.out.println("45^2=" + 45*45);
+        Set<Integer> result = roots(1, -r1-r2, r1*r2);
+        System.out.println(result);
+    }
+
+    /* Copyright (c) 2016 MIT 6.005 course staff, all rights reserved.
+     * Redistribution of original or derived work requires explicit permission.
+     * Don't post any of this code on the web or to a public Github repository.
+     */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
