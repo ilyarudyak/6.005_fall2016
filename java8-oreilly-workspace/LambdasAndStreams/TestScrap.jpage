@@ -1,0 +1,9 @@
+interface ITradable<Trade>{
+	boolean check(Trade t);
+}
+
+// input trade -- returns boolean
+
+(Trade t) -> t.getQuantity() > 1000000 ? true: false;
+
+( Trade t) -> t.getStatus().equal("OPEN") ? true: false;

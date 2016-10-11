@@ -1,0 +1,16 @@
+2
+
+(String name) -> System.out.println("Hello, "+name);
+
+(name) -> System.out.println("Hello, "+name);
+
+name -> System.out.println("Hello, "+name);
+
+Runnable runnable = () -> autoPilot();
+
+(Trade t, PricingSkewAlgo algo) ->{
+	// your logic goes here
+	algo.applyPricingSkew(t);
+	persistingTrade(t);
+	return t;
+}

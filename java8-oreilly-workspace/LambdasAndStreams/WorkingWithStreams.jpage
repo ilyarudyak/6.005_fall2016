@@ -1,0 +1,5 @@
+Working with STREAMS
+--------------------
+
+# A free flowing sequence of elements
+# Streams hold no storage (unlike Collections) 

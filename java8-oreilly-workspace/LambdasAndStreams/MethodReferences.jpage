@@ -1,0 +1,6 @@
+// Method references
+
+// Lambda expression
+
+(trade) ->trade.isOpen();
+trade::isOpen;

@@ -1,0 +1,23 @@
+// Defintion of a BiFunction
+
+@FunctionalInterface
+public interface BiFunction<T, U, R> {
+    R apply(T t, U u);
+	// other default methods
+}
+
+// three-argument Predicate
+
+interface TriPredicate<U, V, W>{
+	boolean test(U u, V v, W w);
+}
+
+// triConsumer
+interface TriConsumer<U, V, W>{
+	void accept(U u, V v, W w);
+}
+
+// triFunction
+interface TriFunction<U, V, W, X> {
+	X accept(U u, V v, W w);
+}

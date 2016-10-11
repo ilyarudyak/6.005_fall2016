@@ -1,0 +1,15 @@
+Map<Integer, String> map = new HashMap<Integer, String>();
+Map<Integer, String> map = new HashMap<>();
+
+(List<Trade> trades, PriceSkewer priceSkewer) ->  {
+	/* logic goes here returning trade collection */ 
+}
+
+(trades, priceSkewer) -> {// logic};
+	
+	
+public interface Pricer{
+	public List<Trade> skew(List<Trade> trades, PriceSkewer priceSkewer){
+		// logic
+	}
+}

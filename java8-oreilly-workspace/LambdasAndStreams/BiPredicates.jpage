@@ -1,0 +1,7 @@
+// Defintion of a BiPredicate
+
+@FunctionalInterface
+public interface BiPredicate<T, U> {
+    boolean test(T t, U u);
+    //other static and default methods
+}
