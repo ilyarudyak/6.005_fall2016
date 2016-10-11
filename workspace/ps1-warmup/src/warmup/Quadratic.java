@@ -19,9 +19,18 @@ public class Quadratic {
         
         if (a == 0 && b == 0 && c == 0) {
             throw new IllegalArgumentException("a, b, and c are ALL zero");
-        }
+        } 
         
         Set<Integer> rootSet = new HashSet<>();
+        
+        // degenerate case
+        if (a == 0 && b != 0) {
+            Double solution = Double.valueOf(-c) / Double.valueOf(b);
+            if (isInteger(solution)) {
+                rootSet.add(solution.intValue());
+                return rootSet;
+            }
+        }
         
         Double discriminant = Math.pow(b, 2) - 4 * Double.valueOf(a) * Double.valueOf(c);
         System.out.println("discriminant=" + discriminant + " sqrt=" + Math.sqrt(discriminant));
