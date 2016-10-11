@@ -43,6 +43,11 @@ public class ComparatorApp {
         // case-insensitive sort with method reference
         Collections.sort(strings, String::compareToIgnoreCase);
         printList(strings, "Sort with comparator - method reference");
+
+        System.out.println();
+        strings.forEach( s -> System.out.println(s));
+        System.out.println();
+        strings.forEach(System.out::println);
     }
 }
 
