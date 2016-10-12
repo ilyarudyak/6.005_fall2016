@@ -31,16 +31,15 @@ public class ParallelStreams {
 	}
 
 	private void parallelStream() {
+		
 		Optional<Integer> sumOfTrades = trades
-				.stream()
-				.parallel()
+				.parallelStream()
+				.peek(t -> System.out.printf("id=%d thread=%s\n",t.getId(), Thread.currentThread().getName()))
 				.filter(Trade::isBigTrade)
-				.peek(t -> System.out.printf(
-						"Trade Id=%d (Filter Thread Name=%s)\n", t.getId(),
-						Thread.currentThread().getName()))
+				.peek(t -> System.out.printf("id=%d filter_thread=%s\n",t.getId(), Thread.currentThread().getName()))
 				.map(t -> t.getQuantity())
-				.peek(t -> System.out.printf("(Mapper Thread Name=%s)\n",
-						Thread.currentThread().getName())).reduce(Integer::sum);
+				.peek(t -> System.out.printf("map_thread=%s\n", Thread.currentThread().getName()))
+				.reduce(Integer::sum);
 
 		System.out.println(sumOfTrades.get());
 	}
@@ -52,8 +51,20 @@ public class ParallelStreams {
 	}
 
 	public static void main(String[] args) {
-		// new ParallelStreams().serialStream();
+//		 new ParallelStreams().serialStream();
 		new ParallelStreams().parallelStream();
 	}
 
 }
+
+
+
+
+
+
+
+
+
+
+
+

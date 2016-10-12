@@ -13,7 +13,7 @@ import com.madhusudhan.j8.util.TradeUtil;
 public class PerformanceMeasurement {
 
 	public void sumTradesInSerial(){
-		List<Trade> trades = TradeUtil.createTrades(100);
+		List<Trade> trades = TradeUtil.createTrades(1000000);
 		Instant start = Instant.now();
 		// Sequential mode
 		trades.stream()
@@ -22,11 +22,11 @@ public class PerformanceMeasurement {
 		
 		Instant end = Instant.now();
 		Duration d = Duration.between(start, end);
-		System.out.printf("%s %d %s" , "Aggregating trades took ", d.toMillis()," ms in Seqential mode");
+		System.out.println("sequential:" + d.toMillis() + "ms");
 	}
 	
 	public void sumTradesInParallell(){
-		List<Trade> trades = TradeUtil.createTrades(100);
+		List<Trade> trades = TradeUtil.createTrades(1000000);
 		Instant start = Instant.now();
 		// Parallel code
 		// Sequential mode
@@ -37,7 +37,7 @@ public class PerformanceMeasurement {
 		
 		Instant end = Instant.now();
 		Duration d = Duration.between(start, end);
-		System.out.printf("%s %d %s" , "Aggregating trades took ", d.toMillis()," ms in Parallel mode");
+		System.out.println("parallel:" + d.toMillis() + "ms");
 	}
 
 	
