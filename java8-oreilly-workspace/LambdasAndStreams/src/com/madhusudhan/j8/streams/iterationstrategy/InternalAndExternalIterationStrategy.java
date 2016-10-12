@@ -21,6 +21,7 @@ public class InternalAndExternalIterationStrategy {
 		}
 		System.out.println("Top 2 classics (Ext Iteration): " + top2Classics);
 	}
+	
 	private void testInternalIteration1() {
 		movies.parallelStream()
 		.filter(Movie::isClassic)
@@ -38,10 +39,14 @@ public class InternalAndExternalIterationStrategy {
 	}
 
 	public static void main(String[] args) {
+		
+//		new InternalAndExternalIterationStrategy().testExternalIteration1();
+		
 		new InternalAndExternalIterationStrategy().testInternalIteration1();
-		new InternalAndExternalIterationStrategy().testInternalIteration2();
-		new InternalAndExternalIterationStrategy().testInternalIteration3();
-		new InternalAndExternalIterationStrategy().testExternalIteration1();
+//		new InternalAndExternalIterationStrategy().testInternalIteration2();
+//		new InternalAndExternalIterationStrategy().testInternalIteration3();
+		
+		
 	}
 
 }
