@@ -8,6 +8,14 @@ import com.madhusudhan.j8.util.MovieUtil;
 public class WorkingWithStreams {
 
 	List<Movie> movies = MovieUtil.createMovies();
+	
+	private void findMoviesByDirectorWorking(String director) {
+		movies.stream()
+			.filter(m -> m.getDirector().equals(director))
+			.map(Movie::getName)
+//			.limit(3)
+			.forEach(System.out::println);
+	}
 
 	private void findMoviesByDirector(String director) {
 		movies.stream()
@@ -19,7 +27,7 @@ public class WorkingWithStreams {
 	}
 
 	public static void main(String[] args) {
-		new WorkingWithStreams().findMoviesByDirector("Steven Spielberg");
+		new WorkingWithStreams().findMoviesByDirectorWorking("Steven Spielberg");
 	}
 
 }

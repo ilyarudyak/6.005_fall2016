@@ -4,6 +4,9 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.List;
+import java.util.TooManyListenersException;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 import com.madhusudhan.j8.domain.Movie;
@@ -21,12 +24,13 @@ public class CreatingStreams {
 	// Empty stream
 	private void testEmptyStreams() {
 		Stream<Movie> moviesEmptyStream = Stream.empty();
-		System.out.println("Empty stream:"+moviesEmptyStream.count());
+		System.out.println("Empty stream:" + moviesEmptyStream.count());
 	}
 	// From values/arrays
 	private void testStreamsFromValues() {
 		Stream<String> movieNames = Stream.of("Gods Must Be Crazy", "Fiddler On The Roof");
-		System.out.println(movieNames.count());
+//		movieNames.forEach(System.out::println);
+		System.out.println(movieNames.collect(Collectors.toList()));
 		
 		String[] movieNames2 = {"Gods Must Be Crazy", "Fiddler On The Roof"};
 		Stream<String> mNames2 = Stream.of(movieNames2);
@@ -53,11 +57,11 @@ public class CreatingStreams {
 		
 	}
 	public static void main(String[] args) {
-		new CreatingStreams().testEmptyStreams();
+//		new CreatingStreams().testEmptyStreams();
 		new CreatingStreams().testStreamsFromValues();
-		new CreatingStreams().testCollectionStreams();
-		new CreatingStreams().testGenerateIterateStreams();
-		new CreatingStreams().testFileStream();
+//		new CreatingStreams().testCollectionStreams();
+//		new CreatingStreams().testGenerateIterateStreams();
+//		new CreatingStreams().testFileStream();
 	}
 
 }

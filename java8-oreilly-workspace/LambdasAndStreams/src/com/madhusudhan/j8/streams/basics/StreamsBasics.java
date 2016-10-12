@@ -18,7 +18,9 @@ public class StreamsBasics {
 			.limit(10)
 			.collect(Collectors.toList());
 		
-		System.out.println("Large trades: "+largeTrades);
+		System.out.println();
+		System.out.println("with streams");
+		System.out.println(largeTrades);
 	}
 
 	private List<Trade> findLargeTradesUsingPreJava8(List<Trade> trades) {
@@ -27,10 +29,13 @@ public class StreamsBasics {
 
 		for (Trade trade : trades) {
 			if (trade.getQuantity() > 10000
-					&& trade.getStatus().equals("CANCELLED")
-					&& trade.getInstrument().equals("GOOGL"))
+					&& trade.getStatus().equals("CANCEL"))
 				largeTrades.add(trade);
 		}
+		
+		System.out.println("without streams");
+		System.out.println(largeTrades);
+		
 		return largeTrades;
 	}
 
