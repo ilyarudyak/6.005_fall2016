@@ -77,27 +77,30 @@ public class OptionalType {
 		List<Integer> attendees = Arrays.asList();
 		Optional<Integer> noAttendees = attendees.stream().reduce(Integer::sum);
 		
-		if(noAttendees.isPresent())
+		if (noAttendees.isPresent()) {
 			System.out.println(noAttendees.get());
+		} else {
+			System.out.println("no attendees");
+		}
 		
 	}
 
 	public static void main(String[] args)  {
 		new OptionalType().attendeesOptional();
 		new OptionalType().noAttendeesOptional();
-		new OptionalType().creatingOptionals();
-		try {
-			new OptionalType().ifElseOptionals();
-		} catch (Exception e1) {
-			e1.printStackTrace();
-		}
-		try {
-			new OptionalType().ifElseThrowOptionals();
-		} catch (Exception e) {
-			System.out.println("Expected exception:"+e);
-		}
-		
-		new OptionalType().filterMapOptionals();
+//		new OptionalType().creatingOptionals();
+//		try {
+//			new OptionalType().ifElseOptionals();
+//		} catch (Exception e1) {
+//			e1.printStackTrace();
+//		}
+//		try {
+//			new OptionalType().ifElseThrowOptionals();
+//		} catch (Exception e) {
+//			System.out.println("Expected exception:"+e);
+//		}
+//		
+//		new OptionalType().filterMapOptionals();
 	}
 
 }
