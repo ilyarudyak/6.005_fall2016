@@ -1,6 +1,12 @@
 package twitter;
 
 import java.util.List;
+import java.util.Set;
+
+import static java.util.stream.Collectors.toList;
+import static java.util.stream.Collectors.toSet;
+
+import java.time.Instant;
 
 /**
  * Filter consists of methods that filter a list of tweets for those matching a
@@ -24,7 +30,9 @@ public class Filter {
      *         in the same order as in the input list.
      */
     public static List<Tweet> writtenBy(List<Tweet> tweets, String username) {
-        throw new RuntimeException("not implemented");
+        return tweets.stream()
+                .filter(tweet -> tweet.getAuthor().equals(username))
+                .collect(toList());
     }
 
     /**
@@ -38,7 +46,17 @@ public class Filter {
      *         in the same order as in the input list.
      */
     public static List<Tweet> inTimespan(List<Tweet> tweets, Timespan timespan) {
-        throw new RuntimeException("not implemented");
+        return tweets.stream()
+                .filter(tweet -> {
+                    Instant start = timespan.getStart();
+                    Instant end = timespan.getEnd();
+                    Instant timestamp = tweet.getTimestamp();
+                    return  (timestamp.equals(start) || 
+                             timestamp.equals(end) ||
+                            (tweet.getTimestamp().isAfter(start) &&
+                            tweet.getTimestamp().isBefore(end))); 
+                })
+                .collect(toList());
     }
 
     /**
@@ -57,11 +75,47 @@ public class Filter {
      *         same order as in the input list.
      */
     public static List<Tweet> containing(List<Tweet> tweets, List<String> words) {
-        throw new RuntimeException("not implemented");
+        return tweets.stream()
+                .filter(tweet -> isContainSomeWord(tweet.getText(), words))
+                .collect(toList());
+    }
+    
+    private static boolean isContainSomeWord(String s, List<String> words) {
+        
+        String sLowerCase = s.toLowerCase();
+        
+//        Set<String> wordsContaining = words.stream()
+//                .filter(word -> sLowerCase.contains(word.toLowerCase()))
+//                .collect(toSet());
+        
+        
+        for (String word : words) {
+            if (sLowerCase.contains(word.toLowerCase())) {
+                return true;
+            }
+        }
+        return false;
     }
 
     /* Copyright (c) 2007-2016 MIT 6.005 course staff, all rights reserved.
      * Redistribution of original or derived work requires explicit permission.
      * Don't post any of this code on the web or to a public Github repository.
      */
+    
+    public static void main(String[] args) {
+        
+        Instant d1 = Instant.parse("2016-02-17T10:00:00Z");
+        Instant d2 = Instant.parse("2016-02-17T10:00:00Z");
+        System.out.println(d2.equals(d1));
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }

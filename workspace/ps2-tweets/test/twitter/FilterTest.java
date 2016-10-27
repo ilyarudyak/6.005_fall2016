@@ -3,9 +3,13 @@ package twitter;
 import static org.junit.Assert.*;
 
 import java.time.Instant;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
+import java.util.stream.Collectors;
 
+import org.junit.Ignore;
 import org.junit.Test;
 
 public class FilterTest {
@@ -20,6 +24,7 @@ public class FilterTest {
     
     private static final Tweet tweet1 = new Tweet(1, "alyssa", "is it reasonable to talk about rivest so much?", d1);
     private static final Tweet tweet2 = new Tweet(2, "bbitdiddle", "rivest talk in 30 minutes #hype", d2);
+    private static final Tweet tweet3 = new Tweet(3, "alyssa", "second tweet by alyssa", d1);
     
     @Test(expected=AssertionError.class)
     public void testAssertionsEnabled() {
@@ -35,8 +40,29 @@ public class FilterTest {
     }
     
     @Test
+    public void testWrittenByCorrectOrder() {
+        List<Tweet> writtenBy = Filter.writtenBy(Arrays.asList(tweet1, tweet3), "alyssa");
+       
+        
+        assertEquals(1, writtenBy.get(0).getId());
+        assertEquals(3, writtenBy.get(1).getId());
+    }
+    
+    @Test
     public void testInTimespanMultipleTweetsMultipleResults() {
         Instant testStart = Instant.parse("2016-02-17T09:00:00Z");
+        Instant testEnd = Instant.parse("2016-02-17T12:00:00Z");
+        
+        List<Tweet> inTimespan = Filter.inTimespan(Arrays.asList(tweet1, tweet2), new Timespan(testStart, testEnd));
+        
+        assertFalse("expected non-empty list", inTimespan.isEmpty());
+        assertTrue("expected list to contain tweets", inTimespan.containsAll(Arrays.asList(tweet1, tweet2)));
+        assertEquals("expected same order", 0, inTimespan.indexOf(tweet1));
+    }
+    
+    @Test
+    public void testInTimespanMultipleTweetsBoundaries() {
+        Instant testStart = Instant.parse("2016-02-17T10:00:00Z");
         Instant testEnd = Instant.parse("2016-02-17T12:00:00Z");
         
         List<Tweet> inTimespan = Filter.inTimespan(Arrays.asList(tweet1, tweet2), new Timespan(testStart, testEnd));
@@ -53,6 +79,20 @@ public class FilterTest {
         assertFalse("expected non-empty list", containing.isEmpty());
         assertTrue("expected list to contain tweets", containing.containsAll(Arrays.asList(tweet1, tweet2)));
         assertEquals("expected same order", 0, containing.indexOf(tweet1));
+    }
+    
+    @Test
+    public void testContainingMultipleWordsInList() {
+        List<Tweet> containing = Filter.containing(Arrays.asList(tweet1, tweet2, tweet3), Arrays.asList("talk", "second"));
+        
+        assertTrue("expected list to contain all tweets", containing.containsAll(Arrays.asList(tweet1, tweet2, tweet3)));
+    }
+    
+    @Test
+    public void testContainingMultipleNotContaining() {
+        List<Tweet> containing = Filter.containing(Arrays.asList(tweet3), Arrays.asList("talk"));
+        
+        assertTrue("expected empty list", containing.isEmpty());
     }
 
     /*
