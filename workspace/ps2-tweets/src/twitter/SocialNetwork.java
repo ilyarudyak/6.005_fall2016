@@ -4,6 +4,12 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
+import static java.util.stream.Collectors.toList;
+import static java.util.stream.Collectors.toMap;
+
+import java.util.Comparator;
+
+
 /**
  * SocialNetwork provides methods that operate on a social network.
  * 
@@ -37,9 +43,17 @@ public class SocialNetwork {
      *         All the Twitter usernames in the returned social network must be
      *         either authors or @-mentions in the list of tweets.
      */
-    public static Map<String, Set<String>> guessFollowsGraph(List<Tweet> tweets) {
-        throw new RuntimeException("not implemented");
+    public static Map<String, Set<String>> guessFollowsGraph(List<Tweet> tweets) {    
+        
+        Map<String, Set<String>> followsGraph = tweets.stream()
+                .map(tweet -> tweet.getAuthor())                
+                .collect(toMap( username -> username,
+                                username -> Extract.getMentionedUsers(
+                                                     Filter.writtenBy(tweets, username))));   
+        
+        return followsGraph;
     }
+
 
     /**
      * Find the people in a social network who have the greatest influence, in
@@ -51,7 +65,23 @@ public class SocialNetwork {
      *         descending order of follower count.
      */
     public static List<String> influencers(Map<String, Set<String>> followsGraph) {
-        throw new RuntimeException("not implemented");
+        
+        Map<String, Long> ranksMap = followsGraph.keySet().stream()
+                .collect(toMap(username -> username,
+                               username -> getRank(username, followsGraph)));
+                
+        List<String> influencersList = followsGraph.keySet().stream().collect(toList());
+        
+        influencersList.sort((username1, username2) -> (int)(ranksMap.get(username1) - ranksMap.get(username2)));
+                
+        return influencersList;
+    }
+    
+    private static Long getRank(String username, Map<String, Set<String>> followsGraph) {
+        
+        return followsGraph.values().stream()
+                            .filter(set -> set.contains(username))
+                            .count();
     }
 
     /* Copyright (c) 2007-2016 MIT 6.005 course staff, all rights reserved.
@@ -59,3 +89,14 @@ public class SocialNetwork {
      * Don't post any of this code on the web or to a public Github repository.
      */
 }
+
+
+
+
+
+
+
+
+
+
+
