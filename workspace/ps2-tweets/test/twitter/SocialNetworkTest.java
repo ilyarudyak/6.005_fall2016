@@ -23,6 +23,12 @@ public class SocialNetworkTest {
      *  - check that user doesn't follow himself
      *  - correct set for users with many tweets and mentions
      *  
+     * for influencers():
+     *  
+     *  - check that all username are in the list: both authors and mentioned
+     *  - check the correct order of sorting
+     *  - 
+     *  
      */
     
     
@@ -37,7 +43,11 @@ public class SocialNetworkTest {
     private static final Tweet t6 = new Tweet(6, "user4", "tweet6 @user2", Instant.now());
     private static final Tweet t7 = new Tweet(7, "user4", "tweet7 @user2 @user4 @user7", Instant.now());
     
+    private static final Tweet t8 = new Tweet(8, "user8", "tweet8 @user2", Instant.now());
+    private static final Tweet t9 = new Tweet(9, "user5", "tweet9", Instant.now());
+    
     private static final List<Tweet> tweets = Arrays.asList(t1, t2, t3, t4, t5, t6, t7);
+    private static final List<Tweet> tweets2 = Arrays.asList(t1, t2, t3, t4, t5, t6, t7, t8, t9);
     
     
     /* ----------- test of influencers() ----------- */
@@ -89,12 +99,7 @@ public class SocialNetworkTest {
                 .containsAll(Arrays.asList("user1", "user2", "user3", "user7")));
     }
     
-    
-    
     /* ----------- test of influencers() ----------- */
-    
-    
-    
     
     @Test
     public void testInfluencersEmpty() {
@@ -103,6 +108,51 @@ public class SocialNetworkTest {
         
         assertTrue("expected empty list", influencers.isEmpty());
     }
+    
+    @Test
+    public void testInfluencersAllIncluded() {
+        Map<String, Set<String>> followsGraph = SocialNetwork.guessFollowsGraph(tweets2);
+        List<String> influencers = SocialNetwork.influencers(followsGraph);
+        
+        assertTrue("expected 8 users", followsGraph.keySet().containsAll(
+                Arrays.asList("user1", "user2", "user3", "user4", "user5", "user6", "user7", "user8")));
+    }
+    
+    @Test 
+    public void testInfluencersCorrectOrderFirst() {
+        Map<String, Set<String>> followsGraph = SocialNetwork.guessFollowsGraph(tweets2);
+        List<String> influencers = SocialNetwork.influencers(followsGraph);
+        
+        assertEquals("expected user2", "user2", influencers.get(0));    
+    }
+    
+    @Test 
+    public void testInfluencersCorrectOrderLast() {
+        Map<String, Set<String>> followsGraph = SocialNetwork.guessFollowsGraph(tweets2);
+        List<String> influencers = SocialNetwork.influencers(followsGraph);
+        
+        assertTrue("expected user5 or user8", Arrays.asList("user5", "user8")
+                .contains(influencers.get(influencers.size() - 1)));    
+    }
+    
+    @Test 
+    public void testInfluencersCorrectOrderMiddle() {
+        Map<String, Set<String>> followsGraph = SocialNetwork.guessFollowsGraph(tweets2);
+        List<String> influencers = SocialNetwork.influencers(followsGraph);
+        System.out.println(influencers);
+        assertTrue("expected user3 before user4", influencers.indexOf("user3") < 
+                influencers.indexOf("user4"));    
+    }
+    
+    @Test 
+    public void testInfluencersCorrectOrderMiddle2() {
+        Map<String, Set<String>> followsGraph = SocialNetwork.guessFollowsGraph(tweets2);
+        List<String> influencers = SocialNetwork.influencers(followsGraph);
+        
+        assertTrue("expected user7 before user5", influencers.indexOf("user7") < 
+                influencers.indexOf("user5"));    
+    }
+    
 
     @Test(expected=AssertionError.class)
     public void testAssertionsEnabled() {

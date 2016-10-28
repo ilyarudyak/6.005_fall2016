@@ -9,6 +9,7 @@ import static java.util.stream.Collectors.toMap;
 import static java.util.stream.Collectors.toSet;
 
 import java.util.Comparator;
+import java.util.HashSet;
 
 
 /**
@@ -53,6 +54,14 @@ public class SocialNetwork {
                 .collect(toMap( username -> username,
                                 username -> getMentionedUsersExceptHimself(tweets, username)));   
         
+        Set<String> mentionedUsers = Extract.getMentionedUsers(tweets);
+        for (String username : mentionedUsers) {
+            if(!followsGraph.containsKey(username)) {
+                followsGraph.put(username, new HashSet<>());
+            }
+        }
+        
+        
         return followsGraph;
     }
     
@@ -81,7 +90,7 @@ public class SocialNetwork {
                 
         List<String> influencersList = followsGraph.keySet().stream().collect(toList());
         
-        influencersList.sort((username1, username2) -> (int)(ranksMap.get(username1) - ranksMap.get(username2)));
+        influencersList.sort((username1, username2) -> (int)(ranksMap.get(username2) - ranksMap.get(username1)));
                 
         return influencersList;
     }
