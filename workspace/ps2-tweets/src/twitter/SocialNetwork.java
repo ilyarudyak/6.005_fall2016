@@ -6,6 +6,7 @@ import java.util.Set;
 
 import static java.util.stream.Collectors.toList;
 import static java.util.stream.Collectors.toMap;
+import static java.util.stream.Collectors.toSet;
 
 import java.util.Comparator;
 
@@ -46,12 +47,20 @@ public class SocialNetwork {
     public static Map<String, Set<String>> guessFollowsGraph(List<Tweet> tweets) {    
         
         Map<String, Set<String>> followsGraph = tweets.stream()
-                .map(tweet -> tweet.getAuthor())                
+                .map(tweet -> tweet.getAuthor())
+                .collect(toSet())
+                .stream()
                 .collect(toMap( username -> username,
-                                username -> Extract.getMentionedUsers(
-                                                     Filter.writtenBy(tweets, username))));   
+                                username -> getMentionedUsersExceptHimself(tweets, username)));   
         
         return followsGraph;
+    }
+    
+    private static Set<String> getMentionedUsersExceptHimself(List<Tweet> tweets, String username) {
+        
+        Set<String> mentionedUsers = Extract.getMentionedUsers(Filter.writtenBy(tweets, username));
+                                            
+        return mentionedUsers.stream().filter(user -> !user.equals(username)).collect(toSet());
     }
 
 
