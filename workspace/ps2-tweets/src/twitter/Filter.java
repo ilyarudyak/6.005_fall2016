@@ -2,6 +2,8 @@ package twitter;
 
 import java.util.List;
 import java.util.Set;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import static java.util.stream.Collectors.toList;
 import static java.util.stream.Collectors.toSet;
@@ -31,7 +33,7 @@ public class Filter {
      */
     public static List<Tweet> writtenBy(List<Tweet> tweets, String username) {
         return tweets.stream()
-                .filter(tweet -> tweet.getAuthor().equals(username))
+                .filter(tweet -> tweet.getAuthor().equalsIgnoreCase(username))
                 .collect(toList());
     }
 
@@ -82,15 +84,21 @@ public class Filter {
     
     private static boolean isContainSomeWord(String s, List<String> words) {
         
+        if (s.isEmpty() || words.isEmpty()) {
+            return false;
+        }
+        
         String sLowerCase = s.toLowerCase();
         
-//        Set<String> wordsContaining = words.stream()
-//                .filter(word -> sLowerCase.contains(word.toLowerCase()))
-//                .collect(toSet());
-        
-        
         for (String word : words) {
-            if (sLowerCase.contains(word.toLowerCase())) {
+            
+            if (word.isEmpty()) {
+                return false;
+            }
+            
+            Pattern wordPattern = Pattern.compile("\\b" + word.toLowerCase() + "\\b");
+            Matcher wordMatcher = wordPattern.matcher(sLowerCase);
+            if (wordMatcher.find()) {
                 return true;
             }
         }

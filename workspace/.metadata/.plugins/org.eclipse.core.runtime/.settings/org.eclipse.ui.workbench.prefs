@@ -18,4 +18,5 @@ org.eclipse.jdt.ui.editors.textfont=1|Ubuntu Mono|15.0|0|COCOA|1|UbuntuMono-Regu
 org.eclipse.jface.textfont=1|Ubuntu Mono|15.0|0|COCOA|1|UbuntuMono-Regular;
 org.eclipse.mylyn.wikitext.ui.presentation.textFont=1|Ubuntu Mono|15.0|0|COCOA|1|UbuntuMono-Regular;
 org.eclipse.recommenders.snipmatch.rcp.searchTextFont=1|Ubuntu Mono|15.0|0|COCOA|1|UbuntuMono-Regular;
+org.eclipse.ui.commands=<?xml version\="1.0" encoding\="UTF-8"?>\n<org.eclipse.ui.commands>\n<keyBinding commandId\="org.eclipse.ui.edit.text.folding.toggle" contextId\="org.eclipse.ui.textEditorScope" keyConfigurationId\="org.eclipse.ui.defaultAcceleratorConfiguration" keySequence\="COMMAND+SHIFT+-"/>\n<keyBinding contextId\="org.eclipse.ui.textEditorScope" keyConfigurationId\="org.eclipse.ui.defaultAcceleratorConfiguration" keySequence\="COMMAND+NUMPAD_DIVIDE"/>\n</org.eclipse.ui.commands>
 org.eclipse.wst.sse.ui.textfont=1|Ubuntu Mono|15.0|0|COCOA|1|UbuntuMono-Regular;

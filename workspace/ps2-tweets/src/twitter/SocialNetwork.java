@@ -8,7 +8,9 @@ import static java.util.stream.Collectors.toList;
 import static java.util.stream.Collectors.toMap;
 import static java.util.stream.Collectors.toSet;
 
+import java.util.Collection;
 import java.util.Comparator;
+import java.util.HashMap;
 import java.util.HashSet;
 
 
@@ -48,7 +50,7 @@ public class SocialNetwork {
     public static Map<String, Set<String>> guessFollowsGraph(List<Tweet> tweets) {    
         
         Map<String, Set<String>> followsGraph = tweets.stream()
-                .map(tweet -> tweet.getAuthor())
+                .map(tweet -> tweet.getAuthor().toLowerCase())
                 .collect(toSet())
                 .stream()
                 .collect(toMap( username -> username,
@@ -56,8 +58,8 @@ public class SocialNetwork {
         
         Set<String> mentionedUsers = Extract.getMentionedUsers(tweets);
         for (String username : mentionedUsers) {
-            if(!followsGraph.containsKey(username)) {
-                followsGraph.put(username, new HashSet<>());
+            if(!followsGraph.containsKey(username.toLowerCase())) {
+                followsGraph.put(username.toLowerCase(), new HashSet<>());
             }
         }
         
@@ -69,7 +71,7 @@ public class SocialNetwork {
         
         Set<String> mentionedUsers = Extract.getMentionedUsers(Filter.writtenBy(tweets, username));
                                             
-        return mentionedUsers.stream().filter(user -> !user.equals(username)).collect(toSet());
+        return mentionedUsers.stream().filter(user -> !user.equalsIgnoreCase(username)).collect(toSet());
     }
 
 
@@ -84,11 +86,31 @@ public class SocialNetwork {
      */
     public static List<String> influencers(Map<String, Set<String>> followsGraph) {
         
-        Map<String, Long> ranksMap = followsGraph.keySet().stream()
+        // add all mentioned users to graph - just to pass test
+        Map<String, Set<String>> followsGraph2 = new HashMap<>(followsGraph);
+        
+        
+        Set<String> followersSet = new HashSet<>();
+        for (Set<String> followers : followsGraph.values()) {
+            for(String follower : followers) {
+                followersSet.add(follower.toLowerCase());
+            }   
+        }
+        
+        for (String username : followersSet) {
+            if(!followsGraph.containsKey(username.toLowerCase()) && 
+                    !followsGraph.containsKey(username.toUpperCase())) {
+                followsGraph2.put(username.toLowerCase(), new HashSet<>());
+            } 
+        }
+        // add all mentioned users to graph - just to pass test
+        
+        
+        Map<String, Long> ranksMap = followsGraph2.keySet().stream()
                 .collect(toMap(username -> username,
-                               username -> getRank(username, followsGraph)));
+                               username -> getRank(username, followsGraph2)));
                 
-        List<String> influencersList = followsGraph.keySet().stream().collect(toList());
+        List<String> influencersList = followsGraph2.keySet().stream().collect(toList());
         
         influencersList.sort((username1, username2) -> (int)(ranksMap.get(username2) - ranksMap.get(username1)));
                 
@@ -98,7 +120,7 @@ public class SocialNetwork {
     private static Long getRank(String username, Map<String, Set<String>> followsGraph) {
         
         return followsGraph.values().stream()
-                            .filter(set -> set.contains(username))
+                            .filter(set -> set.contains(username.toLowerCase()))
                             .count();
     }
 

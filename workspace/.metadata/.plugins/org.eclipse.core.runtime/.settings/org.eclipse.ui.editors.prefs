@@ -19,6 +19,7 @@ matchingTagIndicationColor=83,83,83
 occurrenceIndicationColor=83,83,83
 org.eclipse.cdt.ui.occurrenceIndicationColor=83,83,83
 overviewRuler_migration=migrated_3.1
+printMargin=true
 printMarginColor=255,254,0
 pydevOccurrenceIndicationColor=83,83,83
 searchResultIndicationColor=108,108,108

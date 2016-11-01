@@ -6,10 +6,12 @@ import java.time.Instant;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
+import org.junit.Ignore;
 import org.junit.Test;
 
 public class SocialNetworkTest {
@@ -152,6 +154,25 @@ public class SocialNetworkTest {
         assertTrue("expected user7 before user5", influencers.indexOf("user7") < 
                 influencers.indexOf("user5"));    
     }
+    
+    @Test
+    public void testInfluencersMustBeCaseInsensitive() {
+        /*
+         * Usernames should be case insensitive.
+         */
+        Map<String, Set<String>> network = new HashMap<String, Set<String>>();
+        network.put("bbitdiddle", new HashSet<String>(Arrays.asList("a_lyssp_")));
+        network.put("A_LYSSP_", new HashSet<String>());
+        
+        List<String> influencers = SocialNetwork.influencers(network);
+        
+        assertFalse("expected non-empty list", influencers.isEmpty());
+        assertEquals("list size", 2, influencers.size());
+        assertTrue("incorrect user at index 0", influencers.get(0).toLowerCase().equals("a_lyssp_"));
+        assertTrue("incorrect user at index 1", influencers.get(1).toLowerCase().equals("bbitdiddle"));
+    }
+    
+    
     
 
     @Test(expected=AssertionError.class)

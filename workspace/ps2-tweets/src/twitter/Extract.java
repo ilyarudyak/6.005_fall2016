@@ -1,10 +1,12 @@
 package twitter;
 
+import java.sql.Time;
 import java.time.Instant;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Optional;
 import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -30,17 +32,22 @@ public class Extract {
      */
     public static Timespan getTimespan(List<Tweet> tweets) {
         
-        Instant start = tweets.stream()
+        Optional<Instant> start = tweets.stream()
                                .min(Comparator.comparing(tweet -> tweet.getTimestamp()))
-                               .get()
-                               .getTimestamp();
+                               .map(tweet -> tweet.getTimestamp());
         
-        Instant end = tweets.stream()
+        Optional<Instant> end = tweets.stream()
                             .max(Comparator.comparing(tweet -> tweet.getTimestamp()))
-                            .get()
-                            .getTimestamp();
+                            .map(tweet -> tweet.getTimestamp());
         
-        return new Timespan(start, end);
+        Instant now = Instant.now();
+        Timespan timespan = new Timespan(now, now);
+        if (start.isPresent() && end.isPresent()) {
+            timespan =  new Timespan(start.get(), end.get());
+        }
+        
+        return timespan;
+
     }
 
     /**
