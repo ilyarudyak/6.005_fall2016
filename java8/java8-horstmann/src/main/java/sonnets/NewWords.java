@@ -15,7 +15,17 @@ import static java.util.stream.Collectors.toSet;
  */
 public class NewWords {
 
-    static Set<String> sonnetWords = readWords("src/main/resources/sonnets/sonnet_words.txt");
+//    static Set<String> sonnetWords = readWords("src/main/resources/sonnets/sonnet_words.txt");
+    static Set<String> sonnetWords;
+
+    static {
+        try {
+            sonnetWords = ExtractSonnetWords.extractWords("src/main/resources/sonnets/sonnet_words.txt");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
     static Set<String> dictWords = readWords("src/main/resources/sonnets/sowpods.txt");
 
     public static void main(String[] args) {
@@ -23,10 +33,9 @@ public class NewWords {
         // check if a sonnet word is NOT in dictionary words
         Set<String> newWords = sonnetWords.stream()
                 .filter(word -> !dictWords.contains(word))
-                .sorted()
                 .collect(toSet());
 
-        newWords.forEach(System.out::println);
+        newWords.stream().sorted().forEach(System.out::println);
         System.out.println("total new words: " + newWords.size());
 
     }
