@@ -1,9 +1,8 @@
-package stream.map;
+package stream.collect.map;
 
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.util.Comparator;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -63,19 +62,19 @@ public class CollectToMap2 {
 //        cities.limit(3).forEach(System.out::println);
 
         // sum of populations per state
-//        System.out.println(cities.collect(Collectors
+//        System.out.println(cities.stream.collect(Collectors
 //                .groupingBy(City::getState,
 //                            Collectors.summingInt(City::getPopulation))).get("NY"));
 
         // largest city per state
 //        Comparator<City> compareByPopulation = Comparator.comparing(City::getPopulation);
-//        System.out.println(cities.collect(Collectors
+//        System.out.println(cities.stream.collect(Collectors
 //                .groupingBy(City::getState,
 //                            Collectors.maxBy(compareByPopulation)))
 //                .get("TX").get());
 
         // set of cities per state
-//        System.out.println(cities.collect(Collectors
+//        System.out.println(cities.stream.collect(Collectors
 //                .groupingBy(City::getState,
 //                            Collectors.mapping(City::getName, Collectors.toSet())))
 //                .get("TX"));

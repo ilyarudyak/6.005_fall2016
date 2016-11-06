@@ -1,11 +1,6 @@
-package stream.map;
+package stream.collect.map;
 
-import java.util.Arrays;
-import java.util.List;
 import java.util.Locale;
-import java.util.Map;
-import java.util.function.Function;
-import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 import static java.util.stream.Collectors.*;
@@ -39,12 +34,12 @@ public class CollectToMap {
 //        // id:name
 //        System.out.println(people()
 //                // we can also use toMap(p -> p.getId(), p -> p.getName())
-//                .collect(toMap(Person::getId, Person::getName)));
+//                .stream.collect(toMap(Person::getId, Person::getName)));
 //
 //        // id:person
 //        Map<Integer, Person> peopleMap = people()
 //                // again we can use p -> p
-//                .collect(toMap(Person::getId, Function.identity()));
+//                .stream.collect(toMap(Person::getId, Function.identity()));
 //        System.out.println(peopleMap);
 //        System.out.println(peopleMap.get(1001));
 
@@ -57,11 +52,11 @@ public class CollectToMap {
 
         // country:list of locales
 //        Map<String, List<Locale>> countryToLocales = locales
-//                .collect(groupingBy(Locale::getCountry));
+//                .stream.collect(groupingBy(Locale::getCountry));
 //        System.out.println(countryToLocales.get("CH"));
 
         // country:*set* of locales
-//        System.out.println(locales.collect(groupingBy(Locale::getCountry,
+//        System.out.println(locales.stream.collect(groupingBy(Locale::getCountry,
 //                // downstream collector
 //                toSet())).get("CH"));
 
