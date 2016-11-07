@@ -6,6 +6,7 @@ import java.nio.file.Paths;
 import java.util.List;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 /**
@@ -16,6 +17,11 @@ public class Utils {
     public static final int LIMIT = 10;
 
     public static <T> void head(Stream<T> stream) {
+        stream.limit(LIMIT).forEach(e -> System.out.print(e + " "));
+        System.out.println();
+    }
+
+    public static void head(IntStream stream) {
         stream.limit(LIMIT).forEach(e -> System.out.print(e + " "));
         System.out.println();
     }
