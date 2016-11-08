@@ -31,13 +31,13 @@ public class EncounterOrderTest {
     @Test
     public void hashSetToStream() {
         // BEGIN HASHSET_TO_STREAM
-    Set<Integer> numbers = new HashSet<>(asList(4, 3, 2, 1));
+    Set<Integer> numbers = new HashSet<>(asList(1, 2, 4, 3));
 
     List<Integer> sameOrder = numbers.stream()
                                      .collect(toList());
 
     // This may not pass
-    assertEquals(asList(4, 3, 2, 1), sameOrder);
+    assertEquals(asList(1, 2, 4, 3), sameOrder);
         // END HASHSET_TO_STREAM
     }
 
