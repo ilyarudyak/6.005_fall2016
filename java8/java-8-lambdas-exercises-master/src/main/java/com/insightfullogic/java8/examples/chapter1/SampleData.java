@@ -21,11 +21,19 @@ public class SampleData {
     public static final Album aLoveSupreme = new Album("A Love Supreme",
             asList(new Track("Acknowledgement", 467), new Track("Resolution", 442), new Track("short track", 30)),
             asList(johnColtrane));
-    public static final Album sampleShortAlbum = new Album("sample Short Album", asList(new Track("short track", 30)), asList(johnColtrane));
-    public static final Album manyTrackAlbum = new Album("sample Short Album", asList(new Track("short track", 30), new Track("short track 2", 30), new Track("short track 3", 30), new Track("short track 4", 30), new Track("short track 5", 30)), asList(johnColtrane));
+    public static final Album sampleShortAlbum = new Album("sample Short Album",
+            asList(new Track("short track", 30)),
+            asList(johnColtrane));
+    public static final Album manyTrackAlbum = new Album("sample Short Album",
+            asList(new Track("short track", 30), new Track("short track 2", 30), new Track("short track 3", 30), new Track("short track 4", 30), new Track("short track 5", 30)),
+            asList(johnColtrane));
 
+    public static final Album theWhiteAlbum = new Album("The White Album",
+            asList(new Track("Back in the U.S.S.R.", 163), new Track("Dear Prudence", 236), new Track("Glass Onion", 137)),
+            asList(theBeatles));
     // streams
     public static Stream<Album> albums = Stream.of(aLoveSupreme, sampleShortAlbum, manyTrackAlbum);
+    public static Stream<Album> albumsWithWhite = Stream.of(aLoveSupreme, sampleShortAlbum, manyTrackAlbum, theWhiteAlbum);
     public static Stream<Artist> threeArtists() {
         return Stream.of(johnColtrane, johnLennon, theBeatles);
     }

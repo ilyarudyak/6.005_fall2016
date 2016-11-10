@@ -20,6 +20,8 @@ import static java.util.stream.Collectors.*;
 
 public class CollectorExamples {
 
+    // ----- Enter the Collector: Into Other Collections
+
     public Set<Integer> toCollectionTreeset() {
         Stream<Integer> stream = Stream.of(1, 2, 3);
         // BEGIN TO_COLLECTION_TREESET
@@ -31,6 +33,8 @@ public class CollectorExamples {
         Stream<Integer> stream = Stream.of(1, 2, 3);
         return stream.collect(toSet());
     }
+
+    // ------ Enter the Collector: To Values
 
     // BEGIN BIGGEST_GROUP
     public Optional<Artist> biggestGroup(Stream<Artist> artists) {
@@ -44,6 +48,8 @@ public class CollectorExamples {
         return artists.max(comparing(getCount));
     }
 
+    // ------ Enter the Collector: Partitioning the Data
+
     // BEGIN BANDS_AND_SOLO
     public Map<Boolean, List<Artist>> bandsAndSolo(Stream<Artist> artists) {
         return artists.collect(partitioningBy(artist -> artist.isSolo()));
@@ -56,11 +62,17 @@ public class CollectorExamples {
     }
     // END BANDS_AND_SOLO_REF
 
+    // ------ Enter the Collector: Grouping the Data
+
     // BEGIN ALBUMS_BY_ARTIST
     public Map<Artist, List<Album>> albumsByArtist(Stream<Album> albums) {
-        return albums.collect(groupingBy(album -> album.getMainMusician()));
+        return albums.collect(groupingBy(Album::getMainMusician));
     }
     // END ALBUMS_BY_ARTIST
+
+    // -------------------------------------------------------------------------
+
+    // ------ Enter the Collector: Composing Collectors
 
     public Map<Artist, Integer> numberOfAlbumsDumb(Stream<Album> albums) {
         // BEGIN NUMBER_OF_ALBUMS_DUMB
@@ -81,6 +93,12 @@ public class CollectorExamples {
                 counting()));
     }
     // END NUMBER_OF_ALBUMS
+
+    public Map<Artist, Long> numberOfAlbums2(Stream<Album> albums) {
+        return albums.collect(groupingBy(Album::getMainMusician, counting()));
+    }
+
+    // ------
 
     // BEGIN NAME_OF_ALBUMS_DUMB
     public Map<Artist, List<String>> nameOfAlbumsDumb(Stream<Album> albums) {
@@ -104,6 +122,14 @@ public class CollectorExamples {
                 mapping(Album::getName, toList())));
     }
     // END NAME_OF_ALBUMS
+
+    public Map<Artist, List<String>> nameOfAlbums2(Stream<Album> albums) {
+        return albums.collect(groupingBy(Album::getMainMusician,
+                mapping(Album::getName, toList())
+        ));
+    }
+
+    // ------
 
     public static Map<String, Long> countWords(Stream<String> words) {
         return words.collect(groupingBy(word -> word, counting()));
@@ -140,10 +166,32 @@ public class CollectorExamples {
 //        System.out.println(new CollectorExamples()
 //                .biggestGroup2(SampleData.threeArtists()));
 
+//        System.out.println(new CollectorExamples().bandsAndSolo(SampleData.threeArtists()));
+
+//        System.out.println(new CollectorExamples()
+//                .albumsByArtist(SampleData.albumsWithWhite));
+
         System.out.println(new CollectorExamples()
-                .albumsByArtist(SampleData.albums));
+                .nameOfAlbums2(SampleData.albumsWithWhite));
+
 
     }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

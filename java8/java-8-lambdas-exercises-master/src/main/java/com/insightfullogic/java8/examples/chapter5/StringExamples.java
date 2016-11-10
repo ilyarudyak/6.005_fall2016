@@ -8,6 +8,8 @@ import java.util.stream.Collectors;
 
 public class StringExamples {
 
+    // ------ Enter the Collector: Strings
+
     public static String formatArtists(List<Artist> artists) {
         // BEGIN collectors_joining
         String result =
@@ -17,6 +19,8 @@ public class StringExamples {
         // END collectors_joining
         return result;
     }
+
+    // ------
 
     public static String formatArtistsForLoop(List<Artist> artists) {
         // BEGIN for_loop
