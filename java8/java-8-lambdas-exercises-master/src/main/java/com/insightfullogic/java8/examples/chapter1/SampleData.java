@@ -17,6 +17,9 @@ public class SampleData {
     public static final List<Artist> membersOfTheBeatles = Arrays.asList(johnLennon, paulMcCartney, georgeHarrison, ringoStarr);
     public static final Artist theBeatles = new Artist("The Beatles", membersOfTheBeatles, "UK");
 
+    public static final Artist peteBest = new Artist("Pete Best", "UK");
+    public static final Artist stuartSutcliffe =  new Artist("Stuart Sutcliffe", "UK");
+
     // albums
     public static final Album aLoveSupreme = new Album("A Love Supreme",
             asList(new Track("Acknowledgement", 467), new Track("Resolution", 442), new Track("short track", 30)),
