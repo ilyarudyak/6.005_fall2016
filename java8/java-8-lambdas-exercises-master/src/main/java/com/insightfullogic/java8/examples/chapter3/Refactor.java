@@ -93,7 +93,17 @@ public class Refactor {
 // END findLongTracks_4
     }
 
+    public static Set<String> findLongTracks(List<Album> albums) {
+        return albums.stream()
+                .flatMap(album -> album.getTracks())
+                .filter(track -> track.getLength() >= 60)
+                .map(t -> t.getName())
+                .collect(toSet());
+    }
+
     public static void main(String[] args) {
+
+        List<Album> albums = asList(SampleData.aLoveSupreme, SampleData.sampleShortAlbum);
 //        Step1 step1 = new Step1();
 //        System.out.println(step1.findLongTracks(asList(SampleData.aLoveSupreme, SampleData.sampleShortAlbum)));
 
@@ -103,8 +113,10 @@ public class Refactor {
 //        Step3 step3 = new Step3();
 //        System.out.println(step3.findLongTracks(asList(SampleData.aLoveSupreme, SampleData.sampleShortAlbum)));
 
-        Step4 step4 = new Step4();
-        System.out.println(step4.findLongTracks(asList(SampleData.aLoveSupreme, SampleData.sampleShortAlbum)));
+//        Step4 step4 = new Step4();
+//        System.out.println(step4.findLongTracks(asList(SampleData.aLoveSupreme, SampleData.sampleShortAlbum)));
+
+        System.out.println(Refactor.findLongTracks(albums));
 
     }
 
