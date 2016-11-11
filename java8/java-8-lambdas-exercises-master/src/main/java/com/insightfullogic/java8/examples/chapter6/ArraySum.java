@@ -23,7 +23,7 @@ public class ArraySum {
     public static final int MEDIUM_SIZE = 100;
     public static final int LARGE_SIZE = 10000;
 
-    public enum StreamType { SERIAL, PARALLEL };
+    public enum StreamType { SERIAL, PARALLEL }
 
 
     public List<Album> albums;
