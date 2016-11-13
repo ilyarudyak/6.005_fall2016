@@ -1,19 +1,21 @@
 package piwords;
 
+import java.util.stream.Stream;
+
+import static java.util.Arrays.asList;
+
 public class PiGenerator {
     /**
-     * Returns precision hexadecimal digits of the fractional part of pi.
+     * Returns infinite stream of the fractional part of pi.
      * Returns digits in most significant to least significant order.
-     * 
-     * If precision < 0, return null.
-     * 
-     * @param precision The number of digits after the decimal place to
-     *                  retrieve.
+     *
+     *
      * @return precision digits of pi in hexadecimal.
      */
-    public static int[] computePiInHex(int precision) {
-        // TODO: Implement (Problem 1.d)
-        return new int[0];
+    public static Stream<Integer> piInHex() {
+
+        return Stream.iterate(1, n -> n + 1)
+                .map(n -> piDigit(n));
     }
 
     /**
@@ -21,14 +23,31 @@ public class PiGenerator {
      * 
      * If a < 0, b < 0, or m < 0, return -1.
      * 
-     * @param a
-     * @param b
-     * @param m
-     * @return a^b mod m
+     * @param x
+     * @param y
+     * @param p
+     * @return x^y mod m
      */
-    public static int powerMod(int a, int b, int m) {
-        // TODO: Implement (Problem 1.b)
-        return -1;
+    public static int powerMod(int x, int y, int p) {
+
+        if (x < 0 || y < 0 || p <= 0) { return -1; }
+
+        if (x == 0) { return 0; }
+        if (y == 0) { return 1; }
+
+        int res = 1;
+        x = x % p;
+
+        while (y > 0) {
+
+            if (y % 2 != 0) {
+                res = (res * x) % p;
+            }
+
+            y = y / 2;
+            x = (x * x) % p;
+        }
+        return res;
     }
     
     /**
@@ -76,4 +95,25 @@ public class PiGenerator {
         
         return s+t;
     }
+
+    public static void main(String[] args) {
+
+//        piInHex().limit(10).forEach(n -> System.out.printf("%x ", n));
+
+        System.out.println(asList("12345".split("")));
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
