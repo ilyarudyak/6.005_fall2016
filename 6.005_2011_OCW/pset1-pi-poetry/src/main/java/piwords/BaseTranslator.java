@@ -1,5 +1,11 @@
 package piwords;
 
+import java.math.BigDecimal;
+import java.math.BigInteger;
+import java.util.Arrays;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+
 public class BaseTranslator {
     /**
      * Converts an array where the ith digit corresponds to (1 / baseA)^(i + 1)
@@ -31,9 +37,83 @@ public class BaseTranslator {
      *                   have.
      * @return An array of size precisionB expressing digits in baseB.
      */
-    public static int[] convertBase(int[] digits, int baseA,
-                                    int baseB, int precisionB) {
-        // TODO: Implement (Problem 2.b)
-        return null;
+    public static int[] convertBase2(int[] digits, int baseA, int baseB, int precisionB) {
+
+        // If baseA < 2, baseB < 2, precisionB < 1, or the input digits is empty, return null
+        if ((baseA < 2) || (baseB < 2) || (precisionB < 1) || (digits == null)) {
+            return null;
+        }
+
+        // If digits[i] < 0 or digits[i] >= baseA for any i, return null
+        int inputDigitsLength = digits.length;
+        for (int k = 0; k < inputDigitsLength; k = k + 1) {
+            if ((digits[k] < 0) || (digits[k] >= baseA)) {
+                return null;
+            }
+        }
+
+        long[] opDigits = new long[inputDigitsLength];
+        int opDigitsLength = inputDigitsLength;
+        for (int t = 0; t < inputDigitsLength; t = t + 1) {
+            opDigits[t] = (long) digits[t];
+        }
+        System.out.println(Arrays.toString(opDigits));
+
+        int[] outputArray = new int[precisionB];
+
+        for (int i = 0; i < precisionB; i = i + 1) {
+            long carry = 0;
+            for (int j = opDigitsLength - 1; j >= 0; j = j - 1) {
+                long x = (opDigits[j] * baseB) + carry;
+                opDigits[j] = x % baseA;
+                carry = x / baseA;
+            }
+            outputArray[i] = (int) carry;
+            System.out.print(Arrays.toString(opDigits) + " ");
+            System.out.println(Arrays.toString(outputArray));
+        }
+        return outputArray;
+    }
+
+    public static void convertBase(Stream<Integer> digits, String baseAStr, String baseBStr, int precisionB) {
+
+        String digitStr = "0." + digits.limit(precisionB * 2)
+                .map(n -> Integer.toString(n))
+                .collect(Collectors.joining(""));
+        BigDecimal digit = new BigDecimal(digitStr);
+        BigDecimal baseB = new BigDecimal(baseBStr);
+
+        for (int i = 0; i < precisionB; i++) {
+            digit = digit.multiply(baseB);
+            BigDecimal intValueStr = new BigDecimal(Integer.toString(digit.intValue()));
+            System.out.println(intValueStr);
+            digit = digit.subtract(intValueStr);
+        }
+    }
+
+    public static void main(String[] args) {
+
+        Stream<Integer> digits = Stream.of(1, 4, 1, 5, 9, 2, 6, 5, 3, 5, 8, 9, 7, 9, 3, 2, 3);
+        convertBase(digits, "10", "16", 8);
+
+
+
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -22,6 +22,8 @@ public class PiGeneratorTest {
     private static final int ITERATIONS = 100;
     private static final int RANGE = 1000;
 
+    // ------ piInHex ------
+
     @Test
     public void first10Digits() {
         List<Integer> expected = asList(0x2, 0x4, 0x3, 0xF, 0x6, 0xA, 0x8, 0x8, 0x8, 0x5);
@@ -35,6 +37,15 @@ public class PiGeneratorTest {
         assertEquals(actualFirst20Digits().collect(toList()),
                      PiGenerator.piInHex().limit(20).collect(toList()));
     }
+
+    @Test
+    public void first100Digits() throws IOException {
+
+        assertEquals(actualFirst100Digits().collect(toList()),
+                PiGenerator.piInHex().limit(100).collect(toList()));
+    }
+
+    // ------ powerMod ------
 
     @Test
     public void basicPowerMod() {
@@ -65,7 +76,16 @@ public class PiGeneratorTest {
 
     private Stream<Integer> actualFirst20Digits() throws IOException {
 
-        return Files.lines(Paths.get("src/test/resources/first-20-Digits.txt"))
+        return Files.lines(Paths.get("src/test/resources/first-20-Hex-Digits.txt"))
                 .map(d -> Integer.valueOf(d, 16));
+    }
+
+    private Stream<Integer> actualFirst100Digits() throws IOException {
+
+         return Stream.of(Files.lines(Paths.get("src/test/resources/first-100-Hex-Digits.txt"))
+                 .collect(Collectors.joining())
+                 .split(""))
+                 .filter(s -> !s.equals(" "))
+                 .map(s -> Integer.valueOf(s, 16));
     }
 }
