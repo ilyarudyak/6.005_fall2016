@@ -100,7 +100,7 @@ public class PiGenerator {
 
 //        piInHex().limit(10).forEach(n -> System.out.printf("%x ", n));
 
-        System.out.println(asList("12345".split("")));
+        System.out.println(Integer.valueOf("2"));
     }
 }
 
