@@ -44,6 +44,18 @@ public class DigitsToStringConverterTest {
     }
 
     @Test
+    public void basicNumberSerializerTestSpecificAlphabet() {
+        List<Integer> digits = asList(0, 1, 2, 3);
+        List<String> alphabet = asList("d", "b", "c", "a");
+        int base = 4;
+
+        String expected = "dbca";
+        String actual = convertDigitsToString(digits, base, alphabet);
+
+        assertEquals(expected, actual);
+    }
+
+    @Test
     public void base26BasicTest() {
 
         List<Integer> digits0 = asList(0, 1, 2, 3);

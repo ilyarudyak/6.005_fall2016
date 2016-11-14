@@ -126,6 +126,46 @@ public class WordFinderTest {
         }
 
     }
+
+    @Test
+    public void base26FromFile2Words() {
+
+        String piBase26First10000 = Utils.readPiBase26();
+        Supplier<Stream<String>> wordsSupplier = () -> Stream.of("steel", "feign");
+
+        Map<String, Integer> expected = wordsSupplier.get()
+                .filter(word -> piBase26First10000.indexOf(word) != -1)
+                .collect(toMap(
+                        word -> word,
+                        word -> piBase26First10000.indexOf(word)
+                ));
+
+        Map<String, Integer> actual = WordFinder.getSubstrings(piBase26First10000,
+                wordsSupplier.get());
+
+        assertEquals(expected, actual);
+
+    }
+
+    @Test
+    public void base26FromFileAllWords() {
+
+        String piBase26First10000 = Utils.readPiBase26();
+        Supplier<Stream<String>> wordsSupplier = () -> Utils.readWords();
+
+        Map<String, Integer> expected = wordsSupplier.get()
+                .filter(word -> piBase26First10000.indexOf(word) != -1)
+                .collect(toMap(
+                        word -> word,
+                        word -> piBase26First10000.indexOf(word)
+                ));
+
+        Map<String, Integer> actual = WordFinder.getSubstrings(piBase26First10000,
+                wordsSupplier.get());
+
+        assertEquals(expected, actual);
+
+    }
 }
 
 

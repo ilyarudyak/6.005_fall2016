@@ -1,5 +1,6 @@
 package piwords;
 
+import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -34,4 +35,31 @@ public class Utils {
             return "";
         }
     }
+
+    public static String readPiBase26() {
+
+        try {
+            return Files.lines(Paths.get("src/test/resources/first-10000-Base26.txt"))
+                    .collect(Collectors.joining())
+                    .substring(2);
+        } catch (IOException e) {
+            e.printStackTrace();
+            return "";
+        }
+    }
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
