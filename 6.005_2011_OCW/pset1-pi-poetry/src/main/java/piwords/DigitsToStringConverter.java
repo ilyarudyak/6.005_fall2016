@@ -1,5 +1,15 @@
 package piwords;
 
+import java.util.List;
+import java.util.Map;
+import java.util.function.Function;
+import java.util.stream.IntStream;
+
+import static java.util.Arrays.asList;
+import static java.util.stream.Collectors.joining;
+import static java.util.stream.Collectors.toList;
+import static java.util.stream.Collectors.toMap;
+
 public class DigitsToStringConverter {
     /**
      * Given a list of digits, a base, and an mapping of digits of that base to
@@ -16,9 +26,51 @@ public class DigitsToStringConverter {
      *                 mutated.
      * @return A String encoding the input digits with alphabet.
      */
-    public static String convertDigitsToString(int[] digits, int base,
-                                               char[] alphabet) {
-        // TODO: Implement (Problem 3.b)
-        return "";
+    public static String convertDigitsToString(List<Integer> digits, int base,
+                                               List<String> alphabet) {
+
+        if (!digits.stream()
+                .filter(d -> (d >= base || d < 0))
+                .collect(toList()).isEmpty() ||
+            alphabet.size() != base ) {
+            throw new IllegalArgumentException();
+        }
+
+        Map<Integer, String> digitsMap = IntStream.range(0, base)
+                .mapToObj(Integer::valueOf)
+                .collect(toMap(Function.identity(),
+                               digit -> alphabet.get(digit)));
+
+//        System.out.println(digitsMap);
+
+        return digits.stream()
+                .map(digit -> digitsMap.get(digit))
+                .collect(joining());
+    }
+
+    public static void main(String[] args) {
+
+        List<Integer> digits = asList(0, 1, 2, 4);
+        List<String> alphabet = asList("a", "b", "c");
+        int base = 4;
+        convertDigitsToString(digits, base, alphabet);
+
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
