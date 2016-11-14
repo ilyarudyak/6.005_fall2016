@@ -4,8 +4,10 @@ import static java.util.stream.Collectors.toMap;
 import static org.junit.Assert.*;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.function.Supplier;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 import org.junit.Test;
@@ -57,4 +59,33 @@ public class WordFinderTest {
 
     }
 
+    @Test
+    public void aliceTest() {
+
+        String red = "red";
+        String fred ="fred";
+
+
+        String alice = Utils.readAlice();
+        Stream<String> words = Stream.of(red, fred);
+
+        Map<String, Integer> actual = WordFinder.getSubstrings(alice, words);
+        System.out.println(actual);
+
+        assertTrue(actual.keySet().size() == 1);
+        assertTrue(actual.get(red).equals(alice.indexOf(red)));
+
+    }
+
+    @Test
+    public void aliceTestEmpty() {
+
+        String fred ="fred";
+
+        String alice = Utils.readAlice();
+        Stream<String> words = Stream.of(fred);
+
+        Map<String, Integer> actual = WordFinder.getSubstrings(alice, words);
+        assertTrue(actual.isEmpty());
+    }
 }
