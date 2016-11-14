@@ -1,7 +1,12 @@
 package piwords;
 
+import jdk.nashorn.internal.objects.annotations.Function;
+
 import java.util.HashMap;
 import java.util.Map;
+import java.util.stream.Stream;
+
+import static java.util.stream.Collectors.toMap;
 
 public class WordFinder {
     /**
@@ -12,14 +17,47 @@ public class WordFinder {
      * was found. A needle that was not found in the haystack should not be
      * returned in the output map.
      * 
-     * @param haystack The string to search into.
-     * @param needles The array of strings to search for. This array is not
+     * @param piStr The string to search into.
+     * @param words The array of strings to search for. This array is not
      *                mutated.
      * @return The list of needles that were found in the haystack.
      */
-    public static Map<String, Integer> getSubstrings(String haystack,
-                                                     String[] needles) { 
-        // TODO: Implement (Problem 4.b)
-        return new HashMap<String, Integer>();
+    public static Map<String, Integer> getSubstrings(final String piStr,
+                                                     Stream<String> words) {
+
+        return words
+                .filter(word -> bruteForceSearch(word, piStr) != -1)
+                .collect( toMap(word -> word, word -> bruteForceSearch(word, piStr)) );
+    }
+
+    private static int bruteForceSearch(String pat, String txt) {
+        int M = pat.length();
+        int N = txt.length();
+        for (int i = 0; i <= N - M; i++)
+        {
+            int j;
+            for (j = 0; j < M; j++)
+                if (txt.charAt(i+j) != pat.charAt(j))
+                    break;
+            if (j == M) return i;
+        }
+        return -1;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

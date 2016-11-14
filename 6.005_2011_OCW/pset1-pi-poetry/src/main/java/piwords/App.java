@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 import static java.util.stream.Collectors.toList;
 
@@ -15,16 +16,19 @@ import static java.util.stream.Collectors.toList;
  */
 public class App {
 
-    private static List<String> words = new ArrayList<>();
+    private static Stream<String> words = Stream.empty();
 
     public App() {
+        readWords();
+    }
+
+    private void readWords() {
         Pattern pattern = Pattern.compile("\\W+");
         try {
             String wordStr = Files.lines(Paths.get("src/main/resources/words.txt"))
                     .collect(Collectors.joining());
             words = pattern.splitAsStream(wordStr)
-                    .filter(word -> !word.equals(""))
-                    .collect(toList());
+                    .filter(word -> !word.equals(""));
         } catch (IOException e) {
             e.printStackTrace();
         }
