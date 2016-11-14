@@ -130,7 +130,7 @@ public class WordFinderTest {
     @Test
     public void base26FromFile2Words() {
 
-        String piBase26First10000 = Utils.readPiBase26();
+        String piBase26First10000 = Utils.readPiBase26First10000();
         Supplier<Stream<String>> wordsSupplier = () -> Stream.of("steel", "feign");
 
         Map<String, Integer> expected = wordsSupplier.get()
@@ -150,7 +150,7 @@ public class WordFinderTest {
     @Test
     public void base26FromFileAllWords() {
 
-        String piBase26First10000 = Utils.readPiBase26();
+        String piBase26First10000 = Utils.readPiBase26First10000();
         Supplier<Stream<String>> wordsSupplier = () -> Utils.readWords();
 
         Map<String, Integer> expected = wordsSupplier.get()

@@ -2,7 +2,9 @@ package piwords;
 
 import java.math.BigDecimal;
 import java.math.BigInteger;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -37,7 +39,7 @@ public class BaseTranslator {
      *                   have.
      * @return An array of size precisionB expressing digits in baseB.
      */
-    public static int[] convertBase2(int[] digits, int baseA, int baseB, int precisionB) {
+    public static int[] convertBase(int[] digits, int baseA, int baseB, int precisionB) {
 
         // If baseA < 2, baseB < 2, precisionB < 1, or the input digits is empty, return null
         if ((baseA < 2) || (baseB < 2) || (precisionB < 1) || (digits == null)) {
@@ -75,30 +77,30 @@ public class BaseTranslator {
         return outputArray;
     }
 
-    public static void convertBase(Stream<Integer> digits, String baseAStr, String baseBStr, int precisionB) {
+    public static List<String> convertBaseBigDecimal(Stream<Integer> digits, String baseBStr, int precisionB) {
 
-        String digitStr = "0." + digits.limit(precisionB * 2)
+        String digitStr = "0." + digits.limit(precisionB + 5)
                 .map(n -> Integer.toString(n))
                 .collect(Collectors.joining(""));
         BigDecimal digit = new BigDecimal(digitStr);
         BigDecimal baseB = new BigDecimal(baseBStr);
 
+        List<String> converted = new ArrayList<>();
+
         for (int i = 0; i < precisionB; i++) {
             digit = digit.multiply(baseB);
             BigDecimal intValueStr = new BigDecimal(Integer.toString(digit.intValue()));
-            System.out.println(intValueStr);
             digit = digit.subtract(intValueStr);
+            if (baseBStr.equals("16")) {
+                converted.add(String.format("%x", intValueStr.intValue()));
+            } else if (baseBStr.equals("26")) {
+                converted.add(intValueStr.toString());
+            }
         }
+
+        return converted;
     }
 
-    public static void main(String[] args) {
-
-        Stream<Integer> digits = Stream.of(1, 4, 1, 5, 9, 2, 6, 5, 3, 5, 8, 9, 7, 9, 3, 2, 3);
-        convertBase(digits, "10", "16", 8);
-
-
-
-    }
 }
 
 

@@ -75,13 +75,13 @@ public class PiGeneratorTest {
 
     private Stream<Integer> actualFirst20Digits() throws IOException {
 
-        return Files.lines(Paths.get("src/test/resources/first-20-Hex-Digits.txt"))
+        return Files.lines(Paths.get("src/test/resources/first-20-Hex.txt"))
                 .map(d -> Integer.valueOf(d, 16));
     }
 
     private Stream<Integer> actualFirst100Digits() throws IOException {
 
-         return Stream.of(Files.lines(Paths.get("src/test/resources/first-100-Hex-Digits.txt"))
+         return Stream.of(Files.lines(Paths.get("src/test/resources/first-100-Hex.txt"))
                  .collect(Collectors.joining())
                  .split(""))
                  .filter(s -> !s.equals(" "))
