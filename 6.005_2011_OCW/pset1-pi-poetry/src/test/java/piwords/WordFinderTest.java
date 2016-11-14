@@ -3,11 +3,15 @@ package piwords;
 import static java.util.stream.Collectors.toMap;
 import static org.junit.Assert.*;
 
+import java.time.Instant;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Random;
+import java.util.function.Function;
 import java.util.function.Supplier;
 import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 import org.junit.Test;
@@ -88,4 +92,53 @@ public class WordFinderTest {
         Map<String, Integer> actual = WordFinder.getSubstrings(alice, words);
         assertTrue(actual.isEmpty());
     }
+
+    @Test
+    public void randomTest() {
+
+        final int ITERATIONS = 10;
+
+        String alice = Utils.readAlice();
+        List<String> words = Utils.readWords().collect(Collectors.toList());
+
+        Random random = new Random(Instant.now().getEpochSecond());
+
+        for (int i = 0; i < ITERATIONS; i++) {
+            List<String> randomWordsList = IntStream
+                    .generate(() -> random.nextInt(words.size()))
+                    .limit(10)
+                    .distinct()
+                    .mapToObj(index -> words.get(index))
+                    .collect(Collectors.toList());
+
+            Supplier<Stream<String>> randomWordsSupplier = () -> randomWordsList.stream();
+
+            Map<String, Integer> expected = randomWordsSupplier.get()
+                    .filter(word -> alice.indexOf(word) != -1)
+                    .collect(toMap(Function.identity(),
+                            word -> alice.indexOf(word)));
+
+            Map<String, Integer> actual = WordFinder.getSubstrings(alice,
+                    randomWordsSupplier.get());
+
+            assertEquals(expected, actual);
+
+        }
+
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

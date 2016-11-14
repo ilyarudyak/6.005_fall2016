@@ -30,6 +30,7 @@ public class WordFinder {
                 .collect( toMap(word -> word, word -> bruteForceSearch(word, piStr)) );
     }
 
+    // code from here: http://algs4.cs.princeton.edu/53substring/Brute.java.html
     private static int bruteForceSearch(String pat, String txt) {
         int M = pat.length();
         int N = txt.length();
@@ -43,6 +44,8 @@ public class WordFinder {
         }
         return -1;
     }
+
+    // TODO: add Rabin-Karp
 }
 
 
