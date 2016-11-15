@@ -76,7 +76,7 @@ public class Extract {
      *         Twitter usernames are case-insensitive, and the returned set may
      *         include a username at most once.
      */
-    public static Set<String> getMentionedUsers(List<Tweet> tweets) {
+    public static Set<String> getMentionedUsers2(List<Tweet> tweets) {
         
         Set<String> mentions = new HashSet<>();
         
@@ -92,6 +92,31 @@ public class Extract {
         }
 
         return mentions;
+    }
+    
+    public static Set<String> getMentionedUsers(List<Tweet> tweets) {
+
+        return tweets.stream()
+                .flatMap(tweet -> getMentionsFromTweet(tweet))
+                .collect(Collectors.toSet());
+    }
+    
+    
+    private static Stream<String> getMentionsFromTweet(Tweet tweet) {
+        
+        Set<String> mentions = new HashSet<>();
+        
+        // we use '+' because length(username) > 0
+        // \w is predefined class for [a-zA-Z_0-9]
+        Pattern mentionsPattern = Pattern.compile("(?:[^\\w-]|^)@([\\w-]+)");
+        Matcher mentionsMatcher = mentionsPattern.matcher(tweet.getText());
+        
+        while(mentionsMatcher.find()) {
+            mentions.add(mentionsMatcher.group(1).toLowerCase());
+        }
+        
+        return mentions.stream();
+        
     }
 
     /* Copyright (c) 2007-2016 MIT 6.005 course staff, all rights reserved.
