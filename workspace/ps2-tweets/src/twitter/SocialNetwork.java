@@ -3,6 +3,7 @@ package twitter;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import java.util.stream.Collectors;
 
 import static java.util.stream.Collectors.toList;
 import static java.util.stream.Collectors.toMap;
@@ -12,6 +13,7 @@ import java.util.Collection;
 import java.util.Comparator;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.stream.Stream;
 
 
 /**
@@ -47,31 +49,29 @@ public class SocialNetwork {
      *         All the Twitter usernames in the returned social network must be
      *         either authors or @-mentions in the list of tweets.
      */
-    public static Map<String, Set<String>> guessFollowsGraph(List<Tweet> tweets) {    
+    public static Map<String, Set<String>> guessFollowsGraph(List<Tweet> tweets) {
         
-        Map<String, Set<String>> followsGraph = tweets.stream()
-                .map(tweet -> tweet.getAuthor().toLowerCase())
-                .collect(toSet())
+        Map<String, Set<String>> followsGraph = getAllUsers(tweets)
                 .stream()
                 .collect(toMap( username -> username,
                                 username -> getMentionedUsersExceptHimself(tweets, username)));   
-        
-        Set<String> mentionedUsers = Extract.getMentionedUsers(tweets);
-        for (String username : mentionedUsers) {
-            if(!followsGraph.containsKey(username.toLowerCase())) {
-                followsGraph.put(username.toLowerCase(), new HashSet<>());
-            }
-        }
-        
-        
+       
         return followsGraph;
     }
     
-    private static Set<String> getMentionedUsersExceptHimself(List<Tweet> tweets, String username) {
+    private static Set<String> getAllUsers(List<Tweet> tweets) {
         
-        Set<String> mentionedUsers = Extract.getMentionedUsers(Filter.writtenBy(tweets, username));
+        return Stream.concat(Extract.getMentionedUsers(tweets).stream(),
+                             tweets.stream()
+                                   .map(tweet -> tweet.getAuthor().toLowerCase()))
+                .collect(Collectors.toSet());   
+    }
+    private static Set<String> getMentionedUsersExceptHimself(List<Tweet> tweets, String username) {
                                             
-        return mentionedUsers.stream().filter(user -> !user.equalsIgnoreCase(username)).collect(toSet());
+        return Extract.getMentionedUsers(Filter.writtenBy(tweets, username))
+                .stream()
+                .filter(user -> !user.equalsIgnoreCase(username))
+                .collect(toSet());
     }
 
 
