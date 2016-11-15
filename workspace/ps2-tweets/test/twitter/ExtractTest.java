@@ -7,8 +7,10 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.HashSet;
+import java.util.IllegalFormatCodePointException;
 import java.util.List;
 import java.util.Set;
+import java.util.stream.Collectors;
 
 import org.junit.Ignore;
 import org.junit.Test;
@@ -51,12 +53,141 @@ public class ExtractTest {
         assert false; // make sure assertions are enabled with VM argument: -ea
     }
     
+ // -------------- getTimespan --------------
+    
     @Test
     public void testGetTimespanTwoTweets() {
         Timespan timespan = Extract.getTimespan(Arrays.asList(tweet1, tweet2));
         
         assertEquals("expected start", d1, timespan.getStart());
         assertEquals("expected end", d2, timespan.getEnd());
+    }
+    
+    // Fri 14 Feb 2015 01:18:18 PM EST
+    private static final Instant d10 = Instant.ofEpochMilli(1423937898000L);
+    // Sat 15 Feb 2015 01:18:18 PM EST
+    private static final Instant d20 = Instant.ofEpochMilli(1424024298000L);
+    // Sun 16 Feb 2015 11:18:18 AM EST
+    private static final Instant d30 = Instant.ofEpochMilli(1424103498000L);
+
+    private static final Tweet tweet10 = createTweetWithDate(10, d10);
+    private static final Tweet tweet20 = createTweetWithDate(20, d10);
+    private static final Tweet tweet30 = createTweetWithDate(30, d20);
+    private static final Tweet tweet40 = createTweetWithDate(40, d20);
+    private static final Tweet tweet50 = createTweetWithDate(50, d30);
+    
+    public static Tweet createTweetWithDate(int id, Instant d1) {
+        Tweet tweet = new Tweet(id, "testUser", "dummyText", d1);
+        return tweet;
+    }
+
+
+        /**
+     * Private tests for grading the Extract class.
+     */
+
+    /**
+     * Tests for Extract.getTimespan
+     */
+    @Test
+    public void testGetTimespanEmptyListAlwaysReturnsZeroLengthTimespan() {
+        /*
+         * The timespan of an empty list should be zero length. We don't care
+         * what time is put in there.
+         */
+        Timespan timespan = Extract.getTimespan(new ArrayList<Tweet>());
+        if (timespan.getStart() == timespan.getEnd()) {
+            return;
+        }
+        
+        long startTime = System.nanoTime();
+        long durationToRunTestNanoSeconds = 100_000_000; // 100 milliseconds
+        while ((System.nanoTime()) - startTime <= durationToRunTestNanoSeconds ) {
+            timespan = Extract.getTimespan(new ArrayList<Tweet>());
+            if (!timespan.getStart().equals(timespan.getEnd())){
+                fail();
+            }
+        }
+    }
+
+    @Test
+    public void testGetTimespanSingleTweet() {
+        /*
+         * The timespan of a list containing a single tweet should also have
+         * zero length. However, the timespan should be directly on the
+         * timestamp of the tweet.
+         */
+        Timespan timespan = Extract.getTimespan(Arrays.asList(tweet10));
+        assertEquals(timespan.getStart(), timespan.getEnd());
+        assertEquals(tweet10.getTimestamp(), timespan.getStart());
+    }
+
+    @Test
+    public void testGetTimespanTwoDuplicateStamps() {
+        /*
+         * This test is identical to the case for a single tweet. We want the
+         * resultant timespan to be the minimal covering timespan.
+         */
+        Timespan timespan = Extract.getTimespan(Arrays.asList(tweet10, tweet20));
+        assertEquals(timespan.getStart(), timespan.getEnd());
+        assertEquals(tweet10.getTimestamp(), timespan.getStart());
+    }
+
+    @Test
+    public void testGetTimespanTwoDifferentStamps() {
+        /*
+         * This test checks to make sure that when we give them two tweets, that
+         * the timespan correctly handles setting the start and end.
+         */
+        Timespan timespan = Extract.getTimespan(Arrays.asList(tweet10, tweet30));
+        assertNotEquals(timespan.getStart(), timespan.getEnd());
+        assertEquals(tweet10.getTimestamp(), timespan.getStart());
+        assertEquals(tweet30.getTimestamp(), timespan.getEnd());
+
+        // Make sure the solution isn't order dependant.
+        timespan = Extract.getTimespan(Arrays.asList(tweet30, tweet10));
+        assertNotEquals(timespan.getStart(), timespan.getEnd());
+        assertEquals(tweet10.getTimestamp(), timespan.getStart());
+        assertEquals(tweet30.getTimestamp(), timespan.getEnd());
+    }
+
+    @Test
+    public void testGetTimespanMultipleStampsWithDuplicates() {
+        /*
+         * Testing to make sure duplicates are handled as well as more than two
+         * tweets as input.
+         */
+
+        // Testing duplicates at the start of the timespan.
+        Timespan timespan = Extract.getTimespan(Arrays.asList(tweet10, tweet20,
+                tweet30));
+        assertNotEquals(timespan.getStart(), timespan.getEnd());
+        assertEquals(tweet10.getTimestamp(), timespan.getStart());
+        assertEquals(tweet30.getTimestamp(), timespan.getEnd());
+
+        // Testing duplicates at the end of the timespan.
+        timespan = Extract.getTimespan(Arrays.asList(tweet10, tweet30, tweet40));
+        assertNotEquals(timespan.getStart(), timespan.getEnd());
+        assertEquals(tweet10.getTimestamp(), timespan.getStart());
+        assertEquals(tweet30.getTimestamp(), timespan.getEnd());
+    }
+
+    @Test
+    public void testGetTimespanMultipleStampsWithoutDuplicates() {
+        /*
+         * Testing to make sure more than two inputs are handled.
+         */
+        Timespan timespan = Extract.getTimespan(Arrays.asList(tweet10, tweet30,
+                tweet50));
+        assertNotEquals(timespan.getStart(), timespan.getEnd());
+        assertEquals(tweet10.getTimestamp(), timespan.getStart());
+        assertEquals(tweet50.getTimestamp(), timespan.getEnd());
+
+        // One last check on order.
+        timespan = Extract.getTimespan(Arrays.asList(tweet30, tweet50, tweet10));
+        assertNotEquals(timespan.getStart(), timespan.getEnd());
+        assertEquals(tweet10.getTimestamp(), timespan.getStart());
+        assertEquals(tweet50.getTimestamp(), timespan.getEnd());
     }
     
     // -------------- getMentionedUsers --------------
@@ -80,20 +211,21 @@ public class ExtractTest {
 
     }
 
-//    @Test
-//    public void getMentionedUserLengthSpecialSymbols() {
-//        Set<String> mentionedUsers = Extract.getMentionedUsers(Arrays.asList(tweet4));
-//        List<String> mentionedUsersList = new ArrayList<>(mentionedUsers);
-//        mentionedUsersList.sort(Comparator.naturalOrder());
-//        
-////        System.out.println(mentionedUsers);
-//        
-//        assertTrue(mentionedUsersList.size() == 3);
-////        assertTrue(mentionedUsersList.get(0).equalsIgnoreCase("user0_1-2"));
-//        assertTrue(mentionedUsersList.get(1).equalsIgnoreCase("user89_-"));
-////        assertTrue(mentionedUsersList.get(2).equalsIgnoreCase("_"));
-//        
-//    }
+    @Test
+    public void getMentionedUserLengthSpecialSymbols() {
+        
+        Set<String> mentionedUsers = Extract.getMentionedUsers(Arrays.asList(tweet4))
+                .stream()
+                .map(String::toLowerCase)
+                .collect(Collectors.toSet());
+        
+        
+        assertTrue(mentionedUsers.size() == 3);
+        assertTrue(mentionedUsers.contains("user0_1-2"));
+        assertTrue(mentionedUsers.contains("user89_-"));
+        assertTrue(mentionedUsers.contains("_"));
+        
+    }
     
     @Test
     public void getMentionedUserBeginnigNotLegalSymbols() {
