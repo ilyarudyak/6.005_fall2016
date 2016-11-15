@@ -24,9 +24,10 @@ public class FilterTest {
     private static final Instant d3 = Instant.parse("2016-02-17T08:00:00Z");
     
     private static final Tweet tweet1 = new Tweet(1, "alyssa", "is it reasonable to talk about rivest so much?", d1);
-    private static final Tweet tweet2 = new Tweet(2, "bbitdiddle", "rivest talk in 30 minutes #hype", d2);
-    private static final Tweet tweet3 = new Tweet(3, "alYsSa", "second tweet by alyssa", d1);
+    private static final Tweet tweet2 = new Tweet(2, "bbitdiddle", "rivest tAlk in 30 minutes #hype", d2);
+    private static final Tweet tweet3 = new Tweet(3, "alYsSa", "secOnD tweet by alyssa", d1);
     private static final Tweet tweet4 = new Tweet(4, "alYsSa", "i'm out of timespan", d3);
+    private static final Tweet tweet5 = new Tweet(5, "alYsSa", "talking - substring bug testing", d3);
     
     @Test(expected=AssertionError.class)
     public void testAssertionsEnabled() {
@@ -92,6 +93,28 @@ public class FilterTest {
     // ------------ containing ---------------
     
     @Test
+    public void testContainingEmptyList() {
+        /*
+         * Empty tweets -> return nothing
+         */
+        List<Tweet> filteredTweets = Filter.containing(new ArrayList<Tweet>(),
+                Arrays.asList("test"));
+
+        assertTrue("expected empty list", filteredTweets.isEmpty());
+    }
+    
+    @Test
+    public void testContainingNoWordsToCheck() {
+        /*
+         * Comparing tweets against no words -> return nothing
+         */
+        List<Tweet> filteredTweets = Filter.containing(Arrays.asList(tweet1, tweet2),
+                new ArrayList<String>());
+
+        assertTrue("expected empty list", filteredTweets.isEmpty());
+    }
+    
+    @Test
     public void testContaining() {
         List<Tweet> containing = Filter.containing(Arrays.asList(tweet1, tweet2), Arrays.asList("talk"));
         
@@ -110,6 +133,13 @@ public class FilterTest {
     @Test
     public void testContainingMultipleNotContaining() {
         List<Tweet> containing = Filter.containing(Arrays.asList(tweet3), Arrays.asList("talk"));
+        
+        assertTrue("expected empty list", containing.isEmpty());
+    }
+    
+    @Test
+    public void testContainingSubstringBug() {
+        List<Tweet> containing = Filter.containing(Arrays.asList(tweet5), Arrays.asList("talk"));
         
         assertTrue("expected empty list", containing.isEmpty());
     }
