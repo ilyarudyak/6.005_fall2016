@@ -5,8 +5,12 @@ import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.regex.Pattern;
 import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 import java.util.stream.Stream;
+
+import static java.util.stream.Collectors.toList;
 
 public class BaseTranslator {
     /**
@@ -59,7 +63,7 @@ public class BaseTranslator {
         for (int t = 0; t < inputDigitsLength; t = t + 1) {
             opDigits[t] = (long) digits[t];
         }
-        System.out.println(Arrays.toString(opDigits));
+//        System.out.println(Arrays.toString(opDigits));
 
         int[] outputArray = new int[precisionB];
 
@@ -71,8 +75,8 @@ public class BaseTranslator {
                 carry = x / baseA;
             }
             outputArray[i] = (int) carry;
-            System.out.print(Arrays.toString(opDigits) + " ");
-            System.out.println(Arrays.toString(outputArray));
+//            System.out.print(Arrays.toString(opDigits) + " ");
+//            System.out.println(Arrays.toString(outputArray));
         }
         return outputArray;
     }
@@ -99,6 +103,27 @@ public class BaseTranslator {
         }
 
         return converted;
+    }
+
+
+    public static void main(String[] args) {
+
+        int[] digits = {2, 4, 3, 15, 6};
+        int[] converted = convertBase(digits, 16, 26, 5);
+
+        List<Integer> convertedList = IntStream.of(converted)
+                .mapToObj(Integer::valueOf)
+                .collect(Collectors.toList());
+
+        List<String> alphabet = Pattern.compile("")
+                .splitAsStream("abcdefghijklmnopqrstuvwxyz")
+                .collect(toList());
+
+        String convertedStr = DigitsToStringConverter.convertDigitsToString(
+                convertedList, 26, alphabet);
+
+
+        System.out.println(convertedStr);
     }
 
 }

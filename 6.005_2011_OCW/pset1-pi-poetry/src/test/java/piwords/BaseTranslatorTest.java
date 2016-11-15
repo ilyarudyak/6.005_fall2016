@@ -6,18 +6,57 @@ import org.junit.Test;
 
 import java.util.List;
 import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 public class BaseTranslatorTest {
+
     @Test
-    public void basicBaseTranslatorTest() {
-        // Expect that .01 in base-2 is .25 in base-10
-        // (0 * 1/2^1 + 1 * 1/2^2 = .25)
-        int[] input = {0, 1};
-        int[] expectedOutput = {2, 5};
-//        assertArrayEquals(expectedOutput,
-//                          BaseTranslator.convertBase(input, 2, 10, 2));
+    public void convertBaseBase26First100() {
+
+        String expectedBase26First100 = Utils.readPiBase26First10000().substring(0, 100);
+
+        assertEquals(expectedBase26First100, convertedStr(100));
+
     }
+
+    @Test
+    public void convertBaseBase26First1000() {
+        String expectedBase26First1000 = Utils.readPiBase26First10000().substring(0, 1000);
+
+        assertEquals(expectedBase26First1000, convertedStr(1000));
+    }
+
+    private static String convertedStr(int precision) {
+
+        int baseA = 16;
+        int baseB = 26;
+        int[] digitsInHex = toIntArray(PiGenerator.piInHex()
+                .limit(precision * 2)
+                .collect(Collectors.toList()));
+
+        int[] convertedArray = BaseTranslator.convertBase(
+                digitsInHex, baseA, baseB, precision);
+
+        List<Integer> convertedList = IntStream.of(convertedArray)
+                .mapToObj(Integer::valueOf)
+                .collect(Collectors.toList());
+
+        String convertedStr = DigitsToStringConverter.convertDigitsToString(
+                convertedList, baseB, Utils.alphabet());
+
+        return convertedStr;
+    }
+
+    // from here: http://stackoverflow.com/questions/960431/how-to-convert-listinteger-to-int-in-java
+    private static int[] toIntArray(List<Integer> list) {
+            int[] ret = new int[list.size()];
+            for(int i = 0;i < ret.length;i++)
+                ret[i] = list.get(i);
+            return ret;
+    }
+
+    // ------ big decimal ------
 
     @Test
     public void convertBaseBigDecimalFirst100Hex() {
