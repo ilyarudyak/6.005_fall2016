@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="5" hostname="Ilyas-MacBook-Pro.local" name="twitter.staff.FilterTestRunner" skipped="0" tests="12" time="0.192" timestamp="2016-11-15T16:03:42">
+<testsuite errors="0" failures="5" hostname="Ilyas-MacBook-Pro.local" name="twitter.staff.FilterTestRunner" skipped="0" tests="12" time="0.221" timestamp="2016-11-15T16:26:53">
   <properties>
     <property name="java.vendor" value="Oracle Corporation" />
     <property name="sun.java.launcher" value="SUN_STANDARD" />
@@ -51,7 +51,7 @@
     <property name="gopherProxySet" value="false" />
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
     <property name="beta.grader.jar" value="ps2-beta-grader.jar" />
-    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner twitter.staff.FilterTestRunner skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/.grader/TEST-twitter.staff.FilterTestRunner.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/.grader/junitvmwatcher1538904139979655757.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/.grader/junit1597882778666750753.properties" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner twitter.staff.FilterTestRunner skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/.grader/TEST-twitter.staff.FilterTestRunner.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/.grader/junitvmwatcher7005272080534300208.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/.grader/junit4702139619018966104.properties" />
     <property name="java.class.path" value="/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/lib/junit-4.12.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/lib/hamcrest-core-1.3.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/.grader/bin-impls-staff-final:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/.grader/bin-tests-student:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-launcher.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit4.jar" />
     <property name="ant.version" value="Apache Ant(TM) version 1.9.6 compiled on June 29 2015" />
     <property name="project.name" value="ps2-tweets" />
@@ -78,17 +78,17 @@
     <property name="grader.dir" value=".grader" />
     <property name="ant.project.invoked-targets" value="all" />
   </properties>
-  <testcase classname="twitter.staff.FilterTestRunner" name="yourTests_staffBadImpl_inTimespanExclusiveTimespanBug" time="0.083" />
-  <testcase classname="twitter.staff.FilterTestRunner" name="yourTests_staffBadImpl_containingReturnsSubstringMatchBug" time="0.006">
-    <failure message="None of your tests failed when run against our broken implementation: 8 tests ran with 0 failures in 1 ms." type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: None of your tests failed when run against our broken implementation: 8 tests ran with 0 failures in 1 ms.
+  <testcase classname="twitter.staff.FilterTestRunner" name="yourTests_staffBadImpl_inTimespanExclusiveTimespanBug" time="0.098" />
+  <testcase classname="twitter.staff.FilterTestRunner" name="yourTests_staffBadImpl_containingReturnsSubstringMatchBug" time="0.009">
+    <failure message="None of your tests failed when run against our broken implementation: 8 tests ran with 0 failures in 2 ms." type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: None of your tests failed when run against our broken implementation: 8 tests ran with 0 failures in 2 ms.
 	at twitter.staff.TestHelpers.assertFailure(TestHelpers.java:59)
 	at twitter.staff.FilterTestRunner.yourTests_staffBadImpl_containingReturnsSubstringMatchBug(FilterTestRunner.java:94)
 </failure>
   </testcase>
   <testcase classname="twitter.staff.FilterTestRunner" name="yourTests_staffGoodImpl_Filter" time="0.003" />
-  <testcase classname="twitter.staff.FilterTestRunner" name="yourTests_staffBadImpl_containingReturnsAndNotOrBug" time="0.004" />
-  <testcase classname="twitter.staff.FilterTestRunner" name="yourTests_staffBadImpl_writtenByIndexOutOfBoundsBug" time="0.004">
-    <failure message="None of your tests failed when run against our broken implementation: 8 tests ran with 0 failures in 2 ms." type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: None of your tests failed when run against our broken implementation: 8 tests ran with 0 failures in 2 ms.
+  <testcase classname="twitter.staff.FilterTestRunner" name="yourTests_staffBadImpl_containingReturnsAndNotOrBug" time="0.003" />
+  <testcase classname="twitter.staff.FilterTestRunner" name="yourTests_staffBadImpl_writtenByIndexOutOfBoundsBug" time="0.003">
+    <failure message="None of your tests failed when run against our broken implementation: 8 tests ran with 0 failures in 1 ms." type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: None of your tests failed when run against our broken implementation: 8 tests ran with 0 failures in 1 ms.
 	at twitter.staff.TestHelpers.assertFailure(TestHelpers.java:59)
 	at twitter.staff.FilterTestRunner.yourTests_staffBadImpl_writtenByIndexOutOfBoundsBug(FilterTestRunner.java:48)
 </failure>
@@ -100,8 +100,8 @@
 	at twitter.staff.FilterTestRunner.yourTests_staffBadImpl_inTimespanReturnsFullListBug(FilterTestRunner.java:59)
 </failure>
   </testcase>
-  <testcase classname="twitter.staff.FilterTestRunner" name="yourTests_staffBadImpl_writtenByReturnsOnlyFirstResultBug" time="0.002" />
-  <testcase classname="twitter.staff.FilterTestRunner" name="yourTests_staffBadImpl_writtenByMustBeCaseInsensitiveBug" time="0.003">
+  <testcase classname="twitter.staff.FilterTestRunner" name="yourTests_staffBadImpl_writtenByReturnsOnlyFirstResultBug" time="0.001" />
+  <testcase classname="twitter.staff.FilterTestRunner" name="yourTests_staffBadImpl_writtenByMustBeCaseInsensitiveBug" time="0.002">
     <failure message="None of your tests failed when run against our broken implementation: 8 tests ran with 0 failures in 1 ms." type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: None of your tests failed when run against our broken implementation: 8 tests ran with 0 failures in 1 ms.
 	at twitter.staff.TestHelpers.assertFailure(TestHelpers.java:59)
 	at twitter.staff.FilterTestRunner.yourTests_staffBadImpl_writtenByMustBeCaseInsensitiveBug(FilterTestRunner.java:43)
@@ -109,8 +109,8 @@
   </testcase>
   <testcase classname="twitter.staff.FilterTestRunner" name="yourTests_staffBadImpl_inTimespanAssumesInOrderBug" time="0.002" />
   <testcase classname="twitter.staff.FilterTestRunner" name="yourTests_staffBadImpl_writtenByReturnsFullListBug" time="0.002" />
-  <testcase classname="twitter.staff.FilterTestRunner" name="yourTests_staffBadImpl_containingMustBeCaseInsensitiveBug" time="0.002">
-    <failure message="None of your tests failed when run against our broken implementation: 8 tests ran with 0 failures in 0 ms." type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: None of your tests failed when run against our broken implementation: 8 tests ran with 0 failures in 0 ms.
+  <testcase classname="twitter.staff.FilterTestRunner" name="yourTests_staffBadImpl_containingMustBeCaseInsensitiveBug" time="0.003">
+    <failure message="None of your tests failed when run against our broken implementation: 8 tests ran with 0 failures in 1 ms." type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: None of your tests failed when run against our broken implementation: 8 tests ran with 0 failures in 1 ms.
 	at twitter.staff.TestHelpers.assertFailure(TestHelpers.java:59)
 	at twitter.staff.FilterTestRunner.yourTests_staffBadImpl_containingMustBeCaseInsensitiveBug(FilterTestRunner.java:84)
 </failure>
