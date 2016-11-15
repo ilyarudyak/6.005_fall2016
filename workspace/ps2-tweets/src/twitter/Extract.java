@@ -12,6 +12,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.stream.Collector;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 /**
  * Extract consists of methods that extract information from a list of tweets.
@@ -32,22 +33,49 @@ public class Extract {
      */
     public static Timespan getTimespan(List<Tweet> tweets) {
         
-        Optional<Instant> start = tweets.stream()
-                               .min(Comparator.comparing(tweet -> tweet.getTimestamp()))
-                               .map(tweet -> tweet.getTimestamp());
+        if (tweets.isEmpty()) {
+            Instant now = Instant.now();
+            return new Timespan(now, now);
+        } 
         
-        Optional<Instant> end = tweets.stream()
-                            .max(Comparator.comparing(tweet -> tweet.getTimestamp()))
-                            .map(tweet -> tweet.getTimestamp());
+        Instant start = getTimestamp(tweets.stream(), Timestamp.START);
+        Instant end = getTimestamp(tweets.stream(), Timestamp.END);
         
-        Instant now = Instant.now();
-        Timespan timespan = new Timespan(now, now);
-        if (start.isPresent() && end.isPresent()) {
-            timespan =  new Timespan(start.get(), end.get());
-        }
+        return new Timespan(start, end);
         
-        return timespan;
+//        Optional<Instant> start = tweets.stream()
+//                               .min(Comparator.comparing(tweet -> tweet.getTimestamp()))
+//                               .map(tweet -> tweet.getTimestamp());
+//        
+//        Optional<Instant> end = tweets.stream()
+//                            .max(Comparator.comparing(tweet -> tweet.getTimestamp()))
+//                            .map(tweet -> tweet.getTimestamp());
+//        
+//        Instant now = Instant.now();
+//        Timespan timespan = new Timespan(now, now);
+//        if (start.isPresent() && end.isPresent()) {
+//            timespan =  new Timespan(start.get(), end.get());
+//        }
+//        
+//        
+//        return timespan;
 
+    }
+    
+    private enum Timestamp { START, END };
+    private static Instant getTimestamp(Stream<Tweet> tweetsStream, Timestamp limits) {
+        
+        Comparator<Tweet> byTimestamp = Comparator.comparing(tweet -> tweet.getTimestamp());
+        
+        switch (limits) {
+        case START:
+            return tweetsStream.min(byTimestamp).get().getTimestamp();
+        case END: 
+            return tweetsStream.max(byTimestamp).get().getTimestamp();
+
+        default:
+            throw new IllegalArgumentException();
+        }
     }
 
     /**
