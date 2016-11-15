@@ -42,23 +42,6 @@ public class Extract {
         Instant end = getTimestamp(tweets.stream(), Timestamp.END);
         
         return new Timespan(start, end);
-        
-//        Optional<Instant> start = tweets.stream()
-//                               .min(Comparator.comparing(tweet -> tweet.getTimestamp()))
-//                               .map(tweet -> tweet.getTimestamp());
-//        
-//        Optional<Instant> end = tweets.stream()
-//                            .max(Comparator.comparing(tweet -> tweet.getTimestamp()))
-//                            .map(tweet -> tweet.getTimestamp());
-//        
-//        Instant now = Instant.now();
-//        Timespan timespan = new Timespan(now, now);
-//        if (start.isPresent() && end.isPresent()) {
-//            timespan =  new Timespan(start.get(), end.get());
-//        }
-//        
-//        
-//        return timespan;
 
     }
     
