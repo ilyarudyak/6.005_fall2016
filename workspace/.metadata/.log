@@ -456,3 +456,96 @@ Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.
 
 !ENTRY org.eclipse.core.net 1 0 2016-11-03 01:26:50.458
 !MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+!SESSION 2016-11-08 23:30:34.191 -----------------------------------------------
+eclipse.buildId=4.6.0.I20160606-1100
+java.version=1.8.0_51
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/ilyarudyak/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/ilyarudyak/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2016-11-08 23:30:40.205
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+!SESSION 2016-11-11 12:12:45.995 -----------------------------------------------
+eclipse.buildId=4.6.0.I20160606-1100
+java.version=1.8.0_51
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product -keyring /Users/ilyarudyak/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -data /Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace -product org.eclipse.epp.package.java.product -keyring /Users/ilyarudyak/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2016-11-11 12:12:50.510
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY edu.mit.eecs.javatutor 4 0 2016-11-11 12:16:17.636
+!MESSAGE eclipseLog: plugin version is 0.9.7, ok
+
+!ENTRY edu.mit.eecs.javatutor 4 0 2016-11-11 12:26:57.812
+!MESSAGE eclipseLog: error: /getExercises/creatingClasses 500 Internal Server Error
+
+!ENTRY edu.mit.eecs.javatutor 4 0 2016-11-11 12:27:12.659
+!MESSAGE eclipseLog: error: /getExercises/creatingClasses 500 Internal Server Error
+
+!ENTRY edu.mit.eecs.javatutor 4 0 2016-11-11 12:27:12.660
+!MESSAGE eclipseLog: error: /getExercises/creatingClasses 500 Internal Server Error
+
+!ENTRY edu.mit.eecs.javatutor 4 0 2016-11-11 12:27:12.661
+!MESSAGE eclipseLog: error: /getExercises/creatingClasses 500 Internal Server Error
+
+!ENTRY edu.mit.eecs.javatutor 4 0 2016-11-11 12:27:12.662
+!MESSAGE eclipseLog: error: /exercise/1191 500 Internal Server Error
+
+!ENTRY edu.mit.eecs.javatutor 4 0 2016-11-11 12:33:58.060
+!MESSAGE eclipseLog: error: /exercise/1167 500 Internal Server Error
+
+!ENTRY edu.mit.eecs.javatutor 4 0 2016-11-11 16:36:23.313
+!MESSAGE eclipseLog: error: /exercise/1167 500 Internal Server Error
+
+!ENTRY edu.mit.eecs.javatutor 4 0 2016-11-11 16:36:26.578
+!MESSAGE eclipseLog: error: /getExercises/creatingClasses 500 Internal Server Error
+
+!ENTRY edu.mit.eecs.javatutor 4 0 2016-11-11 16:36:28.416
+!MESSAGE eclipseLog: error: /getExercises/creatingClasses 500 Internal Server Error
+
+!ENTRY edu.mit.eecs.javatutor 4 0 2016-11-11 16:41:24.297
+!MESSAGE eclipseLog: error: /home 500 Internal Server Error
+
+!ENTRY edu.mit.eecs.javatutor 4 0 2016-11-11 16:41:27.294
+!MESSAGE eclipseLog: error: /home 500 Internal Server Error
+
+!ENTRY edu.mit.eecs.javatutor 4 0 2016-11-11 16:41:28.820
+!MESSAGE eclipseLog: error: /home 500 Internal Server Error
+
+!ENTRY edu.mit.eecs.javatutor 4 0 2016-11-11 22:48:43.445
+!MESSAGE eclipseLog: error: /exercise/1161 500 Internal Server Error
+
+!ENTRY edu.mit.eecs.javatutor 4 0 2016-11-11 22:49:19.124
+!MESSAGE eclipseLog: error: /exercise/1179 500 Internal Server Error
+
+!ENTRY edu.mit.eecs.javatutor 4 0 2016-11-11 23:06:04.417
+!MESSAGE eclipseLog: error: /exercise/1160 500 Internal Server Error
+
+!ENTRY edu.mit.eecs.javatutor 4 0 2016-11-11 23:06:08.712
+!MESSAGE eclipseLog: error: /exercise/1160 500 Internal Server Error
+
+!ENTRY edu.mit.eecs.javatutor 4 0 2016-11-11 23:11:27.896
+!MESSAGE eclipseLog: error: /exercise/1181 500 Internal Server Error
+
+!ENTRY edu.mit.eecs.javatutor 4 0 2016-11-11 23:13:25.971
+!MESSAGE eclipseLog: error: /done/object 500 Internal Server Error
+
+!ENTRY edu.mit.eecs.javatutor 4 0 2016-11-11 23:13:30.110
+!MESSAGE eclipseLog: error: /done/object 500 Internal Server Error
+
+!ENTRY edu.mit.eecs.javatutor 4 0 2016-11-11 23:36:14.922
+!MESSAGE eclipseLog: error: /exercise/1051 500 Internal Server Error
+!SESSION 2016-11-15 17:30:18.761 -----------------------------------------------
+eclipse.buildId=4.6.0.I20160606-1100
+java.version=1.8.0_51
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/ilyarudyak/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/ilyarudyak/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2016-11-15 17:30:25.080
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
