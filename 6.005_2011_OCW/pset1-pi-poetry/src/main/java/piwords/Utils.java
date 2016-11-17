@@ -36,4 +36,15 @@ public class Utils {
             return "";
         }
     }
+
+    public static Stream<String> getSonnetWords() {
+        try {
+            return Files.lines(Paths.get("src/main/resources/sonnets/sonnet_words.txt"))
+                    .map(String::toLowerCase);
+        } catch (IOException e) {
+            e.printStackTrace();
+            return Stream.empty();
+        }
+    }
+
 }
