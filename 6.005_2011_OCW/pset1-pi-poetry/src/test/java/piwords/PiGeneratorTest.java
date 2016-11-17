@@ -1,6 +1,8 @@
 package piwords;
 
 import static java.util.Arrays.asList;
+import static java.util.Arrays.sort;
+import static java.util.stream.Collectors.joining;
 import static java.util.stream.Collectors.toList;
 import static org.junit.Assert.*;
 
@@ -44,6 +46,33 @@ public class PiGeneratorTest {
                 PiGenerator.piInHex().limit(100).collect(toList()));
     }
 
+    @Test
+    public void first10000Digits() throws IOException {
+
+        assertEquals(actualFirst8336Digits().collect(toList()),
+                PiGenerator.piInHex().limit(5000).collect(toList()));
+    }
+
+    @Test
+    public void temp() throws IOException {
+
+        String s =
+                actualFirst8336Digits()
+//                .map(n -> Integer.toString(n))
+                .collect(Collectors.joining());
+
+        String s2 =
+                actualFirst10000Digits()
+//                .map(n -> Integer.toString(n))
+                .collect(Collectors.joining());
+
+        for (int i = 0; i < s.length(); ++i) {
+            if (s.charAt(i) != s2.charAt(i)) {
+                System.out.println(i + ": " + s.charAt(i) + " " + s2.charAt(i));
+            }
+        }
+    }
+
     // ------ powerMod ------
 
     @Test
@@ -73,12 +102,13 @@ public class PiGeneratorTest {
 
     }
 
+
+    // helper methods
     private Stream<Integer> actualFirst20Digits() throws IOException {
 
         return Files.lines(Paths.get("src/test/resources/first-20-Hex.txt"))
                 .map(d -> Integer.valueOf(d, 16));
     }
-
     private Stream<Integer> actualFirst100Digits() throws IOException {
 
          return Stream.of(Files.lines(Paths.get("src/test/resources/first-100-Hex.txt"))
@@ -86,5 +116,21 @@ public class PiGeneratorTest {
                  .split(""))
                  .filter(s -> !s.equals(" "))
                  .map(s -> Integer.valueOf(s, 16));
+    }
+    private Stream<String> actualFirst8336Digits() throws IOException {
+
+        return Stream.of(Files.lines(Paths.get("src/test/resources/first-8336-Hex.txt"))
+                .collect(Collectors.joining())
+                .split(""))
+                .limit(8336);
+//                .map(s -> Integer.valueOf(s, 16));
+    }
+    private Stream<String> actualFirst10000Digits() throws IOException {
+
+        return Stream.of(Files.lines(Paths.get("src/test/resources/first-62500-Hex.txt"))
+                .collect(Collectors.joining())
+                .split(""))
+                .limit(8336);
+//                .map(s -> Integer.valueOf(s, 16));
     }
 }

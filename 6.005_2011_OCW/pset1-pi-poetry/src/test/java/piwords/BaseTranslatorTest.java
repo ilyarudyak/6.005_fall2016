@@ -4,12 +4,46 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
+import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 public class BaseTranslatorTest {
+
+
+    // ------ decimal ------
+
+    @Test
+    public void convertBaseDecimal10K() {
+
+        String expected = TestUtils.readPiDecimalFirst10000();
+        String actual = convertedDecimal(15000).substring(0, 10000);
+
+        assertEquals(expected, actual);
+    }
+
+    private static String convertedDecimal(int precision) {
+
+        int baseA = 16;
+        int baseB = 10;
+
+        int[] digitsInHex = toIntArray(PiGenerator.piInHex()
+                .limit(precision)
+                .collect(Collectors.toList()));
+
+        int[] convertedArray = Arrays.copyOf(BaseTranslator.convertBase(
+                digitsInHex, baseA, baseB, precision), precision);
+
+        String convertedString = IntStream.of(convertedArray)
+                .mapToObj(Integer::toString)
+                .collect(Collectors.joining());
+
+        return convertedString;
+    }
+
+    // ------ base26 ------
 
     @Test
     public void convertBaseBase26First100() {

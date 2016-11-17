@@ -50,7 +50,10 @@ public class AppWithProvidedFile {
 
     public static void main(String[] args) {
 
+        //wash steel dear mind tail knee
         printLongWords(Source.WORDS);
+
+        //hell want steel dear mind laid hold sees away best sour herd
         printLongWords(Source.SONNETS);
 
     }

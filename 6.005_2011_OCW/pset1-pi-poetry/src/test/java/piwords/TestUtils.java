@@ -66,7 +66,7 @@ public class TestUtils {
     public static String readPiDecimalFirst10000() {
 
         try {
-            return Files.lines(Paths.get("src/test/resources/first-10000-Decimal.txt"))
+            return Files.lines(Paths.get("src/test/resources/first-10K-Decimal-v1.txt"))
                     .collect(Collectors.joining())
                     .substring(2);
         } catch (IOException e) {
