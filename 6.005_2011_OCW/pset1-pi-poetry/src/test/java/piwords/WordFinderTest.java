@@ -70,7 +70,7 @@ public class WordFinderTest {
         String fred ="fred";
 
 
-        String alice = Utils.readAlice();
+        String alice = TestUtils.readAlice();
         Stream<String> words = Stream.of(red, fred);
 
         Map<String, Integer> actual = WordFinder.getSubstrings(alice, words);
@@ -86,7 +86,7 @@ public class WordFinderTest {
 
         String fred ="fred";
 
-        String alice = Utils.readAlice();
+        String alice = TestUtils.readAlice();
         Stream<String> words = Stream.of(fred);
 
         Map<String, Integer> actual = WordFinder.getSubstrings(alice, words);
@@ -98,8 +98,8 @@ public class WordFinderTest {
 
         final int ITERATIONS = 10;
 
-        String alice = Utils.readAlice();
-        List<String> words = Utils.readWords().collect(Collectors.toList());
+        String alice = TestUtils.readAlice();
+        List<String> words = TestUtils.readWords().collect(Collectors.toList());
 
         Random random = new Random(Instant.now().getEpochSecond());
 
@@ -130,7 +130,7 @@ public class WordFinderTest {
     @Test
     public void base26FromFile2Words() {
 
-        String piBase26First10000 = Utils.readPiBase26First10000();
+        String piBase26First10000 = TestUtils.readPiBase26First10000();
         Supplier<Stream<String>> wordsSupplier = () -> Stream.of("steel", "feign");
 
         Map<String, Integer> expected = wordsSupplier.get()
@@ -150,8 +150,8 @@ public class WordFinderTest {
     @Test
     public void base26FromFileAllWords() {
 
-        String piBase26First10000 = Utils.readPiBase26First10000();
-        Supplier<Stream<String>> wordsSupplier = () -> Utils.readWords();
+        String piBase26First10000 = TestUtils.readPiBase26First10000();
+        Supplier<Stream<String>> wordsSupplier = () -> TestUtils.readWords();
 
         Map<String, Integer> expected = wordsSupplier.get()
                 .filter(word -> piBase26First10000.indexOf(word) != -1)

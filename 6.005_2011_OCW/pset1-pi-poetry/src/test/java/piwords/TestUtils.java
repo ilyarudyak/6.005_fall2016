@@ -14,7 +14,7 @@ import static java.util.stream.Collectors.toList;
 /**
  * Created by ilyarudyak on 11/14/16.
  */
-public class Utils {
+public class TestUtils {
 
     public static Stream<String> readWords() {
         Pattern pattern = Pattern.compile("\\W+");
