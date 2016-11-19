@@ -43,6 +43,36 @@ public class BaseTranslatorTest {
         return convertedString;
     }
 
+    // ----- base16 ------
+
+    @Test
+    public void convertBaseDecimalToHex10K() {
+
+        String expected = TestUtils.readPiHex10K();
+        String actual = convertedDecimalToHex(12000).substring(0, 10000);
+
+        assertEquals(expected, actual);
+    }
+
+    private static String convertedDecimalToHex(int precision) {
+
+        int baseA = 10;
+        int baseB = 16;
+
+        int[] digitsInDecimal = Arrays.copyOf(toIntArray(PiGenerator2
+                .calcPiDigits(50000)), 10000);
+
+
+        int[] convertedArray = Arrays.copyOf(BaseTranslator.convertBase(
+                digitsInDecimal, baseA, baseB, precision), 10000);
+
+        String convertedString = IntStream.of(convertedArray)
+                .mapToObj(Integer::toString)
+                .collect(Collectors.joining());
+
+        return convertedString;
+    }
+
     // ------ base26 ------
 
     @Test

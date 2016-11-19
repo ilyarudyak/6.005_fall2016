@@ -75,6 +75,16 @@ public class TestUtils {
         }
     }
 
+    public static String readPiHex10K() {
+        try {
+            return Files.lines(Paths.get("src/test/resources/first-62500-Hex.txt"))
+                    .collect(Collectors.joining());
+        } catch (IOException e) {
+            e.printStackTrace();
+            return "";
+        }
+    }
+
     public static Stream<Integer> readPiBase26ToStream(int n) {
         return Stream.of(readPiBase26First10000().substring(0, 100).split(""))
                 .map(s -> Integer.valueOf(s));

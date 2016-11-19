@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by ilyarudyak on 11/18/16.
+ * code from here: https://rosettacode.org/wiki/Pi#Java
  */
 public class PiGenerator2 {
 
