@@ -76,9 +76,18 @@ public class TestUtils {
     }
 
 
-    public static String readPiHex10K() {
+    public static String readPiHex8336() {
         try {
-            return Files.lines(Paths.get("src/test/resources/first-62500-Hex.txt"))
+            return Files.lines(Paths.get("src/test/resources/first-8336-Hex.txt"))
+                    .collect(Collectors.joining());
+        } catch (IOException e) {
+            e.printStackTrace();
+            return "";
+        }
+    }
+    public static String readPiHex100K() {
+        try {
+            return Files.lines(Paths.get("src/test/resources/first-100K-Hex.txt"))
                     .collect(Collectors.joining());
         } catch (IOException e) {
             e.printStackTrace();

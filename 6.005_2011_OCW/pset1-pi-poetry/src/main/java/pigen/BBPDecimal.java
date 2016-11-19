@@ -10,7 +10,7 @@ import java.util.stream.IntStream;
  * below). Tested to be correct for 10,000 digits.
  * from here: https://github.com/fredwilby/Math/blob/master/src/com/fredwilby/math/misc/BBP.java
  */
-public class BBP {
+public class BBPDecimal {
 
     /**
      * Calculates pi using the Bailey-Borwein-Plouffe formula to the max
@@ -41,7 +41,6 @@ public class BBP {
 
         return pi.toString().substring(2);
     }
-
 
     public String generatePi(int digits) {
 
@@ -84,3 +83,26 @@ public class BBP {
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -48,7 +48,7 @@ public class BaseTranslatorTest {
     @Test
     public void convertBaseDecimalToHex10K() {
 
-        String expected = TestUtils.readPiHex10K();
+        String expected = TestUtils.readPiHex100K().substring(0, 10000);
         String actual = convertedDecimalToHex(12000).substring(0, 10000);
 
         assertEquals(expected, actual);
