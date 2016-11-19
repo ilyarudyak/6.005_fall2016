@@ -1,5 +1,6 @@
 package piwords;
 
+import java.math.BigInteger;
 import java.util.stream.Stream;
 
 import static java.util.Arrays.asList;
@@ -28,14 +29,14 @@ public class PiGenerator {
      * @param p
      * @return x^y mod m
      */
-    public static int powerMod(int x, int y, int p) {
+    public static int powerMod2(int x, int y, int p) {
 
         if (x < 0 || y < 0 || p <= 0) { return -1; }
 
         if (x == 0) { return 0; }
         if (y == 0) { return 1; }
 
-        int res = 1;
+        long res = 1;
         x = x % p;
 
         while (y > 0) {
@@ -47,7 +48,15 @@ public class PiGenerator {
             y = y / 2;
             x = (x * x) % p;
         }
-        return res;
+        return (int) res;
+    }
+
+    public static int powerMod(int x, int y, int p) {
+        BigInteger X = BigInteger.valueOf(x);
+        BigInteger Y = BigInteger.valueOf(y);
+        BigInteger P = BigInteger.valueOf(p);
+        return X.modPow(Y, P).intValueExact();
+
     }
     
     /**

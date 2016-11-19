@@ -82,6 +82,12 @@ public class PiGeneratorTest {
     }
 
     @Test
+    public void basicPowerModBug() {
+        assertEquals(PiGenerator.powerMod(16, 121, 47030),
+                PiGenerator.powerMod2(16, 121, 47030));
+    }
+
+    @Test
     public void randomPowerMod() {
 
         Random random = new Random(Instant.now().getEpochSecond());

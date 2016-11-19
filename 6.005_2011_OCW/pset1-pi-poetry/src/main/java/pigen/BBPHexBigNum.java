@@ -8,7 +8,7 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 /**
- * Created by ilyarudyak on 11/19/16.
+ * This class produces correct first 10,000 hex digits.
  */
 public class BBPHexBigNum {
 

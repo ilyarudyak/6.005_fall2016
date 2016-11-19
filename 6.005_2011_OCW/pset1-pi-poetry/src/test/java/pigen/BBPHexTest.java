@@ -31,10 +31,10 @@ public class BBPHexTest {
     }
 
     @Test
-    public void piInHexStr8000() throws IOException {
+    public void piInHexStr10000() throws IOException {
 
-        String actual = TestUtils.readPiHex100K().substring(0, 8000);
-        String expected = BBPHex.piInHexStr(8000);
+        String actual = TestUtils.readPiHex100K().substring(0, 10000);
+        String expected = BBPHex.piInHexStr(10000);
 
         assertEquals(actual, expected);
     }

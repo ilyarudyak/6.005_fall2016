@@ -1,5 +1,6 @@
 package pigen;
 
+import java.math.BigInteger;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -38,7 +39,7 @@ public class BBPHex {
      * @param p
      * @return x^y mod m
      */
-    public static int powerMod(int x, int y, int p) {
+    public static int powerMod2(int x, int y, int p) {
 
         if (x < 0 || y < 0 || p <= 0) { return -1; }
 
@@ -60,6 +61,14 @@ public class BBPHex {
         return res;
     }
 
+    public static int powerMod(int x, int y, int p) {
+        BigInteger X = BigInteger.valueOf(x);
+        BigInteger Y = BigInteger.valueOf(y);
+        BigInteger P = BigInteger.valueOf(p);
+        return X.modPow(Y, P).intValueExact();
+
+    }
+
     /**
      * Computes the nth digit of Pi in base-16.
      *
@@ -76,7 +85,7 @@ public class BBPHex {
                 piTerm(5, n) - piTerm(6, n);
 //        System.out.println(x);
 
-        System.out.println("floor=" + Math.floor(x));
+//        System.out.println("floor=" + Math.floor(x));
         x = x - Math.floor(x);
 //        System.out.println(x);
 
@@ -92,6 +101,11 @@ public class BBPHex {
         for (int k = 0; k <= n; ++k) {
             int r = 8 * k + j;
             s += powerMod(16, n-k, r) / (double) r;
+
+            if (powerMod(16, n-k, r) != powerMod2(16, n-k, r)) {
+                System.out.println(n-k + " " + r);
+            }
+
             s = s - Math.floor(s);
         }
 

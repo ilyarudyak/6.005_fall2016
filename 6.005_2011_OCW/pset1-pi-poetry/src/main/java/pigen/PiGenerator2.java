@@ -1,4 +1,4 @@
-package piwords;
+package pigen;
 
 import java.math.BigInteger;
 import java.util.ArrayList;
