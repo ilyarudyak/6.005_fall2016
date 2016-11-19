@@ -10,13 +10,13 @@ import static org.junit.Assert.assertEquals;
 /**
  * Created by ilyarudyak on 11/19/16.
  */
-public class BBPHexTest {
+public class BBPHexBigNumTest {
 
     @Test
     public void piInHexStr1000() throws IOException {
 
         String actual = TestUtils.readPiHex100K().substring(0, 1000);
-        String expected = BBPHex.piInHexStr(1000);
+        String expected = BBPHexBigNum.piInHexStr(1000);
 
         assertEquals(actual, expected);
     }
@@ -25,16 +25,16 @@ public class BBPHexTest {
     public void piInHexStr5000() throws IOException {
 
         String actual = TestUtils.readPiHex100K().substring(0, 5000);
-        String expected = BBPHex.piInHexStr(5000);
+        String expected = BBPHexBigNum.piInHexStr(5000);
 
         assertEquals(actual, expected);
     }
 
     @Test
-    public void piInHexStr8000() throws IOException {
+    public void piInHexStr10000() throws IOException {
 
-        String actual = TestUtils.readPiHex100K().substring(0, 8000);
-        String expected = BBPHex.piInHexStr(8000);
+        String actual = TestUtils.readPiHex100K().substring(0, 10000);
+        String expected = BBPHexBigNum.piInHexStr(10000);
 
         assertEquals(actual, expected);
     }
@@ -42,7 +42,7 @@ public class BBPHexTest {
     @Test
     public void showWhereWrong() {
         String actual = TestUtils.readPiHex100K().substring(0, 8000);
-        String expected = BBPHex.piInHexStr(6000);
+        String expected = BBPHexBigNum.piInHexStr(6000);
 
         int wrongIndex = actual.indexOf("A9DC09662D09A1C4");
         System.out.println("wrongIndex=" + wrongIndex);
@@ -53,16 +53,9 @@ public class BBPHexTest {
 
     private void printWrongPlace(String s, int wrongIndex) {
         System.out.println("..." + s.substring(wrongIndex - 10, wrongIndex) + "|" +
-                            s.substring(wrongIndex, wrongIndex + 10) + "...");
+                s.substring(wrongIndex, wrongIndex + 10) + "...");
     }
 }
-
-
-
-
-
-
-
 
 
 

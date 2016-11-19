@@ -74,7 +74,14 @@ public class BBPHex {
         n -= 1;
         double x = 4 * piTerm(1, n) - 2 * piTerm(4, n) -
                 piTerm(5, n) - piTerm(6, n);
+//        System.out.println(x);
+
+        System.out.println("floor=" + Math.floor(x));
         x = x - Math.floor(x);
+//        System.out.println(x);
+
+//        double y = x * 16;
+//        System.out.println(y);
 
         return (int)(x * 16);
     }
@@ -88,6 +95,8 @@ public class BBPHex {
             s = s - Math.floor(s);
         }
 
+//        System.out.println("s=" + s);
+
         // Calculate the right sum
         double t = 0;
         int k = n+1;
@@ -95,6 +104,7 @@ public class BBPHex {
         while (true) {
             int r = 8 * k + j;
             double newt = t + Math.pow(16, n-k) / r;
+
             if (t == newt) {
                 break;
             } else {
@@ -103,6 +113,27 @@ public class BBPHex {
             ++k;
         }
 
+//        System.out.println("t=" + t);
+
         return s+t;
     }
+
+    public static void main(String[] args) {
+
+        System.out.println(piDigit(2));
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
