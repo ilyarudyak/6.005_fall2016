@@ -1,6 +1,5 @@
 package pigen;
 
-import org.junit.Ignore;
 import org.junit.Test;
 import piwords.TestUtils;
 
@@ -31,6 +30,16 @@ public class BBPTest {
 
         assertEquals(expected, actual);
     }
+
+    @Test
+    public void first10000DecimalDigits() throws IOException {
+
+        String expected = TestUtils.readPiDecimalFirst10000();
+        String actual = new BBP().generatePi(10000).substring(0, 10000);
+
+        assertEquals(expected, actual);
+    }
+
 }
 
 
