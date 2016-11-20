@@ -1,7 +1,7 @@
 package pigen;
 
 import org.junit.Test;
-import piwords.TestUtils;
+import piwords.utils.TestUtils;
 
 import java.io.IOException;
 

@@ -1,4 +1,4 @@
-package piwords;
+package piwords.main;
 
 import static java.util.Arrays.asList;
 import static java.util.Arrays.sort;
@@ -8,6 +8,7 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 import piwords.main.PiGenerator;
+import piwords.utils.TestUtils;
 
 import java.io.IOException;
 import java.math.BigInteger;

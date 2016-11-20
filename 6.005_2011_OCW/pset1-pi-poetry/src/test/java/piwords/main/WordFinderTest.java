@@ -1,4 +1,4 @@
-package piwords;
+package piwords.main;
 
 import static java.util.stream.Collectors.toMap;
 import static org.junit.Assert.*;
@@ -16,6 +16,7 @@ import java.util.stream.Stream;
 
 import org.junit.Test;
 import piwords.main.WordFinder;
+import piwords.utils.TestUtils;
 
 public class WordFinderTest {
 

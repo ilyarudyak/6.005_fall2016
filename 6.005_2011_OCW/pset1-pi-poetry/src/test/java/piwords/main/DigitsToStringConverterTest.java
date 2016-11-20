@@ -1,4 +1,4 @@
-package piwords;
+package piwords.main;
 
 import static java.util.Arrays.asList;
 import static java.util.Arrays.sort;

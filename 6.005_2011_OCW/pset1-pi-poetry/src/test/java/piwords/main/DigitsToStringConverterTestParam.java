@@ -1,4 +1,4 @@
-package piwords;
+package piwords.main;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

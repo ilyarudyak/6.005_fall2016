@@ -1,4 +1,4 @@
-package piwords;
+package piwords.misc;
 
 import org.junit.Test;
 
