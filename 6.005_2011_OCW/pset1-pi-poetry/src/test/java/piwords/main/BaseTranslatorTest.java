@@ -127,28 +127,53 @@ public class BaseTranslatorTest {
 
     // ------ base26 ------
 
-    @Test @Ignore
-    public void convertBaseBase26First100() {
-
-        String expectedBase26First100 = TestUtils.readPiBase26First10000().substring(0, 100);
-
-        assertEquals(expectedBase26First100, convertedStr(100));
-
-    }
-
-    @Test @Ignore
+    @Test
     public void convertBaseBase26First1000() {
-        String expectedBase26First1000 = TestUtils.readPiBase26First10000().substring(0, 1000);
 
-        assertEquals(expectedBase26First1000, convertedStr(1000));
+        String expected = TestUtils.readPiBase26First10000().substring(0, 1000);
+        String actual = convertHexToBase26(2000).substring(0, 1000);
+
+        assertEquals(expected, actual);
+
     }
 
-    private static String convertedStr(int precision) {
+    @Test
+    public void convertBaseBase26First5000() {
+
+        String expected = TestUtils.readPiBase26First10000().substring(0, 5000);
+        String actual = convertHexToBase26(8000).substring(0, 5000);
+
+        assertEquals(expected, actual);
+
+    }
+
+    /**
+     * This test shows that we have correct file for base26.
+     * We test convertBase() from HEX to Base26 (we use hex digits from file,
+     * don't generate them) and convertDigitsToString() against provided file
+     * with Base26 translation.
+     */
+
+    @Test
+    public void convertBaseBase26First10000() {
+
+        String expected = TestUtils.readPiBase26First10000();
+        String actual = convertHexToBase26(15000).substring(0, 9999);
+
+        assertEquals(expected, actual);
+
+    }
+
+
+    private static String convertHexToBase26(int precision) {
 
         int baseA = 16;
         int baseB = 26;
-        int[] digitsInHex = toIntArray(PiGenerator.piInHex()
-                .limit(precision * 2)
+
+        int[] digitsInHex = toIntArray(Pattern.compile("")
+                .splitAsStream(TestUtils.readPiHex100K())
+                .map(s -> Integer.valueOf(s, baseA))
+                .limit(precision)
                 .collect(Collectors.toList()));
 
         int[] convertedArray = BaseTranslator.convertBase(
