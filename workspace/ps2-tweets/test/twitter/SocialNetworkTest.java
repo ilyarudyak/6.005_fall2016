@@ -1,6 +1,7 @@
 package twitter;
 
 import static org.junit.Assert.*;
+import static twitter.Utils.setToLowerCase;
 
 import java.time.Instant;
 import java.util.ArrayList;
@@ -10,6 +11,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import java.util.stream.Collectors;
 
 import org.junit.Ignore;
 import org.junit.Test;
@@ -52,7 +54,7 @@ public class SocialNetworkTest {
     private static final List<Tweet> tweets2 = Arrays.asList(t1, t2, t3, t4, t5, t6, t7, t8, t9);
     
     
-    /* ----------- test of influencers() ----------- */
+    /* ----------- test of followsGraph ----------- */
     
     @Test
     public void testGuessFollowsGraphEmpty() {
@@ -62,10 +64,10 @@ public class SocialNetworkTest {
     }
     
     @Test
-    public void testGuessFollowsGraphCheckUsers() {
+    public void testGuessFollowsGraphContainsAllAuthors() {
         Map<String, Set<String>> followsGraph = SocialNetwork.guessFollowsGraph(tweets);
         
-        assertTrue("expected 4 users", followsGraph.keySet()
+        assertTrue("expected to contain all authors", setToLowerCase(followsGraph.keySet())
                 .containsAll(Arrays.asList("user1", "user2", "user3", "user4")));
     }
     
@@ -73,7 +75,7 @@ public class SocialNetworkTest {
     public void testGuessFollowsGraphUserContainsAllMentions() {
         Map<String, Set<String>> followsGraph = SocialNetwork.guessFollowsGraph(tweets);
         
-        assertTrue("expected 3 users", followsGraph.get("user1")
+        assertTrue("expected 3 users", setToLowerCase(followsGraph.get("user1"))
                 .containsAll(Arrays.asList("user2", "user3", "user4")));
     }
     
@@ -81,7 +83,7 @@ public class SocialNetworkTest {
     public void testGuessFollowsGraphNotContainHimself() {
         Map<String, Set<String>> followsGraph = SocialNetwork.guessFollowsGraph(tweets);
         
-        assertFalse("not expect use1", followsGraph.get("user1")
+        assertFalse("not expect use1", setToLowerCase(followsGraph.get("user1"))
                 .contains("user1"));
     }
     
@@ -89,15 +91,15 @@ public class SocialNetworkTest {
     public void testGuessFollowsGraphWhenOnlyOneMention() {
         Map<String, Set<String>> followsGraph = SocialNetwork.guessFollowsGraph(tweets);
         
-        assertEquals("expect size 1", 1, followsGraph.get("user2").size());
-        assertTrue("expect size 1", followsGraph.get("user2").contains("user6"));
+        assertEquals("expect size 1", 1, setToLowerCase(followsGraph.get("user2")).size());
+        assertTrue("expect size 1", setToLowerCase(followsGraph.get("user2")).contains("user6"));
     }
     
     @Test
     public void testGuessFollowsGraphManyTweetsAndUsers() {
         Map<String, Set<String>> followsGraph = SocialNetwork.guessFollowsGraph(tweets);
         
-        assertTrue("expected 4 users", followsGraph.get("user4")
+        assertTrue("expected 4 users", setToLowerCase(followsGraph.get("user4"))
                 .containsAll(Arrays.asList("user1", "user2", "user3", "user7")));
     }
     

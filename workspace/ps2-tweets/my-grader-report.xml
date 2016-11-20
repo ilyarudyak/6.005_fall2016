@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites>
-  <testsuite errors="0" failures="0" hostname="Ilyas-MacBook-Pro.local" id="0" name="ExtractTest" package="twitter" skipped="0" tests="12" time="0.083" timestamp="2016-11-15T22:37:41">
+  <testsuite errors="0" failures="0" hostname="Ilyas-MacBook-Pro.local" id="0" name="ExtractTest" package="twitter" skipped="0" tests="12" time="0.084" timestamp="2016-11-15T23:10:48">
       <properties>
           <property name="java.vendor" value="Oracle Corporation" />
 
@@ -102,7 +102,7 @@
 
           <property name="beta.grader.jar" value="ps2-beta-grader.jar" />
 
-          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner twitter.ExtractTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/.grader/TEST-twitter.ExtractTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/.grader/junitvmwatcher1573525415144660402.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/.grader/junit1098088201479035848.properties" />
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner twitter.ExtractTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/.grader/TEST-twitter.ExtractTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/.grader/junitvmwatcher8612085672616138019.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/.grader/junit3857814194794087201.properties" />
 
           <property name="java.class.path" value="/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/lib/junit-4.12.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/lib/hamcrest-core-1.3.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/.grader/bin-tests-student:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/.grader/bin-impls-student:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-launcher.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit4.jar" />
 
@@ -156,13 +156,13 @@
 
       </properties>
 
-      <testcase classname="twitter.ExtractTest" name="testGetTimespanMultipleStampsWithDuplicates" time="0.009" />
+      <testcase classname="twitter.ExtractTest" name="testGetTimespanMultipleStampsWithDuplicates" time="0.01" />
 
       <testcase classname="twitter.ExtractTest" name="testGetMentionedUsersNoMention" time="0.005" />
 
       <testcase classname="twitter.ExtractTest" name="testGetTimespanTwoTweets" time="0.0" />
 
-      <testcase classname="twitter.ExtractTest" name="getMentionedUserLengthSpecialSymbols" time="0.0" />
+      <testcase classname="twitter.ExtractTest" name="getMentionedUserLengthSpecialSymbols" time="0.001" />
 
       <testcase classname="twitter.ExtractTest" name="testAssertionsEnabled" time="0.0" />
 
@@ -172,11 +172,11 @@
 
       <testcase classname="twitter.ExtractTest" name="testGetTimespanTwoDuplicateStamps" time="0.0" />
 
-      <testcase classname="twitter.ExtractTest" name="testGetTimespanEmptyListAlwaysReturnsZeroLengthTimespan" time="0.001" />
+      <testcase classname="twitter.ExtractTest" name="testGetTimespanEmptyListAlwaysReturnsZeroLengthTimespan" time="0.0" />
 
       <testcase classname="twitter.ExtractTest" name="testGetTimespanSingleTweet" time="0.0" />
 
-      <testcase classname="twitter.ExtractTest" name="getMentionedUserBeginnigEndString" time="0.0" />
+      <testcase classname="twitter.ExtractTest" name="getMentionedUserBeginnigEndString" time="0.001" />
 
       <testcase classname="twitter.ExtractTest" name="getMentionedUserBeginnigNotLegalSymbols" time="0.0" />
 
@@ -185,7 +185,7 @@
       <system-err><![CDATA[]]></system-err>
 
   </testsuite>
-  <testsuite errors="0" failures="0" hostname="Ilyas-MacBook-Pro.local" id="1" name="FilterTest" package="twitter" skipped="0" tests="12" time="0.079" timestamp="2016-11-15T22:37:41">
+  <testsuite errors="0" failures="0" hostname="Ilyas-MacBook-Pro.local" id="1" name="FilterTest" package="twitter" skipped="0" tests="12" time="0.078" timestamp="2016-11-15T23:10:49">
       <properties>
           <property name="java.vendor" value="Oracle Corporation" />
 
@@ -287,7 +287,7 @@
 
           <property name="beta.grader.jar" value="ps2-beta-grader.jar" />
 
-          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner twitter.FilterTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/.grader/TEST-twitter.FilterTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/.grader/junitvmwatcher5009974611230128951.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/.grader/junit7726888009735923207.properties" />
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner twitter.FilterTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/.grader/TEST-twitter.FilterTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/.grader/junitvmwatcher4605776378927355062.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/.grader/junit8372124353373910021.properties" />
 
           <property name="java.class.path" value="/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/lib/junit-4.12.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/lib/hamcrest-core-1.3.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/.grader/bin-tests-student:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/.grader/bin-impls-student:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-launcher.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit4.jar" />
 
@@ -349,7 +349,7 @@
 
       <testcase classname="twitter.FilterTest" name="testWrittenByEmptyList" time="0.001" />
 
-      <testcase classname="twitter.FilterTest" name="testAssertionsEnabled" time="0.001" />
+      <testcase classname="twitter.FilterTest" name="testAssertionsEnabled" time="0.0" />
 
       <testcase classname="twitter.FilterTest" name="testContainingMultipleWordsInList" time="0.0" />
 
@@ -361,7 +361,7 @@
 
       <testcase classname="twitter.FilterTest" name="testWrittenByCorrectOrder" time="0.0" />
 
-      <testcase classname="twitter.FilterTest" name="testInTimespanMultipleTweetsBoundaries" time="0.001" />
+      <testcase classname="twitter.FilterTest" name="testInTimespanMultipleTweetsBoundaries" time="0.0" />
 
       <testcase classname="twitter.FilterTest" name="testContainingMultipleNotContaining" time="0.0" />
 
@@ -370,7 +370,7 @@
       <system-err><![CDATA[]]></system-err>
 
   </testsuite>
-  <testsuite errors="0" failures="0" hostname="Ilyas-MacBook-Pro.local" id="2" name="SocialNetworkTest" package="twitter" skipped="0" tests="14" time="0.148" timestamp="2016-11-15T22:37:42">
+  <testsuite errors="0" failures="0" hostname="Ilyas-MacBook-Pro.local" id="2" name="SocialNetworkTest" package="twitter" skipped="0" tests="14" time="0.152" timestamp="2016-11-15T23:10:49">
       <properties>
           <property name="java.vendor" value="Oracle Corporation" />
 
@@ -472,7 +472,7 @@
 
           <property name="beta.grader.jar" value="ps2-beta-grader.jar" />
 
-          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner twitter.SocialNetworkTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/.grader/TEST-twitter.SocialNetworkTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/.grader/junitvmwatcher1788260977429135377.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/.grader/junit657174532644106360.properties" />
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner twitter.SocialNetworkTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/.grader/TEST-twitter.SocialNetworkTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/.grader/junitvmwatcher5140343346007529151.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/.grader/junit5931825817216087961.properties" />
 
           <property name="java.class.path" value="/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/lib/junit-4.12.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/lib/hamcrest-core-1.3.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/.grader/bin-tests-student:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/.grader/bin-impls-student:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-launcher.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit4.jar" />
 
@@ -526,21 +526,19 @@
 
       </properties>
 
-      <testcase classname="twitter.SocialNetworkTest" name="testGuessFollowsGraphNotContainHimself" time="0.064" />
+      <testcase classname="twitter.SocialNetworkTest" name="testGuessFollowsGraphNotContainHimself" time="0.066" />
 
       <testcase classname="twitter.SocialNetworkTest" name="testInfluencersCorrectOrderMiddle2" time="0.005" />
 
-      <testcase classname="twitter.SocialNetworkTest" name="testGuessFollowsGraphUserContainsAllMentions" time="0.001" />
-
-      <testcase classname="twitter.SocialNetworkTest" name="testGuessFollowsGraphCheckUsers" time="0.002" />
+      <testcase classname="twitter.SocialNetworkTest" name="testGuessFollowsGraphUserContainsAllMentions" time="0.002" />
 
       <testcase classname="twitter.SocialNetworkTest" name="testGuessFollowsGraphWhenOnlyOneMention" time="0.001" />
 
       <testcase classname="twitter.SocialNetworkTest" name="testInfluencersCorrectOrderFirst" time="0.002" />
 
-      <testcase classname="twitter.SocialNetworkTest" name="testGuessFollowsGraphEmpty" time="0.0" />
+      <testcase classname="twitter.SocialNetworkTest" name="testGuessFollowsGraphEmpty" time="0.001" />
 
-      <testcase classname="twitter.SocialNetworkTest" name="testInfluencersCorrectOrderLast" time="0.002" />
+      <testcase classname="twitter.SocialNetworkTest" name="testInfluencersCorrectOrderLast" time="0.001" />
 
       <testcase classname="twitter.SocialNetworkTest" name="testAssertionsEnabled" time="0.0" />
 
@@ -552,7 +550,9 @@
 
       <testcase classname="twitter.SocialNetworkTest" name="testInfluencersEmpty" time="0.0" />
 
-      <testcase classname="twitter.SocialNetworkTest" name="testInfluencersMustBeCaseInsensitive" time="0.0" />
+      <testcase classname="twitter.SocialNetworkTest" name="testGuessFollowsGraphContainsAllAuthors" time="0.001" />
+
+      <testcase classname="twitter.SocialNetworkTest" name="testInfluencersMustBeCaseInsensitive" time="0.001" />
 
       <system-out><![CDATA[[user2, user3, user1, user7, user6, user4, user8, user5]
 ]]></system-out>
@@ -560,7 +560,7 @@
       <system-err><![CDATA[]]></system-err>
 
   </testsuite>
-  <testsuite errors="0" failures="0" hostname="Ilyas-MacBook-Pro.local" id="3" name="ExtractTestRunner" package="twitter.staff" skipped="0" tests="13" time="0.221" timestamp="2016-11-15T22:37:45">
+  <testsuite errors="0" failures="0" hostname="Ilyas-MacBook-Pro.local" id="3" name="ExtractTestRunner" package="twitter.staff" skipped="0" tests="13" time="0.211" timestamp="2016-11-15T23:10:52">
       <properties>
           <property name="java.vendor" value="Oracle Corporation" />
 
@@ -662,7 +662,7 @@
 
           <property name="beta.grader.jar" value="ps2-beta-grader.jar" />
 
-          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner twitter.staff.ExtractTestRunner skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/.grader/TEST-twitter.staff.ExtractTestRunner.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/.grader/junitvmwatcher7197278925854904519.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/.grader/junit4496631237428915322.properties" />
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner twitter.staff.ExtractTestRunner skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/.grader/TEST-twitter.staff.ExtractTestRunner.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/.grader/junitvmwatcher8425238419270900831.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/.grader/junit6580484119287470248.properties" />
 
           <property name="java.class.path" value="/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/lib/junit-4.12.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/lib/hamcrest-core-1.3.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/.grader/bin-impls-staff-final:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/.grader/bin-tests-student:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-launcher.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit4.jar" />
 
@@ -716,38 +716,38 @@
 
       </properties>
 
-      <testcase classname="twitter.staff.ExtractTestRunner" name="yourTests_staffBadImpl_getMentionedUsersOnlyReturnsFirstMentionBug" time="0.101" />
+      <testcase classname="twitter.staff.ExtractTestRunner" name="yourTests_staffBadImpl_getMentionedUsersOnlyReturnsFirstMentionBug" time="0.096" />
 
       <testcase classname="twitter.staff.ExtractTestRunner" name="yourTests_staffBadImpl_getMentionedUsersUsernameEndedWithPunctuationBug" time="0.005" />
 
-      <testcase classname="twitter.staff.ExtractTestRunner" name="yourTests_staffBadImpl_getTimespanMultipleSameTimestampBug" time="0.004" />
+      <testcase classname="twitter.staff.ExtractTestRunner" name="yourTests_staffBadImpl_getTimespanMultipleSameTimestampBug" time="0.005" />
 
       <testcase classname="twitter.staff.ExtractTestRunner" name="yourTests_staffBadImpl_getTimespanEmptyListBug" time="0.003" />
 
-      <testcase classname="twitter.staff.ExtractTestRunner" name="yourTests_staffBadImpl_getTimespanReturnsGarbageBug" time="0.005" />
+      <testcase classname="twitter.staff.ExtractTestRunner" name="yourTests_staffBadImpl_getTimespanReturnsGarbageBug" time="0.006" />
 
-      <testcase classname="twitter.staff.ExtractTestRunner" name="yourTests_staffBadImpl_getMentionedUsersMustBeCaseInsensitiveBug" time="0.003" />
+      <testcase classname="twitter.staff.ExtractTestRunner" name="yourTests_staffBadImpl_getMentionedUsersMustBeCaseInsensitiveBug" time="0.002" />
 
       <testcase classname="twitter.staff.ExtractTestRunner" name="yourTests_staffBadImpl_getMentionedUsersRepeatedAtSignBug" time="0.002" />
 
       <testcase classname="twitter.staff.ExtractTestRunner" name="yourTests_staffBadImpl_getMentionedUsersEmailAddressBug" time="0.003" />
 
-      <testcase classname="twitter.staff.ExtractTestRunner" name="yourTests_staffBadImpl_getTimespanAssumesInOrderBug" time="0.003" />
+      <testcase classname="twitter.staff.ExtractTestRunner" name="yourTests_staffBadImpl_getTimespanAssumesInOrderBug" time="0.002" />
 
       <testcase classname="twitter.staff.ExtractTestRunner" name="yourTests_staffGoodImpl_getTimespanEmptyListUsesToday_getMentionedUsersMixesUpCase" time="0.003" />
 
       <testcase classname="twitter.staff.ExtractTestRunner" name="yourTests_staffGoodImpl_getTimespanEmptyListUsesOldDate_getMentionedUsersLowerCasesEverything" time="0.003" />
 
-      <testcase classname="twitter.staff.ExtractTestRunner" name="yourTests_staffBadImpl_getTimespanIndexOutOfBoundsBug" time="0.003" />
+      <testcase classname="twitter.staff.ExtractTestRunner" name="yourTests_staffBadImpl_getTimespanIndexOutOfBoundsBug" time="0.002" />
 
-      <testcase classname="twitter.staff.ExtractTestRunner" name="yourTests_staffBadImpl_getTimespanSingleTweetBug" time="0.004" />
+      <testcase classname="twitter.staff.ExtractTestRunner" name="yourTests_staffBadImpl_getTimespanSingleTweetBug" time="0.003" />
 
       <system-out><![CDATA[]]></system-out>
 
       <system-err><![CDATA[]]></system-err>
 
   </testsuite>
-  <testsuite errors="0" failures="0" hostname="Ilyas-MacBook-Pro.local" id="4" name="FilterTestRunner" package="twitter.staff" skipped="0" tests="12" time="0.175" timestamp="2016-11-15T22:37:46">
+  <testsuite errors="0" failures="0" hostname="Ilyas-MacBook-Pro.local" id="4" name="FilterTestRunner" package="twitter.staff" skipped="0" tests="12" time="0.196" timestamp="2016-11-15T23:10:53">
       <properties>
           <property name="java.vendor" value="Oracle Corporation" />
 
@@ -849,7 +849,7 @@
 
           <property name="beta.grader.jar" value="ps2-beta-grader.jar" />
 
-          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner twitter.staff.FilterTestRunner skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/.grader/TEST-twitter.staff.FilterTestRunner.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/.grader/junitvmwatcher7037029038445042845.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/.grader/junit780294376908409701.properties" />
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner twitter.staff.FilterTestRunner skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/.grader/TEST-twitter.staff.FilterTestRunner.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/.grader/junitvmwatcher3433297804061038700.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/.grader/junit1749593315827078991.properties" />
 
           <property name="java.class.path" value="/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/lib/junit-4.12.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/lib/hamcrest-core-1.3.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/.grader/bin-impls-staff-final:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/.grader/bin-tests-student:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-launcher.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit4.jar" />
 
@@ -903,27 +903,27 @@
 
       </properties>
 
-      <testcase classname="twitter.staff.FilterTestRunner" name="yourTests_staffBadImpl_inTimespanExclusiveTimespanBug" time="0.082" />
+      <testcase classname="twitter.staff.FilterTestRunner" name="yourTests_staffBadImpl_inTimespanExclusiveTimespanBug" time="0.092" />
 
-      <testcase classname="twitter.staff.FilterTestRunner" name="yourTests_staffBadImpl_containingReturnsSubstringMatchBug" time="0.002" />
+      <testcase classname="twitter.staff.FilterTestRunner" name="yourTests_staffBadImpl_containingReturnsSubstringMatchBug" time="0.005" />
 
-      <testcase classname="twitter.staff.FilterTestRunner" name="yourTests_staffGoodImpl_Filter" time="0.002" />
+      <testcase classname="twitter.staff.FilterTestRunner" name="yourTests_staffGoodImpl_Filter" time="0.003" />
 
-      <testcase classname="twitter.staff.FilterTestRunner" name="yourTests_staffBadImpl_containingReturnsAndNotOrBug" time="0.004" />
+      <testcase classname="twitter.staff.FilterTestRunner" name="yourTests_staffBadImpl_containingReturnsAndNotOrBug" time="0.005" />
 
       <testcase classname="twitter.staff.FilterTestRunner" name="yourTests_staffBadImpl_writtenByIndexOutOfBoundsBug" time="0.003" />
 
-      <testcase classname="twitter.staff.FilterTestRunner" name="yourTests_staffBadImpl_containingReturnsFullListBug" time="0.002" />
+      <testcase classname="twitter.staff.FilterTestRunner" name="yourTests_staffBadImpl_containingReturnsFullListBug" time="0.003" />
 
       <testcase classname="twitter.staff.FilterTestRunner" name="yourTests_staffBadImpl_inTimespanReturnsFullListBug" time="0.003" />
 
       <testcase classname="twitter.staff.FilterTestRunner" name="yourTests_staffBadImpl_writtenByReturnsOnlyFirstResultBug" time="0.003" />
 
-      <testcase classname="twitter.staff.FilterTestRunner" name="yourTests_staffBadImpl_writtenByMustBeCaseInsensitiveBug" time="0.003" />
+      <testcase classname="twitter.staff.FilterTestRunner" name="yourTests_staffBadImpl_writtenByMustBeCaseInsensitiveBug" time="0.002" />
 
-      <testcase classname="twitter.staff.FilterTestRunner" name="yourTests_staffBadImpl_inTimespanAssumesInOrderBug" time="0.002" />
+      <testcase classname="twitter.staff.FilterTestRunner" name="yourTests_staffBadImpl_inTimespanAssumesInOrderBug" time="0.001" />
 
-      <testcase classname="twitter.staff.FilterTestRunner" name="yourTests_staffBadImpl_writtenByReturnsFullListBug" time="0.003" />
+      <testcase classname="twitter.staff.FilterTestRunner" name="yourTests_staffBadImpl_writtenByReturnsFullListBug" time="0.002" />
 
       <testcase classname="twitter.staff.FilterTestRunner" name="yourTests_staffBadImpl_containingMustBeCaseInsensitiveBug" time="0.002" />
 
@@ -932,7 +932,7 @@
       <system-err><![CDATA[]]></system-err>
 
   </testsuite>
-  <testsuite errors="0" failures="0" hostname="Ilyas-MacBook-Pro.local" id="5" name="GradingExtractTest" package="twitter.staff" skipped="0" tests="21" time="0.139" timestamp="2016-11-15T22:37:44">
+  <testsuite errors="0" failures="0" hostname="Ilyas-MacBook-Pro.local" id="5" name="GradingExtractTest" package="twitter.staff" skipped="0" tests="21" time="0.148" timestamp="2016-11-15T23:10:51">
       <properties>
           <property name="java.vendor" value="Oracle Corporation" />
 
@@ -1034,7 +1034,7 @@
 
           <property name="beta.grader.jar" value="ps2-beta-grader.jar" />
 
-          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner twitter.staff.GradingExtractTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/.grader/TEST-twitter.staff.GradingExtractTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/.grader/junitvmwatcher6784136058594998764.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/.grader/junit1118374464966498805.properties" />
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner twitter.staff.GradingExtractTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/.grader/TEST-twitter.staff.GradingExtractTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/.grader/junitvmwatcher7408184020849815209.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/.grader/junit1313026951610773901.properties" />
 
           <property name="java.class.path" value="/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/lib/junit-4.12.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/lib/hamcrest-core-1.3.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/.grader/bin-tests-final:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/.grader/bin-impls-student:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-launcher.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit4.jar" />
 
@@ -1088,13 +1088,13 @@
 
       </properties>
 
-      <testcase classname="twitter.staff.GradingExtractTest" name="testGetMentionedUsersSingleMentionSingleTweet" time="0.06" />
+      <testcase classname="twitter.staff.GradingExtractTest" name="testGetMentionedUsersSingleMentionSingleTweet" time="0.069" />
 
-      <testcase classname="twitter.staff.GradingExtractTest" name="testGetTimespanMultipleStampsWithDuplicates" time="0.006" />
+      <testcase classname="twitter.staff.GradingExtractTest" name="testGetTimespanMultipleStampsWithDuplicates" time="0.005" />
 
       <testcase classname="twitter.staff.GradingExtractTest" name="testGetMentionedUsersEmailAddress" time="0.0" />
 
-      <testcase classname="twitter.staff.GradingExtractTest" name="testGetMentionedUsersUsernameEndedByPunctuation" time="0.0" />
+      <testcase classname="twitter.staff.GradingExtractTest" name="testGetMentionedUsersUsernameEndedByPunctuation" time="0.001" />
 
       <testcase classname="twitter.staff.GradingExtractTest" name="testGetMentionedUsersMultipleMentionsMultipleTweets" time="0.0" />
 
@@ -1135,7 +1135,7 @@
       <system-err><![CDATA[]]></system-err>
 
   </testsuite>
-  <testsuite errors="0" failures="0" hostname="Ilyas-MacBook-Pro.local" id="6" name="GradingFilterTest" package="twitter.staff" skipped="0" tests="21" time="0.132" timestamp="2016-11-15T22:37:44">
+  <testsuite errors="0" failures="0" hostname="Ilyas-MacBook-Pro.local" id="6" name="GradingFilterTest" package="twitter.staff" skipped="0" tests="21" time="0.132" timestamp="2016-11-15T23:10:51">
       <properties>
           <property name="java.vendor" value="Oracle Corporation" />
 
@@ -1237,7 +1237,7 @@
 
           <property name="beta.grader.jar" value="ps2-beta-grader.jar" />
 
-          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner twitter.staff.GradingFilterTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/.grader/TEST-twitter.staff.GradingFilterTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/.grader/junitvmwatcher5440191520017328232.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/.grader/junit6091988279700688224.properties" />
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner twitter.staff.GradingFilterTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/.grader/TEST-twitter.staff.GradingFilterTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/.grader/junitvmwatcher8765580593122471125.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/.grader/junit6168703152873080210.properties" />
 
           <property name="java.class.path" value="/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/lib/junit-4.12.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/lib/hamcrest-core-1.3.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/.grader/bin-tests-final:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/.grader/bin-impls-student:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-launcher.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit4.jar" />
 
@@ -1291,17 +1291,17 @@
 
       </properties>
 
-      <testcase classname="twitter.staff.GradingFilterTest" name="testContainingPunctuation" time="0.058" />
+      <testcase classname="twitter.staff.GradingFilterTest" name="testContainingPunctuation" time="0.056" />
 
-      <testcase classname="twitter.staff.GradingFilterTest" name="testWrittenByUnderscores" time="0.0" />
+      <testcase classname="twitter.staff.GradingFilterTest" name="testWrittenByUnderscores" time="0.001" />
 
       <testcase classname="twitter.staff.GradingFilterTest" name="testContainingNoResults" time="0.0" />
 
       <testcase classname="twitter.staff.GradingFilterTest" name="testContainingNoWordsToCheck" time="0.0" />
 
-      <testcase classname="twitter.staff.GradingFilterTest" name="testContainingMultipleSearchWords" time="0.0" />
+      <testcase classname="twitter.staff.GradingFilterTest" name="testContainingMultipleSearchWords" time="0.001" />
 
-      <testcase classname="twitter.staff.GradingFilterTest" name="testContainingNoFullWordMatch" time="0.001" />
+      <testcase classname="twitter.staff.GradingFilterTest" name="testContainingNoFullWordMatch" time="0.0" />
 
       <testcase classname="twitter.staff.GradingFilterTest" name="testInTimespanEmptyList" time="0.001" />
 
@@ -1309,17 +1309,17 @@
 
       <testcase classname="twitter.staff.GradingFilterTest" name="testInTimespanSingleTweetTimespanInexact" time="0.0" />
 
-      <testcase classname="twitter.staff.GradingFilterTest" name="testContainingMustBeCaseInsensitive" time="0.0" />
+      <testcase classname="twitter.staff.GradingFilterTest" name="testContainingMustBeCaseInsensitive" time="0.001" />
 
-      <testcase classname="twitter.staff.GradingFilterTest" name="testContainingEmptyList" time="0.001" />
+      <testcase classname="twitter.staff.GradingFilterTest" name="testContainingEmptyList" time="0.0" />
 
-      <testcase classname="twitter.staff.GradingFilterTest" name="testWrittenByMustBeCaseInsensitive" time="0.0" />
+      <testcase classname="twitter.staff.GradingFilterTest" name="testWrittenByMustBeCaseInsensitive" time="0.001" />
 
       <testcase classname="twitter.staff.GradingFilterTest" name="testContainingSingleSearchWordSingleResult" time="0.0" />
 
-      <testcase classname="twitter.staff.GradingFilterTest" name="testInTimespanNoTweetsInSpan" time="0.0" />
+      <testcase classname="twitter.staff.GradingFilterTest" name="testInTimespanNoTweetsInSpan" time="0.001" />
 
-      <testcase classname="twitter.staff.GradingFilterTest" name="testInTimespanMultipleTweetsInexact" time="0.0" />
+      <testcase classname="twitter.staff.GradingFilterTest" name="testInTimespanMultipleTweetsInexact" time="0.001" />
 
       <testcase classname="twitter.staff.GradingFilterTest" name="testContainingSingleSearchWordMultipleResult" time="0.001" />
 
@@ -1331,14 +1331,14 @@
 
       <testcase classname="twitter.staff.GradingFilterTest" name="testWrittenByAuthorFound" time="0.0" />
 
-      <testcase classname="twitter.staff.GradingFilterTest" name="testInTimespanSingleTweetTimespanExact" time="0.001" />
+      <testcase classname="twitter.staff.GradingFilterTest" name="testInTimespanSingleTweetTimespanExact" time="0.0" />
 
       <system-out><![CDATA[]]></system-out>
 
       <system-err><![CDATA[]]></system-err>
 
   </testsuite>
-  <testsuite errors="0" failures="0" hostname="Ilyas-MacBook-Pro.local" id="7" name="GradingSocialNetworkTest" package="twitter.staff" skipped="0" tests="14" time="0.146" timestamp="2016-11-15T22:37:45">
+  <testsuite errors="0" failures="0" hostname="Ilyas-MacBook-Pro.local" id="7" name="GradingSocialNetworkTest" package="twitter.staff" skipped="0" tests="14" time="0.154" timestamp="2016-11-15T23:10:52">
       <properties>
           <property name="java.vendor" value="Oracle Corporation" />
 
@@ -1440,7 +1440,7 @@
 
           <property name="beta.grader.jar" value="ps2-beta-grader.jar" />
 
-          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner twitter.staff.GradingSocialNetworkTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/.grader/TEST-twitter.staff.GradingSocialNetworkTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/.grader/junitvmwatcher17659840899805719.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/.grader/junit3371532836485398597.properties" />
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner twitter.staff.GradingSocialNetworkTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/.grader/TEST-twitter.staff.GradingSocialNetworkTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/.grader/junitvmwatcher2899959245597151880.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/.grader/junit3001206292967950541.properties" />
 
           <property name="java.class.path" value="/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/lib/junit-4.12.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/lib/hamcrest-core-1.3.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/.grader/bin-tests-final:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/.grader/bin-impls-student:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-launcher.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit4.jar" />
 
@@ -1494,21 +1494,21 @@
 
       </properties>
 
-      <testcase classname="twitter.staff.GradingSocialNetworkTest" name="testInfluencersGraphOneUserNoFollowing" time="0.064" />
+      <testcase classname="twitter.staff.GradingSocialNetworkTest" name="testInfluencersGraphOneUserNoFollowing" time="0.062" />
 
       <testcase classname="twitter.staff.GradingSocialNetworkTest" name="testInfluencersTwoUsersOneFollowing" time="0.0" />
 
-      <testcase classname="twitter.staff.GradingSocialNetworkTest" name="testGuessFollowsGraphUserMentionsSelf" time="0.008" />
+      <testcase classname="twitter.staff.GradingSocialNetworkTest" name="testGuessFollowsGraphUserMentionsSelf" time="0.007" />
 
-      <testcase classname="twitter.staff.GradingSocialNetworkTest" name="testInfluencersMultipleUsersSomeSameFollowerCounts" time="0.001" />
+      <testcase classname="twitter.staff.GradingSocialNetworkTest" name="testInfluencersMultipleUsersSomeSameFollowerCounts" time="0.0" />
 
-      <testcase classname="twitter.staff.GradingSocialNetworkTest" name="testGuessFollowsGraphEmptyList" time="0.0" />
+      <testcase classname="twitter.staff.GradingSocialNetworkTest" name="testGuessFollowsGraphEmptyList" time="0.001" />
 
-      <testcase classname="twitter.staff.GradingSocialNetworkTest" name="testInfluencersMultipleUsersAllSameFollowerCounts" time="0.001" />
+      <testcase classname="twitter.staff.GradingSocialNetworkTest" name="testInfluencersMultipleUsersAllSameFollowerCounts" time="0.0" />
 
       <testcase classname="twitter.staff.GradingSocialNetworkTest" name="testInfluencersEmptyGraph" time="0.0" />
 
-      <testcase classname="twitter.staff.GradingSocialNetworkTest" name="testInfluencersMultipleUsersAllDifferentFollowerCounts" time="0.001" />
+      <testcase classname="twitter.staff.GradingSocialNetworkTest" name="testInfluencersMultipleUsersAllDifferentFollowerCounts" time="0.0" />
 
       <testcase classname="twitter.staff.GradingSocialNetworkTest" name="testGuessFollowsGraphSingleTweetAtMention" time="0.001" />
 
@@ -1527,7 +1527,7 @@
       <system-err><![CDATA[]]></system-err>
 
   </testsuite>
-  <testsuite errors="0" failures="0" hostname="Ilyas-MacBook-Pro.local" id="8" name="OriginalExtractTest" package="twitter.staff" skipped="0" tests="3" time="0.075" timestamp="2016-11-15T22:37:40">
+  <testsuite errors="0" failures="0" hostname="Ilyas-MacBook-Pro.local" id="8" name="OriginalExtractTest" package="twitter.staff" skipped="0" tests="3" time="0.077" timestamp="2016-11-15T23:10:47">
       <properties>
           <property name="java.vendor" value="Oracle Corporation" />
 
@@ -1629,7 +1629,7 @@
 
           <property name="beta.grader.jar" value="ps2-beta-grader.jar" />
 
-          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner twitter.staff.OriginalExtractTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/.grader/TEST-twitter.staff.OriginalExtractTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/.grader/junitvmwatcher3938336569564275511.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/.grader/junit1406716913841832741.properties" />
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner twitter.staff.OriginalExtractTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/.grader/TEST-twitter.staff.OriginalExtractTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/.grader/junitvmwatcher2789992657584895589.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/.grader/junit755184835850464682.properties" />
 
           <property name="java.class.path" value="/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/lib/junit-4.12.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/lib/hamcrest-core-1.3.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/.grader/bin-tests-beta:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/.grader/bin-impls-student:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-launcher.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit4.jar" />
 
@@ -1683,9 +1683,9 @@
 
       </properties>
 
-      <testcase classname="twitter.staff.OriginalExtractTest" name="testGetMentionedUsersNoMention" time="0.011" />
+      <testcase classname="twitter.staff.OriginalExtractTest" name="testGetMentionedUsersNoMention" time="0.012" />
 
-      <testcase classname="twitter.staff.OriginalExtractTest" name="testGetTimespanTwoTweets" time="0.003" />
+      <testcase classname="twitter.staff.OriginalExtractTest" name="testGetTimespanTwoTweets" time="0.004" />
 
       <testcase classname="twitter.staff.OriginalExtractTest" name="testAssertionsEnabled" time="0.0" />
 
@@ -1694,7 +1694,7 @@
       <system-err><![CDATA[]]></system-err>
 
   </testsuite>
-  <testsuite errors="0" failures="0" hostname="Ilyas-MacBook-Pro.local" id="9" name="OriginalFilterTest" package="twitter.staff" skipped="0" tests="4" time="0.076" timestamp="2016-11-15T22:37:40">
+  <testsuite errors="0" failures="0" hostname="Ilyas-MacBook-Pro.local" id="9" name="OriginalFilterTest" package="twitter.staff" skipped="0" tests="4" time="0.078" timestamp="2016-11-15T23:10:47">
       <properties>
           <property name="java.vendor" value="Oracle Corporation" />
 
@@ -1796,7 +1796,7 @@
 
           <property name="beta.grader.jar" value="ps2-beta-grader.jar" />
 
-          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner twitter.staff.OriginalFilterTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/.grader/TEST-twitter.staff.OriginalFilterTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/.grader/junitvmwatcher4758045914566632312.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/.grader/junit3779463127876407449.properties" />
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner twitter.staff.OriginalFilterTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/.grader/TEST-twitter.staff.OriginalFilterTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/.grader/junitvmwatcher1267651799995078387.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/.grader/junit3080457572462001933.properties" />
 
           <property name="java.class.path" value="/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/lib/junit-4.12.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/lib/hamcrest-core-1.3.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/.grader/bin-tests-beta:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/.grader/bin-impls-student:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-launcher.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit4.jar" />
 
@@ -1854,7 +1854,7 @@
 
       <testcase classname="twitter.staff.OriginalFilterTest" name="testAssertionsEnabled" time="0.0" />
 
-      <testcase classname="twitter.staff.OriginalFilterTest" name="testWrittenByMultipleTweetsSingleResult" time="0.0" />
+      <testcase classname="twitter.staff.OriginalFilterTest" name="testWrittenByMultipleTweetsSingleResult" time="0.001" />
 
       <testcase classname="twitter.staff.OriginalFilterTest" name="testInTimespanMultipleTweetsMultipleResults" time="0.001" />
 
@@ -1863,7 +1863,7 @@
       <system-err><![CDATA[]]></system-err>
 
   </testsuite>
-  <testsuite errors="0" failures="0" hostname="Ilyas-MacBook-Pro.local" id="10" name="OriginalSocialNetworkTest" package="twitter.staff" skipped="0" tests="3" time="0.141" timestamp="2016-11-15T22:37:40">
+  <testsuite errors="0" failures="0" hostname="Ilyas-MacBook-Pro.local" id="10" name="OriginalSocialNetworkTest" package="twitter.staff" skipped="0" tests="3" time="0.14" timestamp="2016-11-15T23:10:48">
       <properties>
           <property name="java.vendor" value="Oracle Corporation" />
 
@@ -1965,7 +1965,7 @@
 
           <property name="beta.grader.jar" value="ps2-beta-grader.jar" />
 
-          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner twitter.staff.OriginalSocialNetworkTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/.grader/TEST-twitter.staff.OriginalSocialNetworkTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/.grader/junitvmwatcher4840679137464296470.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/.grader/junit1295571919339653289.properties" />
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner twitter.staff.OriginalSocialNetworkTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/.grader/TEST-twitter.staff.OriginalSocialNetworkTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/.grader/junitvmwatcher3936552872543656411.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/.grader/junit5105312167691116400.properties" />
 
           <property name="java.class.path" value="/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/lib/junit-4.12.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/lib/hamcrest-core-1.3.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/.grader/bin-tests-beta:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/.grader/bin-impls-student:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-launcher.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit4.jar" />
 
@@ -2019,7 +2019,7 @@
 
       </properties>
 
-      <testcase classname="twitter.staff.OriginalSocialNetworkTest" name="testGuessFollowsGraphEmpty" time="0.064" />
+      <testcase classname="twitter.staff.OriginalSocialNetworkTest" name="testGuessFollowsGraphEmpty" time="0.073" />
 
       <testcase classname="twitter.staff.OriginalSocialNetworkTest" name="testAssertionsEnabled" time="0.0" />
 
@@ -2030,7 +2030,7 @@
       <system-err><![CDATA[]]></system-err>
 
   </testsuite>
-  <testsuite errors="0" failures="6" hostname="Ilyas-MacBook-Pro.local" id="11" name="SocialNetworkTestRunner" package="twitter.staff" skipped="0" tests="14" time="0.223" timestamp="2016-11-15T22:37:46">
+  <testsuite errors="0" failures="6" hostname="Ilyas-MacBook-Pro.local" id="11" name="SocialNetworkTestRunner" package="twitter.staff" skipped="0" tests="14" time="0.285" timestamp="2016-11-15T23:10:53">
       <properties>
           <property name="java.vendor" value="Oracle Corporation" />
 
@@ -2132,7 +2132,7 @@
 
           <property name="beta.grader.jar" value="ps2-beta-grader.jar" />
 
-          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner twitter.staff.SocialNetworkTestRunner skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/.grader/TEST-twitter.staff.SocialNetworkTestRunner.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/.grader/junitvmwatcher7604835892749489789.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/.grader/junit3071841609589292828.properties" />
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner twitter.staff.SocialNetworkTestRunner skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/.grader/TEST-twitter.staff.SocialNetworkTestRunner.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/.grader/junitvmwatcher6776604725819904206.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/.grader/junit9014214217189004750.properties" />
 
           <property name="java.class.path" value="/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/lib/junit-4.12.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/lib/hamcrest-core-1.3.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/.grader/bin-impls-staff-final:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps2-tweets/.grader/bin-tests-student:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-launcher.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit4.jar" />
 
@@ -2186,27 +2186,27 @@
 
       </properties>
 
-      <testcase classname="twitter.staff.SocialNetworkTestRunner" name="yourTests_staffGoodImpl_guessFollowsGraphAlternatingCase" time="0.041">
-          <failure message="Some of your tests failed when run against our correct implementation: 14 tests ran with 6 failures in 17 ms.&#xa;java.lang.NullPointerException: null&#xa;    at twitter.SocialNetworkTest.testGuessFollowsGraphNotContainHimself(SocialNetworkTest.java:85)&#xa;    ...&#xa;java.lang.NullPointerException: null&#xa;    at twitter.SocialNetworkTest.testGuessFollowsGraphUserContainsAllMentions(SocialNetworkTest.java:77)&#xa;    ...&#xa;java.lang.AssertionError: expected 4 users&#xa;    ...&#xa;    at twitter.SocialNetworkTest.testGuessFollowsGraphCheckUsers(SocialNetworkTest.java:68)&#xa;    ...&#xa;java.lang.NullPointerException: null&#xa;    at twitter.SocialNetworkTest.testGuessFollowsGraphWhenOnlyOneMention(SocialNetworkTest.java:92)&#xa;    ...&#xa;java.lang.NullPointerException: null&#xa;    at twitter.SocialNetworkTest.testGuessFollowsGraphManyTweetsAndUsers(SocialNetworkTest.java:101)&#xa;    ...&#xa;java.lang.AssertionError: expected 8 users&#xa;    ...&#xa;    at twitter.SocialNetworkTest.testInfluencersAllIncluded(SocialNetworkTest.java:119)&#xa;    ...&#xa;----" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Some of your tests failed when run against our correct implementation: 14 tests ran with 6 failures in 17 ms.
+      <testcase classname="twitter.staff.SocialNetworkTestRunner" name="yourTests_staffGoodImpl_guessFollowsGraphAlternatingCase" time="0.1">
+          <failure message="Some of your tests failed when run against our correct implementation: 14 tests ran with 5 failures in 75 ms.&#xa;java.lang.NullPointerException: null&#xa;    at twitter.Utils.setToLowerCase(Utils.java:9)&#xa;    at twitter.SocialNetworkTest.testGuessFollowsGraphNotContainHimself(SocialNetworkTest.java:86)&#xa;    ...&#xa;java.lang.NullPointerException: null&#xa;    at twitter.Utils.setToLowerCase(Utils.java:9)&#xa;    at twitter.SocialNetworkTest.testGuessFollowsGraphUserContainsAllMentions(SocialNetworkTest.java:78)&#xa;    ...&#xa;java.lang.NullPointerException: null&#xa;    at twitter.Utils.setToLowerCase(Utils.java:9)&#xa;    at twitter.SocialNetworkTest.testGuessFollowsGraphWhenOnlyOneMention(SocialNetworkTest.java:94)&#xa;    ...&#xa;java.lang.NullPointerException: null&#xa;    at twitter.Utils.setToLowerCase(Utils.java:9)&#xa;    at twitter.SocialNetworkTest.testGuessFollowsGraphManyTweetsAndUsers(SocialNetworkTest.java:102)&#xa;    ...&#xa;java.lang.AssertionError: expected 8 users&#xa;    ...&#xa;    at twitter.SocialNetworkTest.testInfluencersAllIncluded(SocialNetworkTest.java:121)&#xa;    ...&#xa;----" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Some of your tests failed when run against our correct implementation: 14 tests ran with 5 failures in 75 ms.
 java.lang.NullPointerException: null
-    at twitter.SocialNetworkTest.testGuessFollowsGraphNotContainHimself(SocialNetworkTest.java:85)
-    ...
-java.lang.NullPointerException: null
-    at twitter.SocialNetworkTest.testGuessFollowsGraphUserContainsAllMentions(SocialNetworkTest.java:77)
-    ...
-java.lang.AssertionError: expected 4 users
-    ...
-    at twitter.SocialNetworkTest.testGuessFollowsGraphCheckUsers(SocialNetworkTest.java:68)
+    at twitter.Utils.setToLowerCase(Utils.java:9)
+    at twitter.SocialNetworkTest.testGuessFollowsGraphNotContainHimself(SocialNetworkTest.java:86)
     ...
 java.lang.NullPointerException: null
-    at twitter.SocialNetworkTest.testGuessFollowsGraphWhenOnlyOneMention(SocialNetworkTest.java:92)
+    at twitter.Utils.setToLowerCase(Utils.java:9)
+    at twitter.SocialNetworkTest.testGuessFollowsGraphUserContainsAllMentions(SocialNetworkTest.java:78)
     ...
 java.lang.NullPointerException: null
-    at twitter.SocialNetworkTest.testGuessFollowsGraphManyTweetsAndUsers(SocialNetworkTest.java:101)
+    at twitter.Utils.setToLowerCase(Utils.java:9)
+    at twitter.SocialNetworkTest.testGuessFollowsGraphWhenOnlyOneMention(SocialNetworkTest.java:94)
+    ...
+java.lang.NullPointerException: null
+    at twitter.Utils.setToLowerCase(Utils.java:9)
+    at twitter.SocialNetworkTest.testGuessFollowsGraphManyTweetsAndUsers(SocialNetworkTest.java:102)
     ...
 java.lang.AssertionError: expected 8 users
     ...
-    at twitter.SocialNetworkTest.testInfluencersAllIncluded(SocialNetworkTest.java:119)
+    at twitter.SocialNetworkTest.testInfluencersAllIncluded(SocialNetworkTest.java:121)
     ...
 ----
 	at twitter.staff.TestHelpers.assertSuccess(TestHelpers.java:50)
@@ -2215,11 +2215,11 @@ java.lang.AssertionError: expected 8 users
 
       </testcase>
 
-      <testcase classname="twitter.staff.SocialNetworkTestRunner" name="yourTests_staffGoodImpl_guessFollowsGraphReturnsEmptyNodes" time="0.015">
-          <failure message="Some of your tests failed when run against our correct implementation: 14 tests ran with 1 failure in 12 ms.&#xa;java.lang.AssertionError: expected 8 users&#xa;    ...&#xa;    at twitter.SocialNetworkTest.testInfluencersAllIncluded(SocialNetworkTest.java:119)&#xa;    ...&#xa;----" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Some of your tests failed when run against our correct implementation: 14 tests ran with 1 failure in 12 ms.
+      <testcase classname="twitter.staff.SocialNetworkTestRunner" name="yourTests_staffGoodImpl_guessFollowsGraphReturnsEmptyNodes" time="0.016">
+          <failure message="Some of your tests failed when run against our correct implementation: 14 tests ran with 1 failure in 12 ms.&#xa;java.lang.AssertionError: expected 8 users&#xa;    ...&#xa;    at twitter.SocialNetworkTest.testInfluencersAllIncluded(SocialNetworkTest.java:121)&#xa;    ...&#xa;----" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Some of your tests failed when run against our correct implementation: 14 tests ran with 1 failure in 12 ms.
 java.lang.AssertionError: expected 8 users
     ...
-    at twitter.SocialNetworkTest.testInfluencersAllIncluded(SocialNetworkTest.java:119)
+    at twitter.SocialNetworkTest.testInfluencersAllIncluded(SocialNetworkTest.java:121)
     ...
 ----
 	at twitter.staff.TestHelpers.assertSuccess(TestHelpers.java:50)
@@ -2228,25 +2228,25 @@ java.lang.AssertionError: expected 8 users
 
       </testcase>
 
-      <testcase classname="twitter.staff.SocialNetworkTestRunner" name="yourTests_staffBadImpl_guessFollowsGraphCompleteGraphBug" time="0.004" />
+      <testcase classname="twitter.staff.SocialNetworkTestRunner" name="yourTests_staffBadImpl_guessFollowsGraphCompleteGraphBug" time="0.005" />
 
-      <testcase classname="twitter.staff.SocialNetworkTestRunner" name="yourTests_staffBadImpl_influencersMustBeCaseInsensitiveBug" time="0.009" />
+      <testcase classname="twitter.staff.SocialNetworkTestRunner" name="yourTests_staffBadImpl_influencersMustBeCaseInsensitiveBug" time="0.008" />
 
-      <testcase classname="twitter.staff.SocialNetworkTestRunner" name="yourTests_staffBadImpl_influencersReturnsFirstInRankOnlyBug" time="0.008" />
+      <testcase classname="twitter.staff.SocialNetworkTestRunner" name="yourTests_staffBadImpl_influencersReturnsFirstInRankOnlyBug" time="0.007" />
 
       <testcase classname="twitter.staff.SocialNetworkTestRunner" name="yourTests_staffGoodImpl_guessFollowsGraphReturnsNoEmptyNodes" time="0.01">
-          <failure message="Some of your tests failed when run against our correct implementation: 14 tests ran with 3 failures in 6 ms.&#xa;java.lang.AssertionError: expected user7 before user5&#xa;    ...&#xa;    at twitter.SocialNetworkTest.testInfluencersCorrectOrderMiddle2(SocialNetworkTest.java:154)&#xa;    ...&#xa;java.lang.AssertionError: expected 4 users&#xa;    ...&#xa;    at twitter.SocialNetworkTest.testGuessFollowsGraphCheckUsers(SocialNetworkTest.java:68)&#xa;    ...&#xa;java.lang.AssertionError: expected 8 users&#xa;    ...&#xa;    at twitter.SocialNetworkTest.testInfluencersAllIncluded(SocialNetworkTest.java:119)&#xa;    ...&#xa;----" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Some of your tests failed when run against our correct implementation: 14 tests ran with 3 failures in 6 ms.
+          <failure message="Some of your tests failed when run against our correct implementation: 14 tests ran with 3 failures in 6 ms.&#xa;java.lang.AssertionError: expected user7 before user5&#xa;    ...&#xa;    at twitter.SocialNetworkTest.testInfluencersCorrectOrderMiddle2(SocialNetworkTest.java:156)&#xa;    ...&#xa;java.lang.AssertionError: expected 8 users&#xa;    ...&#xa;    at twitter.SocialNetworkTest.testInfluencersAllIncluded(SocialNetworkTest.java:121)&#xa;    ...&#xa;java.lang.AssertionError: expected to contain all authors&#xa;    ...&#xa;    at twitter.SocialNetworkTest.testGuessFollowsGraphContainsAllAuthors(SocialNetworkTest.java:70)&#xa;    ...&#xa;----" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Some of your tests failed when run against our correct implementation: 14 tests ran with 3 failures in 6 ms.
 java.lang.AssertionError: expected user7 before user5
     ...
-    at twitter.SocialNetworkTest.testInfluencersCorrectOrderMiddle2(SocialNetworkTest.java:154)
-    ...
-java.lang.AssertionError: expected 4 users
-    ...
-    at twitter.SocialNetworkTest.testGuessFollowsGraphCheckUsers(SocialNetworkTest.java:68)
+    at twitter.SocialNetworkTest.testInfluencersCorrectOrderMiddle2(SocialNetworkTest.java:156)
     ...
 java.lang.AssertionError: expected 8 users
     ...
-    at twitter.SocialNetworkTest.testInfluencersAllIncluded(SocialNetworkTest.java:119)
+    at twitter.SocialNetworkTest.testInfluencersAllIncluded(SocialNetworkTest.java:121)
+    ...
+java.lang.AssertionError: expected to contain all authors
+    ...
+    at twitter.SocialNetworkTest.testGuessFollowsGraphContainsAllAuthors(SocialNetworkTest.java:70)
     ...
 ----
 	at twitter.staff.TestHelpers.assertSuccess(TestHelpers.java:50)
@@ -2255,22 +2255,22 @@ java.lang.AssertionError: expected 8 users
 
       </testcase>
 
-      <testcase classname="twitter.staff.SocialNetworkTestRunner" name="yourTests_staffBadImpl_guessFollowsGraphFollowsInWrongDirectionBug" time="0.009" />
+      <testcase classname="twitter.staff.SocialNetworkTestRunner" name="yourTests_staffBadImpl_guessFollowsGraphFollowsInWrongDirectionBug" time="0.008" />
 
-      <testcase classname="twitter.staff.SocialNetworkTestRunner" name="yourTests_staffBadImpl_guessFollowsGraphAddsNonExistentUsersBug" time="0.012" />
+      <testcase classname="twitter.staff.SocialNetworkTestRunner" name="yourTests_staffBadImpl_guessFollowsGraphAddsNonExistentUsersBug" time="0.011" />
 
-      <testcase classname="twitter.staff.SocialNetworkTestRunner" name="yourTests_staffGoodImpl_guessFollowsGraphBidirectionalFollowing" time="0.011">
-          <failure message="Some of your tests failed when run against our correct implementation: 14 tests ran with 3 failures in 7 ms.&#xa;java.lang.AssertionError: expect size 1 expected:&lt;1&gt; but was:&lt;3&gt;&#xa;    ...&#xa;    at twitter.SocialNetworkTest.testGuessFollowsGraphWhenOnlyOneMention(SocialNetworkTest.java:92)&#xa;    ...&#xa;org.junit.ComparisonFailure: expected user2 expected:&lt;user[2]&gt; but was:&lt;user[4]&gt;&#xa;    ...&#xa;    at twitter.SocialNetworkTest.testInfluencersCorrectOrderFirst(SocialNetworkTest.java:128)&#xa;    ...&#xa;java.lang.AssertionError: expected user3 before user4&#xa;    ...&#xa;    at twitter.SocialNetworkTest.testInfluencersCorrectOrderMiddle(SocialNetworkTest.java:145)&#xa;    ...&#xa;----" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Some of your tests failed when run against our correct implementation: 14 tests ran with 3 failures in 7 ms.
+      <testcase classname="twitter.staff.SocialNetworkTestRunner" name="yourTests_staffGoodImpl_guessFollowsGraphBidirectionalFollowing" time="0.01">
+          <failure message="Some of your tests failed when run against our correct implementation: 14 tests ran with 3 failures in 6 ms.&#xa;java.lang.AssertionError: expect size 1 expected:&lt;1&gt; but was:&lt;3&gt;&#xa;    ...&#xa;    at twitter.SocialNetworkTest.testGuessFollowsGraphWhenOnlyOneMention(SocialNetworkTest.java:94)&#xa;    ...&#xa;org.junit.ComparisonFailure: expected user2 expected:&lt;user[2]&gt; but was:&lt;user[4]&gt;&#xa;    ...&#xa;    at twitter.SocialNetworkTest.testInfluencersCorrectOrderFirst(SocialNetworkTest.java:130)&#xa;    ...&#xa;java.lang.AssertionError: expected user3 before user4&#xa;    ...&#xa;    at twitter.SocialNetworkTest.testInfluencersCorrectOrderMiddle(SocialNetworkTest.java:147)&#xa;    ...&#xa;----" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Some of your tests failed when run against our correct implementation: 14 tests ran with 3 failures in 6 ms.
 java.lang.AssertionError: expect size 1 expected:&lt;1&gt; but was:&lt;3&gt;
     ...
-    at twitter.SocialNetworkTest.testGuessFollowsGraphWhenOnlyOneMention(SocialNetworkTest.java:92)
+    at twitter.SocialNetworkTest.testGuessFollowsGraphWhenOnlyOneMention(SocialNetworkTest.java:94)
     ...
     ...
-    at twitter.SocialNetworkTest.testInfluencersCorrectOrderFirst(SocialNetworkTest.java:128)
+    at twitter.SocialNetworkTest.testInfluencersCorrectOrderFirst(SocialNetworkTest.java:130)
     ...
 java.lang.AssertionError: expected user3 before user4
     ...
-    at twitter.SocialNetworkTest.testInfluencersCorrectOrderMiddle(SocialNetworkTest.java:145)
+    at twitter.SocialNetworkTest.testInfluencersCorrectOrderMiddle(SocialNetworkTest.java:147)
     ...
 ----
 	at twitter.staff.TestHelpers.assertSuccess(TestHelpers.java:50)
@@ -2279,11 +2279,11 @@ java.lang.AssertionError: expected user3 before user4
 
       </testcase>
 
-      <testcase classname="twitter.staff.SocialNetworkTestRunner" name="yourTests_staffGoodImpl_influencersSameRankArbitraryOrder1" time="0.008">
-          <failure message="Some of your tests failed when run against our correct implementation: 14 tests ran with 1 failure in 3 ms.&#xa;java.lang.AssertionError: expected 8 users&#xa;    ...&#xa;    at twitter.SocialNetworkTest.testInfluencersAllIncluded(SocialNetworkTest.java:119)&#xa;    ...&#xa;----" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Some of your tests failed when run against our correct implementation: 14 tests ran with 1 failure in 3 ms.
+      <testcase classname="twitter.staff.SocialNetworkTestRunner" name="yourTests_staffGoodImpl_influencersSameRankArbitraryOrder1" time="0.007">
+          <failure message="Some of your tests failed when run against our correct implementation: 14 tests ran with 1 failure in 3 ms.&#xa;java.lang.AssertionError: expected 8 users&#xa;    ...&#xa;    at twitter.SocialNetworkTest.testInfluencersAllIncluded(SocialNetworkTest.java:121)&#xa;    ...&#xa;----" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Some of your tests failed when run against our correct implementation: 14 tests ran with 1 failure in 3 ms.
 java.lang.AssertionError: expected 8 users
     ...
-    at twitter.SocialNetworkTest.testInfluencersAllIncluded(SocialNetworkTest.java:119)
+    at twitter.SocialNetworkTest.testInfluencersAllIncluded(SocialNetworkTest.java:121)
     ...
 ----
 	at twitter.staff.TestHelpers.assertSuccess(TestHelpers.java:50)
@@ -2292,11 +2292,11 @@ java.lang.AssertionError: expected 8 users
 
       </testcase>
 
-      <testcase classname="twitter.staff.SocialNetworkTestRunner" name="yourTests_staffGoodImpl_influencersSameRankArbitraryOrder2" time="0.01">
-          <failure message="Some of your tests failed when run against our correct implementation: 14 tests ran with 1 failure in 8 ms.&#xa;java.lang.AssertionError: expected 8 users&#xa;    ...&#xa;    at twitter.SocialNetworkTest.testInfluencersAllIncluded(SocialNetworkTest.java:119)&#xa;    ...&#xa;----" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Some of your tests failed when run against our correct implementation: 14 tests ran with 1 failure in 8 ms.
+      <testcase classname="twitter.staff.SocialNetworkTestRunner" name="yourTests_staffGoodImpl_influencersSameRankArbitraryOrder2" time="0.007">
+          <failure message="Some of your tests failed when run against our correct implementation: 14 tests ran with 1 failure in 4 ms.&#xa;java.lang.AssertionError: expected 8 users&#xa;    ...&#xa;    at twitter.SocialNetworkTest.testInfluencersAllIncluded(SocialNetworkTest.java:121)&#xa;    ...&#xa;----" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Some of your tests failed when run against our correct implementation: 14 tests ran with 1 failure in 4 ms.
 java.lang.AssertionError: expected 8 users
     ...
-    at twitter.SocialNetworkTest.testInfluencersAllIncluded(SocialNetworkTest.java:119)
+    at twitter.SocialNetworkTest.testInfluencersAllIncluded(SocialNetworkTest.java:121)
     ...
 ----
 	at twitter.staff.TestHelpers.assertSuccess(TestHelpers.java:50)
@@ -2305,11 +2305,11 @@ java.lang.AssertionError: expected 8 users
 
       </testcase>
 
-      <testcase classname="twitter.staff.SocialNetworkTestRunner" name="yourTests_staffBadImpl_guessFollowsGraphMustBeCaseInsensitiveBug" time="0.004" />
+      <testcase classname="twitter.staff.SocialNetworkTestRunner" name="yourTests_staffBadImpl_guessFollowsGraphMustBeCaseInsensitiveBug" time="0.006" />
 
-      <testcase classname="twitter.staff.SocialNetworkTestRunner" name="yourTests_staffBadImpl_guessFollowsGraphSelfMentionBug" time="0.01" />
+      <testcase classname="twitter.staff.SocialNetworkTestRunner" name="yourTests_staffBadImpl_guessFollowsGraphSelfMentionBug" time="0.007" />
 
-      <testcase classname="twitter.staff.SocialNetworkTestRunner" name="yourTests_staffBadImpl_influencersPrunesEmptyNodesBug" time="0.005" />
+      <testcase classname="twitter.staff.SocialNetworkTestRunner" name="yourTests_staffBadImpl_influencersPrunesEmptyNodesBug" time="0.006" />
 
       <system-out><![CDATA[[user2, user3, user7, user6, user4, user1, user8, user5]
 [user2, user3, user7, user6, user4, user1, user8, user5]
