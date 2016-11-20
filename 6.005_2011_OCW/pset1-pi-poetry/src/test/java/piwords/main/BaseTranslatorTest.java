@@ -2,13 +2,14 @@ package piwords.main;
 
 import static org.junit.Assert.*;
 
+import org.junit.Ignore;
 import org.junit.Test;
-import pigen.PiGenerator2;
 import piwords.misc.PiGenerator;
 import piwords.utils.TestUtils;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
@@ -17,30 +18,45 @@ public class BaseTranslatorTest {
 
     // ------ base16 -> base10 ------
 
+    /**
+     * Test convertBase() from base16 to base10 using data from files
+     * for both bases (we don't test pi generating here).
+     */
     @Test
-    public void convertBaseDecimal1000() {
+    public void convertBaseHexToDecimal1000() {
 
-        String expected = TestUtils.readPiDecimalFirst10000().substring(0, 1000);
-        String actual = convertedDecimal(1000);
+        String expected = TestUtils.readPiDecimalFirst10K().substring(0, 1000);
+        String actual = convertHexToDecimal(1000);
 
         assertEquals(expected, actual);
     }
 
     @Test
-    public void convertBaseDecimal5000() {
+    public void convertBaseHexToDecimal5000() {
 
-        String expected = TestUtils.readPiDecimalFirst10000().substring(0, 5000);
-        String actual = convertedDecimal(5000);
+        String expected = TestUtils.readPiDecimalFirst10K().substring(0, 5000);
+        String actual = convertHexToDecimal(5000);
 
         assertEquals(expected, actual);
     }
 
-    private static String convertedDecimal(int precision) {
+    @Test
+    public void convertBaseHexToDecimal10000() {
+
+        String expected = TestUtils.readPiDecimalFirst10K().substring(0, 10000);
+        String actual = convertHexToDecimal(10000);
+
+        assertEquals(expected, actual);
+    }
+
+    private static String convertHexToDecimal(int precision) {
 
         int baseA = 16;
         int baseB = 10;
 
-        int[] digitsInHex = toIntArray(PiGenerator.piInHex()
+        int[] digitsInHex = toIntArray(Pattern.compile("")
+                .splitAsStream(TestUtils.readPiHex100K())
+                .map(s -> Integer.valueOf(s, baseA))
                 .limit(precision)
                 .collect(Collectors.toList()));
 
@@ -54,13 +70,35 @@ public class BaseTranslatorTest {
         return convertedString;
     }
 
-    // ----- base16 ------
+    // ----- base10 -> base16 ------
+
+    /**
+     * To get correct result we need to set precision more than tested:
+     * 2000 instead of 1000 (we don't check if we can use less precision).
+     */
+    @Test
+    public void convertBaseDecimalToHex1000() {
+
+        String expected = TestUtils.readPiHex100K().substring(0, 1000);
+        String actual = convertedDecimalToHex(2000).substring(0, 1000);
+
+        assertEquals(expected, actual);
+    }
 
     @Test
-    public void convertBaseDecimalToHex10K() {
+    public void convertBaseDecimalToHex5000() {
+
+        String expected = TestUtils.readPiHex100K().substring(0, 5000);
+        String actual = convertedDecimalToHex(7000).substring(0, 5000);
+
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    public void convertBaseDecimalToHex10000() {
 
         String expected = TestUtils.readPiHex100K().substring(0, 10000);
-        String actual = convertedDecimalToHex(12000).substring(0, 10000);
+        String actual = convertedDecimalToHex(15000).substring(0, 10000);
 
         assertEquals(expected, actual);
     }
@@ -70,15 +108,18 @@ public class BaseTranslatorTest {
         int baseA = 10;
         int baseB = 16;
 
-        int[] digitsInDecimal = Arrays.copyOf(toIntArray(PiGenerator2
-                .calcPiDigits(50000)), 10000);
+        int[] digitsInDecimal = toIntArray(Pattern.compile("")
+                .splitAsStream(TestUtils.readPiDecimalFirst100K())
+                .limit(precision)
+                .map(s -> Integer.valueOf(s, baseA))
+                .collect(Collectors.toList()));
 
 
-        int[] convertedArray = Arrays.copyOf(BaseTranslator.convertBase(
-                digitsInDecimal, baseA, baseB, precision), 10000);
+        int[] convertedArray = BaseTranslator.convertBase(
+                digitsInDecimal, baseA, baseB, precision);
 
         String convertedString = IntStream.of(convertedArray)
-                .mapToObj(Integer::toString)
+                .mapToObj(i -> Integer.toString(i, baseB).toUpperCase())
                 .collect(Collectors.joining());
 
         return convertedString;
@@ -86,7 +127,7 @@ public class BaseTranslatorTest {
 
     // ------ base26 ------
 
-    @Test
+    @Test @Ignore
     public void convertBaseBase26First100() {
 
         String expectedBase26First100 = TestUtils.readPiBase26First10000().substring(0, 100);
@@ -95,7 +136,7 @@ public class BaseTranslatorTest {
 
     }
 
-    @Test
+    @Test @Ignore
     public void convertBaseBase26First1000() {
         String expectedBase26First1000 = TestUtils.readPiBase26First10000().substring(0, 1000);
 

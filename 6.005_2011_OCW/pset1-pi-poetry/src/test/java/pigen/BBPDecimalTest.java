@@ -16,7 +16,7 @@ public class BBPDecimalTest {
     @Test
     public void first1000DecimalDigits() throws IOException {
 
-        String expected = TestUtils.readPiDecimalFirst10000().substring(0, 1000);
+        String expected = TestUtils.readPiDecimalFirst10K().substring(0, 1000);
         String actual = new BBPDecimal().generatePi(1000).substring(0, 1000);
 
         assertEquals(expected, actual);
@@ -25,7 +25,7 @@ public class BBPDecimalTest {
     @Test
     public void first5000DecimalDigits() throws IOException {
 
-        String expected = TestUtils.readPiDecimalFirst10000().substring(0, 5000);
+        String expected = TestUtils.readPiDecimalFirst10K().substring(0, 5000);
         String actual = new BBPDecimal().generatePi(5000).substring(0, 5000);
 
         assertEquals(expected, actual);
@@ -34,7 +34,7 @@ public class BBPDecimalTest {
     @Test
     public void first10000DecimalDigits() throws IOException {
 
-        String expected = TestUtils.readPiDecimalFirst10000();
+        String expected = TestUtils.readPiDecimalFirst10K();
         String actual = new BBPDecimal().generatePi(10000).substring(0, 10000);
 
         assertEquals(expected, actual);

@@ -1,6 +1,7 @@
 package piwords.misc;
 
 import org.junit.Test;
+import piwords.utils.TestUtils;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -29,7 +30,12 @@ public class DataTest {
                 actualFirst10000Digits(V3));
     }
 
+    @Test
+    public void provided100KCorrectUpTo10K() {
 
+        assertEquals(TestUtils.readPiDecimalFirst10K(),
+                TestUtils.readPiDecimalFirst100K().substring(0, 10000));
+    }
 
 
     private String actualFirst10000Digits(String filename) throws IOException {

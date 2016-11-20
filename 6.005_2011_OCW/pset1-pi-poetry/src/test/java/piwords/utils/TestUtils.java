@@ -1,6 +1,5 @@
 package piwords.utils;
 
-import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -56,17 +55,28 @@ public class TestUtils {
 
 
     public static Stream<Integer> readPiDecimalFirst100ToStream() {
-        return Stream.of(readPiDecimalFirst10000().substring(0, 100).split(""))
+        return Stream.of(readPiDecimalFirst10K().substring(0, 100).split(""))
                 .map(s -> Integer.valueOf(s));
     }
     public static Stream<Integer> readPiDecimalToStream(int n) {
-        return Stream.of(readPiDecimalFirst10000().substring(0, n).split(""))
+        return Stream.of(readPiDecimalFirst10K().substring(0, n).split(""))
                 .map(s -> Integer.valueOf(s));
     }
-    public static String readPiDecimalFirst10000() {
+    public static String readPiDecimalFirst10K() {
 
         try {
             return Files.lines(Paths.get("src/test/resources/first-10K-Decimal-v1.txt"))
+                    .collect(Collectors.joining())
+                    .substring(2);
+        } catch (IOException e) {
+            e.printStackTrace();
+            return "";
+        }
+    }
+    public static String readPiDecimalFirst100K() {
+
+        try {
+            return Files.lines(Paths.get("src/test/resources/first-100K-Decimal.txt"))
                     .collect(Collectors.joining())
                     .substring(2);
         } catch (IOException e) {
