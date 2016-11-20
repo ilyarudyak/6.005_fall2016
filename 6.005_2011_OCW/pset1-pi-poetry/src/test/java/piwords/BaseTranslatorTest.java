@@ -4,6 +4,9 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 import pigen.PiGenerator2;
+import piwords.main.BaseTranslator;
+import piwords.main.DigitsToStringConverter;
+import piwords.main.PiGenerator;
 
 import java.util.Arrays;
 import java.util.List;
@@ -14,13 +17,22 @@ import java.util.stream.Stream;
 public class BaseTranslatorTest {
 
 
-    // ------ decimal ------
+    // ------ base16 -> base10 ------
 
     @Test
-    public void convertBaseDecimal10K() {
+    public void convertBaseDecimal1000() {
 
-        String expected = TestUtils.readPiDecimalFirst10000();
-        String actual = convertedDecimal(15000).substring(0, 10000);
+        String expected = TestUtils.readPiDecimalFirst10000().substring(0, 1000);
+        String actual = convertedDecimal(1000);
+
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    public void convertBaseDecimal5000() {
+
+        String expected = TestUtils.readPiDecimalFirst10000().substring(0, 5000);
+        String actual = convertedDecimal(5000);
 
         assertEquals(expected, actual);
     }

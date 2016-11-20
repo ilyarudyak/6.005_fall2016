@@ -3,7 +3,7 @@
  * assignment! This file can be run to check your progress.
  */
 
-package piwords;
+package piwords.apps;
 
 import java.util.Arrays;
 import java.util.Map;

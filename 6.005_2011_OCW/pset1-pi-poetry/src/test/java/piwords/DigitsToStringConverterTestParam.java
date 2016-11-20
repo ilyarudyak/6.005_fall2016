@@ -11,7 +11,7 @@ import java.util.regex.Pattern;
 
 import static java.util.stream.Collectors.toList;
 import static org.junit.Assert.assertEquals;
-import static piwords.DigitsToStringConverter.convertDigitsToString;
+import static piwords.main.DigitsToStringConverter.convertDigitsToString;
 
 /**
  * Created by ilyarudyak on 11/19/16.

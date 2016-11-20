@@ -1,4 +1,4 @@
-package piwords;
+package piwords.extra;
 
 public class AlphabetGenerator {
     /**

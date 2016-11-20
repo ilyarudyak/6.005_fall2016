@@ -4,14 +4,12 @@ import static java.util.Arrays.asList;
 import static java.util.Arrays.sort;
 import static java.util.stream.Collectors.toList;
 import static org.junit.Assert.*;
-import static piwords.DigitsToStringConverter.convertDigitsToString;
+import static piwords.main.DigitsToStringConverter.convertDigitsToString;
 
 import org.junit.Test;
 
 import java.util.List;
 import java.util.regex.Pattern;
-import java.util.stream.Collectors;
-import java.util.stream.IntStream;
 
 public class DigitsToStringConverterTest {
 

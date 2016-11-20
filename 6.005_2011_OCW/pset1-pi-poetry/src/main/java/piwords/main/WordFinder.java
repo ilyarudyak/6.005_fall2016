@@ -1,8 +1,6 @@
-package piwords;
+package piwords.main;
 
-import jdk.nashorn.internal.objects.annotations.Function;
 
-import java.util.HashMap;
 import java.util.Map;
 import java.util.stream.Stream;
 

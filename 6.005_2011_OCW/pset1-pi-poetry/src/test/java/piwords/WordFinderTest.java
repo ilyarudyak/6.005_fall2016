@@ -15,6 +15,7 @@ import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 import org.junit.Test;
+import piwords.main.WordFinder;
 
 public class WordFinderTest {
 

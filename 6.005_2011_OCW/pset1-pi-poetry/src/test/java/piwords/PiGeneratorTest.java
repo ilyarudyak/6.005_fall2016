@@ -7,6 +7,7 @@ import static java.util.stream.Collectors.toList;
 import static org.junit.Assert.*;
 
 import org.junit.Test;
+import piwords.main.PiGenerator;
 
 import java.io.IOException;
 import java.math.BigInteger;
@@ -43,14 +44,14 @@ public class PiGeneratorTest {
     public void first100Digits() throws IOException {
 
         assertEquals(actualFirst100Digits().collect(toList()),
-                PiGenerator.piInHex().limit(100).collect(toList()));
+                PiGenerator.piInHexStr(1000));
     }
 
     @Test
-    public void first10000Digits() throws IOException {
+    public void first1000Digits() throws IOException {
 
-        assertEquals(actualFirst8336Digits().collect(toList()),
-                PiGenerator.piInHex().limit(5000).collect(toList()));
+        assertEquals(TestUtils.readPiHex100K().substring(0, 1000),
+                PiGenerator.piInHexStr(1000));
     }
 
     @Test

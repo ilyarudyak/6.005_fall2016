@@ -3,6 +3,7 @@ package piwords;
 import static org.junit.Assert.*;
 
 import org.junit.Test;
+import piwords.extra.AlphabetGenerator;
 
 public class AlphabetGeneratorTest {
     @Test

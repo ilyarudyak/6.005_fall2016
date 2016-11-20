@@ -1,6 +1,7 @@
-package piwords;
+package piwords.main;
 
 import java.math.BigInteger;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 import static java.util.Arrays.asList;
@@ -17,6 +18,12 @@ public class PiGenerator {
 
         return Stream.iterate(1, n -> n + 1)
                 .map(n -> piDigit(n));
+    }
+    public static String piInHexStr(int size) {
+        return Stream.iterate(1, n -> n + 1)
+                .map(n -> String.format("%X", piDigit(n)))
+                .limit(size)
+                .collect(Collectors.joining());
     }
 
     /**
@@ -105,12 +112,6 @@ public class PiGenerator {
         return s+t;
     }
 
-    public static void main(String[] args) {
-
-//        piInHex().limit(10).forEach(n -> System.out.printf("%x ", n));
-
-        System.out.println(Integer.valueOf("2"));
-    }
 }
 
 

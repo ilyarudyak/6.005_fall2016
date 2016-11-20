@@ -1,17 +1,11 @@
-package piwords;
+package piwords.apps;
 
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
-import java.util.ArrayList;
+import piwords.utils.Utils;
+import piwords.main.WordFinder;
+
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
-import java.util.regex.Pattern;
-import java.util.stream.Collectors;
 import java.util.stream.Stream;
-
-import static java.util.stream.Collectors.toList;
 
 /**
  * Created by ilyarudyak on 11/14/16.

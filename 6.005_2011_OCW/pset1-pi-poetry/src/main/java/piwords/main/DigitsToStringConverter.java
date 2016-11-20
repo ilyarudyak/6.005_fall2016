@@ -1,11 +1,10 @@
-package piwords;
+package piwords.main;
 
 import java.util.List;
 import java.util.Map;
 import java.util.function.Function;
 import java.util.stream.IntStream;
 
-import static java.util.Arrays.asList;
 import static java.util.stream.Collectors.joining;
 import static java.util.stream.Collectors.toList;
 import static java.util.stream.Collectors.toMap;
@@ -48,14 +47,6 @@ public class DigitsToStringConverter {
                 .collect(joining());
     }
 
-    public static void main(String[] args) {
-
-        List<Integer> digits = asList(0, 1, 2, 4);
-        List<String> alphabet = asList("a", "b", "c");
-        int base = 4;
-        convertDigitsToString(digits, base, alphabet);
-
-    }
 }
 
 

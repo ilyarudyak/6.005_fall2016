@@ -1,4 +1,4 @@
-package piwords;
+package piwords.utils;
 
 import java.io.IOException;
 import java.nio.file.Files;
