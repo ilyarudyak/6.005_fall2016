@@ -12,6 +12,13 @@ import static org.junit.Assert.assertEquals;
  */
 public class BBPHexTest {
 
+    /**
+     * This is the test of method provided in 6.005 with correct
+     * implementation of powerMod().
+     * Test first 1000 digits of PI (after dot) in HEX by
+     * comparing with string from file (see sources of data in readme.txt).
+     * @throws IOException
+     */
     @Test
     public void piInHexStr1000() throws IOException {
 
@@ -39,6 +46,10 @@ public class BBPHexTest {
         assertEquals(actual, expected);
     }
 
+    /**
+     * This method shows differences when we're using incorrect implementation
+     * of powerMod(). Errors are after 5K digits due to overflow.
+     */
     @Test
     public void showWhereWrong() {
         String actual = TestUtils.readPiHex100K().substring(0, 8000);

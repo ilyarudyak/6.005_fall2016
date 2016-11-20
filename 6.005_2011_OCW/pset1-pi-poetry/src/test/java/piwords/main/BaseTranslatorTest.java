@@ -4,16 +4,13 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 import pigen.PiGenerator2;
-import piwords.main.BaseTranslator;
-import piwords.main.DigitsToStringConverter;
-import piwords.main.PiGenerator;
+import piwords.misc.PiGenerator;
 import piwords.utils.TestUtils;
 
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
-import java.util.stream.Stream;
 
 public class BaseTranslatorTest {
 

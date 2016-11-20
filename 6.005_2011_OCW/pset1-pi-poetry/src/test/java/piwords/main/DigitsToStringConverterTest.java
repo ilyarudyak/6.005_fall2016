@@ -53,30 +53,6 @@ public class DigitsToStringConverterTest {
         assertEquals(expected, actual);
     }
 
-    @Test
-    public void base26BasicTest() {
-
-        List<Integer> digits0 = asList(0, 1, 2, 3);
-        List<Integer> digits1 = asList(22, 23, 24, 25);
-        List<Integer> digits2 = asList(0);
-        List<Integer> digits3 = asList(25);
-        List<Integer> digits4 = asList();
-
-        List<String> alphabet = Pattern.compile("")
-                .splitAsStream("abcdefghijklmnopqrstuvwxyz")
-                .collect(toList());
-
-        int base = 26;
-
-        assertEquals("abcd", convertDigitsToString(digits0, base, alphabet));
-        assertEquals("wxyz", convertDigitsToString(digits1, base, alphabet));
-        assertEquals("a", convertDigitsToString(digits2, base, alphabet));
-        assertEquals("z", convertDigitsToString(digits3, base, alphabet));
-        assertEquals("", convertDigitsToString(digits4, base, alphabet));
-
-
-    }
-
 }
 
 

@@ -1,4 +1,4 @@
-package piwords.main;
+package piwords.misc;
 
 import java.math.BigInteger;
 import java.util.stream.Collectors;
@@ -6,6 +6,10 @@ import java.util.stream.Stream;
 
 import static java.util.Arrays.asList;
 
+
+/**
+ * We don't use this class - see pigen.BBPHex.
+ */
 public class PiGenerator {
     /**
      * Returns infinite stream of the fractional part of pi.
