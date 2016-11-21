@@ -11,9 +11,7 @@ import java.util.Map;
 
 import static java.util.Arrays.asList;
 import static org.junit.Assert.assertEquals;
-import static piwords.extra.DigitsFrequency.getFreqMap;
-import static piwords.extra.DigitsFrequency.getOrderedDigitsFromBase26;
-import static piwords.extra.DigitsFrequency.getPiBase26;
+import static piwords.extra.DigitsFrequency.*;
 import static piwords.main.DigitsToStringConverter.convertDigitsToString;
 import static piwords.utils.TestUtils.readPiBase26First10000;
 
@@ -77,7 +75,7 @@ public class DigitsFrequencyTest {
     @Test
     public void temp() {
 
-        System.out.println(DigitsFrequency.getPiBase26WithFreq(100));
+        System.out.println(getPiBase26WithFreq(10000).length());
     }
 
 }

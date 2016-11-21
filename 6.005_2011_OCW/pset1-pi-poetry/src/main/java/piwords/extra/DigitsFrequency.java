@@ -18,6 +18,7 @@ import java.util.stream.Stream;
 
 import static java.util.stream.Collectors.toList;
 import static piwords.main.DigitsToStringConverter.convertDigitsToString;
+import static piwords.main.DigitsToStringConverter.convertDigitsToStringWithFreq;
 
 /**
  * Created by ilyarudyak on 11/21/16.
@@ -80,11 +81,16 @@ public class DigitsFrequency {
 
     public static String getPiBase26WithFreq(int precision) {
 
-        List<Integer> digits = getOrderedDigitsFromBase26(precision);
+        List<Integer> digits = getPiBase26(10000);
+        List<Integer> digitsFreq = getOrderedDigitsFromBase26(precision);
+
         int base = 26;
         List<String> alphabet = Pattern.compile("").splitAsStream(ORDERED_ALPHABET)
                 .collect(Collectors.toList());
-        return convertDigitsToString(digits, base, alphabet);
+
+        String convertedString = convertDigitsToStringWithFreq(digits, digitsFreq, base, alphabet);
+
+        return convertedString;
     }
 }
 

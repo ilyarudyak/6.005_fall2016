@@ -47,6 +47,28 @@ public class DigitsToStringConverter {
                 .collect(joining());
     }
 
+    public static String convertDigitsToStringWithFreq(List<Integer> digits, List<Integer> digitsFreq,
+                                                       int base, List<String> orderedAlphabet) {
+
+        if (!digits.stream()
+                .filter(d -> (d >= base || d < 0))
+                .collect(toList()).isEmpty() ||
+                orderedAlphabet.size() != base ) {
+            throw new IllegalArgumentException();
+        }
+
+        Map<Integer, String> digitsMap = IntStream.range(0, base)
+                .mapToObj(Integer::valueOf)
+                .collect(toMap(Function.identity(),
+                        digit -> orderedAlphabet.get(digitsFreq.indexOf(digit))));
+
+//        System.out.println(digitsMap);
+
+        return digits.stream()
+                .map(digit -> digitsMap.get(digit))
+                .collect(joining());
+    }
+
 }
 
 
