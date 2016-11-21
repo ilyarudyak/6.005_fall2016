@@ -2,6 +2,7 @@ package piwords.extra;
 
 import pigen.BBPHex;
 import piwords.main.BaseTranslator;
+import piwords.main.DigitsToStringConverter;
 import piwords.utils.Utils;
 
 import javax.rmi.CORBA.Util;
@@ -10,11 +11,13 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
 import java.util.function.Function;
+import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 import static java.util.stream.Collectors.toList;
+import static piwords.main.DigitsToStringConverter.convertDigitsToString;
 
 /**
  * Created by ilyarudyak on 11/21/16.
@@ -64,15 +67,24 @@ public class DigitsFrequency {
     }
 
     /**
-     * We order digits based on their frequency in Pi (first 1K).
+     * We order digits based on their frequency in Pi.
      */
     public static List<Integer> getOrderedDigitsFromBase26(int precision) {
 
         Map<Integer, Long> freqMap = getFreqMap(getPiBase26(precision));
         List<Integer> orderedDigits = new ArrayList<>(freqMap.keySet());
-        Comparator<Integer> byFrequency = (d1, d2) -> freqMap.get(d1).intValue() - freqMap.get(d2).intValue();
+        Comparator<Integer> byFrequency = (d1, d2) -> freqMap.get(d2).intValue() - freqMap.get(d1).intValue();
         orderedDigits.sort(byFrequency);
         return orderedDigits;
+    }
+
+    public static String getPiBase26WithFreq(int precision) {
+
+        List<Integer> digits = getOrderedDigitsFromBase26(precision);
+        int base = 26;
+        List<String> alphabet = Pattern.compile("").splitAsStream(ORDERED_ALPHABET)
+                .collect(Collectors.toList());
+        return convertDigitsToString(digits, base, alphabet);
     }
 }
 
