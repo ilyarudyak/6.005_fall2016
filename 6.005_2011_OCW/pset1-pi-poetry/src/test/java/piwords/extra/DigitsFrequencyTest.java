@@ -1,24 +1,20 @@
 package piwords.extra;
 
-import com.google.common.collect.ImmutableMap;
 import org.junit.Test;
-import pigen.BBPHex;
-import piwords.main.BaseTranslator;
 import piwords.main.DigitsToStringConverter;
 import piwords.utils.TestUtils;
+import piwords.utils.Utils;
 
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 import static java.util.Arrays.asList;
-import static java.util.Arrays.sort;
 import static org.junit.Assert.assertEquals;
 import static piwords.extra.DigitsFrequency.getFreqMap;
-import static piwords.extra.DigitsFrequency.getPiListBase26First10K;
+import static piwords.extra.DigitsFrequency.getPiBase26;
+import static piwords.main.DigitsToStringConverter.convertDigitsToString;
+import static piwords.utils.TestUtils.readPiBase26First10000;
 
 /**
  * Created by ilyarudyak on 11/21/16.
@@ -60,11 +56,19 @@ public class DigitsFrequencyTest {
     }
 
     @Test
-    public void getPiListBase26First1K() {
+    public void getPiBase26First1K() {
 
-        String expected = TestUtils.readPiBase26First10000().substring(0, 1000);
-        String actual = DigitsToStringConverter.convertDigitsToString(
-                getPiListBase26First10K(1000), 26, TestUtils.alphabet());
+        String expected = readPiBase26First10000().substring(0, 1000);
+        String actual = convertDigitsToString(getPiBase26(1000), 26, TestUtils.alphabet());
+
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    public void getPiBase26First10K() {
+
+        String expected = readPiBase26First10000().substring(0, 9999);
+        String actual = convertDigitsToString(getPiBase26(9999), 26, TestUtils.alphabet());
 
         assertEquals(expected, actual);
     }
@@ -72,7 +76,7 @@ public class DigitsFrequencyTest {
     @Test
     public void temp() {
 
-        System.out.println(getFreqMap(getPiListBase26First10K(1000)));
+        System.out.println(Utils.readPiHex(100));
     }
 
 }

@@ -56,4 +56,34 @@ public class Utils {
         return ret;
     }
 
+    public static String readPiHex100K() {
+        try {
+            return Files.lines(Paths.get("src/test/resources/first-100K-Hex.txt"))
+                    .collect(Collectors.joining());
+        } catch (IOException e) {
+            e.printStackTrace();
+            return "";
+        }
+    }
+    public static List<Integer> readPiHex(int precision) {
+        return Pattern.compile("").splitAsStream(readPiHex100K())
+                .limit(precision)
+                .map(s -> Integer.valueOf(s, 16))
+                .collect(Collectors.toList());
+    }
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
