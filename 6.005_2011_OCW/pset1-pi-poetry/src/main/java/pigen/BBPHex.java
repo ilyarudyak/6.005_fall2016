@@ -113,14 +113,8 @@ public class BBPHex {
             int r = 8 * k + j;
             s += powerMod(16, n-k, r) / (double) r;
 
-            if (powerMod(16, n-k, r) != powerMod2(16, n-k, r)) {
-                System.out.println(n-k + " " + r);
-            }
-
             s = s - Math.floor(s);
         }
-
-//        System.out.println("s=" + s);
 
         // Calculate the right sum
         double t = 0;
@@ -138,7 +132,6 @@ public class BBPHex {
             ++k;
         }
 
-//        System.out.println("t=" + t);
 
         return s+t;
     }

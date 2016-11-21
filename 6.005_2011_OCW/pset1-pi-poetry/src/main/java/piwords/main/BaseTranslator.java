@@ -1,5 +1,7 @@
 package piwords.main;
 
+import java.util.List;
+
 public class BaseTranslator {
     /**
      * Converts an array where the ith digit corresponds to (1 / baseA)^(i + 1)
@@ -65,6 +67,7 @@ public class BaseTranslator {
         }
         return outputArray;
     }
+
 }
 
 

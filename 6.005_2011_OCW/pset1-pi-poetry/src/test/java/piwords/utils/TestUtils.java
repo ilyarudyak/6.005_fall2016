@@ -3,6 +3,7 @@ package piwords.utils;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
@@ -82,6 +83,20 @@ public class TestUtils {
         } catch (IOException e) {
             e.printStackTrace();
             return "";
+        }
+    }
+    public static List<Integer> readPiDecimalFirst10KIncluding3() {
+        try {
+            String piStr = Files.lines(Paths.get("src/test/resources/first-10K-Decimal-v1.txt"))
+                    .collect(Collectors.joining())
+                    .replace(".", "")
+                    .substring(1, 10001);
+            return Stream.of(piStr.split(""))
+                    .map(s -> Integer.valueOf(s))
+                    .collect(toList());
+        } catch (IOException e) {
+            e.printStackTrace();
+            return new ArrayList<>();
         }
     }
 

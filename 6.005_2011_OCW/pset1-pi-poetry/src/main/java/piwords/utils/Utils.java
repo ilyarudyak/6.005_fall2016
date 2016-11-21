@@ -3,6 +3,7 @@ package piwords.utils;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.util.List;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -45,6 +46,14 @@ public class Utils {
             e.printStackTrace();
             return Stream.empty();
         }
+    }
+
+    // from here: http://stackoverflow.com/questions/960431/how-to-convert-listinteger-to-int-in-java
+    public static int[] toIntArray(List<Integer> list) {
+        int[] ret = new int[list.size()];
+        for(int i = 0;i < ret.length;i++)
+            ret[i] = list.get(i);
+        return ret;
     }
 
 }
