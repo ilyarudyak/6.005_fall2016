@@ -34,31 +34,42 @@ public class BBPHex {
      *
      * If a < 0, b < 0, or m < 0, return -1.
      *
-     * @param x
-     * @param y
+     * @param base
+     * @param exp
      * @param p
      * @return x^y mod m
      */
-    public static int powerMod2(int x, int y, int p) {
+    public static int powerMod2(long base, int exp, int p) {
 
-        if (x < 0 || y < 0 || p <= 0) { return -1; }
+        int baseInt = (int) base;
+        int resInt = 1;
 
-        if (x == 0) { return 0; }
-        if (y == 0) { return 1; }
+        if (base < 0 || exp < 0 || p <= 0) { return -1; }
+        assert p * p <= Long.MAX_VALUE;
+        if (p == 1) { return 0; }
 
-        int res = 1;
-        x = x % p;
+        long res = 1;
+        base = base % p;
 
-        while (y > 0) {
+        baseInt = baseInt % p;
 
-            if (y % 2 != 0) {
-                res = (res * x) % p;
+        while (exp > 0) {
+
+            if (exp % 2 != 0) {
+                res = ((res % p) * (base % p)) % p;
+
+                resInt = (resInt * baseInt) % p;
+                System.out.print("exp=" + exp + " res=" + res + " resInt=" + resInt);
             }
 
-            y = y / 2;
-            x = (x * x) % p;
+            exp = exp / 2;
+            base = (base * base) % p;
+
+            baseInt = (baseInt * baseInt) % p;
+            System.out.println(" exp=" + exp + " base=" + base + " baseInt=" + baseInt);
+
         }
-        return res;
+        return (int)res;
     }
 
     public static int powerMod(int x, int y, int p) {

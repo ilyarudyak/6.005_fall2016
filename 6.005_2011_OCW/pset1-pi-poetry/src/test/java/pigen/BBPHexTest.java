@@ -6,6 +6,7 @@ import piwords.utils.TestUtils;
 import java.io.IOException;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
 
 /**
  * Created by ilyarudyak on 11/19/16.
@@ -44,6 +45,48 @@ public class BBPHexTest {
         String expected = BBPHex.piInHexStr(10000);
 
         assertEquals(actual, expected);
+    }
+
+    // ------ powerMod2 ------
+
+    @Test
+    public void powerMod2Overflow() {
+
+        int base = 16;
+        int exponent = 4199;
+        int p = 46409;
+
+        int expected = BBPHex.powerMod(base, exponent, p);
+        int actual = BBPHex.powerMod2(base, exponent, p);
+
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    public void reproduceBugInPowerMod2() {
+
+        int base = 16;
+        int n = 10000;
+        int j = 1;
+        boolean isDifferent = false;
+
+        for (int k = 0; k < n; k++) {
+            int expected = BBPHex.powerMod(base, n-k, 8*k+j);
+            int actual = BBPHex.powerMod2(base, n-k, 8*k+j);
+            if (expected != actual) {
+                isDifferent = true;
+                break;
+            }
+        }
+        assertFalse(isDifferent);
+
+    }
+
+    @Test
+    public void temp() {
+        int p = 46409;
+        int m = p * p;
+        System.out.println(m);
     }
 
     /**
