@@ -56,7 +56,7 @@ public interface Library {
      * @return list of books in this library's collection (both available and checked out) 
      * whose title or author match the search string, ordered by decreasing amount  of match.
      * A book should appear at most once on the list. 
-     * Keyword matching and ranking is underdetermined, but at the very least must support: 
+     * Keyword matching and ranking is under determined, but at the very least must support: 
      *     - exact matching of title and author: i.e., if a copy of a book is in the library's 
      *           collection, then find(book.getTitle()) and find(book.getAuthors().get(i)) 
      *           must include book among the results.
@@ -79,3 +79,19 @@ public interface Library {
      */
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

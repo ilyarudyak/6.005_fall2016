@@ -1,16 +1,21 @@
 package library;
 
+import java.time.Instant;import java.util.AbstractList;
+import java.util.Arrays;
+import java.util.Objects;
+import java.util.UUID;
+import java.util.stream.Collectors;
+
 /**
  * BookCopy is a mutable type representing a particular copy of a book that is held in a library's
  * collection.
  */
 public class BookCopy {
-
-    // TODO: rep
     
-    // TODO: rep invariant
-    // TODO: abstraction function
-    // TODO: safety from rep exposure argument
+    private final Book book;
+    private Condition condition;
+    private UUID id;
+    
     
     public static enum Condition {
         GOOD, DAMAGED
@@ -21,26 +26,35 @@ public class BookCopy {
      * @param book the Book of which this is a copy
      */
     public BookCopy(Book book) {
-        throw new RuntimeException("not implemented yet");
+        this.book = new Book(book);
+        this.condition = Condition.GOOD;
+        this.id = UUID.randomUUID();
+        checkRep();
     }
     
     // assert the rep invariant
     private void checkRep() {
-        throw new RuntimeException("not implemented yet");
+        assert Book.isAtLeastOneNonSpaceChar(book.getTitle());                    
+        assert !book.getAuthors().isEmpty();                              
+        assert book.getAuthors().stream()
+                .filter(s -> !Book.isAtLeastOneNonSpaceChar(s))
+                .collect(Collectors.toList())
+                .isEmpty();                                      
+        assert book.getYear() >= 0; 
     }
     
     /**
      * @return the Book of which this is a copy
      */
     public Book getBook() {
-        throw new RuntimeException("not implemented yet");
+        return book;
     }
     
     /**
      * @return the condition of this book copy
      */
     public Condition getCondition() {
-        throw new RuntimeException("not implemented yet");
+        return condition;
     }
 
     /**
@@ -48,33 +62,68 @@ public class BookCopy {
      * @param condition the latest condition of the book copy
      */
     public void setCondition(Condition condition) {
-        throw new RuntimeException("not implemented yet");
+        this.condition = condition;
     }
     
-    /**
-     * @return human-readable representation of this book that includes book.toString()
-     *    and the words "good" or "damaged" depending on its condition
-     */
-    public String toString() {
-        throw new RuntimeException("not implemented yet");
+    public UUID getId() {
+        return id;
     }
 
-    // uncomment the following methods if you need to implement equals and hashCode,
-    // or delete them if you don't
-    // @Override
-    // public boolean equals(Object that) {
-    //     throw new RuntimeException("not implemented yet");
-    // }
-    // 
-    // @Override
-    // public int hashCode() {
-    //     throw new RuntimeException("not implemented yet");
-    // }
+
+
+    @Override
+    public String toString() {
+        return "BookCopy [book=" + book + ", condition=" + condition.toString().toLowerCase() + "]";
+    }
+
+     @Override
+     public boolean equals(Object that) {
+         
+         if (this == that) {
+             return true;
+         }
+         
+         if (that == null || getClass() != that.getClass()) {
+             return false;
+         }
+         
+         BookCopy thatBookCopy = (BookCopy) that;
+         
+         return book.equals(thatBookCopy.getBook()) && 
+//                 condition.equals(thatBookCopy.getCondition()) &&
+                 id.equals(thatBookCopy.getId());
+     }
+     
+     @Override
+     public int hashCode() {
+         return Objects.hash(book, condition, id);
+     }
 
 
     /* Copyright (c) 2016 MIT 6.005 course staff, all rights reserved.
      * Redistribution of original or derived work requires explicit permission.
      * Don't post any of this code on the web or to a public Github repository.
      */
+     
+     public static void main(String[] args) {
+        
+         Book book = new Book("title", Arrays.asList("author"), 2000);
+         BookCopy bookCopy = new BookCopy(book);
+         System.out.println(bookCopy);
+    }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
