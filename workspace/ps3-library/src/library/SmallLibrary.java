@@ -105,7 +105,7 @@ public class SmallLibrary implements Library {
                 .filter(copy -> copy.getBook().equals(book))
                 .collect(Collectors.toSet());
     }
-    
+
     // -------------------------------------------
     
     private Set<Book> allBooksInLibrary() {
@@ -120,8 +120,13 @@ public class SmallLibrary implements Library {
     @Override
     public List<Book> find(String query) {
         return allBooksInLibrary().stream()
+                // exact matching of title or author
                 .filter(book -> book.getTitle().equals(query) || 
                         book.getAuthors().contains(query))
+                // remove duplicates
+                .collect(Collectors.toSet())
+                .stream()
+                // newer books should appear first
                 .sorted(Comparator.comparing(Book::getYear).reversed())
                 .collect(Collectors.toList());
     }
