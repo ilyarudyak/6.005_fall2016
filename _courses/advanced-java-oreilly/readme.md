@@ -52,3 +52,48 @@ public class CompanyEmployee implements Company, Employee {
     }
 }
 ```
+### Overriding `equals()` and `hashCode()`
+* we have to override them both - otherwise we'll broke code for hashing; we may generate 
+this code with IDE (based on solution in Bloch's book); 
+* to override `equals()` we have to: (a) compare pointers to these objects; (b) check if 
+they are `instanceof` class (this includes superclasses; if we need to include only current class -
+we check `getClass()` - this is controversial topic); (c) compare chosen attributes (its easy to do 
+this with `Objects.equals()` than to write all cases explicitly like in `Task.java`); 
+```java
+class Task {
+        @Override
+        public boolean equals(Object o) {
+            if (this == o) return true;
+            if (o == null) return false;
+            if (!(o instanceof Task)) return false;
+    
+            Task task = (Task) o;
+            
+            // Returns true if the arguments are equal to each other and false otherwise. 
+            // Consequently, if both arguments are null, true is returned and if exactly 
+            // one argument is null, false is returned. Otherwise, equality is determined 
+            // by using the equals method of the first argument.
+            return Objects.equals(id, other.id);
+        }
+}
+```
+* to override `hashCode()` we may again use helper method from `Objects` class rather than
+deal with Bloch's implementation: `return Objects.hash(id, ...)`.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
