@@ -4,7 +4,7 @@ version '1.0-SNAPSHOT'
 apply plugin: 'groovy'
 apply plugin: 'application'
 
-mainClassName = 'oop.UseHR'
+mainClassName = 'interfaces.defaults.DefaultMethodsDemo'
 
 sourceCompatibility = 1.8
 
