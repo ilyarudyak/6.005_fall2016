@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites>
-  <testsuite errors="0" failures="0" hostname="Ilyas-MacBook-Pro.local" id="0" name="BigLibraryTest" package="library" skipped="0" tests="2" time="0.127" timestamp="2016-11-26T22:52:06">
+  <testsuite errors="0" failures="0" hostname="Ilyas-MacBook-Pro.local" id="0" name="BigLibraryTest" package="library" skipped="0" tests="2" time="0.133" timestamp="2016-12-11T08:59:53">
       <properties>
           <property name="java.vendor" value="Oracle Corporation" />
 
@@ -13,6 +13,8 @@
           <property name="os.name" value="Mac OS X" />
 
           <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/classes" />
+
+          <property name="final.grading" value="true" />
 
           <property name="java.vm.specification.vendor" value="Oracle Corporation" />
 
@@ -86,7 +88,7 @@
 
           <property name="java.specification.vendor" value="Oracle Corporation" />
 
-          <property name="which.tests.ran" value="BETA" />
+          <property name="which.tests.ran" value="BETA + FINAL" />
 
           <property name="java.library.path" value="/Users/ilyarudyak/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:." />
 
@@ -100,7 +102,7 @@
 
           <property name="beta.grader.jar" value="ps3-beta-grader.jar" />
 
-          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner library.BigLibraryTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps3-library/.grader/TEST-library.BigLibraryTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps3-library/.grader/junitvmwatcher4007724420716500617.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps3-library/.grader/junit5602013962771226368.properties" />
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner library.BigLibraryTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps3-library/.grader/TEST-library.BigLibraryTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps3-library/.grader/junitvmwatcher2856631461715331735.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps3-library/.grader/junit3815859909314956612.properties" />
 
           <property name="java.class.path" value="/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps3-library/lib/junit-4.12.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps3-library/lib/hamcrest-core-1.3.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps3-library/.grader/bin-student:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-launcher.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit4.jar" />
 
@@ -156,14 +158,14 @@
 
       <testcase classname="library.BigLibraryTest" name="testAssertionsEnabled" time="0.001" />
 
-      <testcase classname="library.BigLibraryTest" name="testExampleTest" time="0.071" />
+      <testcase classname="library.BigLibraryTest" name="testExampleTest" time="0.076" />
 
       <system-out><![CDATA[]]></system-out>
 
       <system-err><![CDATA[]]></system-err>
 
   </testsuite>
-  <testsuite errors="0" failures="0" hostname="Ilyas-MacBook-Pro.local" id="1" name="BookCopyTest" package="library" skipped="0" tests="2" time="0.132" timestamp="2016-11-26T22:52:07">
+  <testsuite errors="0" failures="0" hostname="Ilyas-MacBook-Pro.local" id="1" name="BookCopyTest" package="library" skipped="0" tests="2" time="0.138" timestamp="2016-12-11T08:59:53">
       <properties>
           <property name="java.vendor" value="Oracle Corporation" />
 
@@ -176,6 +178,8 @@
           <property name="os.name" value="Mac OS X" />
 
           <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/classes" />
+
+          <property name="final.grading" value="true" />
 
           <property name="java.vm.specification.vendor" value="Oracle Corporation" />
 
@@ -249,7 +253,7 @@
 
           <property name="java.specification.vendor" value="Oracle Corporation" />
 
-          <property name="which.tests.ran" value="BETA" />
+          <property name="which.tests.ran" value="BETA + FINAL" />
 
           <property name="java.library.path" value="/Users/ilyarudyak/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:." />
 
@@ -263,7 +267,7 @@
 
           <property name="beta.grader.jar" value="ps3-beta-grader.jar" />
 
-          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner library.BookCopyTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps3-library/.grader/TEST-library.BookCopyTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps3-library/.grader/junitvmwatcher346205429617741106.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps3-library/.grader/junit769283001360962525.properties" />
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner library.BookCopyTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps3-library/.grader/TEST-library.BookCopyTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps3-library/.grader/junitvmwatcher7111663139885036177.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps3-library/.grader/junit8766335332250302765.properties" />
 
           <property name="java.class.path" value="/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps3-library/lib/junit-4.12.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps3-library/lib/hamcrest-core-1.3.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps3-library/.grader/bin-student:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-launcher.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit4.jar" />
 
@@ -319,14 +323,14 @@
 
       <testcase classname="library.BookCopyTest" name="testAssertionsEnabled" time="0.001" />
 
-      <testcase classname="library.BookCopyTest" name="testExampleTest" time="0.067" />
+      <testcase classname="library.BookCopyTest" name="testExampleTest" time="0.073" />
 
       <system-out><![CDATA[]]></system-out>
 
       <system-err><![CDATA[]]></system-err>
 
   </testsuite>
-  <testsuite errors="0" failures="0" hostname="Ilyas-MacBook-Pro.local" id="2" name="BookTest" package="library" skipped="0" tests="11" time="0.128" timestamp="2016-11-26T22:52:07">
+  <testsuite errors="0" failures="0" hostname="Ilyas-MacBook-Pro.local" id="2" name="BookTest" package="library" skipped="0" tests="11" time="0.142" timestamp="2016-12-11T08:59:53">
       <properties>
           <property name="java.vendor" value="Oracle Corporation" />
 
@@ -339,6 +343,8 @@
           <property name="os.name" value="Mac OS X" />
 
           <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/classes" />
+
+          <property name="final.grading" value="true" />
 
           <property name="java.vm.specification.vendor" value="Oracle Corporation" />
 
@@ -412,7 +418,7 @@
 
           <property name="java.specification.vendor" value="Oracle Corporation" />
 
-          <property name="which.tests.ran" value="BETA" />
+          <property name="which.tests.ran" value="BETA + FINAL" />
 
           <property name="java.library.path" value="/Users/ilyarudyak/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:." />
 
@@ -426,7 +432,7 @@
 
           <property name="beta.grader.jar" value="ps3-beta-grader.jar" />
 
-          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner library.BookTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps3-library/.grader/TEST-library.BookTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps3-library/.grader/junitvmwatcher2848396055389775371.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps3-library/.grader/junit5278437414165885215.properties" />
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner library.BookTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps3-library/.grader/TEST-library.BookTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps3-library/.grader/junitvmwatcher3598699936239103950.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps3-library/.grader/junit2324961227839096722.properties" />
 
           <property name="java.class.path" value="/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps3-library/lib/junit-4.12.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps3-library/lib/hamcrest-core-1.3.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps3-library/.grader/bin-student:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-launcher.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit4.jar" />
 
@@ -480,23 +486,23 @@
 
       </properties>
 
-      <testcase classname="library.BookTest" name="checkRepNegativeYear" time="0.063" />
+      <testcase classname="library.BookTest" name="checkRepNegativeYear" time="0.062" />
 
-      <testcase classname="library.BookTest" name="equalsSimpleNotEqualBooksAuthorsOrder" time="0.0" />
+      <testcase classname="library.BookTest" name="equalsSimpleNotEqualBooksAuthorsOrder" time="0.001" />
 
       <testcase classname="library.BookTest" name="equalsSimpleNotEqualBooksCaseSensitiveAuthor" time="0.0" />
 
       <testcase classname="library.BookTest" name="equalsSimpleEqualBooks" time="0.0" />
 
-      <testcase classname="library.BookTest" name="checkRepEmptyTitle" time="0.0" />
+      <testcase classname="library.BookTest" name="checkRepEmptyTitle" time="0.001" />
 
       <testcase classname="library.BookTest" name="testAssertionsEnabled" time="0.0" />
 
-      <testcase classname="library.BookTest" name="equalsSimpleEqualBooksYear" time="0.0" />
+      <testcase classname="library.BookTest" name="equalsSimpleEqualBooksYear" time="0.001" />
 
-      <testcase classname="library.BookTest" name="checkRepEmptyAuthorList" time="0.001" />
+      <testcase classname="library.BookTest" name="checkRepEmptyAuthorList" time="0.0" />
 
-      <testcase classname="library.BookTest" name="equalsSimpleNotEqualBooksCaseSensitiveTitle" time="0.0" />
+      <testcase classname="library.BookTest" name="equalsSimpleNotEqualBooksCaseSensitiveTitle" time="0.001" />
 
       <testcase classname="library.BookTest" name="checkRepEmptyAuthors" time="0.001" />
 
@@ -507,7 +513,7 @@
       <system-err><![CDATA[]]></system-err>
 
   </testsuite>
-  <testsuite errors="0" failures="0" hostname="Ilyas-MacBook-Pro.local" id="3" name="LibraryTest" package="library" skipped="0" tests="4" time="0.134" timestamp="2016-11-26T22:52:08">
+  <testsuite errors="0" failures="0" hostname="Ilyas-MacBook-Pro.local" id="3" name="LibraryTest" package="library" skipped="0" tests="18" time="0.381" timestamp="2016-12-11T08:59:54">
       <properties>
           <property name="java.vendor" value="Oracle Corporation" />
 
@@ -520,6 +526,8 @@
           <property name="os.name" value="Mac OS X" />
 
           <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/classes" />
+
+          <property name="final.grading" value="true" />
 
           <property name="java.vm.specification.vendor" value="Oracle Corporation" />
 
@@ -593,7 +601,7 @@
 
           <property name="java.specification.vendor" value="Oracle Corporation" />
 
-          <property name="which.tests.ran" value="BETA" />
+          <property name="which.tests.ran" value="BETA + FINAL" />
 
           <property name="java.library.path" value="/Users/ilyarudyak/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:." />
 
@@ -607,7 +615,7 @@
 
           <property name="beta.grader.jar" value="ps3-beta-grader.jar" />
 
-          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner library.LibraryTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps3-library/.grader/TEST-library.LibraryTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps3-library/.grader/junitvmwatcher672316942117886243.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps3-library/.grader/junit7124949215812716646.properties" />
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner library.LibraryTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps3-library/.grader/TEST-library.LibraryTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps3-library/.grader/junitvmwatcher3883697680661329842.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps3-library/.grader/junit980966651210039803.properties" />
 
           <property name="java.class.path" value="/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps3-library/lib/junit-4.12.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps3-library/lib/hamcrest-core-1.3.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps3-library/.grader/bin-student:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-launcher.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit4.jar" />
 
@@ -661,20 +669,48 @@
 
       </properties>
 
-      <testcase classname="library.LibraryTest" name="testAssertionsEnabled[library.SmallLibrary]" time="0.001" />
+      <testcase classname="library.LibraryTest" name="checkInCheckOut[library.SmallLibrary]" time="0.156" />
 
-      <testcase classname="library.LibraryTest" name="testExampleTest[library.SmallLibrary]" time="0.068" />
+      <testcase classname="library.LibraryTest" name="buyDifferentBook[library.SmallLibrary]" time="0.002" />
 
-      <testcase classname="library.LibraryTest" name="testAssertionsEnabled[library.BigLibrary]" time="0.0" />
+      <testcase classname="library.LibraryTest" name="buySecondCopy[library.SmallLibrary]" time="0.002" />
 
-      <testcase classname="library.LibraryTest" name="testExampleTest[library.BigLibrary]" time="0.002" />
+      <testcase classname="library.LibraryTest" name="testAssertionsEnabled[library.SmallLibrary]" time="0.002" />
+
+      <testcase classname="library.LibraryTest" name="buyFirstCopy[library.SmallLibrary]" time="0.001" />
+
+      <testcase classname="library.LibraryTest" name="buyManyBooks[library.SmallLibrary]" time="0.004" />
+
+      <testcase classname="library.LibraryTest" name="findExactTitle[library.SmallLibrary]" time="0.013" />
+
+      <testcase classname="library.LibraryTest" name="findExactAuthor[library.SmallLibrary]" time="0.005" />
+
+      <testcase classname="library.LibraryTest" name="checkOut[library.SmallLibrary]" time="0.002" />
+
+      <testcase classname="library.LibraryTest" name="checkInCheckOut[library.BigLibrary]" time="0.018" />
+
+      <testcase classname="library.LibraryTest" name="buyDifferentBook[library.BigLibrary]" time="0.001" />
+
+      <testcase classname="library.LibraryTest" name="buySecondCopy[library.BigLibrary]" time="0.006" />
+
+      <testcase classname="library.LibraryTest" name="testAssertionsEnabled[library.BigLibrary]" time="0.001" />
+
+      <testcase classname="library.LibraryTest" name="buyFirstCopy[library.BigLibrary]" time="0.002" />
+
+      <testcase classname="library.LibraryTest" name="buyManyBooks[library.BigLibrary]" time="0.009" />
+
+      <testcase classname="library.LibraryTest" name="findExactTitle[library.BigLibrary]" time="0.007" />
+
+      <testcase classname="library.LibraryTest" name="findExactAuthor[library.BigLibrary]" time="0.004" />
+
+      <testcase classname="library.LibraryTest" name="checkOut[library.BigLibrary]" time="0.013" />
 
       <system-out><![CDATA[]]></system-out>
 
       <system-err><![CDATA[]]></system-err>
 
   </testsuite>
-  <testsuite errors="0" failures="0" hostname="Ilyas-MacBook-Pro.local" id="4" name="SmallLibraryTest" package="library" skipped="1" tests="4" time="0.132" timestamp="2016-11-26T22:52:08">
+  <testsuite errors="0" failures="0" hostname="Ilyas-MacBook-Pro.local" id="4" name="SmallLibraryTest" package="library" skipped="1" tests="4" time="0.149" timestamp="2016-12-11T08:59:54">
       <properties>
           <property name="java.vendor" value="Oracle Corporation" />
 
@@ -687,6 +723,8 @@
           <property name="os.name" value="Mac OS X" />
 
           <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/classes" />
+
+          <property name="final.grading" value="true" />
 
           <property name="java.vm.specification.vendor" value="Oracle Corporation" />
 
@@ -760,7 +798,7 @@
 
           <property name="java.specification.vendor" value="Oracle Corporation" />
 
-          <property name="which.tests.ran" value="BETA" />
+          <property name="which.tests.ran" value="BETA + FINAL" />
 
           <property name="java.library.path" value="/Users/ilyarudyak/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:." />
 
@@ -774,7 +812,7 @@
 
           <property name="beta.grader.jar" value="ps3-beta-grader.jar" />
 
-          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner library.SmallLibraryTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps3-library/.grader/TEST-library.SmallLibraryTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps3-library/.grader/junitvmwatcher1813597378910769364.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps3-library/.grader/junit5760843772586150224.properties" />
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner library.SmallLibraryTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps3-library/.grader/TEST-library.SmallLibraryTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps3-library/.grader/junitvmwatcher3985428446079812244.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps3-library/.grader/junit5066238002287104990.properties" />
 
           <property name="java.class.path" value="/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps3-library/lib/junit-4.12.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps3-library/lib/hamcrest-core-1.3.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps3-library/.grader/bin-student:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-launcher.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit4.jar" />
 
@@ -828,7 +866,7 @@
 
       </properties>
 
-      <testcase classname="library.SmallLibraryTest" name="testEqualsHashcodeDifferentLibrariesDifferentContent" time="0.069" />
+      <testcase classname="library.SmallLibraryTest" name="testEqualsHashcodeDifferentLibrariesDifferentContent" time="0.082" />
 
       <testcase classname="library.SmallLibraryTest" name="testLose" time="0.0">
           <skipped />
@@ -844,7 +882,7 @@
       <system-err><![CDATA[]]></system-err>
 
   </testsuite>
-  <testsuite errors="0" failures="0" hostname="Ilyas-MacBook-Pro.local" id="5" name="BookCopyTest" package="library.beta" skipped="0" tests="4" time="0.134" timestamp="2016-11-26T22:52:08">
+  <testsuite errors="0" failures="0" hostname="Ilyas-MacBook-Pro.local" id="5" name="BookCopyTest" package="library.beta" skipped="0" tests="4" time="0.155" timestamp="2016-12-11T08:59:55">
       <properties>
           <property name="java.vendor" value="Oracle Corporation" />
 
@@ -857,6 +895,8 @@
           <property name="os.name" value="Mac OS X" />
 
           <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/classes" />
+
+          <property name="final.grading" value="true" />
 
           <property name="java.vm.specification.vendor" value="Oracle Corporation" />
 
@@ -930,7 +970,7 @@
 
           <property name="java.specification.vendor" value="Oracle Corporation" />
 
-          <property name="which.tests.ran" value="BETA" />
+          <property name="which.tests.ran" value="BETA + FINAL" />
 
           <property name="java.library.path" value="/Users/ilyarudyak/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:." />
 
@@ -944,7 +984,7 @@
 
           <property name="beta.grader.jar" value="ps3-beta-grader.jar" />
 
-          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner library.beta.BookCopyTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps3-library/.grader/TEST-library.beta.BookCopyTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps3-library/.grader/junitvmwatcher5703088399512935687.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps3-library/.grader/junit7927380914386096348.properties" />
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner library.beta.BookCopyTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps3-library/.grader/TEST-library.beta.BookCopyTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps3-library/.grader/junitvmwatcher5054270015884156848.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps3-library/.grader/junit1998931987886494652.properties" />
 
           <property name="java.class.path" value="/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps3-library/lib/junit-4.12.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps3-library/lib/hamcrest-core-1.3.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps3-library/.grader/bin-student:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-launcher.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit4.jar" />
 
@@ -998,20 +1038,20 @@
 
       </properties>
 
-      <testcase classname="library.beta.BookCopyTest" name="testEqualsHashcode" time="0.071" />
+      <testcase classname="library.beta.BookCopyTest" name="testEqualsHashcode" time="0.083" />
 
-      <testcase classname="library.beta.BookCopyTest" name="testGetBook" time="0.0" />
+      <testcase classname="library.beta.BookCopyTest" name="testGetBook" time="0.001" />
 
       <testcase classname="library.beta.BookCopyTest" name="testAssertionsEnabled" time="0.0" />
 
-      <testcase classname="library.beta.BookCopyTest" name="testCondition" time="0.0" />
+      <testcase classname="library.beta.BookCopyTest" name="testCondition" time="0.001" />
 
       <system-out><![CDATA[]]></system-out>
 
       <system-err><![CDATA[]]></system-err>
 
   </testsuite>
-  <testsuite errors="0" failures="0" hostname="Ilyas-MacBook-Pro.local" id="6" name="BookTest" package="library.beta" skipped="0" tests="4" time="0.121" timestamp="2016-11-26T22:52:09">
+  <testsuite errors="0" failures="0" hostname="Ilyas-MacBook-Pro.local" id="6" name="BookTest" package="library.beta" skipped="0" tests="4" time="0.123" timestamp="2016-12-11T08:59:55">
       <properties>
           <property name="java.vendor" value="Oracle Corporation" />
 
@@ -1024,6 +1064,8 @@
           <property name="os.name" value="Mac OS X" />
 
           <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/classes" />
+
+          <property name="final.grading" value="true" />
 
           <property name="java.vm.specification.vendor" value="Oracle Corporation" />
 
@@ -1097,7 +1139,7 @@
 
           <property name="java.specification.vendor" value="Oracle Corporation" />
 
-          <property name="which.tests.ran" value="BETA" />
+          <property name="which.tests.ran" value="BETA + FINAL" />
 
           <property name="java.library.path" value="/Users/ilyarudyak/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:." />
 
@@ -1111,7 +1153,7 @@
 
           <property name="beta.grader.jar" value="ps3-beta-grader.jar" />
 
-          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner library.beta.BookTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps3-library/.grader/TEST-library.beta.BookTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps3-library/.grader/junitvmwatcher5465741736363442241.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps3-library/.grader/junit4465609600813328132.properties" />
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner library.beta.BookTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps3-library/.grader/TEST-library.beta.BookTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps3-library/.grader/junitvmwatcher7192922344872983875.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps3-library/.grader/junit835649066896389224.properties" />
 
           <property name="java.class.path" value="/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps3-library/lib/junit-4.12.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps3-library/lib/hamcrest-core-1.3.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps3-library/.grader/bin-student:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-launcher.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit4.jar" />
 
@@ -1178,7 +1220,7 @@
       <system-err><![CDATA[]]></system-err>
 
   </testsuite>
-  <testsuite errors="0" failures="0" hostname="Ilyas-MacBook-Pro.local" id="7" name="LibraryTest" package="library.beta" skipped="0" tests="16" time="0.161" timestamp="2016-11-26T22:52:09">
+  <testsuite errors="0" failures="0" hostname="Ilyas-MacBook-Pro.local" id="7" name="LibraryTest" package="library.beta" skipped="0" tests="16" time="0.192" timestamp="2016-12-11T08:59:56">
       <properties>
           <property name="java.vendor" value="Oracle Corporation" />
 
@@ -1191,6 +1233,8 @@
           <property name="os.name" value="Mac OS X" />
 
           <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/classes" />
+
+          <property name="final.grading" value="true" />
 
           <property name="java.vm.specification.vendor" value="Oracle Corporation" />
 
@@ -1264,7 +1308,7 @@
 
           <property name="java.specification.vendor" value="Oracle Corporation" />
 
-          <property name="which.tests.ran" value="BETA" />
+          <property name="which.tests.ran" value="BETA + FINAL" />
 
           <property name="java.library.path" value="/Users/ilyarudyak/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:." />
 
@@ -1278,7 +1322,7 @@
 
           <property name="beta.grader.jar" value="ps3-beta-grader.jar" />
 
-          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner library.beta.LibraryTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps3-library/.grader/TEST-library.beta.LibraryTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps3-library/.grader/junitvmwatcher5386839387092327748.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps3-library/.grader/junit1537241804696311295.properties" />
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner library.beta.LibraryTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps3-library/.grader/TEST-library.beta.LibraryTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps3-library/.grader/junitvmwatcher1075367327721481346.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps3-library/.grader/junit5722748375281532339.properties" />
 
           <property name="java.class.path" value="/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps3-library/lib/junit-4.12.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps3-library/lib/hamcrest-core-1.3.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps3-library/.grader/bin-student:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-launcher.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit4.jar" />
 
@@ -1332,27 +1376,27 @@
 
       </properties>
 
-      <testcase classname="library.beta.LibraryTest" name="testBuy[library.SmallLibrary]" time="0.071" />
+      <testcase classname="library.beta.LibraryTest" name="testBuy[library.SmallLibrary]" time="0.086" />
 
-      <testcase classname="library.beta.LibraryTest" name="testFind[library.SmallLibrary]" time="0.009" />
+      <testcase classname="library.beta.LibraryTest" name="testFind[library.SmallLibrary]" time="0.012" />
 
       <testcase classname="library.beta.LibraryTest" name="testLose[library.SmallLibrary]" time="0.002" />
 
-      <testcase classname="library.beta.LibraryTest" name="testAllCopiesAvailableCopies[library.SmallLibrary]" time="0.001" />
+      <testcase classname="library.beta.LibraryTest" name="testAllCopiesAvailableCopies[library.SmallLibrary]" time="0.002" />
 
-      <testcase classname="library.beta.LibraryTest" name="testEqualsHashcode[library.SmallLibrary]" time="0.0" />
+      <testcase classname="library.beta.LibraryTest" name="testEqualsHashcode[library.SmallLibrary]" time="0.001" />
 
       <testcase classname="library.beta.LibraryTest" name="testAssertionsEnabled[library.SmallLibrary]" time="0.0" />
 
       <testcase classname="library.beta.LibraryTest" name="testIsAvailable[library.SmallLibrary]" time="0.001" />
 
-      <testcase classname="library.beta.LibraryTest" name="testCheckinCheckout[library.SmallLibrary]" time="0.0" />
+      <testcase classname="library.beta.LibraryTest" name="testCheckinCheckout[library.SmallLibrary]" time="0.001" />
 
       <testcase classname="library.beta.LibraryTest" name="testBuy[library.BigLibrary]" time="0.001" />
 
-      <testcase classname="library.beta.LibraryTest" name="testFind[library.BigLibrary]" time="0.003" />
+      <testcase classname="library.beta.LibraryTest" name="testFind[library.BigLibrary]" time="0.004" />
 
-      <testcase classname="library.beta.LibraryTest" name="testLose[library.BigLibrary]" time="0.002" />
+      <testcase classname="library.beta.LibraryTest" name="testLose[library.BigLibrary]" time="0.001" />
 
       <testcase classname="library.beta.LibraryTest" name="testAllCopiesAvailableCopies[library.BigLibrary]" time="0.001" />
 
@@ -1363,6 +1407,539 @@
       <testcase classname="library.beta.LibraryTest" name="testIsAvailable[library.BigLibrary]" time="0.001" />
 
       <testcase classname="library.beta.LibraryTest" name="testCheckinCheckout[library.BigLibrary]" time="0.001" />
+
+      <system-out><![CDATA[]]></system-out>
+
+      <system-err><![CDATA[]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="1" hostname="Ilyas-MacBook-Pro.local" id="8" name="BookTest" package="library.staff" skipped="0" tests="2" time="0.138" timestamp="2016-12-11T08:59:56">
+      <properties>
+          <property name="java.vendor" value="Oracle Corporation" />
+
+          <property name="sun.java.launcher" value="SUN_STANDARD" />
+
+          <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+
+          <property name="build.sysclasspath" value="ignore" />
+
+          <property name="os.name" value="Mac OS X" />
+
+          <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/classes" />
+
+          <property name="final.grading" value="true" />
+
+          <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+
+          <property name="ant.home" value="/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327" />
+
+          <property name="java.runtime.version" value="1.8.0_51-b16" />
+
+          <property name="user.name" value="ilyarudyak" />
+
+          <property name="ant.build.javac.target" value="1.8" />
+
+          <property name="user.language" value="en" />
+
+          <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib" />
+
+          <property name="grader.report.file" value="my-grader-report.xml" />
+
+          <property name="ant.project.default-target" value="all" />
+
+          <property name="java.version" value="1.8.0_51" />
+
+          <property name="user.timezone" value="Europe/Moscow" />
+
+          <property name="sun.arch.data.model" value="64" />
+
+          <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+
+          <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/endorsed" />
+
+          <property name="sun.cpu.isalist" value="" />
+
+          <property name="sun.jnu.encoding" value="UTF-8" />
+
+          <property name="file.encoding.pkg" value="sun.io" />
+
+          <property name="file.separator" value="/" />
+
+          <property name="java.specification.name" value="Java Platform API Specification" />
+
+          <property name="java.class.version" value="52.0" />
+
+          <property name="user.country" value="US" />
+
+          <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre" />
+
+          <property name="java.vm.info" value="mixed mode" />
+
+          <property name="ant.file" value="/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps3-library/grader.xml" />
+
+          <property name="os.version" value="10.12.1" />
+
+          <property name="final.grader.jar" value="ps3-final-grader.jar" />
+
+          <property name="path.separator" value=":" />
+
+          <property name="java.vm.version" value="25.51-b03" />
+
+          <property name="ant.library.dir" value="/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib" />
+
+          <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob" />
+
+          <property name="sun.io.unicode.encoding" value="UnicodeBig" />
+
+          <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit" />
+
+          <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+
+          <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+
+          <property name="user.home" value="/Users/ilyarudyak" />
+
+          <property name="java.specification.vendor" value="Oracle Corporation" />
+
+          <property name="which.tests.ran" value="BETA + FINAL" />
+
+          <property name="java.library.path" value="/Users/ilyarudyak/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:." />
+
+          <property name="java.vendor.url" value="http://java.oracle.com/" />
+
+          <property name="java.vm.vendor" value="Oracle Corporation" />
+
+          <property name="gopherProxySet" value="false" />
+
+          <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+
+          <property name="beta.grader.jar" value="ps3-beta-grader.jar" />
+
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner library.staff.BookTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps3-library/.grader/TEST-library.staff.BookTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps3-library/.grader/junitvmwatcher3564404232905940836.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps3-library/.grader/junit4844057856380480087.properties" />
+
+          <property name="java.class.path" value="/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps3-library/lib/junit-4.12.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps3-library/lib/hamcrest-core-1.3.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps3-library/.grader/bin-tests-final:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps3-library/.grader/bin-student:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-launcher.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit4.jar" />
+
+          <property name="ant.version" value="Apache Ant(TM) version 1.9.6 compiled on June 29 2015" />
+
+          <property name="project.name" value="ps3-library" />
+
+          <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+
+          <property name="java.vm.specification.version" value="1.8" />
+
+          <property name="sun.cpu.endian" value="little" />
+
+          <property name="didit.desc" value="Running our tests against your implementation" />
+
+          <property name="sun.os.patch.level" value="unknown" />
+
+          <property name="java.io.tmpdir" value="/var/folders/2r/mhs9bq0x3sx158w70nqz2j6h0000gn/T/" />
+
+          <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
+
+          <property name="os.arch" value="x86_64" />
+
+          <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment" />
+
+          <property name="java.ext.dirs" value="/Users/ilyarudyak/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java" />
+
+          <property name="user.dir" value="/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps3-library" />
+
+          <property name="line.separator" value="&#xa;" />
+
+          <property name="zipfile" value="my-submission.zip" />
+
+          <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
+
+          <property name="problem.set" value="ps3" />
+
+          <property name="basedir" value="/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps3-library" />
+
+          <property name="ant.java.version" value="1.8" />
+
+          <property name="ant.core.lib" value="/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant.jar" />
+
+          <property name="file.encoding" value="UTF-8" />
+
+          <property name="java.specification.version" value="1.8" />
+
+          <property name="grader.dir" value=".grader" />
+
+          <property name="ant.project.invoked-targets" value="all" />
+
+      </properties>
+
+      <testcase classname="library.staff.BookTest" name="testRepExposureInGetAuthors" time="0.065" />
+
+      <testcase classname="library.staff.BookTest" name="testRepExposureInConstructor" time="0.004">
+          <failure message="expected:&lt;[Joe Don Baker]&gt; but was:&lt;[Joe Don Baker, Ellen Robinson]&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected:&lt;[Joe Don Baker]&gt; but was:&lt;[Joe Don Baker, Ellen Robinson]&gt;
+	at library.staff.BookTest.testRepExposureInConstructor(BookTest.java:41)
+</failure>
+
+      </testcase>
+
+      <system-out><![CDATA[]]></system-out>
+
+      <system-err><![CDATA[]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="2" hostname="Ilyas-MacBook-Pro.local" id="9" name="LibraryTest" package="library.staff" skipped="0" tests="12" time="0.167" timestamp="2016-12-11T08:59:57">
+      <properties>
+          <property name="java.vendor" value="Oracle Corporation" />
+
+          <property name="sun.java.launcher" value="SUN_STANDARD" />
+
+          <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+
+          <property name="build.sysclasspath" value="ignore" />
+
+          <property name="os.name" value="Mac OS X" />
+
+          <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/classes" />
+
+          <property name="final.grading" value="true" />
+
+          <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+
+          <property name="ant.home" value="/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327" />
+
+          <property name="java.runtime.version" value="1.8.0_51-b16" />
+
+          <property name="user.name" value="ilyarudyak" />
+
+          <property name="ant.build.javac.target" value="1.8" />
+
+          <property name="user.language" value="en" />
+
+          <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib" />
+
+          <property name="grader.report.file" value="my-grader-report.xml" />
+
+          <property name="ant.project.default-target" value="all" />
+
+          <property name="java.version" value="1.8.0_51" />
+
+          <property name="user.timezone" value="Europe/Moscow" />
+
+          <property name="sun.arch.data.model" value="64" />
+
+          <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+
+          <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/endorsed" />
+
+          <property name="sun.cpu.isalist" value="" />
+
+          <property name="sun.jnu.encoding" value="UTF-8" />
+
+          <property name="file.encoding.pkg" value="sun.io" />
+
+          <property name="file.separator" value="/" />
+
+          <property name="java.specification.name" value="Java Platform API Specification" />
+
+          <property name="java.class.version" value="52.0" />
+
+          <property name="user.country" value="US" />
+
+          <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre" />
+
+          <property name="java.vm.info" value="mixed mode" />
+
+          <property name="ant.file" value="/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps3-library/grader.xml" />
+
+          <property name="os.version" value="10.12.1" />
+
+          <property name="final.grader.jar" value="ps3-final-grader.jar" />
+
+          <property name="path.separator" value=":" />
+
+          <property name="java.vm.version" value="25.51-b03" />
+
+          <property name="ant.library.dir" value="/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib" />
+
+          <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob" />
+
+          <property name="sun.io.unicode.encoding" value="UnicodeBig" />
+
+          <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit" />
+
+          <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+
+          <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+
+          <property name="user.home" value="/Users/ilyarudyak" />
+
+          <property name="java.specification.vendor" value="Oracle Corporation" />
+
+          <property name="which.tests.ran" value="BETA + FINAL" />
+
+          <property name="java.library.path" value="/Users/ilyarudyak/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:." />
+
+          <property name="java.vendor.url" value="http://java.oracle.com/" />
+
+          <property name="java.vm.vendor" value="Oracle Corporation" />
+
+          <property name="gopherProxySet" value="false" />
+
+          <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+
+          <property name="beta.grader.jar" value="ps3-beta-grader.jar" />
+
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner library.staff.LibraryTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps3-library/.grader/TEST-library.staff.LibraryTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps3-library/.grader/junitvmwatcher13399193639654703.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps3-library/.grader/junit3609241262622684037.properties" />
+
+          <property name="java.class.path" value="/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps3-library/lib/junit-4.12.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps3-library/lib/hamcrest-core-1.3.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps3-library/.grader/bin-tests-final:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps3-library/.grader/bin-student:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-launcher.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit4.jar" />
+
+          <property name="ant.version" value="Apache Ant(TM) version 1.9.6 compiled on June 29 2015" />
+
+          <property name="project.name" value="ps3-library" />
+
+          <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+
+          <property name="java.vm.specification.version" value="1.8" />
+
+          <property name="sun.cpu.endian" value="little" />
+
+          <property name="didit.desc" value="Running our tests against your implementation" />
+
+          <property name="sun.os.patch.level" value="unknown" />
+
+          <property name="java.io.tmpdir" value="/var/folders/2r/mhs9bq0x3sx158w70nqz2j6h0000gn/T/" />
+
+          <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
+
+          <property name="os.arch" value="x86_64" />
+
+          <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment" />
+
+          <property name="java.ext.dirs" value="/Users/ilyarudyak/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java" />
+
+          <property name="user.dir" value="/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps3-library" />
+
+          <property name="line.separator" value="&#xa;" />
+
+          <property name="zipfile" value="my-submission.zip" />
+
+          <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
+
+          <property name="problem.set" value="ps3" />
+
+          <property name="basedir" value="/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps3-library" />
+
+          <property name="ant.java.version" value="1.8" />
+
+          <property name="ant.core.lib" value="/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant.jar" />
+
+          <property name="file.encoding" value="UTF-8" />
+
+          <property name="java.specification.version" value="1.8" />
+
+          <property name="grader.dir" value=".grader" />
+
+          <property name="ant.project.invoked-targets" value="all" />
+
+      </properties>
+
+      <testcase classname="library.staff.LibraryTest" name="testDifferentObjectsRepresentingSameBook[library.SmallLibrary]" time="0.072" />
+
+      <testcase classname="library.staff.LibraryTest" name="testFindAfterLosingLastCopy[library.SmallLibrary]" time="0.008" />
+
+      <testcase classname="library.staff.LibraryTest" name="testFindAfterLosingAndRebuyingBook[library.SmallLibrary]" time="0.001" />
+
+      <testcase classname="library.staff.LibraryTest" name="testRepExposureInAllCopies[library.SmallLibrary]" time="0.0" />
+
+      <testcase classname="library.staff.LibraryTest" name="testRepExposureInAvailableCopies[library.SmallLibrary]" time="0.001" />
+
+      <testcase classname="library.staff.LibraryTest" name="testRepExposureInFind[library.SmallLibrary]" time="0.001" />
+
+      <testcase classname="library.staff.LibraryTest" name="testDifferentObjectsRepresentingSameBook[library.BigLibrary]" time="0.003" />
+
+      <testcase classname="library.staff.LibraryTest" name="testFindAfterLosingLastCopy[library.BigLibrary]" time="0.007">
+          <failure message="losing last copy of a book should remove it from find() results expected:&lt;[]&gt; but was:&lt;[Book [title=The Grapes of Wrath, authors=[John Steinbeck], year=1939]]&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: losing last copy of a book should remove it from find() results expected:&lt;[]&gt; but was:&lt;[Book [title=The Grapes of Wrath, authors=[John Steinbeck], year=1939]]&gt;
+	at library.staff.LibraryTest.testFindAfterLosingLastCopy(LibraryTest.java:87)
+</failure>
+
+      </testcase>
+
+      <testcase classname="library.staff.LibraryTest" name="testFindAfterLosingAndRebuyingBook[library.BigLibrary]" time="0.002">
+          <failure message="losing last copy of a book should remove it from find() results expected:&lt;[]&gt; but was:&lt;[Book [title=Cannery Row, authors=[John Steinbeck], year=1945]]&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: losing last copy of a book should remove it from find() results expected:&lt;[]&gt; but was:&lt;[Book [title=Cannery Row, authors=[John Steinbeck], year=1945]]&gt;
+	at library.staff.LibraryTest.testFindAfterLosingAndRebuyingBook(LibraryTest.java:99)
+</failure>
+
+      </testcase>
+
+      <testcase classname="library.staff.LibraryTest" name="testRepExposureInAllCopies[library.BigLibrary]" time="0.001" />
+
+      <testcase classname="library.staff.LibraryTest" name="testRepExposureInAvailableCopies[library.BigLibrary]" time="0.001" />
+
+      <testcase classname="library.staff.LibraryTest" name="testRepExposureInFind[library.BigLibrary]" time="0.001" />
+
+      <system-out><![CDATA[]]></system-out>
+
+      <system-err><![CDATA[]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="1" hostname="Ilyas-MacBook-Pro.local" id="10" name="SmallLibraryTest" package="library.staff" skipped="0" tests="1" time="0.069" timestamp="2016-12-11T08:59:57">
+      <properties>
+          <property name="java.vendor" value="Oracle Corporation" />
+
+          <property name="sun.java.launcher" value="SUN_STANDARD" />
+
+          <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+
+          <property name="build.sysclasspath" value="ignore" />
+
+          <property name="os.name" value="Mac OS X" />
+
+          <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/classes" />
+
+          <property name="final.grading" value="true" />
+
+          <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+
+          <property name="ant.home" value="/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327" />
+
+          <property name="java.runtime.version" value="1.8.0_51-b16" />
+
+          <property name="user.name" value="ilyarudyak" />
+
+          <property name="ant.build.javac.target" value="1.8" />
+
+          <property name="user.language" value="en" />
+
+          <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib" />
+
+          <property name="grader.report.file" value="my-grader-report.xml" />
+
+          <property name="ant.project.default-target" value="all" />
+
+          <property name="java.version" value="1.8.0_51" />
+
+          <property name="user.timezone" value="Europe/Moscow" />
+
+          <property name="sun.arch.data.model" value="64" />
+
+          <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+
+          <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/endorsed" />
+
+          <property name="sun.cpu.isalist" value="" />
+
+          <property name="sun.jnu.encoding" value="UTF-8" />
+
+          <property name="file.encoding.pkg" value="sun.io" />
+
+          <property name="file.separator" value="/" />
+
+          <property name="java.specification.name" value="Java Platform API Specification" />
+
+          <property name="java.class.version" value="52.0" />
+
+          <property name="user.country" value="US" />
+
+          <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre" />
+
+          <property name="java.vm.info" value="mixed mode" />
+
+          <property name="ant.file" value="/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps3-library/grader.xml" />
+
+          <property name="os.version" value="10.12.1" />
+
+          <property name="final.grader.jar" value="ps3-final-grader.jar" />
+
+          <property name="path.separator" value=":" />
+
+          <property name="java.vm.version" value="25.51-b03" />
+
+          <property name="ant.library.dir" value="/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib" />
+
+          <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob" />
+
+          <property name="sun.io.unicode.encoding" value="UnicodeBig" />
+
+          <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit" />
+
+          <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+
+          <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+
+          <property name="user.home" value="/Users/ilyarudyak" />
+
+          <property name="java.specification.vendor" value="Oracle Corporation" />
+
+          <property name="which.tests.ran" value="BETA + FINAL" />
+
+          <property name="java.library.path" value="/Users/ilyarudyak/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:." />
+
+          <property name="java.vendor.url" value="http://java.oracle.com/" />
+
+          <property name="java.vm.vendor" value="Oracle Corporation" />
+
+          <property name="gopherProxySet" value="false" />
+
+          <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+
+          <property name="beta.grader.jar" value="ps3-beta-grader.jar" />
+
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner library.staff.SmallLibraryTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps3-library/.grader/TEST-library.staff.SmallLibraryTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps3-library/.grader/junitvmwatcher7465460840357710711.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps3-library/.grader/junit7337069392904620820.properties" />
+
+          <property name="java.class.path" value="/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps3-library/lib/junit-4.12.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps3-library/lib/hamcrest-core-1.3.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps3-library/.grader/bin-tests-final:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps3-library/.grader/bin-student:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-launcher.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit4.jar" />
+
+          <property name="ant.version" value="Apache Ant(TM) version 1.9.6 compiled on June 29 2015" />
+
+          <property name="project.name" value="ps3-library" />
+
+          <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+
+          <property name="java.vm.specification.version" value="1.8" />
+
+          <property name="sun.cpu.endian" value="little" />
+
+          <property name="didit.desc" value="Running our tests against your implementation" />
+
+          <property name="sun.os.patch.level" value="unknown" />
+
+          <property name="java.io.tmpdir" value="/var/folders/2r/mhs9bq0x3sx158w70nqz2j6h0000gn/T/" />
+
+          <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
+
+          <property name="os.arch" value="x86_64" />
+
+          <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment" />
+
+          <property name="java.ext.dirs" value="/Users/ilyarudyak/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java" />
+
+          <property name="user.dir" value="/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps3-library" />
+
+          <property name="line.separator" value="&#xa;" />
+
+          <property name="zipfile" value="my-submission.zip" />
+
+          <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
+
+          <property name="problem.set" value="ps3" />
+
+          <property name="basedir" value="/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps3-library" />
+
+          <property name="ant.java.version" value="1.8" />
+
+          <property name="ant.core.lib" value="/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant.jar" />
+
+          <property name="file.encoding" value="UTF-8" />
+
+          <property name="java.specification.version" value="1.8" />
+
+          <property name="grader.dir" value=".grader" />
+
+          <property name="ant.project.invoked-targets" value="all" />
+
+      </properties>
+
+      <testcase classname="library.staff.SmallLibraryTest" name="testUsesTheGivenRep" time="0.009">
+          <failure message="SmallLibrary rep has an extra field named id" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: SmallLibrary rep has an extra field named id
+	at library.staff.SmallLibraryTest.testUsesTheGivenRep(SmallLibraryTest.java:28)
+</failure>
+
+      </testcase>
 
       <system-out><![CDATA[]]></system-out>
 
