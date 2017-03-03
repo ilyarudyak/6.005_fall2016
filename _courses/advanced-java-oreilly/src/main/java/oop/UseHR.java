@@ -7,7 +7,7 @@ public class UseHR {
         hr.hire(new Hourly("Barney"));
         hr.hire(new Salaried());
         hr.hire(new Hourly());
-        hr.printEverybody();
-//        hr.payEverybody();
+//        hr.printEverybody();
+        hr.payEverybody();
     }
 }
