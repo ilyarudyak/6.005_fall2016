@@ -20,7 +20,7 @@ public class Salaried extends Employee {
 
     @Override
     public String toString() {
-        return String.format("Salaried{name=%ssalary=%s} %s",
+        return String.format("Salaried{name=%s salary=%s} %s",
                 getName(), salary, super.toString());
     }
 }

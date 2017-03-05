@@ -13,17 +13,23 @@ public class HRDemo {
                 new Salaried("Kyle"), new Salaried("Stan"),
                 new Salaried("Kenny"), new Salaried("Cartman"));
 
-        System.out.println(employees);
-        System.out.println(salarieds);
+//        System.out.println(employees);
+//        System.out.println(salarieds);
 
-        HR.printEmpNames(employees);
-        // HR.printEmpNames(salarieds); // doesn't compile
+        // without wildcards
+//        HR.printEmpNames(employees);
+//        HR.printEmpNames(salarieds); // doesn't compile
 
-
-        HR.printEmpAndSubclassNames(salarieds);
+        // with wildcards
+//        HR.printEmpAndSubclassNames(employees);
+//        System.out.println();
+//        HR.printEmpAndSubclassNames(salarieds);
 
         HR.printAllFiltered(employees,
-                e -> e.toString().length() % 2 == 0);
+                e -> e.getName().length() % 2 == 0);
+        System.out.println();
+        HR.printAllFiltered(salarieds,
+                e -> e.getName().length() % 2 == 0);
 
         // PECS --> produces uses extends, consumes uses super
     }

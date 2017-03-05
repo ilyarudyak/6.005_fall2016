@@ -80,7 +80,65 @@ class Task {
 * to override `hashCode()` we may again use helper method from `Objects` class rather than
 deal with Bloch's implementation: `return Objects.hash(id, ...)`.
 
+## Part 2. Generics
+### Wildcards
+* we can not use `List<Salaried>` in the place where `List<Employee>` is required even if 
+`Salaried` is a subclass of `Employee` - this is the reason why we have to use wildcards;
+(why this is not possible for lists is another question - basically we'll break type safety - 
+see interview notes);
+```java
+public class HR {
+    public static void printEmpNames(List<Employee> employees) {
+        employees.stream()
+                .map(Employee::getName)
+                .forEach(System.out::println);
+    }
+}
 
+public class HRDemo {
+    public static void main(String[] args) {
+        HR.printEmpNames(employees);
+        // HR.printEmpNames(salarieds); // doesn't compile
+    }
+}
+```
+* we have to use `<? extends Employee>` if we want the method to be applicable to subclasses:
+```java
+public class HR {
+
+    public static void printEmpAndSubclassNames(List<? extends Employee> employees) {
+        employees.stream()
+                .map(Employee::getName)
+                .forEach(System.out::println);
+        // employees.add(new Employee("Fred")); // does not compile
+        // employees.add(new Salaried("Barney")); // does not compile
+    }
+}
+```
+* it turns out that we have to use `super` in other situations:
+```java
+public class HR {
+
+    // PECS --> produces uses extends, consumes uses super
+    public static void printAllFiltered(
+            List<? extends Employee> employees, Predicate<? super Employee> predicate) {
+        for (Employee e : employees) {
+            if (predicate.test(e)) {
+                System.out.println(e.getName());
+            }
+        }
+    }
+}
+```
+* we also have to use `<T extends Repairable>`, we can not just use the name of the interface:
+```java
+public class RepairShop {
+
+    public static <T extends Repairable> void fixAll(List<T> items) {
+        items.forEach(T::fix);
+    }
+}
+```
 
 
 
