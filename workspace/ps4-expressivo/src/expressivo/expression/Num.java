@@ -1,10 +1,14 @@
-package expressivo;
+package expressivo.expression;
 
 import java.util.Map;
 
+import expressivo.Expression;
+
 public class Num implements Expression{
+    
     private final Number number;
     private boolean isInt;
+    
     /**
      * 
      * @param num: The number this contains
@@ -46,7 +50,6 @@ public class Num implements Expression{
             return new Num(left.getNum() + right.getNum());
     }
     
-    
     public static Num zero() {
         return new Num(0);
     }
@@ -71,7 +74,6 @@ public class Num implements Expression{
          return number.toString();
     }
     
-    
     @Override
     public int hashCode() {
         return number.hashCode();
@@ -92,6 +94,8 @@ public class Num implements Expression{
         else return false;
     }
 
+    
+    
     /* da/dx = 0 if a is a constant */
     @Override
     public Expression differentiate(Var x) {

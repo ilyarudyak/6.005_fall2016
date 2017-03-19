@@ -1,9 +1,10 @@
-package expressivo;
+package expressivo.expression;
 
+import expressivo.Expression;
 
-public class MultiplyExpression extends BinaryOp implements Expression{
+public class Multiply extends BinaryOp implements Expression{
 
-    public MultiplyExpression(Expression leftOp, Expression rightOp) {
+    public Multiply(Expression leftOp, Expression rightOp) {
         super(leftOp, rightOp, '*');
     }
     
@@ -26,36 +27,36 @@ public class MultiplyExpression extends BinaryOp implements Expression{
             else if (isNumRight) {
                 return Num.product((Num)leftOp, (Num)rightOp);
            }
-            else if (rightOp instanceof MultiplyExpression) {
-    	        final Expression leftOfRightOp = ((MultiplyExpression) rightOp).getLeft();
-    	        final Expression rigtOfRightOp = ((MultiplyExpression) rightOp).getRight();
+            else if (rightOp instanceof Multiply) {
+    	        final Expression leftOfRightOp = ((Multiply) rightOp).getLeft();
+    	        final Expression rigtOfRightOp = ((Multiply) rightOp).getRight();
     	        if (leftOfRightOp instanceof Num) {
     	            return createProduct( Num.product((Num) leftOp, (Num) leftOfRightOp) , rigtOfRightOp);
     	        }
     	        
-    	        else return new MultiplyExpression(leftOp, rightOp);
+    	        else return new Multiply(leftOp, rightOp);
     	    }
             
-            else return new MultiplyExpression(leftOp, rightOp);
+            else return new Multiply(leftOp, rightOp);
     	   
     	}
     	
-    	else if (rightOp instanceof MultiplyExpression) {
-    	     final Expression leftOfRightOp = ((MultiplyExpression) rightOp).getLeft();
-             final Expression rigtOfRightOp = ((MultiplyExpression) rightOp).getRight();
+    	else if (rightOp instanceof Multiply) {
+    	     final Expression leftOfRightOp = ((Multiply) rightOp).getLeft();
+             final Expression rigtOfRightOp = ((Multiply) rightOp).getRight();
              if (leftOfRightOp instanceof Num) {
                  return createProduct(leftOfRightOp, createProduct(leftOp, rigtOfRightOp));
              }
              
-             else return new MultiplyExpression(leftOp, rightOp);
+             else return new Multiply(leftOp, rightOp);
     	}
     	
 
     	else if (rightOp.equals(zero)) return zero;
     	else if (rightOp.equals(one)) return leftOp;
     
-    	else if (isNumRight) return new MultiplyExpression(rightOp, leftOp);
-    	else return new MultiplyExpression(leftOp, rightOp);
+    	else if (isNumRight) return new Multiply(rightOp, leftOp);
+    	else return new Multiply(leftOp, rightOp);
     }
 
 
@@ -70,6 +71,6 @@ public class MultiplyExpression extends BinaryOp implements Expression{
         final Expression leftDeriv = left.differentiate(x);
         final Expression rightDeriv = right.differentiate(x);
                
-        return new SumExpression(new MultiplyExpression(left, rightDeriv), new MultiplyExpression(right, leftDeriv));	
+        return new Sum(new Multiply(left, rightDeriv), new Multiply(right, leftDeriv));	
 	} 
 }

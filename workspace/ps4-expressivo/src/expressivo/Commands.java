@@ -2,6 +2,8 @@ package expressivo;
 
 import java.util.Map;
 
+import expressivo.expression.Var;
+
 /**
  * String-based commands provided by the expression system.
  * 

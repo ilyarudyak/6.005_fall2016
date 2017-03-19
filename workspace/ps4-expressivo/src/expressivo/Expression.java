@@ -4,6 +4,11 @@ import java.io.File;
 import java.io.IOException;
 import java.util.List;
 import java.util.Map;
+
+import expressivo.expression.Multiply;
+import expressivo.expression.Num;
+import expressivo.expression.Sum;
+import expressivo.expression.Var;
 import lib6005.parser.*;
 
 /**
@@ -27,9 +32,9 @@ public interface Expression {
 
     public static Expression create(Expression leftExpr, Expression rightExpr, char op) {
         if  (op == '+')
-            return SumExpression.createSum(leftExpr, rightExpr);
+            return Sum.createSum(leftExpr, rightExpr);
         else
-            return MultiplyExpression.createProduct(leftExpr, rightExpr);
+            return Multiply.createProduct(leftExpr, rightExpr);
     }
     public static Expression accumulator(ParseTree<Grammar> tree, Grammar grammarObj) {
         Expression expr = null;
@@ -51,9 +56,9 @@ public interface Expression {
             else if (child.getName() == Grammar.WHITESPACE) continue;
             else {
                 if (grammarObj == Grammar.SUM)
-                    expr = new SumExpression(buildAST(child), expr);
+                    expr = new Sum(buildAST(child), expr);
                 else
-                    expr = new MultiplyExpression(buildAST(child), expr);
+                    expr = new Multiply(buildAST(child), expr);
             }
         }
         
@@ -112,7 +117,7 @@ public interface Expression {
      */
     public static Expression parse(String input) {
         try {
-            Parser<Grammar> parser = GrammarCompiler.compile(new File("/Users/apple/Documents/workspace/ps1-expressivo/src/expressivo/Expression.g"), Grammar.ROOT);
+            Parser<Grammar> parser = GrammarCompiler.compile(new File("src/expressivo/Expression.g"), Grammar.ROOT);
             ParseTree<Grammar> tree = parser.parse(input);
             return buildAST(tree);
             

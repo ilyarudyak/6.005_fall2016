@@ -1,6 +1,8 @@
-package expressivo;
+package expressivo.expression;
 
 import java.util.Map;
+
+import expressivo.Expression;
 
 public class Var implements Expression{
     private final String var;

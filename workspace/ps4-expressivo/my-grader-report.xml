@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites>
-  <testsuite errors="0" failures="0" hostname="Ilyas-MacBook-Pro.local" id="0" name="CommandsTest" package="expressivo" skipped="0" tests="1" time="0.068" timestamp="2017-03-19T11:49:00">
+  <testsuite errors="0" failures="0" hostname="Ilyas-MacBook-Pro.local" id="0" name="CommandsTest" package="expressivo" skipped="0" tests="1" time="0.054" timestamp="2017-03-19T12:46:10">
       <properties>
           <property name="java.vendor" value="Oracle Corporation" />
 
@@ -13,6 +13,8 @@
           <property name="os.name" value="Mac OS X" />
 
           <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/classes" />
+
+          <property name="final.grading" value="true" />
 
           <property name="java.vm.specification.vendor" value="Oracle Corporation" />
 
@@ -86,7 +88,7 @@
 
           <property name="java.specification.vendor" value="Oracle Corporation" />
 
-          <property name="which.tests.ran" value="BETA" />
+          <property name="which.tests.ran" value="BETA + FINAL" />
 
           <property name="java.library.path" value="/Users/ilyarudyak/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:." />
 
@@ -100,7 +102,7 @@
 
           <property name="beta.grader.jar" value="ps1-beta-grader.jar" />
 
-          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner expressivo.CommandsTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps4-expressivo/.grader/TEST-expressivo.CommandsTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps4-expressivo/.grader/junitvmwatcher9046609031540081321.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps4-expressivo/.grader/junit4466251616026273628.properties" />
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner expressivo.CommandsTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps4-expressivo/.grader/TEST-expressivo.CommandsTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps4-expressivo/.grader/junitvmwatcher7118092228620963803.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps4-expressivo/.grader/junit4140777386880711957.properties" />
 
           <property name="java.class.path" value="/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps4-expressivo/lib/junit-4.12.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps4-expressivo/lib/hamcrest-core-1.3.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps4-expressivo/lib/parserlib.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps4-expressivo/.grader/bin-student:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-launcher.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit4.jar" />
 
@@ -154,14 +156,14 @@
 
       </properties>
 
-      <testcase classname="expressivo.CommandsTest" name="testAssertionsEnabled" time="0.002" />
+      <testcase classname="expressivo.CommandsTest" name="testAssertionsEnabled" time="0.001" />
 
       <system-out><![CDATA[]]></system-out>
 
       <system-err><![CDATA[]]></system-err>
 
   </testsuite>
-  <testsuite errors="0" failures="0" hostname="Ilyas-MacBook-Pro.local" id="1" name="ExpressionTest" package="expressivo" skipped="0" tests="1" time="0.061" timestamp="2017-03-19T11:49:01">
+  <testsuite errors="0" failures="0" hostname="Ilyas-MacBook-Pro.local" id="1" name="ExpressionTest" package="expressivo" skipped="0" tests="27" time="0.619" timestamp="2017-03-19T12:46:10">
       <properties>
           <property name="java.vendor" value="Oracle Corporation" />
 
@@ -174,6 +176,8 @@
           <property name="os.name" value="Mac OS X" />
 
           <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/classes" />
+
+          <property name="final.grading" value="true" />
 
           <property name="java.vm.specification.vendor" value="Oracle Corporation" />
 
@@ -247,7 +251,7 @@
 
           <property name="java.specification.vendor" value="Oracle Corporation" />
 
-          <property name="which.tests.ran" value="BETA" />
+          <property name="which.tests.ran" value="BETA + FINAL" />
 
           <property name="java.library.path" value="/Users/ilyarudyak/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:." />
 
@@ -261,7 +265,7 @@
 
           <property name="beta.grader.jar" value="ps1-beta-grader.jar" />
 
-          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner expressivo.ExpressionTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps4-expressivo/.grader/TEST-expressivo.ExpressionTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps4-expressivo/.grader/junitvmwatcher1710660430679910575.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps4-expressivo/.grader/junit5109379351405022785.properties" />
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner expressivo.ExpressionTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps4-expressivo/.grader/TEST-expressivo.ExpressionTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps4-expressivo/.grader/junitvmwatcher3247014479089673860.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps4-expressivo/.grader/junit8331925242686527025.properties" />
 
           <property name="java.class.path" value="/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps4-expressivo/lib/junit-4.12.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps4-expressivo/lib/hamcrest-core-1.3.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps4-expressivo/lib/parserlib.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps4-expressivo/.grader/bin-student:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-launcher.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit4.jar" />
 
@@ -315,14 +319,66 @@
 
       </properties>
 
-      <testcase classname="expressivo.ExpressionTest" name="testAssertionsEnabled" time="0.002" />
+      <testcase classname="expressivo.ExpressionTest" name="testHashCode[same one variable]" time="0.084" />
+
+      <testcase classname="expressivo.ExpressionTest" name="testEquals[same one variable]" time="0.032" />
+
+      <testcase classname="expressivo.ExpressionTest" name="testToStringConsistent[same one variable]" time="0.018" />
+
+      <testcase classname="expressivo.ExpressionTest" name="testHashCode[same one operator]" time="0.026" />
+
+      <testcase classname="expressivo.ExpressionTest" name="testEquals[same one operator]" time="0.017" />
+
+      <testcase classname="expressivo.ExpressionTest" name="testToStringConsistent[same one operator]" time="0.014" />
+
+      <testcase classname="expressivo.ExpressionTest" name="testHashCode[same expression with numbers/variables/operators]" time="0.02" />
+
+      <testcase classname="expressivo.ExpressionTest" name="testEquals[same expression with numbers/variables/operators]" time="0.015" />
+
+      <testcase classname="expressivo.ExpressionTest" name="testToStringConsistent[same expression with numbers/variables/operators]" time="0.013" />
+
+      <testcase classname="expressivo.ExpressionTest" name="testHashCode[var and same var parenthesized]" time="0.012" />
+
+      <testcase classname="expressivo.ExpressionTest" name="testEquals[var and same var parenthesized]" time="0.02" />
+
+      <testcase classname="expressivo.ExpressionTest" name="testToStringConsistent[var and same var parenthesized]" time="0.022" />
+
+      <testcase classname="expressivo.ExpressionTest" name="testHashCode[one operator and same operator parenthesized]" time="0.018" />
+
+      <testcase classname="expressivo.ExpressionTest" name="testEquals[one operator and same operator parenthesized]" time="0.012" />
+
+      <testcase classname="expressivo.ExpressionTest" name="testToStringConsistent[one operator and same operator parenthesized]" time="0.009" />
+
+      <testcase classname="expressivo.ExpressionTest" name="testHashCode[* + * same as (*)+(*)]" time="0.012" />
+
+      <testcase classname="expressivo.ExpressionTest" name="testEquals[* + * same as (*)+(*)]" time="0.01" />
+
+      <testcase classname="expressivo.ExpressionTest" name="testToStringConsistent[* + * same as (*)+(*)]" time="0.012" />
+
+      <testcase classname="expressivo.ExpressionTest" name="testHashCode[((*)+)* different from * + *]" time="0.009" />
+
+      <testcase classname="expressivo.ExpressionTest" name="testEquals[((*)+)* different from * + *]" time="0.011" />
+
+      <testcase classname="expressivo.ExpressionTest" name="testToStringConsistent[((*)+)* different from * + *]" time="0.014" />
+
+      <testcase classname="expressivo.ExpressionTest" name="testHashCode[+ not commutative under structual equality]" time="0.023" />
+
+      <testcase classname="expressivo.ExpressionTest" name="testEquals[+ not commutative under structual equality]" time="0.019" />
+
+      <testcase classname="expressivo.ExpressionTest" name="testToStringConsistent[+ not commutative under structual equality]" time="0.018" />
+
+      <testcase classname="expressivo.ExpressionTest" name="testHashCode[* not commutative under structual equality]" time="0.022" />
+
+      <testcase classname="expressivo.ExpressionTest" name="testEquals[* not commutative under structual equality]" time="0.012" />
+
+      <testcase classname="expressivo.ExpressionTest" name="testToStringConsistent[* not commutative under structual equality]" time="0.011" />
 
       <system-out><![CDATA[]]></system-out>
 
       <system-err><![CDATA[]]></system-err>
 
   </testsuite>
-  <testsuite errors="4" failures="1" hostname="Ilyas-MacBook-Pro.local" id="2" name="JavaInterfaceTest" package="expressivo.beta" skipped="0" tests="6" time="0.079" timestamp="2017-03-19T11:49:01">
+  <testsuite errors="0" failures="0" hostname="Ilyas-MacBook-Pro.local" id="2" name="JavaInterfaceTest" package="expressivo.beta" skipped="0" tests="6" time="0.263" timestamp="2017-03-19T12:46:11">
       <properties>
           <property name="java.vendor" value="Oracle Corporation" />
 
@@ -335,6 +391,8 @@
           <property name="os.name" value="Mac OS X" />
 
           <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/classes" />
+
+          <property name="final.grading" value="true" />
 
           <property name="java.vm.specification.vendor" value="Oracle Corporation" />
 
@@ -408,7 +466,7 @@
 
           <property name="java.specification.vendor" value="Oracle Corporation" />
 
-          <property name="which.tests.ran" value="BETA" />
+          <property name="which.tests.ran" value="BETA + FINAL" />
 
           <property name="java.library.path" value="/Users/ilyarudyak/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:." />
 
@@ -422,7 +480,7 @@
 
           <property name="beta.grader.jar" value="ps1-beta-grader.jar" />
 
-          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner expressivo.beta.JavaInterfaceTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps4-expressivo/.grader/TEST-expressivo.beta.JavaInterfaceTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps4-expressivo/.grader/junitvmwatcher4977152255959783794.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps4-expressivo/.grader/junit5329661292458406150.properties" />
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner expressivo.beta.JavaInterfaceTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps4-expressivo/.grader/TEST-expressivo.beta.JavaInterfaceTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps4-expressivo/.grader/junitvmwatcher740918507367373772.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps4-expressivo/.grader/junit26424087845548827.properties" />
 
           <property name="java.class.path" value="/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps4-expressivo/lib/junit-4.12.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps4-expressivo/lib/hamcrest-core-1.3.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps4-expressivo/lib/parserlib.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps4-expressivo/.grader/bin-student:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-launcher.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit4.jar" />
 
@@ -476,53 +534,1079 @@
 
       </properties>
 
-      <testcase classname="expressivo.beta.JavaInterfaceTest" name="testParseEquals" time="0.008" />
+      <testcase classname="expressivo.beta.JavaInterfaceTest" name="testParseEquals" time="0.102" />
 
-      <testcase classname="expressivo.beta.JavaInterfaceTest" name="testDifferentiate" time="0.005">
-          <error type="java.lang.NullPointerException">java.lang.NullPointerException
+      <testcase classname="expressivo.beta.JavaInterfaceTest" name="testDifferentiate" time="0.012" />
+
+      <testcase classname="expressivo.beta.JavaInterfaceTest" name="testParseToString" time="0.023" />
+
+      <testcase classname="expressivo.beta.JavaInterfaceTest" name="testSimplifyTwice" time="0.02" />
+
+      <testcase classname="expressivo.beta.JavaInterfaceTest" name="testParseInvalid" time="0.011" />
+
+      <testcase classname="expressivo.beta.JavaInterfaceTest" name="testSimplify" time="0.014" />
+
+      <system-out><![CDATA[]]></system-out>
+
+      <system-err><![CDATA[]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="Ilyas-MacBook-Pro.local" id="3" name="ExpressionTest" package="expressivo.grader" skipped="0" tests="27" time="0.604" timestamp="2017-03-19T12:46:12">
+      <properties>
+          <property name="java.vendor" value="Oracle Corporation" />
+
+          <property name="sun.java.launcher" value="SUN_STANDARD" />
+
+          <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+
+          <property name="build.sysclasspath" value="ignore" />
+
+          <property name="os.name" value="Mac OS X" />
+
+          <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/classes" />
+
+          <property name="final.grading" value="true" />
+
+          <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+
+          <property name="ant.home" value="/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327" />
+
+          <property name="java.runtime.version" value="1.8.0_51-b16" />
+
+          <property name="user.name" value="ilyarudyak" />
+
+          <property name="ant.build.javac.target" value="1.8" />
+
+          <property name="user.language" value="en" />
+
+          <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib" />
+
+          <property name="grader.report.file" value="my-grader-report.xml" />
+
+          <property name="ant.project.default-target" value="all" />
+
+          <property name="java.version" value="1.8.0_51" />
+
+          <property name="user.timezone" value="Europe/Moscow" />
+
+          <property name="sun.arch.data.model" value="64" />
+
+          <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+
+          <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/endorsed" />
+
+          <property name="sun.cpu.isalist" value="" />
+
+          <property name="sun.jnu.encoding" value="UTF-8" />
+
+          <property name="file.encoding.pkg" value="sun.io" />
+
+          <property name="file.separator" value="/" />
+
+          <property name="java.specification.name" value="Java Platform API Specification" />
+
+          <property name="java.class.version" value="52.0" />
+
+          <property name="user.country" value="US" />
+
+          <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre" />
+
+          <property name="java.vm.info" value="mixed mode" />
+
+          <property name="ant.file" value="/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps4-expressivo/grader.xml" />
+
+          <property name="os.version" value="10.12.3" />
+
+          <property name="final.grader.jar" value="ps1-final-grader.jar" />
+
+          <property name="path.separator" value=":" />
+
+          <property name="java.vm.version" value="25.51-b03" />
+
+          <property name="ant.library.dir" value="/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib" />
+
+          <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob" />
+
+          <property name="sun.io.unicode.encoding" value="UnicodeBig" />
+
+          <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit" />
+
+          <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+
+          <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+
+          <property name="user.home" value="/Users/ilyarudyak" />
+
+          <property name="java.specification.vendor" value="Oracle Corporation" />
+
+          <property name="which.tests.ran" value="BETA + FINAL" />
+
+          <property name="java.library.path" value="/Users/ilyarudyak/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:." />
+
+          <property name="java.vendor.url" value="http://java.oracle.com/" />
+
+          <property name="java.vm.vendor" value="Oracle Corporation" />
+
+          <property name="gopherProxySet" value="false" />
+
+          <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+
+          <property name="beta.grader.jar" value="ps1-beta-grader.jar" />
+
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner expressivo.grader.ExpressionTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps4-expressivo/.grader/TEST-expressivo.grader.ExpressionTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps4-expressivo/.grader/junitvmwatcher1587771300684294186.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps4-expressivo/.grader/junit7479750055790458881.properties" />
+
+          <property name="java.class.path" value="/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps4-expressivo/lib/junit-4.12.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps4-expressivo/lib/hamcrest-core-1.3.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps4-expressivo/lib/parserlib.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps4-expressivo/.grader/bin-tests-final:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps4-expressivo/.grader/bin-student:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-launcher.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit4.jar" />
+
+          <property name="ant.version" value="Apache Ant(TM) version 1.9.6 compiled on June 29 2015" />
+
+          <property name="project.name" value="ps1-expressivo" />
+
+          <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+
+          <property name="java.vm.specification.version" value="1.8" />
+
+          <property name="sun.cpu.endian" value="little" />
+
+          <property name="didit.desc" value="Running our tests against your implementation" />
+
+          <property name="sun.os.patch.level" value="unknown" />
+
+          <property name="java.io.tmpdir" value="/var/folders/2r/mhs9bq0x3sx158w70nqz2j6h0000gn/T/" />
+
+          <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
+
+          <property name="os.arch" value="x86_64" />
+
+          <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment" />
+
+          <property name="java.ext.dirs" value="/Users/ilyarudyak/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java" />
+
+          <property name="user.dir" value="/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps4-expressivo" />
+
+          <property name="line.separator" value="&#xa;" />
+
+          <property name="zipfile" value="my-submission.zip" />
+
+          <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
+
+          <property name="problem.set" value="ps1" />
+
+          <property name="basedir" value="/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps4-expressivo" />
+
+          <property name="ant.java.version" value="1.8" />
+
+          <property name="ant.core.lib" value="/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant.jar" />
+
+          <property name="file.encoding" value="UTF-8" />
+
+          <property name="java.specification.version" value="1.8" />
+
+          <property name="grader.dir" value=".grader" />
+
+          <property name="ant.project.invoked-targets" value="all" />
+
+      </properties>
+
+      <testcase classname="expressivo.grader.ExpressionTest" name="testHashCode[same one variable]" time="0.084" />
+
+      <testcase classname="expressivo.grader.ExpressionTest" name="testEquals[same one variable]" time="0.032" />
+
+      <testcase classname="expressivo.grader.ExpressionTest" name="testToStringConsistent[same one variable]" time="0.019" />
+
+      <testcase classname="expressivo.grader.ExpressionTest" name="testHashCode[same one operator]" time="0.022" />
+
+      <testcase classname="expressivo.grader.ExpressionTest" name="testEquals[same one operator]" time="0.018" />
+
+      <testcase classname="expressivo.grader.ExpressionTest" name="testToStringConsistent[same one operator]" time="0.015" />
+
+      <testcase classname="expressivo.grader.ExpressionTest" name="testHashCode[same expression with numbers/variables/operators]" time="0.012" />
+
+      <testcase classname="expressivo.grader.ExpressionTest" name="testEquals[same expression with numbers/variables/operators]" time="0.011" />
+
+      <testcase classname="expressivo.grader.ExpressionTest" name="testToStringConsistent[same expression with numbers/variables/operators]" time="0.01" />
+
+      <testcase classname="expressivo.grader.ExpressionTest" name="testHashCode[var and same var parenthesized]" time="0.011" />
+
+      <testcase classname="expressivo.grader.ExpressionTest" name="testEquals[var and same var parenthesized]" time="0.017" />
+
+      <testcase classname="expressivo.grader.ExpressionTest" name="testToStringConsistent[var and same var parenthesized]" time="0.017" />
+
+      <testcase classname="expressivo.grader.ExpressionTest" name="testHashCode[one operator and same operator parenthesized]" time="0.019" />
+
+      <testcase classname="expressivo.grader.ExpressionTest" name="testEquals[one operator and same operator parenthesized]" time="0.011" />
+
+      <testcase classname="expressivo.grader.ExpressionTest" name="testToStringConsistent[one operator and same operator parenthesized]" time="0.009" />
+
+      <testcase classname="expressivo.grader.ExpressionTest" name="testHashCode[* + * same as (*)+(*)]" time="0.013" />
+
+      <testcase classname="expressivo.grader.ExpressionTest" name="testEquals[* + * same as (*)+(*)]" time="0.017" />
+
+      <testcase classname="expressivo.grader.ExpressionTest" name="testToStringConsistent[* + * same as (*)+(*)]" time="0.009" />
+
+      <testcase classname="expressivo.grader.ExpressionTest" name="testHashCode[((*)+)* different from * + *]" time="0.01" />
+
+      <testcase classname="expressivo.grader.ExpressionTest" name="testEquals[((*)+)* different from * + *]" time="0.014" />
+
+      <testcase classname="expressivo.grader.ExpressionTest" name="testToStringConsistent[((*)+)* different from * + *]" time="0.016" />
+
+      <testcase classname="expressivo.grader.ExpressionTest" name="testHashCode[+ not commutative under structual equality]" time="0.019" />
+
+      <testcase classname="expressivo.grader.ExpressionTest" name="testEquals[+ not commutative under structual equality]" time="0.023" />
+
+      <testcase classname="expressivo.grader.ExpressionTest" name="testToStringConsistent[+ not commutative under structual equality]" time="0.023" />
+
+      <testcase classname="expressivo.grader.ExpressionTest" name="testHashCode[* not commutative under structual equality]" time="0.027" />
+
+      <testcase classname="expressivo.grader.ExpressionTest" name="testEquals[* not commutative under structual equality]" time="0.012" />
+
+      <testcase classname="expressivo.grader.ExpressionTest" name="testToStringConsistent[* not commutative under structual equality]" time="0.014" />
+
+      <system-out><![CDATA[]]></system-out>
+
+      <system-err><![CDATA[]]></system-err>
+
+  </testsuite>
+  <testsuite errors="6" failures="18" hostname="Ilyas-MacBook-Pro.local" id="4" name="ExpressivoTest" package="expressivo.grader" skipped="0" tests="152" time="1.428" timestamp="2017-03-19T12:46:13">
+      <properties>
+          <property name="java.vendor" value="Oracle Corporation" />
+
+          <property name="sun.java.launcher" value="SUN_STANDARD" />
+
+          <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+
+          <property name="build.sysclasspath" value="ignore" />
+
+          <property name="os.name" value="Mac OS X" />
+
+          <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/classes" />
+
+          <property name="final.grading" value="true" />
+
+          <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+
+          <property name="ant.home" value="/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327" />
+
+          <property name="java.runtime.version" value="1.8.0_51-b16" />
+
+          <property name="user.name" value="ilyarudyak" />
+
+          <property name="ant.build.javac.target" value="1.8" />
+
+          <property name="user.language" value="en" />
+
+          <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib" />
+
+          <property name="grader.report.file" value="my-grader-report.xml" />
+
+          <property name="ant.project.default-target" value="all" />
+
+          <property name="java.version" value="1.8.0_51" />
+
+          <property name="user.timezone" value="Europe/Moscow" />
+
+          <property name="sun.arch.data.model" value="64" />
+
+          <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+
+          <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/endorsed" />
+
+          <property name="sun.cpu.isalist" value="" />
+
+          <property name="sun.jnu.encoding" value="UTF-8" />
+
+          <property name="file.encoding.pkg" value="sun.io" />
+
+          <property name="file.separator" value="/" />
+
+          <property name="java.specification.name" value="Java Platform API Specification" />
+
+          <property name="java.class.version" value="52.0" />
+
+          <property name="user.country" value="US" />
+
+          <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre" />
+
+          <property name="java.vm.info" value="mixed mode" />
+
+          <property name="ant.file" value="/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps4-expressivo/grader.xml" />
+
+          <property name="os.version" value="10.12.3" />
+
+          <property name="final.grader.jar" value="ps1-final-grader.jar" />
+
+          <property name="path.separator" value=":" />
+
+          <property name="java.vm.version" value="25.51-b03" />
+
+          <property name="ant.library.dir" value="/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib" />
+
+          <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob" />
+
+          <property name="sun.io.unicode.encoding" value="UnicodeBig" />
+
+          <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit" />
+
+          <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+
+          <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+
+          <property name="user.home" value="/Users/ilyarudyak" />
+
+          <property name="java.specification.vendor" value="Oracle Corporation" />
+
+          <property name="which.tests.ran" value="BETA + FINAL" />
+
+          <property name="java.library.path" value="/Users/ilyarudyak/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:." />
+
+          <property name="java.vendor.url" value="http://java.oracle.com/" />
+
+          <property name="java.vm.vendor" value="Oracle Corporation" />
+
+          <property name="gopherProxySet" value="false" />
+
+          <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+
+          <property name="beta.grader.jar" value="ps1-beta-grader.jar" />
+
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner expressivo.grader.ExpressivoTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps4-expressivo/.grader/TEST-expressivo.grader.ExpressivoTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps4-expressivo/.grader/junitvmwatcher8691058277834787246.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps4-expressivo/.grader/junit3586132016551899347.properties" />
+
+          <property name="java.class.path" value="/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps4-expressivo/lib/junit-4.12.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps4-expressivo/lib/hamcrest-core-1.3.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps4-expressivo/lib/parserlib.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps4-expressivo/.grader/bin-tests-final:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps4-expressivo/.grader/bin-student:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-launcher.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit4.jar" />
+
+          <property name="ant.version" value="Apache Ant(TM) version 1.9.6 compiled on June 29 2015" />
+
+          <property name="project.name" value="ps1-expressivo" />
+
+          <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+
+          <property name="java.vm.specification.version" value="1.8" />
+
+          <property name="sun.cpu.endian" value="little" />
+
+          <property name="didit.desc" value="Running our tests against your implementation" />
+
+          <property name="sun.os.patch.level" value="unknown" />
+
+          <property name="java.io.tmpdir" value="/var/folders/2r/mhs9bq0x3sx158w70nqz2j6h0000gn/T/" />
+
+          <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
+
+          <property name="os.arch" value="x86_64" />
+
+          <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment" />
+
+          <property name="java.ext.dirs" value="/Users/ilyarudyak/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java" />
+
+          <property name="user.dir" value="/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps4-expressivo" />
+
+          <property name="line.separator" value="&#xa;" />
+
+          <property name="zipfile" value="my-submission.zip" />
+
+          <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
+
+          <property name="problem.set" value="ps1" />
+
+          <property name="basedir" value="/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps4-expressivo" />
+
+          <property name="ant.java.version" value="1.8" />
+
+          <property name="ant.core.lib" value="/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant.jar" />
+
+          <property name="file.encoding" value="UTF-8" />
+
+          <property name="java.specification.version" value="1.8" />
+
+          <property name="grader.dir" value=".grader" />
+
+          <property name="ant.project.invoked-targets" value="all" />
+
+      </properties>
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dx[zero]" time="0.108" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dy[zero]" time="0.023" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testParse[zero]" time="0.013" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testSimplify_xyz[zero]" time="0.014" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dx[nonzero integer]" time="0.007" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dy[nonzero integer]" time="0.011" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testParse[nonzero integer]" time="0.007" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testSimplify_xyz[nonzero integer]" time="0.013" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dx[decimal-fraction &lt; 1]" time="0.009" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dy[decimal-fraction &lt; 1]" time="0.009" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testParse[decimal-fraction &lt; 1]" time="0.006" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testSimplify_xyz[decimal-fraction &lt; 1]" time="0.012" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dx[decimal-fraction &gt; 1]" time="0.01" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dy[decimal-fraction &gt; 1]" time="0.011" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testParse[decimal-fraction &gt; 1]" time="0.01" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testSimplify_xyz[decimal-fraction &gt; 1]" time="0.005" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dx[trailing zeros]" time="0.01" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dy[trailing zeros]" time="0.008" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testParse[trailing zeros]" time="0.005" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testSimplify_xyz[trailing zeros]" time="0.006" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dx[no leading zero]" time="0.006" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dy[no leading zero]" time="0.012" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testParse[no leading zero]" time="0.011" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testSimplify_xyz[no leading zero]" time="0.012" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dx[decimal-fraction very small]" time="0.015" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dy[decimal-fraction very small]" time="0.006" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testParse[decimal-fraction very small]" time="0.011">
+          <error message="invalid Expression.toString (staff parser could not parse)" type="java.lang.RuntimeException">java.lang.RuntimeException: invalid Expression.toString (staff parser could not parse)
+	at expressivo.grader.ExpressivoTest.testParse(ExpressivoTest.java:100)
+Caused by: expressivo.staff.SyntaxError: Character 3: expected end_of_input, got E in expression &quot;1.0E-6&quot;
+	at expressivo.staff.Parser.parse(Parser.java:23)
+	at expressivo.staff.Parser.parse(Parser.java:13)
+	at expressivo.grader.ExpressivoTest.testParse(ExpressivoTest.java:98)
+Caused by: expressivo.staff.SyntaxError: Character 3: expected end_of_input, got E
+	at expressivo.staff.Parser.eat(Parser.java:129)
+	at expressivo.staff.Parser.parse(Parser.java:48)
+	at expressivo.staff.Parser.parse(Parser.java:21)
+</error>
+
+      </testcase>
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testSimplify_xyz[decimal-fraction very small]" time="0.007">
+          <error message="invalid simplified expression (staff parser could not parse)" type="java.lang.RuntimeException">java.lang.RuntimeException: invalid simplified expression (staff parser could not parse)
+	at expressivo.grader.ExpressivoTest.testSimplify_xyz(ExpressivoTest.java:159)
+Caused by: expressivo.staff.SyntaxError: Character 3: expected end_of_input, got E in expression &quot;1.0E-6&quot;
+	at expressivo.staff.Parser.parse(Parser.java:23)
+	at expressivo.staff.Parser.parse(Parser.java:13)
+	at expressivo.grader.ExpressivoTest.testSimplify_xyz(ExpressivoTest.java:157)
+Caused by: expressivo.staff.SyntaxError: Character 3: expected end_of_input, got E
+	at expressivo.staff.Parser.eat(Parser.java:129)
+	at expressivo.staff.Parser.parse(Parser.java:48)
+	at expressivo.staff.Parser.parse(Parser.java:21)
+</error>
+
+      </testcase>
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dx[integer very large]" time="0.006">
+          <error message="error calling differentiate()" type="java.lang.RuntimeException">java.lang.RuntimeException: error calling differentiate()
+	at expressivo.grader.ExpressivoTest.testDifferentiate_dx(ExpressivoTest.java:113)
+Caused by: java.lang.NumberFormatException: For input string: &quot;9007199254740992&quot;
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Integer.parseInt(Integer.java:583)
+	at java.lang.Integer.parseInt(Integer.java:615)
+	at expressivo.Expression.buildAST(Expression.java:82)
+	at expressivo.Expression.buildAST(Expression.java:94)
+	at expressivo.Expression.buildAST(Expression.java:94)
+	at expressivo.Expression.buildAST(Expression.java:94)
+	at expressivo.Expression.accumulator(Expression.java:48)
+	at expressivo.Expression.buildAST(Expression.java:103)
+	at expressivo.Expression.buildAST(Expression.java:94)
+	at expressivo.Expression.parse(Expression.java:122)
 	at expressivo.Commands.differentiate(Commands.java:26)
-	at expressivo.beta.JavaInterfaceTest.testDifferentiate(JavaInterfaceTest.java:39)
+	at expressivo.grader.ExpressivoTest.testDifferentiate_dx(ExpressivoTest.java:111)
 </error>
 
       </testcase>
 
-      <testcase classname="expressivo.beta.JavaInterfaceTest" name="testParseToString" time="0.0">
-          <error type="java.lang.NullPointerException">java.lang.NullPointerException
-	at expressivo.beta.JavaInterfaceTest.testParseToString(JavaInterfaceTest.java:31)
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dy[integer very large]" time="0.008">
+          <error message="error calling differentiate()" type="java.lang.RuntimeException">java.lang.RuntimeException: error calling differentiate()
+	at expressivo.grader.ExpressivoTest.testDifferentiate_dy(ExpressivoTest.java:131)
+Caused by: java.lang.NumberFormatException: For input string: &quot;9007199254740992&quot;
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Integer.parseInt(Integer.java:583)
+	at java.lang.Integer.parseInt(Integer.java:615)
+	at expressivo.Expression.buildAST(Expression.java:82)
+	at expressivo.Expression.buildAST(Expression.java:94)
+	at expressivo.Expression.buildAST(Expression.java:94)
+	at expressivo.Expression.buildAST(Expression.java:94)
+	at expressivo.Expression.accumulator(Expression.java:48)
+	at expressivo.Expression.buildAST(Expression.java:103)
+	at expressivo.Expression.buildAST(Expression.java:94)
+	at expressivo.Expression.parse(Expression.java:122)
+	at expressivo.Commands.differentiate(Commands.java:26)
+	at expressivo.grader.ExpressivoTest.testDifferentiate_dy(ExpressivoTest.java:129)
 </error>
 
       </testcase>
 
-      <testcase classname="expressivo.beta.JavaInterfaceTest" name="testSimplifyTwice" time="0.001">
-          <error type="java.lang.NullPointerException">java.lang.NullPointerException
-	at expressivo.Commands.simplify(Commands.java:44)
-	at expressivo.beta.JavaInterfaceTest.testSimplifyTwice(JavaInterfaceTest.java:61)
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testParse[integer very large]" time="0.006">
+          <error message="error calling parse()" type="java.lang.RuntimeException">java.lang.RuntimeException: error calling parse()
+	at expressivo.grader.ExpressivoTest.testParse(ExpressivoTest.java:95)
+Caused by: java.lang.NumberFormatException: For input string: &quot;9007199254740992&quot;
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Integer.parseInt(Integer.java:583)
+	at java.lang.Integer.parseInt(Integer.java:615)
+	at expressivo.Expression.buildAST(Expression.java:82)
+	at expressivo.Expression.buildAST(Expression.java:94)
+	at expressivo.Expression.buildAST(Expression.java:94)
+	at expressivo.Expression.buildAST(Expression.java:94)
+	at expressivo.Expression.accumulator(Expression.java:48)
+	at expressivo.Expression.buildAST(Expression.java:103)
+	at expressivo.Expression.buildAST(Expression.java:94)
+	at expressivo.Expression.parse(Expression.java:122)
+	at expressivo.grader.ExpressivoTest.testParse(ExpressivoTest.java:93)
 </error>
 
       </testcase>
 
-      <testcase classname="expressivo.beta.JavaInterfaceTest" name="testParseInvalid" time="0.001">
-          <failure message="Expected exception: java.lang.IllegalArgumentException" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Expected exception: java.lang.IllegalArgumentException
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testSimplify_xyz[integer very large]" time="0.007">
+          <error message="error calling simplify()" type="java.lang.RuntimeException">java.lang.RuntimeException: error calling simplify()
+	at expressivo.grader.ExpressivoTest.testSimplify_xyz(ExpressivoTest.java:154)
+Caused by: java.lang.NumberFormatException: For input string: &quot;9007199254740992&quot;
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Integer.parseInt(Integer.java:583)
+	at java.lang.Integer.parseInt(Integer.java:615)
+	at expressivo.Expression.buildAST(Expression.java:82)
+	at expressivo.Expression.buildAST(Expression.java:94)
+	at expressivo.Expression.buildAST(Expression.java:94)
+	at expressivo.Expression.buildAST(Expression.java:94)
+	at expressivo.Expression.accumulator(Expression.java:48)
+	at expressivo.Expression.buildAST(Expression.java:103)
+	at expressivo.Expression.buildAST(Expression.java:94)
+	at expressivo.Expression.parse(Expression.java:122)
+	at expressivo.Commands.simplify(Commands.java:45)
+	at expressivo.grader.ExpressivoTest.testSimplify_xyz(ExpressivoTest.java:152)
+</error>
+
+      </testcase>
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dx[x]" time="0.007" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dy[x]" time="0.011" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testParse[x]" time="0.006" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testSimplify_xyz[x]" time="0.006" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dx[y]" time="0.006" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dy[y]" time="0.008" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testParse[y]" time="0.007" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testSimplify_xyz[y]" time="0.007" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dx[other variable]" time="0.004" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dy[other variable]" time="0.006" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testParse[other variable]" time="0.005" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testSimplify_xyz[other variable]" time="0.013" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dx[variable with parens]" time="0.011" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dy[variable with parens]" time="0.011" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testParse[variable with parens]" time="0.011" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testSimplify_xyz[variable with parens]" time="0.01" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dx[variable with extra parens]" time="0.011" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dy[variable with extra parens]" time="0.009" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testParse[variable with extra parens]" time="0.014" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testSimplify_xyz[variable with extra parens]" time="0.008" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dx[add]" time="0.007" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dy[add]" time="0.003" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testParse[add]" time="0.006" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testSimplify_xyz[add]" time="0.005" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dx[add with extra parens]" time="0.007" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dy[add with extra parens]" time="0.007" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testParse[add with extra parens]" time="0.007" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testSimplify_xyz[add with extra parens]" time="0.008" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dx[times]" time="0.009" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dy[times]" time="0.005" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testParse[times]" time="0.005" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testSimplify_xyz[times]" time="0.005" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dx[times with extra parens]" time="0.007" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dy[times with extra parens]" time="0.009" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testParse[times with extra parens]" time="0.007" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testSimplify_xyz[times with extra parens]" time="0.007" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dx[* ( * )]" time="0.006" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dy[* ( * )]" time="0.005" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testParse[* ( * )]" time="0.006" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testSimplify_xyz[* ( * )]" time="0.007" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dx[( * ) *]" time="0.008" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dy[( * ) *]" time="0.005" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testParse[( * ) *]" time="0.007" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testSimplify_xyz[( * ) *]" time="0.007" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dx[( * ) * ( * )]" time="0.007" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dy[( * ) * ( * )]" time="0.004" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testParse[( * ) * ( * )]" time="0.004" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testSimplify_xyz[( * ) * ( * )]" time="0.004" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dx[* * * * *]" time="0.009" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dy[* * * * *]" time="0.01" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testParse[* * * * *]" time="0.01" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testSimplify_xyz[* * * * *]" time="0.013" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dx[integers add]" time="0.013" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dy[integers add]" time="0.011" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testParse[integers add]" time="0.01" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testSimplify_xyz[integers add]" time="0.012" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dx[integers times]" time="0.011" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dy[integers times]" time="0.009" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testParse[integers times]" time="0.012" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testSimplify_xyz[integers times]" time="0.01" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dx[integers with various ops]" time="0.0">
+          <failure message="manual skip" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: manual skip
+	at expressivo.grader.ExpressivoTest.testDifferentiate_dx(ExpressivoTest.java:106)
 </failure>
 
       </testcase>
 
-      <testcase classname="expressivo.beta.JavaInterfaceTest" name="testSimplify" time="0.001">
-          <error type="java.lang.NullPointerException">java.lang.NullPointerException
-	at expressivo.Commands.simplify(Commands.java:44)
-	at expressivo.beta.JavaInterfaceTest.testSimplify(JavaInterfaceTest.java:50)
-</error>
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dy[integers with various ops]" time="0.001">
+          <failure message="manual skip" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: manual skip
+	at expressivo.grader.ExpressivoTest.testDifferentiate_dy(ExpressivoTest.java:124)
+</failure>
 
       </testcase>
 
-      <system-out><![CDATA[cannot open file Expression.g
-cannot open file Expression.g
-cannot open file Expression.g
-cannot open file Expression.g
-cannot open file Expression.g
-cannot open file Expression.g
-cannot open file Expression.g
-]]></system-out>
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testParse[integers with various ops]" time="0.014" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testSimplify_xyz[integers with various ops]" time="0.012" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dx[decimal-fractions add]" time="0.013" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dy[decimal-fractions add]" time="0.014" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testParse[decimal-fractions add]" time="0.011" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testSimplify_xyz[decimal-fractions add]" time="0.007" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dx[decimal-fractions times]" time="0.005" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dy[decimal-fractions times]" time="0.005" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testParse[decimal-fractions times]" time="0.006" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testSimplify_xyz[decimal-fractions times]" time="0.004" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dx[decimal-fractions with various ops]" time="0.004" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dy[decimal-fractions with various ops]" time="0.005" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testParse[decimal-fractions with various ops]" time="0.004" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testSimplify_xyz[decimal-fractions with various ops]" time="0.005" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dx[decimal-fractions integers add]" time="0.006" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dy[decimal-fractions integers add]" time="0.004" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testParse[decimal-fractions integers add]" time="0.004" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testSimplify_xyz[decimal-fractions integers add]" time="0.006" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dx[decimal-fractions integers times]" time="0.004" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dy[decimal-fractions integers times]" time="0.004" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testParse[decimal-fractions integers times]" time="0.007" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testSimplify_xyz[decimal-fractions integers times]" time="0.005" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dx[decimal-fractions integers with various ops]" time="0.001">
+          <failure message="manual skip" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: manual skip
+	at expressivo.grader.ExpressivoTest.testDifferentiate_dx(ExpressivoTest.java:106)
+</failure>
+
+      </testcase>
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dy[decimal-fractions integers with various ops]" time="0.001">
+          <failure message="manual skip" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: manual skip
+	at expressivo.grader.ExpressivoTest.testDifferentiate_dy(ExpressivoTest.java:124)
+</failure>
+
+      </testcase>
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testParse[decimal-fractions integers with various ops]" time="0.005" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testSimplify_xyz[decimal-fractions integers with various ops]" time="0.005" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dx[various variable names]" time="0.004" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dy[various variable names]" time="0.004" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testParse[various variable names]" time="0.005" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testSimplify_xyz[various variable names]" time="0.004" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dx[nested left]" time="0.0">
+          <failure message="manual skip" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: manual skip
+	at expressivo.grader.ExpressivoTest.testDifferentiate_dx(ExpressivoTest.java:106)
+</failure>
+
+      </testcase>
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dy[nested left]" time="0.0">
+          <failure message="manual skip" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: manual skip
+	at expressivo.grader.ExpressivoTest.testDifferentiate_dy(ExpressivoTest.java:124)
+</failure>
+
+      </testcase>
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testParse[nested left]" time="0.013" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testSimplify_xyz[nested left]" time="0.011" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dx[nested center]" time="0.0">
+          <failure message="manual skip" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: manual skip
+	at expressivo.grader.ExpressivoTest.testDifferentiate_dx(ExpressivoTest.java:106)
+</failure>
+
+      </testcase>
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dy[nested center]" time="0.001">
+          <failure message="manual skip" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: manual skip
+	at expressivo.grader.ExpressivoTest.testDifferentiate_dy(ExpressivoTest.java:124)
+</failure>
+
+      </testcase>
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testParse[nested center]" time="0.007" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testSimplify_xyz[nested center]" time="0.007" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dx[nested right]" time="0.0">
+          <failure message="manual skip" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: manual skip
+	at expressivo.grader.ExpressivoTest.testDifferentiate_dx(ExpressivoTest.java:106)
+</failure>
+
+      </testcase>
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dy[nested right]" time="0.0">
+          <failure message="manual skip" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: manual skip
+	at expressivo.grader.ExpressivoTest.testDifferentiate_dy(ExpressivoTest.java:124)
+</failure>
+
+      </testcase>
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testParse[nested right]" time="0.006" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testSimplify_xyz[nested right]" time="0.006" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dx[nested balanced]" time="0.001">
+          <failure message="manual skip" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: manual skip
+	at expressivo.grader.ExpressivoTest.testDifferentiate_dx(ExpressivoTest.java:106)
+</failure>
+
+      </testcase>
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dy[nested balanced]" time="0.001">
+          <failure message="manual skip" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: manual skip
+	at expressivo.grader.ExpressivoTest.testDifferentiate_dy(ExpressivoTest.java:124)
+</failure>
+
+      </testcase>
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testParse[nested balanced]" time="0.007" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testSimplify_xyz[nested balanced]" time="0.008" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dx[polynomial in x/y/z]" time="0.001">
+          <failure message="manual skip" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: manual skip
+	at expressivo.grader.ExpressivoTest.testDifferentiate_dx(ExpressivoTest.java:106)
+</failure>
+
+      </testcase>
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dy[polynomial in x/y/z]" time="0.001">
+          <failure message="manual skip" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: manual skip
+	at expressivo.grader.ExpressivoTest.testDifferentiate_dy(ExpressivoTest.java:124)
+</failure>
+
+      </testcase>
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testParse[polynomial in x/y/z]" time="0.004" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testSimplify_xyz[polynomial in x/y/z]" time="0.004" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dx[polynomial in x/y/z with extra parens]" time="0.001">
+          <failure message="manual skip" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: manual skip
+	at expressivo.grader.ExpressivoTest.testDifferentiate_dx(ExpressivoTest.java:106)
+</failure>
+
+      </testcase>
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dy[polynomial in x/y/z with extra parens]" time="0.0">
+          <failure message="manual skip" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: manual skip
+	at expressivo.grader.ExpressivoTest.testDifferentiate_dy(ExpressivoTest.java:124)
+</failure>
+
+      </testcase>
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testParse[polynomial in x/y/z with extra parens]" time="0.005" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testSimplify_xyz[polynomial in x/y/z with extra parens]" time="0.008" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dx[polynomial in x/y/z and various other variables]" time="0.0">
+          <failure message="manual skip" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: manual skip
+	at expressivo.grader.ExpressivoTest.testDifferentiate_dx(ExpressivoTest.java:106)
+</failure>
+
+      </testcase>
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dy[polynomial in x/y/z and various other variables]" time="0.0">
+          <failure message="manual skip" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: manual skip
+	at expressivo.grader.ExpressivoTest.testDifferentiate_dy(ExpressivoTest.java:124)
+</failure>
+
+      </testcase>
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testParse[polynomial in x/y/z and various other variables]" time="0.006" />
+
+      <testcase classname="expressivo.grader.ExpressivoTest" name="testSimplify_xyz[polynomial in x/y/z and various other variables]" time="0.006" />
+
+      <system-out><![CDATA[]]></system-out>
+
+      <system-err><![CDATA[]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="Ilyas-MacBook-Pro.local" id="5" name="IllegalTest" package="expressivo.grader" skipped="0" tests="14" time="0.302" timestamp="2017-03-19T12:46:15">
+      <properties>
+          <property name="java.vendor" value="Oracle Corporation" />
+
+          <property name="sun.java.launcher" value="SUN_STANDARD" />
+
+          <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+
+          <property name="build.sysclasspath" value="ignore" />
+
+          <property name="os.name" value="Mac OS X" />
+
+          <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/classes" />
+
+          <property name="final.grading" value="true" />
+
+          <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+
+          <property name="ant.home" value="/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327" />
+
+          <property name="java.runtime.version" value="1.8.0_51-b16" />
+
+          <property name="user.name" value="ilyarudyak" />
+
+          <property name="ant.build.javac.target" value="1.8" />
+
+          <property name="user.language" value="en" />
+
+          <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib" />
+
+          <property name="grader.report.file" value="my-grader-report.xml" />
+
+          <property name="ant.project.default-target" value="all" />
+
+          <property name="java.version" value="1.8.0_51" />
+
+          <property name="user.timezone" value="Europe/Moscow" />
+
+          <property name="sun.arch.data.model" value="64" />
+
+          <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+
+          <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/endorsed" />
+
+          <property name="sun.cpu.isalist" value="" />
+
+          <property name="sun.jnu.encoding" value="UTF-8" />
+
+          <property name="file.encoding.pkg" value="sun.io" />
+
+          <property name="file.separator" value="/" />
+
+          <property name="java.specification.name" value="Java Platform API Specification" />
+
+          <property name="java.class.version" value="52.0" />
+
+          <property name="user.country" value="US" />
+
+          <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre" />
+
+          <property name="java.vm.info" value="mixed mode" />
+
+          <property name="ant.file" value="/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps4-expressivo/grader.xml" />
+
+          <property name="os.version" value="10.12.3" />
+
+          <property name="final.grader.jar" value="ps1-final-grader.jar" />
+
+          <property name="path.separator" value=":" />
+
+          <property name="java.vm.version" value="25.51-b03" />
+
+          <property name="ant.library.dir" value="/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib" />
+
+          <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob" />
+
+          <property name="sun.io.unicode.encoding" value="UnicodeBig" />
+
+          <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit" />
+
+          <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+
+          <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+
+          <property name="user.home" value="/Users/ilyarudyak" />
+
+          <property name="java.specification.vendor" value="Oracle Corporation" />
+
+          <property name="which.tests.ran" value="BETA + FINAL" />
+
+          <property name="java.library.path" value="/Users/ilyarudyak/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:." />
+
+          <property name="java.vendor.url" value="http://java.oracle.com/" />
+
+          <property name="java.vm.vendor" value="Oracle Corporation" />
+
+          <property name="gopherProxySet" value="false" />
+
+          <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+
+          <property name="beta.grader.jar" value="ps1-beta-grader.jar" />
+
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner expressivo.grader.IllegalTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps4-expressivo/.grader/TEST-expressivo.grader.IllegalTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps4-expressivo/.grader/junitvmwatcher3431757445254316367.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps4-expressivo/.grader/junit3291011756738125793.properties" />
+
+          <property name="java.class.path" value="/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps4-expressivo/lib/junit-4.12.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps4-expressivo/lib/hamcrest-core-1.3.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps4-expressivo/lib/parserlib.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps4-expressivo/.grader/bin-tests-final:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps4-expressivo/.grader/bin-student:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-launcher.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit4.jar" />
+
+          <property name="ant.version" value="Apache Ant(TM) version 1.9.6 compiled on June 29 2015" />
+
+          <property name="project.name" value="ps1-expressivo" />
+
+          <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+
+          <property name="java.vm.specification.version" value="1.8" />
+
+          <property name="sun.cpu.endian" value="little" />
+
+          <property name="didit.desc" value="Running our tests against your implementation" />
+
+          <property name="sun.os.patch.level" value="unknown" />
+
+          <property name="java.io.tmpdir" value="/var/folders/2r/mhs9bq0x3sx158w70nqz2j6h0000gn/T/" />
+
+          <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
+
+          <property name="os.arch" value="x86_64" />
+
+          <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment" />
+
+          <property name="java.ext.dirs" value="/Users/ilyarudyak/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java" />
+
+          <property name="user.dir" value="/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps4-expressivo" />
+
+          <property name="line.separator" value="&#xa;" />
+
+          <property name="zipfile" value="my-submission.zip" />
+
+          <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
+
+          <property name="problem.set" value="ps1" />
+
+          <property name="basedir" value="/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps4-expressivo" />
+
+          <property name="ant.java.version" value="1.8" />
+
+          <property name="ant.core.lib" value="/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant.jar" />
+
+          <property name="file.encoding" value="UTF-8" />
+
+          <property name="java.specification.version" value="1.8" />
+
+          <property name="grader.dir" value=".grader" />
+
+          <property name="ant.project.invoked-targets" value="all" />
+
+      </properties>
+
+      <testcase classname="expressivo.grader.IllegalTest" name="testParse[missing op]" time="0.059" />
+
+      <testcase classname="expressivo.grader.IllegalTest" name="testParse[adjacent vars]" time="0.021" />
+
+      <testcase classname="expressivo.grader.IllegalTest" name="testParse[unbalanced open]" time="0.019" />
+
+      <testcase classname="expressivo.grader.IllegalTest" name="testParse[unbalanced close]" time="0.017" />
+
+      <testcase classname="expressivo.grader.IllegalTest" name="testParse[empty parens]" time="0.011" />
+
+      <testcase classname="expressivo.grader.IllegalTest" name="testParse[empty nesting]" time="0.01" />
+
+      <testcase classname="expressivo.grader.IllegalTest" name="testParse[prefix op]" time="0.008" />
+
+      <testcase classname="expressivo.grader.IllegalTest" name="testParse[postfix op]" time="0.012" />
+
+      <testcase classname="expressivo.grader.IllegalTest" name="testParse[leading op]" time="0.01" />
+
+      <testcase classname="expressivo.grader.IllegalTest" name="testParse[trailing op]" time="0.009" />
+
+      <testcase classname="expressivo.grader.IllegalTest" name="testParse[multiple decimal points]" time="0.009" />
+
+      <testcase classname="expressivo.grader.IllegalTest" name="testParse[lone op]" time="0.008" />
+
+      <testcase classname="expressivo.grader.IllegalTest" name="testParse[lone decimal point]" time="0.005" />
+
+      <testcase classname="expressivo.grader.IllegalTest" name="testParse[lone nested op]" time="0.008" />
+
+      <system-out><![CDATA[]]></system-out>
 
       <system-err><![CDATA[]]></system-err>
 
