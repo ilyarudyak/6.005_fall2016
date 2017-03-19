@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="6" failures="18" hostname="Ilyas-MacBook-Pro.local" name="expressivo.grader.ExpressivoTest" skipped="0" tests="152" time="1.428" timestamp="2017-03-19T12:46:13">
+<testsuite errors="6" failures="18" hostname="Ilyas-MacBook-Pro.local" name="expressivo.grader.ExpressivoTest" skipped="0" tests="152" time="1.46" timestamp="2017-03-19T15:38:57">
   <properties>
     <property name="java.vendor" value="Oracle Corporation" />
     <property name="sun.java.launcher" value="SUN_STANDARD" />
@@ -51,7 +51,7 @@
     <property name="gopherProxySet" value="false" />
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
     <property name="beta.grader.jar" value="ps1-beta-grader.jar" />
-    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner expressivo.grader.ExpressivoTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps4-expressivo/.grader/TEST-expressivo.grader.ExpressivoTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps4-expressivo/.grader/junitvmwatcher8691058277834787246.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps4-expressivo/.grader/junit3586132016551899347.properties" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner expressivo.grader.ExpressivoTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps4-expressivo/.grader/TEST-expressivo.grader.ExpressivoTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps4-expressivo/.grader/junitvmwatcher6135536282638188912.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps4-expressivo/.grader/junit2890420007945445251.properties" />
     <property name="java.class.path" value="/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps4-expressivo/lib/junit-4.12.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps4-expressivo/lib/hamcrest-core-1.3.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps4-expressivo/lib/parserlib.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps4-expressivo/.grader/bin-tests-final:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps4-expressivo/.grader/bin-student:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-launcher.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit4.jar" />
     <property name="ant.version" value="Apache Ant(TM) version 1.9.6 compiled on June 29 2015" />
     <property name="project.name" value="ps1-expressivo" />
@@ -79,32 +79,32 @@
     <property name="ant.project.invoked-targets" value="all" />
   </properties>
   <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dx[zero]" time="0.108" />
-  <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dy[zero]" time="0.023" />
-  <testcase classname="expressivo.grader.ExpressivoTest" name="testParse[zero]" time="0.013" />
-  <testcase classname="expressivo.grader.ExpressivoTest" name="testSimplify_xyz[zero]" time="0.014" />
-  <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dx[nonzero integer]" time="0.007" />
-  <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dy[nonzero integer]" time="0.011" />
-  <testcase classname="expressivo.grader.ExpressivoTest" name="testParse[nonzero integer]" time="0.007" />
-  <testcase classname="expressivo.grader.ExpressivoTest" name="testSimplify_xyz[nonzero integer]" time="0.013" />
-  <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dx[decimal-fraction &lt; 1]" time="0.009" />
-  <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dy[decimal-fraction &lt; 1]" time="0.009" />
-  <testcase classname="expressivo.grader.ExpressivoTest" name="testParse[decimal-fraction &lt; 1]" time="0.006" />
-  <testcase classname="expressivo.grader.ExpressivoTest" name="testSimplify_xyz[decimal-fraction &lt; 1]" time="0.012" />
+  <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dy[zero]" time="0.024" />
+  <testcase classname="expressivo.grader.ExpressivoTest" name="testParse[zero]" time="0.017" />
+  <testcase classname="expressivo.grader.ExpressivoTest" name="testSimplify_xyz[zero]" time="0.018" />
+  <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dx[nonzero integer]" time="0.01" />
+  <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dy[nonzero integer]" time="0.01" />
+  <testcase classname="expressivo.grader.ExpressivoTest" name="testParse[nonzero integer]" time="0.008" />
+  <testcase classname="expressivo.grader.ExpressivoTest" name="testSimplify_xyz[nonzero integer]" time="0.011" />
+  <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dx[decimal-fraction &lt; 1]" time="0.007" />
+  <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dy[decimal-fraction &lt; 1]" time="0.006" />
+  <testcase classname="expressivo.grader.ExpressivoTest" name="testParse[decimal-fraction &lt; 1]" time="0.008" />
+  <testcase classname="expressivo.grader.ExpressivoTest" name="testSimplify_xyz[decimal-fraction &lt; 1]" time="0.009" />
   <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dx[decimal-fraction &gt; 1]" time="0.01" />
-  <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dy[decimal-fraction &gt; 1]" time="0.011" />
-  <testcase classname="expressivo.grader.ExpressivoTest" name="testParse[decimal-fraction &gt; 1]" time="0.01" />
-  <testcase classname="expressivo.grader.ExpressivoTest" name="testSimplify_xyz[decimal-fraction &gt; 1]" time="0.005" />
+  <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dy[decimal-fraction &gt; 1]" time="0.008" />
+  <testcase classname="expressivo.grader.ExpressivoTest" name="testParse[decimal-fraction &gt; 1]" time="0.006" />
+  <testcase classname="expressivo.grader.ExpressivoTest" name="testSimplify_xyz[decimal-fraction &gt; 1]" time="0.008" />
   <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dx[trailing zeros]" time="0.01" />
   <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dy[trailing zeros]" time="0.008" />
-  <testcase classname="expressivo.grader.ExpressivoTest" name="testParse[trailing zeros]" time="0.005" />
-  <testcase classname="expressivo.grader.ExpressivoTest" name="testSimplify_xyz[trailing zeros]" time="0.006" />
-  <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dx[no leading zero]" time="0.006" />
-  <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dy[no leading zero]" time="0.012" />
+  <testcase classname="expressivo.grader.ExpressivoTest" name="testParse[trailing zeros]" time="0.007" />
+  <testcase classname="expressivo.grader.ExpressivoTest" name="testSimplify_xyz[trailing zeros]" time="0.004" />
+  <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dx[no leading zero]" time="0.007" />
+  <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dy[no leading zero]" time="0.009" />
   <testcase classname="expressivo.grader.ExpressivoTest" name="testParse[no leading zero]" time="0.011" />
-  <testcase classname="expressivo.grader.ExpressivoTest" name="testSimplify_xyz[no leading zero]" time="0.012" />
-  <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dx[decimal-fraction very small]" time="0.015" />
-  <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dy[decimal-fraction very small]" time="0.006" />
-  <testcase classname="expressivo.grader.ExpressivoTest" name="testParse[decimal-fraction very small]" time="0.011">
+  <testcase classname="expressivo.grader.ExpressivoTest" name="testSimplify_xyz[no leading zero]" time="0.01" />
+  <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dx[decimal-fraction very small]" time="0.013" />
+  <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dy[decimal-fraction very small]" time="0.004" />
+  <testcase classname="expressivo.grader.ExpressivoTest" name="testParse[decimal-fraction very small]" time="0.013">
     <error message="invalid Expression.toString (staff parser could not parse)" type="java.lang.RuntimeException">java.lang.RuntimeException: invalid Expression.toString (staff parser could not parse)
 	at expressivo.grader.ExpressivoTest.testParse(ExpressivoTest.java:100)
 Caused by: expressivo.staff.SyntaxError: Character 3: expected end_of_input, got E in expression &quot;1.0E-6&quot;
@@ -137,14 +137,14 @@ Caused by: java.lang.NumberFormatException: For input string: &quot;900719925474
 	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
 	at java.lang.Integer.parseInt(Integer.java:583)
 	at java.lang.Integer.parseInt(Integer.java:615)
-	at expressivo.Expression.buildAST(Expression.java:82)
-	at expressivo.Expression.buildAST(Expression.java:94)
-	at expressivo.Expression.buildAST(Expression.java:94)
-	at expressivo.Expression.buildAST(Expression.java:94)
-	at expressivo.Expression.accumulator(Expression.java:48)
-	at expressivo.Expression.buildAST(Expression.java:103)
-	at expressivo.Expression.buildAST(Expression.java:94)
-	at expressivo.Expression.parse(Expression.java:122)
+	at expressivo.Expression.buildAST(Expression.java:83)
+	at expressivo.Expression.buildAST(Expression.java:100)
+	at expressivo.Expression.buildAST(Expression.java:100)
+	at expressivo.Expression.buildAST(Expression.java:100)
+	at expressivo.Expression.accumulator(Expression.java:49)
+	at expressivo.Expression.buildAST(Expression.java:109)
+	at expressivo.Expression.buildAST(Expression.java:100)
+	at expressivo.Expression.parse(Expression.java:132)
 	at expressivo.Commands.differentiate(Commands.java:26)
 	at expressivo.grader.ExpressivoTest.testDifferentiate_dx(ExpressivoTest.java:111)
 </error>
@@ -156,116 +156,116 @@ Caused by: java.lang.NumberFormatException: For input string: &quot;900719925474
 	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
 	at java.lang.Integer.parseInt(Integer.java:583)
 	at java.lang.Integer.parseInt(Integer.java:615)
-	at expressivo.Expression.buildAST(Expression.java:82)
-	at expressivo.Expression.buildAST(Expression.java:94)
-	at expressivo.Expression.buildAST(Expression.java:94)
-	at expressivo.Expression.buildAST(Expression.java:94)
-	at expressivo.Expression.accumulator(Expression.java:48)
-	at expressivo.Expression.buildAST(Expression.java:103)
-	at expressivo.Expression.buildAST(Expression.java:94)
-	at expressivo.Expression.parse(Expression.java:122)
+	at expressivo.Expression.buildAST(Expression.java:83)
+	at expressivo.Expression.buildAST(Expression.java:100)
+	at expressivo.Expression.buildAST(Expression.java:100)
+	at expressivo.Expression.buildAST(Expression.java:100)
+	at expressivo.Expression.accumulator(Expression.java:49)
+	at expressivo.Expression.buildAST(Expression.java:109)
+	at expressivo.Expression.buildAST(Expression.java:100)
+	at expressivo.Expression.parse(Expression.java:132)
 	at expressivo.Commands.differentiate(Commands.java:26)
 	at expressivo.grader.ExpressivoTest.testDifferentiate_dy(ExpressivoTest.java:129)
 </error>
   </testcase>
-  <testcase classname="expressivo.grader.ExpressivoTest" name="testParse[integer very large]" time="0.006">
+  <testcase classname="expressivo.grader.ExpressivoTest" name="testParse[integer very large]" time="0.01">
     <error message="error calling parse()" type="java.lang.RuntimeException">java.lang.RuntimeException: error calling parse()
 	at expressivo.grader.ExpressivoTest.testParse(ExpressivoTest.java:95)
 Caused by: java.lang.NumberFormatException: For input string: &quot;9007199254740992&quot;
 	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
 	at java.lang.Integer.parseInt(Integer.java:583)
 	at java.lang.Integer.parseInt(Integer.java:615)
-	at expressivo.Expression.buildAST(Expression.java:82)
-	at expressivo.Expression.buildAST(Expression.java:94)
-	at expressivo.Expression.buildAST(Expression.java:94)
-	at expressivo.Expression.buildAST(Expression.java:94)
-	at expressivo.Expression.accumulator(Expression.java:48)
-	at expressivo.Expression.buildAST(Expression.java:103)
-	at expressivo.Expression.buildAST(Expression.java:94)
-	at expressivo.Expression.parse(Expression.java:122)
+	at expressivo.Expression.buildAST(Expression.java:83)
+	at expressivo.Expression.buildAST(Expression.java:100)
+	at expressivo.Expression.buildAST(Expression.java:100)
+	at expressivo.Expression.buildAST(Expression.java:100)
+	at expressivo.Expression.accumulator(Expression.java:49)
+	at expressivo.Expression.buildAST(Expression.java:109)
+	at expressivo.Expression.buildAST(Expression.java:100)
+	at expressivo.Expression.parse(Expression.java:132)
 	at expressivo.grader.ExpressivoTest.testParse(ExpressivoTest.java:93)
 </error>
   </testcase>
-  <testcase classname="expressivo.grader.ExpressivoTest" name="testSimplify_xyz[integer very large]" time="0.007">
+  <testcase classname="expressivo.grader.ExpressivoTest" name="testSimplify_xyz[integer very large]" time="0.008">
     <error message="error calling simplify()" type="java.lang.RuntimeException">java.lang.RuntimeException: error calling simplify()
 	at expressivo.grader.ExpressivoTest.testSimplify_xyz(ExpressivoTest.java:154)
 Caused by: java.lang.NumberFormatException: For input string: &quot;9007199254740992&quot;
 	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
 	at java.lang.Integer.parseInt(Integer.java:583)
 	at java.lang.Integer.parseInt(Integer.java:615)
-	at expressivo.Expression.buildAST(Expression.java:82)
-	at expressivo.Expression.buildAST(Expression.java:94)
-	at expressivo.Expression.buildAST(Expression.java:94)
-	at expressivo.Expression.buildAST(Expression.java:94)
-	at expressivo.Expression.accumulator(Expression.java:48)
-	at expressivo.Expression.buildAST(Expression.java:103)
-	at expressivo.Expression.buildAST(Expression.java:94)
-	at expressivo.Expression.parse(Expression.java:122)
+	at expressivo.Expression.buildAST(Expression.java:83)
+	at expressivo.Expression.buildAST(Expression.java:100)
+	at expressivo.Expression.buildAST(Expression.java:100)
+	at expressivo.Expression.buildAST(Expression.java:100)
+	at expressivo.Expression.accumulator(Expression.java:49)
+	at expressivo.Expression.buildAST(Expression.java:109)
+	at expressivo.Expression.buildAST(Expression.java:100)
+	at expressivo.Expression.parse(Expression.java:132)
 	at expressivo.Commands.simplify(Commands.java:45)
 	at expressivo.grader.ExpressivoTest.testSimplify_xyz(ExpressivoTest.java:152)
 </error>
   </testcase>
   <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dx[x]" time="0.007" />
-  <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dy[x]" time="0.011" />
-  <testcase classname="expressivo.grader.ExpressivoTest" name="testParse[x]" time="0.006" />
+  <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dy[x]" time="0.01" />
+  <testcase classname="expressivo.grader.ExpressivoTest" name="testParse[x]" time="0.008" />
   <testcase classname="expressivo.grader.ExpressivoTest" name="testSimplify_xyz[x]" time="0.006" />
   <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dx[y]" time="0.006" />
-  <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dy[y]" time="0.008" />
-  <testcase classname="expressivo.grader.ExpressivoTest" name="testParse[y]" time="0.007" />
-  <testcase classname="expressivo.grader.ExpressivoTest" name="testSimplify_xyz[y]" time="0.007" />
+  <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dy[y]" time="0.007" />
+  <testcase classname="expressivo.grader.ExpressivoTest" name="testParse[y]" time="0.008" />
+  <testcase classname="expressivo.grader.ExpressivoTest" name="testSimplify_xyz[y]" time="0.009" />
   <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dx[other variable]" time="0.004" />
   <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dy[other variable]" time="0.006" />
-  <testcase classname="expressivo.grader.ExpressivoTest" name="testParse[other variable]" time="0.005" />
-  <testcase classname="expressivo.grader.ExpressivoTest" name="testSimplify_xyz[other variable]" time="0.013" />
-  <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dx[variable with parens]" time="0.011" />
-  <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dy[variable with parens]" time="0.011" />
-  <testcase classname="expressivo.grader.ExpressivoTest" name="testParse[variable with parens]" time="0.011" />
-  <testcase classname="expressivo.grader.ExpressivoTest" name="testSimplify_xyz[variable with parens]" time="0.01" />
+  <testcase classname="expressivo.grader.ExpressivoTest" name="testParse[other variable]" time="0.007" />
+  <testcase classname="expressivo.grader.ExpressivoTest" name="testSimplify_xyz[other variable]" time="0.014" />
+  <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dx[variable with parens]" time="0.012" />
+  <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dy[variable with parens]" time="0.01" />
+  <testcase classname="expressivo.grader.ExpressivoTest" name="testParse[variable with parens]" time="0.008" />
+  <testcase classname="expressivo.grader.ExpressivoTest" name="testSimplify_xyz[variable with parens]" time="0.009" />
   <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dx[variable with extra parens]" time="0.011" />
-  <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dy[variable with extra parens]" time="0.009" />
-  <testcase classname="expressivo.grader.ExpressivoTest" name="testParse[variable with extra parens]" time="0.014" />
-  <testcase classname="expressivo.grader.ExpressivoTest" name="testSimplify_xyz[variable with extra parens]" time="0.008" />
-  <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dx[add]" time="0.007" />
-  <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dy[add]" time="0.003" />
+  <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dy[variable with extra parens]" time="0.013" />
+  <testcase classname="expressivo.grader.ExpressivoTest" name="testParse[variable with extra parens]" time="0.013" />
+  <testcase classname="expressivo.grader.ExpressivoTest" name="testSimplify_xyz[variable with extra parens]" time="0.006" />
+  <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dx[add]" time="0.008" />
+  <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dy[add]" time="0.004" />
   <testcase classname="expressivo.grader.ExpressivoTest" name="testParse[add]" time="0.006" />
   <testcase classname="expressivo.grader.ExpressivoTest" name="testSimplify_xyz[add]" time="0.005" />
-  <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dx[add with extra parens]" time="0.007" />
-  <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dy[add with extra parens]" time="0.007" />
-  <testcase classname="expressivo.grader.ExpressivoTest" name="testParse[add with extra parens]" time="0.007" />
+  <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dx[add with extra parens]" time="0.008" />
+  <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dy[add with extra parens]" time="0.006" />
+  <testcase classname="expressivo.grader.ExpressivoTest" name="testParse[add with extra parens]" time="0.005" />
   <testcase classname="expressivo.grader.ExpressivoTest" name="testSimplify_xyz[add with extra parens]" time="0.008" />
   <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dx[times]" time="0.009" />
-  <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dy[times]" time="0.005" />
+  <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dy[times]" time="0.006" />
   <testcase classname="expressivo.grader.ExpressivoTest" name="testParse[times]" time="0.005" />
-  <testcase classname="expressivo.grader.ExpressivoTest" name="testSimplify_xyz[times]" time="0.005" />
+  <testcase classname="expressivo.grader.ExpressivoTest" name="testSimplify_xyz[times]" time="0.004" />
   <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dx[times with extra parens]" time="0.007" />
-  <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dy[times with extra parens]" time="0.009" />
-  <testcase classname="expressivo.grader.ExpressivoTest" name="testParse[times with extra parens]" time="0.007" />
-  <testcase classname="expressivo.grader.ExpressivoTest" name="testSimplify_xyz[times with extra parens]" time="0.007" />
-  <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dx[* ( * )]" time="0.006" />
-  <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dy[* ( * )]" time="0.005" />
-  <testcase classname="expressivo.grader.ExpressivoTest" name="testParse[* ( * )]" time="0.006" />
-  <testcase classname="expressivo.grader.ExpressivoTest" name="testSimplify_xyz[* ( * )]" time="0.007" />
-  <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dx[( * ) *]" time="0.008" />
+  <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dy[times with extra parens]" time="0.005" />
+  <testcase classname="expressivo.grader.ExpressivoTest" name="testParse[times with extra parens]" time="0.008" />
+  <testcase classname="expressivo.grader.ExpressivoTest" name="testSimplify_xyz[times with extra parens]" time="0.008" />
+  <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dx[* ( * )]" time="0.008" />
+  <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dy[* ( * )]" time="0.006" />
+  <testcase classname="expressivo.grader.ExpressivoTest" name="testParse[* ( * )]" time="0.004" />
+  <testcase classname="expressivo.grader.ExpressivoTest" name="testSimplify_xyz[* ( * )]" time="0.004" />
+  <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dx[( * ) *]" time="0.005" />
   <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dy[( * ) *]" time="0.005" />
-  <testcase classname="expressivo.grader.ExpressivoTest" name="testParse[( * ) *]" time="0.007" />
-  <testcase classname="expressivo.grader.ExpressivoTest" name="testSimplify_xyz[( * ) *]" time="0.007" />
-  <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dx[( * ) * ( * )]" time="0.007" />
+  <testcase classname="expressivo.grader.ExpressivoTest" name="testParse[( * ) *]" time="0.003" />
+  <testcase classname="expressivo.grader.ExpressivoTest" name="testSimplify_xyz[( * ) *]" time="0.004" />
+  <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dx[( * ) * ( * )]" time="0.006" />
   <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dy[( * ) * ( * )]" time="0.004" />
   <testcase classname="expressivo.grader.ExpressivoTest" name="testParse[( * ) * ( * )]" time="0.004" />
-  <testcase classname="expressivo.grader.ExpressivoTest" name="testSimplify_xyz[( * ) * ( * )]" time="0.004" />
-  <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dx[* * * * *]" time="0.009" />
-  <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dy[* * * * *]" time="0.01" />
-  <testcase classname="expressivo.grader.ExpressivoTest" name="testParse[* * * * *]" time="0.01" />
-  <testcase classname="expressivo.grader.ExpressivoTest" name="testSimplify_xyz[* * * * *]" time="0.013" />
-  <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dx[integers add]" time="0.013" />
-  <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dy[integers add]" time="0.011" />
-  <testcase classname="expressivo.grader.ExpressivoTest" name="testParse[integers add]" time="0.01" />
-  <testcase classname="expressivo.grader.ExpressivoTest" name="testSimplify_xyz[integers add]" time="0.012" />
-  <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dx[integers times]" time="0.011" />
-  <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dy[integers times]" time="0.009" />
+  <testcase classname="expressivo.grader.ExpressivoTest" name="testSimplify_xyz[( * ) * ( * )]" time="0.006" />
+  <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dx[* * * * *]" time="0.005" />
+  <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dy[* * * * *]" time="0.007" />
+  <testcase classname="expressivo.grader.ExpressivoTest" name="testParse[* * * * *]" time="0.011" />
+  <testcase classname="expressivo.grader.ExpressivoTest" name="testSimplify_xyz[* * * * *]" time="0.01" />
+  <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dx[integers add]" time="0.01" />
+  <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dy[integers add]" time="0.009" />
+  <testcase classname="expressivo.grader.ExpressivoTest" name="testParse[integers add]" time="0.008" />
+  <testcase classname="expressivo.grader.ExpressivoTest" name="testSimplify_xyz[integers add]" time="0.009" />
+  <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dx[integers times]" time="0.008" />
+  <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dy[integers times]" time="0.008" />
   <testcase classname="expressivo.grader.ExpressivoTest" name="testParse[integers times]" time="0.012" />
-  <testcase classname="expressivo.grader.ExpressivoTest" name="testSimplify_xyz[integers times]" time="0.01" />
-  <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dx[integers with various ops]" time="0.0">
+  <testcase classname="expressivo.grader.ExpressivoTest" name="testSimplify_xyz[integers times]" time="0.011" />
+  <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dx[integers with various ops]" time="0.001">
     <failure message="manual skip" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: manual skip
 	at expressivo.grader.ExpressivoTest.testDifferentiate_dx(ExpressivoTest.java:106)
 </failure>
@@ -275,81 +275,81 @@ Caused by: java.lang.NumberFormatException: For input string: &quot;900719925474
 	at expressivo.grader.ExpressivoTest.testDifferentiate_dy(ExpressivoTest.java:124)
 </failure>
   </testcase>
-  <testcase classname="expressivo.grader.ExpressivoTest" name="testParse[integers with various ops]" time="0.014" />
+  <testcase classname="expressivo.grader.ExpressivoTest" name="testParse[integers with various ops]" time="0.011" />
   <testcase classname="expressivo.grader.ExpressivoTest" name="testSimplify_xyz[integers with various ops]" time="0.012" />
   <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dx[decimal-fractions add]" time="0.013" />
-  <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dy[decimal-fractions add]" time="0.014" />
-  <testcase classname="expressivo.grader.ExpressivoTest" name="testParse[decimal-fractions add]" time="0.011" />
-  <testcase classname="expressivo.grader.ExpressivoTest" name="testSimplify_xyz[decimal-fractions add]" time="0.007" />
-  <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dx[decimal-fractions times]" time="0.005" />
-  <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dy[decimal-fractions times]" time="0.005" />
-  <testcase classname="expressivo.grader.ExpressivoTest" name="testParse[decimal-fractions times]" time="0.006" />
-  <testcase classname="expressivo.grader.ExpressivoTest" name="testSimplify_xyz[decimal-fractions times]" time="0.004" />
-  <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dx[decimal-fractions with various ops]" time="0.004" />
+  <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dy[decimal-fractions add]" time="0.009" />
+  <testcase classname="expressivo.grader.ExpressivoTest" name="testParse[decimal-fractions add]" time="0.008" />
+  <testcase classname="expressivo.grader.ExpressivoTest" name="testSimplify_xyz[decimal-fractions add]" time="0.006" />
+  <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dx[decimal-fractions times]" time="0.007" />
+  <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dy[decimal-fractions times]" time="0.007" />
+  <testcase classname="expressivo.grader.ExpressivoTest" name="testParse[decimal-fractions times]" time="0.008" />
+  <testcase classname="expressivo.grader.ExpressivoTest" name="testSimplify_xyz[decimal-fractions times]" time="0.005" />
+  <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dx[decimal-fractions with various ops]" time="0.007" />
   <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dy[decimal-fractions with various ops]" time="0.005" />
   <testcase classname="expressivo.grader.ExpressivoTest" name="testParse[decimal-fractions with various ops]" time="0.004" />
-  <testcase classname="expressivo.grader.ExpressivoTest" name="testSimplify_xyz[decimal-fractions with various ops]" time="0.005" />
-  <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dx[decimal-fractions integers add]" time="0.006" />
-  <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dy[decimal-fractions integers add]" time="0.004" />
-  <testcase classname="expressivo.grader.ExpressivoTest" name="testParse[decimal-fractions integers add]" time="0.004" />
-  <testcase classname="expressivo.grader.ExpressivoTest" name="testSimplify_xyz[decimal-fractions integers add]" time="0.006" />
+  <testcase classname="expressivo.grader.ExpressivoTest" name="testSimplify_xyz[decimal-fractions with various ops]" time="0.008" />
+  <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dx[decimal-fractions integers add]" time="0.005" />
+  <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dy[decimal-fractions integers add]" time="0.007" />
+  <testcase classname="expressivo.grader.ExpressivoTest" name="testParse[decimal-fractions integers add]" time="0.007" />
+  <testcase classname="expressivo.grader.ExpressivoTest" name="testSimplify_xyz[decimal-fractions integers add]" time="0.005" />
   <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dx[decimal-fractions integers times]" time="0.004" />
-  <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dy[decimal-fractions integers times]" time="0.004" />
-  <testcase classname="expressivo.grader.ExpressivoTest" name="testParse[decimal-fractions integers times]" time="0.007" />
-  <testcase classname="expressivo.grader.ExpressivoTest" name="testSimplify_xyz[decimal-fractions integers times]" time="0.005" />
-  <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dx[decimal-fractions integers with various ops]" time="0.001">
+  <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dy[decimal-fractions integers times]" time="0.006" />
+  <testcase classname="expressivo.grader.ExpressivoTest" name="testParse[decimal-fractions integers times]" time="0.004" />
+  <testcase classname="expressivo.grader.ExpressivoTest" name="testSimplify_xyz[decimal-fractions integers times]" time="0.007" />
+  <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dx[decimal-fractions integers with various ops]" time="0.0">
     <failure message="manual skip" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: manual skip
 	at expressivo.grader.ExpressivoTest.testDifferentiate_dx(ExpressivoTest.java:106)
 </failure>
   </testcase>
-  <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dy[decimal-fractions integers with various ops]" time="0.001">
+  <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dy[decimal-fractions integers with various ops]" time="0.0">
     <failure message="manual skip" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: manual skip
 	at expressivo.grader.ExpressivoTest.testDifferentiate_dy(ExpressivoTest.java:124)
 </failure>
   </testcase>
-  <testcase classname="expressivo.grader.ExpressivoTest" name="testParse[decimal-fractions integers with various ops]" time="0.005" />
-  <testcase classname="expressivo.grader.ExpressivoTest" name="testSimplify_xyz[decimal-fractions integers with various ops]" time="0.005" />
-  <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dx[various variable names]" time="0.004" />
-  <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dy[various variable names]" time="0.004" />
-  <testcase classname="expressivo.grader.ExpressivoTest" name="testParse[various variable names]" time="0.005" />
-  <testcase classname="expressivo.grader.ExpressivoTest" name="testSimplify_xyz[various variable names]" time="0.004" />
-  <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dx[nested left]" time="0.0">
+  <testcase classname="expressivo.grader.ExpressivoTest" name="testParse[decimal-fractions integers with various ops]" time="0.008" />
+  <testcase classname="expressivo.grader.ExpressivoTest" name="testSimplify_xyz[decimal-fractions integers with various ops]" time="0.008" />
+  <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dx[various variable names]" time="0.007" />
+  <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dy[various variable names]" time="0.008" />
+  <testcase classname="expressivo.grader.ExpressivoTest" name="testParse[various variable names]" time="0.006" />
+  <testcase classname="expressivo.grader.ExpressivoTest" name="testSimplify_xyz[various variable names]" time="0.006" />
+  <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dx[nested left]" time="0.001">
     <failure message="manual skip" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: manual skip
 	at expressivo.grader.ExpressivoTest.testDifferentiate_dx(ExpressivoTest.java:106)
 </failure>
   </testcase>
-  <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dy[nested left]" time="0.0">
+  <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dy[nested left]" time="0.001">
     <failure message="manual skip" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: manual skip
 	at expressivo.grader.ExpressivoTest.testDifferentiate_dy(ExpressivoTest.java:124)
 </failure>
   </testcase>
-  <testcase classname="expressivo.grader.ExpressivoTest" name="testParse[nested left]" time="0.013" />
-  <testcase classname="expressivo.grader.ExpressivoTest" name="testSimplify_xyz[nested left]" time="0.011" />
+  <testcase classname="expressivo.grader.ExpressivoTest" name="testParse[nested left]" time="0.015" />
+  <testcase classname="expressivo.grader.ExpressivoTest" name="testSimplify_xyz[nested left]" time="0.012" />
   <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dx[nested center]" time="0.0">
     <failure message="manual skip" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: manual skip
 	at expressivo.grader.ExpressivoTest.testDifferentiate_dx(ExpressivoTest.java:106)
 </failure>
   </testcase>
-  <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dy[nested center]" time="0.001">
+  <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dy[nested center]" time="0.0">
     <failure message="manual skip" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: manual skip
 	at expressivo.grader.ExpressivoTest.testDifferentiate_dy(ExpressivoTest.java:124)
 </failure>
   </testcase>
   <testcase classname="expressivo.grader.ExpressivoTest" name="testParse[nested center]" time="0.007" />
-  <testcase classname="expressivo.grader.ExpressivoTest" name="testSimplify_xyz[nested center]" time="0.007" />
+  <testcase classname="expressivo.grader.ExpressivoTest" name="testSimplify_xyz[nested center]" time="0.009" />
   <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dx[nested right]" time="0.0">
     <failure message="manual skip" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: manual skip
 	at expressivo.grader.ExpressivoTest.testDifferentiate_dx(ExpressivoTest.java:106)
 </failure>
   </testcase>
-  <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dy[nested right]" time="0.0">
+  <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dy[nested right]" time="0.001">
     <failure message="manual skip" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: manual skip
 	at expressivo.grader.ExpressivoTest.testDifferentiate_dy(ExpressivoTest.java:124)
 </failure>
   </testcase>
   <testcase classname="expressivo.grader.ExpressivoTest" name="testParse[nested right]" time="0.006" />
-  <testcase classname="expressivo.grader.ExpressivoTest" name="testSimplify_xyz[nested right]" time="0.006" />
-  <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dx[nested balanced]" time="0.001">
+  <testcase classname="expressivo.grader.ExpressivoTest" name="testSimplify_xyz[nested right]" time="0.008" />
+  <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dx[nested balanced]" time="0.0">
     <failure message="manual skip" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: manual skip
 	at expressivo.grader.ExpressivoTest.testDifferentiate_dx(ExpressivoTest.java:106)
 </failure>
@@ -359,19 +359,19 @@ Caused by: java.lang.NumberFormatException: For input string: &quot;900719925474
 	at expressivo.grader.ExpressivoTest.testDifferentiate_dy(ExpressivoTest.java:124)
 </failure>
   </testcase>
-  <testcase classname="expressivo.grader.ExpressivoTest" name="testParse[nested balanced]" time="0.007" />
+  <testcase classname="expressivo.grader.ExpressivoTest" name="testParse[nested balanced]" time="0.005" />
   <testcase classname="expressivo.grader.ExpressivoTest" name="testSimplify_xyz[nested balanced]" time="0.008" />
   <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dx[polynomial in x/y/z]" time="0.001">
     <failure message="manual skip" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: manual skip
 	at expressivo.grader.ExpressivoTest.testDifferentiate_dx(ExpressivoTest.java:106)
 </failure>
   </testcase>
-  <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dy[polynomial in x/y/z]" time="0.001">
+  <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dy[polynomial in x/y/z]" time="0.0">
     <failure message="manual skip" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: manual skip
 	at expressivo.grader.ExpressivoTest.testDifferentiate_dy(ExpressivoTest.java:124)
 </failure>
   </testcase>
-  <testcase classname="expressivo.grader.ExpressivoTest" name="testParse[polynomial in x/y/z]" time="0.004" />
+  <testcase classname="expressivo.grader.ExpressivoTest" name="testParse[polynomial in x/y/z]" time="0.006" />
   <testcase classname="expressivo.grader.ExpressivoTest" name="testSimplify_xyz[polynomial in x/y/z]" time="0.004" />
   <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dx[polynomial in x/y/z with extra parens]" time="0.001">
     <failure message="manual skip" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: manual skip
@@ -383,20 +383,20 @@ Caused by: java.lang.NumberFormatException: For input string: &quot;900719925474
 	at expressivo.grader.ExpressivoTest.testDifferentiate_dy(ExpressivoTest.java:124)
 </failure>
   </testcase>
-  <testcase classname="expressivo.grader.ExpressivoTest" name="testParse[polynomial in x/y/z with extra parens]" time="0.005" />
-  <testcase classname="expressivo.grader.ExpressivoTest" name="testSimplify_xyz[polynomial in x/y/z with extra parens]" time="0.008" />
-  <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dx[polynomial in x/y/z and various other variables]" time="0.0">
+  <testcase classname="expressivo.grader.ExpressivoTest" name="testParse[polynomial in x/y/z with extra parens]" time="0.006" />
+  <testcase classname="expressivo.grader.ExpressivoTest" name="testSimplify_xyz[polynomial in x/y/z with extra parens]" time="0.006" />
+  <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dx[polynomial in x/y/z and various other variables]" time="0.001">
     <failure message="manual skip" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: manual skip
 	at expressivo.grader.ExpressivoTest.testDifferentiate_dx(ExpressivoTest.java:106)
 </failure>
   </testcase>
-  <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dy[polynomial in x/y/z and various other variables]" time="0.0">
+  <testcase classname="expressivo.grader.ExpressivoTest" name="testDifferentiate_dy[polynomial in x/y/z and various other variables]" time="0.001">
     <failure message="manual skip" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: manual skip
 	at expressivo.grader.ExpressivoTest.testDifferentiate_dy(ExpressivoTest.java:124)
 </failure>
   </testcase>
   <testcase classname="expressivo.grader.ExpressivoTest" name="testParse[polynomial in x/y/z and various other variables]" time="0.006" />
-  <testcase classname="expressivo.grader.ExpressivoTest" name="testSimplify_xyz[polynomial in x/y/z and various other variables]" time="0.006" />
+  <testcase classname="expressivo.grader.ExpressivoTest" name="testSimplify_xyz[polynomial in x/y/z and various other variables]" time="0.007" />
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

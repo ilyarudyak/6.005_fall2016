@@ -16,8 +16,8 @@ root ::= product | sum;
 	sum ::= primitive_1 ('+' primitive_1)*;
 	product ::= primitive_2 ('*' primitive_2)*;
 	token ::= number | variable;
-	primitive_1 ::= token | product | '(' product ')';
 	primitive_2 ::= token | '(' sum ')';
+	primitive_1 ::= token | product | '(' product ')';
 }
 number ::= int | decimal;
 int ::= [0-9]+;

@@ -8,29 +8,28 @@ public class BinaryOp{
     private final Expression left;
     private final Expression right;
     private char op;
-    /**
-     * Constructor for the BinaryOp class
-     * @param leftOp forms the left side of the expression
-     * @param rightOp forms the right side of the expression
-     */
+
     public BinaryOp(Expression leftOp, Expression rightOp, char op) {
         this.left = leftOp;
         this.right = rightOp;
         this.op = op;
     }
 
-    /**
-     * @return the left part of this
-     */
     public Expression getLeft(){
         return left;
     }
-    /**
-     * @return the right part of this
-     */
+
     public Expression getRight(){
         return right;
     }
+    
+    @Override
+    public String toString() {
+        // TODO something wrong here 
+        return '(' + left.toString() + ')' + op + '(' + right.toString() + ')';
+    }
+    
+    // -------- equals() and hashCode() ---------------
     
     @Override
     public boolean equals(Object that){
@@ -57,14 +56,13 @@ public class BinaryOp{
         }
     }
     
+    // ----------------- problems 3-4 -----------------
+    
     public Expression simplify(Map<String, Double> env) {
         final Expression simplifiedLeftExpr = getLeft().simplify(env);
         final Expression simplifiedRightExpr = getRight().simplify(env);
         return Expression.create(simplifiedLeftExpr, simplifiedRightExpr, op);
     }
     
-    @Override
-    public String toString() {
-        return '(' + left.toString() + ')' + op + '(' + right.toString() + ')';
-    }
+
 }

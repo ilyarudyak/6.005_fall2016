@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.util.List;
 import java.util.Map;
 
-import expressivo.expression.Multiply;
+import expressivo.expression.Product;
 import expressivo.expression.Num;
 import expressivo.expression.Sum;
 import expressivo.expression.Var;
@@ -24,73 +24,35 @@ import lib6005.parser.*;
  */
 public interface Expression {
     
-    // Datatype definition
-    // Expression = Number(num: double) + Var(var: [A-Za-z]+) 
-    // + Add(leftOp: Expression, rightOp: Expression) 
-    // + Multiply(leftOp: Expression, rightOp: Expression)
-    enum Grammar {ROOT, SUM, PRODUCT, TOKEN, PRIMITIVE_1, PRIMITIVE_2, NUMBER, INT, DECIMAL, WHITESPACE, VARIABLE};
-
-    public static Expression create(Expression leftExpr, Expression rightExpr, char op) {
-        if  (op == '+')
-            return Sum.createSum(leftExpr, rightExpr);
-        else
-            return Multiply.createProduct(leftExpr, rightExpr);
-    }
-    public static Expression accumulator(ParseTree<Grammar> tree, Grammar grammarObj) {
-        Expression expr = null;
-        boolean first = true;
-        List<ParseTree<Grammar>> children = tree.children();
-        int len = children.size();
-        for (int i = len-1; i >= 0; i--) {
-            /* the first child */
-            ParseTree<Grammar> child = children.get(i);
-            if (first) {
-                expr = buildAST(child);
-                first = false;
-            }
-            
-            /* accumulate this by creating a new binaryOp object with
-             *  expr as the leftOp and the result as rightOp
-             **/
-            
-            else if (child.getName() == Grammar.WHITESPACE) continue;
-            else {
-                if (grammarObj == Grammar.SUM)
-                    expr = new Sum(buildAST(child), expr);
-                else
-                    expr = new Multiply(buildAST(child), expr);
-            }
-        }
-        
-        return expr;
-        
-    }
+    enum ExpressivoGrammar {ROOT, SUM, PRODUCT, TOKEN, PRIMITIVE_1, PRIMITIVE_2, 
+        NUMBER, INT, DECIMAL, WHITESPACE, VARIABLE};
     
-    /**
-     * This function is a DFS on the concrete syntax tree (CST)
-     * @param tree: the CST to be parsed into an Expression (AST)
-     * @return the AST corresponding to this tree
-     */
-    public static Expression buildAST(ParseTree<Grammar> tree) {
-        if (tree.getName() == Grammar.DECIMAL) {
+    public static Expression buildAST(ParseTree<ExpressivoGrammar> concreteSymbolTree) {
+        
+        if (concreteSymbolTree.getName() == ExpressivoGrammar.DECIMAL) {
             /* reached a double terminal */
-            return new Num(Double.parseDouble(tree.getContents()));            
+            return new Num(Double.parseDouble(concreteSymbolTree.getContents()));            
         }
 
-        else if (tree.getName() == Grammar.INT) {
+        else if (concreteSymbolTree.getName() == ExpressivoGrammar.INT) {
             /* reached an int terminal */
-            return new Num(Integer.parseInt(tree.getContents()));
+            return new Num(Integer.parseInt(concreteSymbolTree.getContents()));
         }
         
-        else if (tree.getName() == Grammar.VARIABLE) {
+        else if (concreteSymbolTree.getName() == ExpressivoGrammar.VARIABLE) {
             /* reached a terminal */
-            return new Var(tree.getContents());
+            return new Var(concreteSymbolTree.getContents());
         }
         
-        else if (tree.getName() == Grammar.ROOT || tree.getName() == Grammar.TOKEN || tree.getName() == Grammar.PRIMITIVE_1 || tree.getName() == Grammar.PRIMITIVE_2 || tree.getName() == Grammar.NUMBER) {
+        else if (concreteSymbolTree.getName() == ExpressivoGrammar.ROOT        || 
+                 concreteSymbolTree.getName() == ExpressivoGrammar.TOKEN       || 
+                 concreteSymbolTree.getName() == ExpressivoGrammar.PRIMITIVE_1 || 
+                 concreteSymbolTree.getName() == ExpressivoGrammar.PRIMITIVE_2 || 
+                 concreteSymbolTree.getName() == ExpressivoGrammar.NUMBER) {
+            
             /* non-terminals with only one child */
-            for (ParseTree<Grammar> child: tree.children()) {
-                if (child.getName() != Grammar.WHITESPACE) 
+            for (ParseTree<ExpressivoGrammar> child: concreteSymbolTree.children()) {
+                if (child.getName() != ExpressivoGrammar.WHITESPACE) 
                     return buildAST(child);
             }
             
@@ -98,9 +60,9 @@ public interface Expression {
             throw new IllegalArgumentException("error in parsing");
         }
         
-        else if (tree.getName() == Grammar.SUM || tree.getName() == Grammar.PRODUCT) {
+        else if (concreteSymbolTree.getName() == ExpressivoGrammar.SUM || concreteSymbolTree.getName() == ExpressivoGrammar.PRODUCT) {
             /* a sum or product node can have one or more children that need to be accumulated together */
-            return accumulator(tree, tree.getName());   
+            return accumulator(concreteSymbolTree, concreteSymbolTree.getName());   
          }
         
         else {
@@ -110,71 +72,76 @@ public interface Expression {
     }
     
     /**
-     * Parse an expression.
-     * @param input expression to parse, as defined in the PS1 handout.
-     * @return expression AST for the input , Note that the expression is parsed from right to left: x*x*x => (x*(x*x)) & x+y+z => (x+(y+z))
-     * @throws IllegalArgumentException if the expression is invalid
+     * (1) Create parser using lib6005.parser from grammar file
+     * (2) Parse string input into CST
+     * (3) Build AST from this CST using buildAST()
+     * @param input
+     * @return Expression (AST)
      */
     public static Expression parse(String input) {
+        
         try {
-            Parser<Grammar> parser = GrammarCompiler.compile(new File("src/expressivo/Expression.g"), Grammar.ROOT);
-            ParseTree<Grammar> tree = parser.parse(input);
-            return buildAST(tree);
+            Parser<ExpressivoGrammar> parser = GrammarCompiler.compile(
+                    new File("src/expressivo/Expression.g"), ExpressivoGrammar.ROOT);
+            ParseTree<ExpressivoGrammar> concreteSymbolTree = parser.parse(input);
+            
+//            tree.display();
+            
+            return buildAST(concreteSymbolTree);
             
         }
         
         catch (UnableToParseException e) {
-            throw new IllegalArgumentException("Cannot parse the expression.");
+            throw new IllegalArgumentException("Can't parse the expression...");
         }
         catch (IOException e) {
-            System.out.println("cannot open file Expression.g");
-            return null;
+            System.out.println("Cannot open file Expression.g");
+            throw new RuntimeException("Can't open the file with grammar...");
         }
     }
     
-
-    /**
-     * @param x: Var object to be differentiated with respect to
-     * @return derivative of this wrt x
-     */
+    // helper methods
+    public static Expression accumulator(ParseTree<ExpressivoGrammar> tree, ExpressivoGrammar grammarObj) {
+        Expression expr = null;
+        boolean first = true;
+        List<ParseTree<ExpressivoGrammar>> children = tree.children();
+        int len = children.size();
+        for (int i = len-1; i >= 0; i--) {
+            /* the first child */
+            ParseTree<ExpressivoGrammar> child = children.get(i);
+            if (first) {
+                expr = buildAST(child);
+                first = false;
+            }
+            
+            /* accumulate this by creating a new binaryOp object with
+             *  expr as the leftOp and the result as rightOp
+             **/
+            
+            else if (child.getName() == ExpressivoGrammar.WHITESPACE) continue;
+            else {
+                if (grammarObj == ExpressivoGrammar.SUM)
+                    expr = new Sum(buildAST(child), expr);
+                else
+                    expr = new Product(buildAST(child), expr);
+            }
+        }
+        
+        return expr;
+        
+    }
     
+    // ----------------- problems 3-4 -----------------
+    
+    public static Expression create(Expression leftExpr, Expression rightExpr, char op) {
+        if  (op == '+')
+            return Sum.createSum(leftExpr, rightExpr);
+        else
+            return Product.createProduct(leftExpr, rightExpr);
+    }
+
     public Expression differentiate(Var x);
     
-    
-    /**
-     * @param env: Map<String, double> mapping variables to values: 
-     * Keys (must be non-empty, case-sensitive) in env will be used to create Var objects. 
-     * 
-     * @return expr: Expression obtained by substituting each var in this (such that it has a mapping in env) and simplifying. 
-     */
-    
     public Expression simplify(Map<String, Double> env);
-    
-    /**
-     * @return a parsable representation of this expression, such that
-     * for all e:Expression, e.equals(Expression.parse(e.toString())).
-     */
-    @Override 
-    public String toString();
 
-    /**
-     * @param thatObject any object
-     * @return true if and only if this and thatObject are structurally-equal
-     * Expressions, as defined in the PS1 handout.
-     */
-    @Override
-    public boolean equals(Object thatObject);
-    
-    /**
-     * @return hash code value consistent with the equals() definition of structural
-     * equality, such that for all e1,e2:Expression,
-     *     e1.equals(e2) implies e1.hashCode() == e2.hashCode()
-     */
-    @Override
-    public int hashCode();
-    
-    
-    /* Copyright (c) 2015-2017 MIT 6.005 course staff, all rights reserved.
-     * Redistribution of original or derived work requires permission of course staff.
-     */
 }

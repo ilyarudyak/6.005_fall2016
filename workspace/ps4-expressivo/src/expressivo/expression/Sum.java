@@ -6,10 +6,12 @@ public class Sum extends BinaryOp implements Expression{
 
     public Sum(Expression leftOp, Expression rightOp) {
         super(leftOp, rightOp, '+');
-        // TODO Auto-generated constructor stub
     }
 
-    /* factory method for generating expressions 
+    // ----------------- problems 3-4 -----------------
+    
+    /** We use this method only in simplify().
+     * factory method for generating expressions 
      * @returns an Expression formed using the following rules:
      * a+b = a if b = 0 || a+b = b if a = 0
      * a+b = 2*a if a = b
@@ -27,28 +29,28 @@ public class Sum extends BinaryOp implements Expression{
     	}
     	else if (leftOp.equals(zero)) return rightOp;
     	else if (rightOp.equals(zero)) return leftOp;
-    	else if (leftOp.equals(rightOp)) return Multiply.createProduct(new Num(2), leftOp);
+    	else if (leftOp.equals(rightOp)) return Product.createProduct(new Num(2), leftOp);
     	else{
     	    
-    	    boolean isLeftProduct = leftOp instanceof Multiply;
-    	    boolean isRightProduct = rightOp instanceof Multiply;
+    	    boolean isLeftProduct = leftOp instanceof Product;
+    	    boolean isRightProduct = rightOp instanceof Product;
     	    
     	    if (isLeftProduct || isRightProduct) {
-    	        final Expression RightOfLeft = isLeftProduct ? ((Multiply) leftOp).getRight() : leftOp;
-                final Expression RightofRight =  isRightProduct? ((Multiply) rightOp).getRight(): rightOp;
-                final Expression leftOfLeft =  isLeftProduct? ((Multiply) leftOp).getLeft() : one;
-                final Expression leftOfRight =  isRightProduct? ((Multiply) rightOp).getLeft() : one;
+    	        final Expression RightOfLeft = isLeftProduct ? ((Product) leftOp).getRight() : leftOp;
+                final Expression RightofRight =  isRightProduct? ((Product) rightOp).getRight(): rightOp;
+                final Expression leftOfLeft =  isLeftProduct? ((Product) leftOp).getLeft() : one;
+                final Expression leftOfRight =  isRightProduct? ((Product) rightOp).getLeft() : one;
 
                 
                 if (RightOfLeft.equals(RightofRight)) {
                     if (leftOfLeft instanceof Num && leftOfRight instanceof Num)
-                        return Multiply.createProduct(Num.add((Num) leftOfLeft, (Num) leftOfRight), RightOfLeft);
+                        return Product.createProduct(Num.add((Num) leftOfLeft, (Num) leftOfRight), RightOfLeft);
                     
                     else return new Sum(leftOp, rightOp);
                 }
                 
-                else if (RightOfLeft.equals(rightOp) && leftOfLeft instanceof Num) return Multiply.createProduct(Num.add( (Num) leftOfLeft, one), rightOp);
-                else if (RightofRight.equals(leftOp) && leftOfRight instanceof Num) return Multiply.createProduct(Num.add((Num) leftOfRight, one), leftOp);
+                else if (RightOfLeft.equals(rightOp) && leftOfLeft instanceof Num) return Product.createProduct(Num.add( (Num) leftOfLeft, one), rightOp);
+                else if (RightofRight.equals(leftOp) && leftOfRight instanceof Num) return Product.createProduct(Num.add((Num) leftOfRight, one), leftOp);
                 
                 else return new Sum(leftOp, rightOp);
 
