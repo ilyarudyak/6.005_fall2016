@@ -1,5 +1,9 @@
 package expressivo;
 
+import expressivo.expression.Multiply;
+import expressivo.expression.Number;
+import expressivo.expression.Plus;
+import expressivo.expression.Variable;
 import lib6005.parser.*;
 
 /**
@@ -16,7 +20,9 @@ import lib6005.parser.*;
 public interface Expression {
     
     // Datatype definition
-    //   TODO
+    //Expression = Number(n: int) + Variable(s: String) 
+    //+ Plus(left: Expression, right: Expression) 
+    //+ Multiply (left: Expression, right: Expression)
     
     /**
      * Parse an expression.
@@ -27,6 +33,44 @@ public interface Expression {
     public static Expression parse(String input) {
         throw new RuntimeException("unimplemented");
     }
+    
+    // ----------------- building up an expression -----------------
+    
+    public static Expression make(double num){
+        return new Number(num);
+    }
+    
+    public static Expression make(String var){
+        return new Variable(var);
+    }
+    
+    public static Expression sum(Expression left, Expression right){
+        Number zero = new Number(0);
+        if(left.equals(zero)){
+            return right;
+        }
+        if(right.equals(zero)){
+            return left;
+        }
+        return new Plus(left,right);
+    }
+    
+   public static Expression times(Expression left, Expression right){
+       Number zero = new Number(0);
+       Number one = new Number(1);
+       if(left.equals(zero)||right.equals(zero)){
+           return new Number(0);
+       }
+       if(left.equals(one)){
+           return right;
+       }
+       if(right.equals(one)){
+           return left;
+       }
+       return new Multiply(left,right);
+   }
+   
+    // ----------------- standard observers -----------------
     
     /**
      * @return a parsable representation of this expression, such that
