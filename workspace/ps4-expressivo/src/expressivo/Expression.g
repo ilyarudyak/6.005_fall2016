@@ -11,11 +11,16 @@
  *
  * For more information, see the parsers reading.
  */
-root ::= sum;
+root ::= product | sum;
 @skip whitespace{
-	sum ::= primitive ('+' primitive)*;
-	primitive ::= number | '(' sum ')';
+	sum ::= primitive_1 ('+' primitive_1)*;
+	product ::= primitive_2 ('*' primitive_2)*;
+	token ::= number | variable;
+	primitive_1 ::= token | product | '(' product ')';
+	primitive_2 ::= token | '(' sum ')';
 }
-number ::= [0-9]+;
-
+number ::= int | decimal;
+int ::= [0-9]+;
+decimal ::= [0-9]* '.' [0-9]+;
+variable ::= [A-Za-z]+;
 whitespace ::= [ ]+;
