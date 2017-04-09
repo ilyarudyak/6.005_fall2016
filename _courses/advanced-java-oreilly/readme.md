@@ -30,6 +30,17 @@ public class Salaried extends Employee {
     }
 }
 ```
+* we may use **factory** pattern to instantiate a class; in this case we create an instance
+of the child **concrete** class; we may check what class we instantiated with 
+`getClass().getName()`:
+```java
+public class CurrencyPrinter {
+    public static void main(String[] args) {
+        NumberFormat nf = NumberFormat.getCurrencyInstance();
+        System.out.println(nf.getClass().getName());
+    }
+}
+```
 ### Static and default methods in Interfaces
 * there were no `static` and `non-abstract` methods prior to java 8; `static` methods 
 were introduced to eliminate classes like `Collections` - now we can see `static` methods 
