@@ -1,4 +1,35 @@
 ## Part 1. Interfaces, Inheritance and Object
+### Abstract classes and methods
+* if we want default constructor in the child class we have 2 options: (a) define 
+default constructors in **both** classes; we **can not** define it in the child class 
+but not in the parent class, we implicitly call `super()` with default constructor
+of the parent class; (this is probably the usual approach) (b) we can define 
+it in terms of other constructors in the child class;
+```java
+public abstract class Employee {
+    public static final String DEFAULT_NAME = "UNKNOWN";
+
+    public Employee() {
+        this(DEFAULT_NAME);
+    }
+}
+
+public class Salaried extends Employee {
+    public static final double DEFAULT_SALARY = 120000;
+
+    // we can define define default constructor here only if 
+    // we have default constructor in the parent class
+    public Salaried() {
+        
+    }
+
+    // alternatively we can define default constructor in
+    // terms of other constructor
+    public Salaried() {
+        this(DEFAULT_NAME, DEFAULT_SALARY);
+    }
+}
+```
 ### Static and default methods in Interfaces
 * there were no `static` and `non-abstract` methods prior to java 8; `static` methods 
 were introduced to eliminate classes like `Collections` - now we can see `static` methods 
@@ -61,20 +92,20 @@ we check `getClass()` - this is controversial topic); (c) compare chosen attribu
 this with `Objects.equals()` than to write all cases explicitly like in `Task.java`); 
 ```java
 class Task {
-        @Override
-        public boolean equals(Object o) {
-            if (this == o) return true;
-            if (o == null) return false;
-            if (!(o instanceof Task)) return false;
-    
-            Task task = (Task) o;
-            
-            // Returns true if the arguments are equal to each other and false otherwise. 
-            // Consequently, if both arguments are null, true is returned and if exactly 
-            // one argument is null, false is returned. Otherwise, equality is determined 
-            // by using the equals method of the first argument.
-            return Objects.equals(id, other.id);
-        }
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null) return false;
+        if (!(o instanceof Task)) return false;
+
+        Task task = (Task) o;
+        
+        // Returns true if the arguments are equal to each other and false otherwise. 
+        // Consequently, if both arguments are null, true is returned and if exactly 
+        // one argument is null, false is returned. Otherwise, equality is determined 
+        // by using the equals method of the first argument.
+        return Objects.equals(id, other.id);
+    }
 }
 ```
 * to override `hashCode()` we may again use helper method from `Objects` class rather than

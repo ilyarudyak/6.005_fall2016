@@ -5,7 +5,7 @@ public class Salaried extends Employee {
 
     private double salary = DEFAULT_SALARY;
 
-    public Salaried() {}
+    public Salaried() { }
 
     public Salaried(String name) {
         this(name, DEFAULT_SALARY);
@@ -27,5 +27,9 @@ public class Salaried extends Employee {
     @Override
     public double getPay() {
         return salary / 24;
+    }
+
+    public static void main(String[] args) {
+        Salaried salaried = new Salaried();
     }
 }

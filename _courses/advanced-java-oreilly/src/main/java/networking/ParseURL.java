@@ -5,7 +5,7 @@ import java.net.URL;
 public class ParseURL {
     public static void main(String[] args) throws Exception {
 
-        URL aURL = new URL("http://search.oreilly.com:80/index.html?q=kousen&x=0&y=0#REFERENCE");
+        URL aURL = new URL("http://ssearch.oreilly.com:80/index.html?q=kousen&x=0&y=0#REFERENCE");
 
         System.out.println("protocol = " + aURL.getProtocol());
         System.out.println("authority = " + aURL.getAuthority());
