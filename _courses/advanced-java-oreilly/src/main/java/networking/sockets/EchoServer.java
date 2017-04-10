@@ -14,7 +14,7 @@ public class EchoServer {
                 PrintWriter out = new PrintWriter(client.getOutputStream(), true);
         ) {
             System.out.println("Connected...");
-            String line = "";
+            String line;
             while ((line = in.readLine()) != null) {
                 out.println("You said: " + line);
             }
