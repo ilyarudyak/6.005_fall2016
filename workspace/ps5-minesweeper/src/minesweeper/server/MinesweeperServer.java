@@ -22,12 +22,13 @@ public class MinesweeperServer {
     /** Maximum port number as defined by ServerSocket. */
     private static final int MAXIMUM_PORT = 65535;
     /** Default square board size. */
-    private static final int DEFAULT_SIZE = 10;
+    public static final int DEFAULT_SIZE = 10;
 
     /** Socket for receiving incoming connections. */
     private final ServerSocket serverSocket;
     /** True if the server should *not* disconnect a client after a BOOM message. */
     private final boolean debug;
+    private Board board;
 
     // TODO: Abstraction function, rep invariant, rep exposure
 
@@ -41,6 +42,7 @@ public class MinesweeperServer {
     public MinesweeperServer(int port, boolean debug) throws IOException {
         serverSocket = new ServerSocket(port);
         this.debug = debug;
+        
     }
 
     /**
@@ -54,7 +56,7 @@ public class MinesweeperServer {
         while (true) {
             // block until a client connects
             Socket socket = serverSocket.accept();
-
+            System.out.println("Connected...");
             // handle the client
             try {
                 handleConnection(socket);
@@ -253,3 +255,18 @@ public class MinesweeperServer {
         server.serve();
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
