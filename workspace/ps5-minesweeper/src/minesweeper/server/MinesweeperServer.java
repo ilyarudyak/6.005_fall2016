@@ -67,6 +67,12 @@ public class MinesweeperServer {
             }
         }
     }
+    
+    
+
+    public void setBoard(Board board) {
+        this.board = board;
+    }
 
     /**
      * Handle a single client connection. Returns when client disconnects.
@@ -106,9 +112,10 @@ public class MinesweeperServer {
             // TODO Problem 5
         }
         String[] tokens = input.split(" ");
+        System.out.println(Arrays.toString(tokens));
         if (tokens[0].equals("look")) {
             // 'look' request
-            // TODO Problem 5
+            return board.toString();
         } else if (tokens[0].equals("help")) {
             // 'help' request
             // TODO Problem 5
@@ -250,8 +257,12 @@ public class MinesweeperServer {
     public static void runMinesweeperServer(boolean debug, Optional<File> file, int sizeX, int sizeY, int port) throws IOException {
         
         // TODO: Continue implementation here in problem 4
+
         
         MinesweeperServer server = new MinesweeperServer(port, debug);
+        if (!file.isPresent()) {
+            server.setBoard(Board.buildRandomBoard());
+        }
         server.serve();
     }
 }
