@@ -3,10 +3,12 @@
  */
 package minesweeper;
 
+import java.time.Instant;
 import java.util.List;
 import java.util.Objects;
 import java.util.Random;
 import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
@@ -30,8 +32,12 @@ public class Board {
     }
     
     public static Board buildRandomBoard() {
+        return buildRandomBoard(Instant.now().getEpochSecond());
+    }
+    
+    static Board buildRandomBoard(Long seed) {
         int defaultSize = MinesweeperServer.DEFAULT_SIZE;
-        Random random = new Random(0);
+        Random random = new Random(seed);
         List<Point> bombsList = IntStream.range(0, defaultSize)
                 .mapToObj(n -> new Point(random.nextInt(defaultSize), random.nextInt(defaultSize)))
                 .collect(Collectors.toList());
@@ -47,7 +53,7 @@ public class Board {
         board = new ConcurrentHashMap<>();
         for (int x = 0; x < boardXSize; x++) {
             for (int y = 0; y < boardYSize; y++) {
-                Point point = new Point(x, y);
+                Point point = new Point(y, x);
                 board.computeIfAbsent(point, p -> new Square(p, bombs.containsKey(p)));
             }
         }
@@ -61,6 +67,8 @@ public class Board {
         return bombs;
     }
 
+    // -------------- operations on the board ------------
+    
     public void setSquareDug(Point point) {
         board.computeIfPresent(point, (p, s) -> s.setDug());
     }
@@ -73,12 +81,42 @@ public class Board {
         board.computeIfPresent(point, (p, s) -> s.removeBomb());
     }
     
+    // ------------- calculate number of bombs -----------
+    
+    public int getNumberOfBombs(Point point) {
+        Square square = board.get(point);
+        return getAdjSquares(point)
+                .stream()
+                .mapToInt(s -> s.getBombCount())
+                .sum();
+    }
+    
+    private List<Square> getAdjSquares(Point point) {
+        List<Point> adjPoints = new CopyOnWriteArrayList<>();
+        for (int i = -1; i <= 1; i++) {
+            for (int j = -1; j <= 1; j++) {
+                Point p = new Point(point.x + i, point.y + j);
+                if (!p.equals(point) && isOnBoard(p)) {
+                    adjPoints.add(p);
+                }
+            }
+        }
+        return adjPoints.stream().map(p -> board.get(p)).collect(Collectors.toList());
+    }
+    
+    private boolean isOnBoard(Point point) {
+        return 0 <= point.x && point.x < boardXSize &&
+               0 <= point.y && point.y < boardYSize; 
+    }
+    
+    // -------------- printing --------------------------
+    
     @Override
     public String toString() {
         StringBuffer boardStrBuf = new StringBuffer();
         for (int x = 0; x < boardXSize; x++) {
             for (int y = 0; y < boardYSize; y++) {
-                Point point = new Point(x, y);
+                Point point = new Point(y, x);
                 boardStrBuf.append(board.get(point).toString());
             }
             boardStrBuf.append("\n");
@@ -86,12 +124,12 @@ public class Board {
         return boardStrBuf.toString();
     }
     
-    /** Debugging printing for board */
+    // debugging printing for board
     public String printBoard() {
         StringBuffer boardStrBuf = new StringBuffer();
         for (int x = 0; x < boardXSize; x++) {
             for (int y = 0; y < boardYSize; y++) {
-                Point point = new Point(x, y);
+                Point point = new Point(y, x);
                 if (board.get(point).isContainBomb) {
                     boardStrBuf.append("B");
                 } else {
@@ -102,6 +140,26 @@ public class Board {
         }
         return boardStrBuf.toString();
     }
+    
+    public String printBoardWithBombCount() {
+        StringBuffer boardStrBuf = new StringBuffer();
+        for (int x = 0; x < boardXSize; x++) {
+            for (int y = 0; y < boardYSize; y++) {
+                Point point = new Point(y, x);
+                if (board.get(point).isContainBomb) {
+                    boardStrBuf.append("B");
+                } else if (getNumberOfBombs(point) > 0) {
+                    boardStrBuf.append(getNumberOfBombs(point));
+                } else {
+                    boardStrBuf.append(board.get(point).toString());
+                }
+            }
+            boardStrBuf.append("\n");
+        }
+        return boardStrBuf.toString();
+    }
+   
+    // -------------- inner classes ---------------------
     
     static class Point {
         private final int x;
@@ -190,6 +248,10 @@ public class Board {
         
         public boolean isContainBomb() {
             return isContainBomb;
+        }
+        
+        public int getBombCount() {
+            return isContainBomb ? 1 : 0;
         }
         
         public boolean isUntouched() {

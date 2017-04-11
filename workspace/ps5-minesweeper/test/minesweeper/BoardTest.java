@@ -5,11 +5,15 @@ package minesweeper;
 
 import static org.junit.Assert.*;
 
-import java.awt.Point;
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 
 import org.junit.Before;
 import org.junit.Test;
+import org.omg.PortableServer.POAPackage.ObjectAlreadyActive;
 
 /**
  * TODO: Description
@@ -22,7 +26,7 @@ public class BoardTest {
     }
     
     @Test
-    public void testConstructorSimple() {
+    public void testConstructor() {
         Board board = new Board(3, 3, 
                 Arrays.asList(new Board.Point(0, 0), new Board.Point(2, 2)));
 //        System.out.println(board);
@@ -51,7 +55,7 @@ public class BoardTest {
     }
     
     @Test
-    public void testSquareSimple() {
+    public void testSquare() {
         Board.Point p11 = new Board.Point(1, 1);
         Board.Square s1 = new Board.Square(p11, false);
         Board.Square s2 = new Board.Square(p11, true);
@@ -67,7 +71,7 @@ public class BoardTest {
     }
     
     @Test
-    public void testPointSimple() {
+    public void testPoint() {
         Board.Point p1 = new Board.Point(1, 1);
         Board.Point p2 = new Board.Point(1, 1);
         Board.Point p3 = new Board.Point(0, 0);
@@ -84,10 +88,54 @@ public class BoardTest {
     
     @Test
     public void testBuildingRandom() {
-        Board board = Board.buildRandomBoard();
-        System.out.println(board);
+        Board board = Board.buildRandomBoard(0L);
+        ConcurrentHashMap<Board.Point, Boolean> bombs = board.getBombs();
+        List<Board.Point> points = Arrays.asList(
+                new Board.Point(3, 2),
+                new Board.Point(5, 4),
+                new Board.Point(1, 0),
+                new Board.Point(1, 1),
+                new Board.Point(7, 7)
+                );
+        
+        assertEquals(10, bombs.size());
+        points.forEach(p -> assertTrue(bombs.get(p)));
+    }
+    
+    @Test
+    public void testgetNumberOfBombs() {
+        Board board = Board.buildRandomBoard(0L);
+        List<Board.Point> points = Arrays.asList(
+                new Board.Point(0, 0),
+                new Board.Point(9, 0),
+                new Board.Point(2, 1),
+                new Board.Point(4, 4),
+                new Board.Point(8, 7)
+        );
+
+        System.out.println(board.printBoardWithBombCount());
         System.out.println();
+        
+        points.forEach(p -> board.setSquareFlagged(p, true));
         System.out.println(board.printBoard());
-        System.out.println(board.getBombs());
+        
+        
+        assertEquals(2, board.getNumberOfBombs(points.get(0)));
+        assertEquals(0, board.getNumberOfBombs(points.get(1)));
+        assertEquals(3, board.getNumberOfBombs(points.get(2)));
+        assertEquals(3, board.getNumberOfBombs(points.get(3)));
+        assertEquals(2, board.getNumberOfBombs(points.get(4)));
+
     }
 }
+
+
+
+
+
+
+
+
+
+
+
