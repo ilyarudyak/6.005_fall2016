@@ -6,8 +6,11 @@ package minesweeper.server;
 import java.io.*;
 import java.net.*;
 import java.util.*;
+import java.util.concurrent.atomic.AtomicInteger;
 
 import minesweeper.Board;
+import minesweeper.Point;
+import minesweeper.Square;
 
 /**
  * Multiplayer Minesweeper server.
@@ -28,7 +31,14 @@ public class MinesweeperServer {
     private final ServerSocket serverSocket;
     /** True if the server should *not* disconnect a client after a BOOM message. */
     private final boolean debug;
+    
+    private static String BOOM_MESSAGE = "BOOM!\n";
+    private static String HELP_MESSAGE = "This is the help message!\n";
+    private static String TERMINATE = "terminate";
+    
     private Board board;
+    private AtomicInteger playersNum = new AtomicInteger(1);
+    private String helloMessage;
 
     // TODO: Abstraction function, rep invariant, rep exposure
 
@@ -56,7 +66,6 @@ public class MinesweeperServer {
         while (true) {
             // block until a client connects
             Socket socket = serverSocket.accept();
-            System.out.println("Connected...");
             // handle the client
             try {
                 handleConnection(socket);
@@ -67,11 +76,12 @@ public class MinesweeperServer {
             }
         }
     }
-    
-    
 
     public void setBoard(Board board) {
         this.board = board;
+        helloMessage = String.format("Welcome to Minesweeper. Players: %d including you. "
+                + "Board: %d columns by %d rows. Type 'help' for help.\n", playersNum.intValue(), 
+                board.getBoardXSize(), board.getBoardYSize());
     }
 
     /**
@@ -85,11 +95,19 @@ public class MinesweeperServer {
         PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
 
         try {
+            out.println(helloMessage);
+            if (debug) {
+                out.println(board.printBoard());
+            }
             for (String line = in.readLine(); line != null; line = in.readLine()) {
                 String output = handleRequest(line);
                 if (output != null) {
                     // TODO: Consider improving spec of handleRequest to avoid use of null
-                    out.println(output);
+                    if (output.equals(TERMINATE)) {
+                        break;
+                    } else {
+                        out.println(output);
+                    }
                 }
             }
         } finally {
@@ -109,31 +127,48 @@ public class MinesweeperServer {
                      + "(dig -?\\d+ -?\\d+)|(flag -?\\d+ -?\\d+)|(deflag -?\\d+ -?\\d+)";
         if ( ! input.matches(regex)) {
             // invalid input
-            // TODO Problem 5
+            return HELP_MESSAGE;
         }
         String[] tokens = input.split(" ");
-        System.out.println(Arrays.toString(tokens));
         if (tokens[0].equals("look")) {
             // 'look' request
             return board.toString();
         } else if (tokens[0].equals("help")) {
             // 'help' request
-            // TODO Problem 5
+            return HELP_MESSAGE;
         } else if (tokens[0].equals("bye")) {
             // 'bye' request
-            // TODO Problem 5
+            return TERMINATE;
         } else {
             int x = Integer.parseInt(tokens[1]);
             int y = Integer.parseInt(tokens[2]);
+            Point point = new Point(x, y);
+            Square square = board.getBoard().get(point);
             if (tokens[0].equals("dig")) {
                 // 'dig x y' request
-                // TODO Problem 5
+                if (!board.isOnBoard(point) || !square.isUntouched()) {
+                    return board.toString();
+                } else {
+                    square.setDug();
+                    if (square.isContainBomb()) {
+                        return BOOM_MESSAGE;
+                    } else {
+                        return board.toString();
+                    }
+                }
+                
             } else if (tokens[0].equals("flag")) {
                 // 'flag x y' request
-                // TODO Problem 5
+                if (board.isOnBoard(point) && square.isUntouched()) {
+                    square.setFlagged(true);
+                    return board.toString();
+                }
             } else if (tokens[0].equals("deflag")) {
                 // 'deflag x y' request
-                // TODO Problem 5
+                if (board.isOnBoard(point) && square.isUntouched()) {
+                    square.setFlagged(false);
+                    return board.toString();
+                }
             }
         }
         // TODO: Should never get here, make sure to return in each of the cases above
@@ -261,7 +296,7 @@ public class MinesweeperServer {
         
         MinesweeperServer server = new MinesweeperServer(port, debug);
         if (!file.isPresent()) {
-            server.setBoard(Board.buildRandomBoard());
+            server.setBoard(Board.buildRandomBoard(0L));
         }
         server.serve();
     }

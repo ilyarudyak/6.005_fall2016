@@ -35,7 +35,7 @@ public class Board {
         return buildRandomBoard(Instant.now().getEpochSecond());
     }
     
-    static Board buildRandomBoard(Long seed) {
+    public static Board buildRandomBoard(Long seed) {
         int defaultSize = MinesweeperServer.DEFAULT_SIZE;
         Random random = new Random(seed);
         List<Point> bombsList = IntStream.range(0, defaultSize)
@@ -59,6 +59,16 @@ public class Board {
         }
     }
 
+    // -------------- getters ----------------------------
+
+    public int getBoardXSize() {
+        return boardXSize;
+    }
+
+    public int getBoardYSize() {
+        return boardYSize;
+    }
+    
     public ConcurrentHashMap<Point, Square> getBoard() {
         return board;
     }
@@ -83,7 +93,7 @@ public class Board {
     
     // ------------- calculate number of bombs -----------
     
-    public int getNumberOfBombs(Point point) {
+    public int getBombCount(Point point) {
         Square square = board.get(point);
         return getAdjSquares(point)
                 .stream()
@@ -95,7 +105,7 @@ public class Board {
         List<Point> adjPoints = new CopyOnWriteArrayList<>();
         for (int i = -1; i <= 1; i++) {
             for (int j = -1; j <= 1; j++) {
-                Point p = new Point(point.x + i, point.y + j);
+                Point p = new Point(point.getX() + i, point.getY() + j);
                 if (!p.equals(point) && isOnBoard(p)) {
                     adjPoints.add(p);
                 }
@@ -104,9 +114,9 @@ public class Board {
         return adjPoints.stream().map(p -> board.get(p)).collect(Collectors.toList());
     }
     
-    private boolean isOnBoard(Point point) {
-        return 0 <= point.x && point.x < boardXSize &&
-               0 <= point.y && point.y < boardYSize; 
+    public boolean isOnBoard(Point point) {
+        return 0 <= point.getX() && point.getX() < boardXSize &&
+               0 <= point.getY() && point.getY() < boardYSize; 
     }
     
     // -------------- printing --------------------------
@@ -117,7 +127,13 @@ public class Board {
         for (int x = 0; x < boardXSize; x++) {
             for (int y = 0; y < boardYSize; y++) {
                 Point point = new Point(y, x);
-                boardStrBuf.append(board.get(point).toString());
+                Square square = board.get(point);
+                int bombCount = getBombCount(point);
+                if (square.isDug() && bombCount > 0) {
+                    boardStrBuf.append(Integer.toString(bombCount));
+                } else {
+                    boardStrBuf.append(board.get(point).toString());
+                }
             }
             boardStrBuf.append("\n");
         }
@@ -130,7 +146,7 @@ public class Board {
         for (int x = 0; x < boardXSize; x++) {
             for (int y = 0; y < boardYSize; y++) {
                 Point point = new Point(y, x);
-                if (board.get(point).isContainBomb) {
+                if (board.get(point).isContainBomb()) {
                     boardStrBuf.append("B");
                 } else {
                     boardStrBuf.append(board.get(point).toString());
@@ -146,10 +162,10 @@ public class Board {
         for (int x = 0; x < boardXSize; x++) {
             for (int y = 0; y < boardYSize; y++) {
                 Point point = new Point(y, x);
-                if (board.get(point).isContainBomb) {
+                if (board.get(point).isContainBomb()) {
                     boardStrBuf.append("B");
-                } else if (getNumberOfBombs(point) > 0) {
-                    boardStrBuf.append(getNumberOfBombs(point));
+                } else if (getBombCount(point) > 0) {
+                    boardStrBuf.append(getBombCount(point));
                 } else {
                     boardStrBuf.append(board.get(point).toString());
                 }
@@ -158,128 +174,9 @@ public class Board {
         }
         return boardStrBuf.toString();
     }
-   
-    // -------------- inner classes ---------------------
+  
     
-    static class Point {
-        private final int x;
-        private final int y;
-        
-        public Point(int x, int y) {
-            this.x = x;
-            this.y = y;
-        }
 
-        public int getX() {
-            return x;
-        }
-
-        public int getY() {
-            return y;
-        }
-
-        @Override
-        public int hashCode() {
-            return Objects.hash(x, y);
-        }
-
-        @Override
-        public boolean equals(Object obj) {
-            if (this == obj) return true;
-            if (obj == null) return false;
-            if (getClass() != obj.getClass()) return false;
-            Point objPoint = (Point) obj;
-            return x == objPoint.x && y == objPoint.y;
-        }
-
-        @Override
-        public String toString() {
-            return String.format("(%d,%d)", x, y);
-        }
-        
-        
-        
-    }
-    
-    static class Square {
-        private final Point point;
-        
-        private boolean isContainBomb;
-        
-        private boolean isUntouched = true;
-        private boolean isDug = false;
-        private boolean isFlagged = false;
-        
-        
-        public Square(Point point, boolean isContainBomb) {
-            this.point = point;
-            this.isContainBomb = isContainBomb;
-        }
-        
-        private void checkRep() {
-            if (isUntouched) { assert !isDug; }
-            if (!isUntouched) { assert isDug; }
-        }
-        
-        // ----------- setters ------------
-        
-        public Square removeBomb() {
-            this.isContainBomb = false;
-            return this;
-        }
-        
-        public Square setDug() {
-            this.isDug = true;
-            this.isUntouched = false;
-            checkRep();
-            return this;
-        }
-        
-        public Square setFlagged(boolean isFlagged) {
-            this.isFlagged = isFlagged;
-            return this;
-        }
-
-        // ----------- getters ------------
-        
-        public Point getPoint() {
-            return point;
-        }
-        
-        public boolean isContainBomb() {
-            return isContainBomb;
-        }
-        
-        public int getBombCount() {
-            return isContainBomb ? 1 : 0;
-        }
-        
-        public boolean isUntouched() {
-            return isUntouched;
-        }
-        
-        public boolean isDug() {
-            return isDug;
-        }
-
-        public boolean isFlagged() {
-            return isFlagged;
-        }
-
-        // ----------- other ------------
-
-        @Override
-        public String toString() {
-            if (isFlagged) return "F";
-            else if (isDug && isContainBomb) return "B";
-            else if (isDug && !isContainBomb) return " ";
-            else if (isUntouched && !isFlagged) return "-";
-            else throw new RuntimeException("wrong Square");
-            
-        }
-        
-        
-    }
     
 }
 

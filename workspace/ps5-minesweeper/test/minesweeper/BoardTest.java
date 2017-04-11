@@ -28,12 +28,12 @@ public class BoardTest {
     @Test
     public void testConstructor() {
         Board board = new Board(3, 3, 
-                Arrays.asList(new Board.Point(0, 0), new Board.Point(2, 2)));
+                Arrays.asList(new Point(0, 0), new Point(2, 2)));
 //        System.out.println(board);
         
-        Board.Point p00 = new Board.Point(0, 0);
-        Board.Point p01 = new Board.Point(0, 1);
-        Board.Point p22 = new Board.Point(2, 2);
+        Point p00 = new Point(0, 0);
+        Point p01 = new Point(0, 1);
+        Point p22 = new Point(2, 2);
         assertTrue(board.getBoard().get(p00).isContainBomb() &&
                    board.getBoard().get(p22).isContainBomb());
         assertFalse(board.getBoard().get(p01).isContainBomb());
@@ -56,12 +56,12 @@ public class BoardTest {
     
     @Test
     public void testSquare() {
-        Board.Point p11 = new Board.Point(1, 1);
-        Board.Square s1 = new Board.Square(p11, false);
-        Board.Square s2 = new Board.Square(p11, true);
-        Board.Square s3 = new Board.Square(p11, true);
+        Point p11 = new Point(1, 1);
+        Square s1 = new Square(p11, false);
+        Square s2 = new Square(p11, true);
+        Square s3 = new Square(p11, true);
         s3.setDug();
-        Board.Square s4 = new Board.Square(p11, false);
+        Square s4 = new Square(p11, false);
         s4.setFlagged(true);
         
         assertEquals("-", s1.toString());
@@ -72,9 +72,9 @@ public class BoardTest {
     
     @Test
     public void testPoint() {
-        Board.Point p1 = new Board.Point(1, 1);
-        Board.Point p2 = new Board.Point(1, 1);
-        Board.Point p3 = new Board.Point(0, 0);
+        Point p1 = new Point(1, 1);
+        Point p2 = new Point(1, 1);
+        Point p3 = new Point(0, 0);
         
         assertTrue(p1.equals(p2));
         assertFalse(p1.equals(p3));
@@ -89,13 +89,13 @@ public class BoardTest {
     @Test
     public void testBuildingRandom() {
         Board board = Board.buildRandomBoard(0L);
-        ConcurrentHashMap<Board.Point, Boolean> bombs = board.getBombs();
-        List<Board.Point> points = Arrays.asList(
-                new Board.Point(3, 2),
-                new Board.Point(5, 4),
-                new Board.Point(1, 0),
-                new Board.Point(1, 1),
-                new Board.Point(7, 7)
+        ConcurrentHashMap<Point, Boolean> bombs = board.getBombs();
+        List<Point> points = Arrays.asList(
+                new Point(3, 2),
+                new Point(5, 4),
+                new Point(1, 0),
+                new Point(1, 1),
+                new Point(7, 7)
                 );
         
         assertEquals(10, bombs.size());
@@ -105,12 +105,12 @@ public class BoardTest {
     @Test
     public void testgetNumberOfBombs() {
         Board board = Board.buildRandomBoard(0L);
-        List<Board.Point> points = Arrays.asList(
-                new Board.Point(0, 0),
-                new Board.Point(9, 0),
-                new Board.Point(2, 1),
-                new Board.Point(4, 4),
-                new Board.Point(8, 7)
+        List<Point> points = Arrays.asList(
+                new Point(0, 0),
+                new Point(9, 0),
+                new Point(2, 1),
+                new Point(4, 4),
+                new Point(8, 7)
         );
 
         System.out.println(board.printBoardWithBombCount());
@@ -120,11 +120,11 @@ public class BoardTest {
         System.out.println(board.printBoard());
         
         
-        assertEquals(2, board.getNumberOfBombs(points.get(0)));
-        assertEquals(0, board.getNumberOfBombs(points.get(1)));
-        assertEquals(3, board.getNumberOfBombs(points.get(2)));
-        assertEquals(3, board.getNumberOfBombs(points.get(3)));
-        assertEquals(2, board.getNumberOfBombs(points.get(4)));
+        assertEquals(2, board.getBombCount(points.get(0)));
+        assertEquals(0, board.getBombCount(points.get(1)));
+        assertEquals(3, board.getBombCount(points.get(2)));
+        assertEquals(3, board.getBombCount(points.get(3)));
+        assertEquals(2, board.getBombCount(points.get(4)));
 
     }
 }
