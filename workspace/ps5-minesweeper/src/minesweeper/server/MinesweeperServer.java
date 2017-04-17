@@ -32,8 +32,8 @@ public class MinesweeperServer {
     /** True if the server should *not* disconnect a client after a BOOM message. */
     private final boolean debug;
     
-    private static String BOOM_MESSAGE = "BOOM!\n";
-    private static String HELP_MESSAGE = "This is the help message!\n";
+    private static String BOOM_MESSAGE = "BOOM!";
+    private static String HELP_MESSAGE = "This is the help message!";
     private static String TERMINATE = "terminate";
     
     private Board board;
@@ -96,9 +96,6 @@ public class MinesweeperServer {
 
         try {
             out.println(helloMessage);
-            if (debug) {
-                out.println(board.printBoard());
-            }
             for (String line = in.readLine(); line != null; line = in.readLine()) {
                 String output = handleRequest(line);
                 if (output != null) {
@@ -178,6 +175,7 @@ public class MinesweeperServer {
             square.setDug();
             if (square.isContainBomb()) {                                   // case 3
                 board.removeBomb(point);
+                handleDigNeighbors(point);
                 return BOOM_MESSAGE;
             } else {
                 handleDigNeighbors(point);
@@ -192,12 +190,11 @@ public class MinesweeperServer {
         if (board.getBombCount(point) == 0) {
             board.getAdjPoints(point)
                 .stream()
-                .filter(p -> board.getBombCount(p) == 0)
                 .forEach(p -> {
                     Square square = board.getBoard().get(p);
                     if (square.isUntouched()) {
                         square.setDug();
-//                        handleDigNeighbors(p);
+                        handleDigNeighbors(p);
                     }
                 });
         }
