@@ -127,6 +127,17 @@ public class BoardTest {
         assertEquals(2, board.getBombCount(points.get(4)));
 
     }
+    
+    @Test
+    public void testBuildBoardFromFile() {
+        
+        String fileName = "test/resources/boards/board_file_2";
+        Board b = new Board(fileName);
+        System.out.println(b.getBoardXSize() + ":" + b.getBoardYSize());
+        System.out.println(b.getBoard());
+        System.out.println(b.printBoard());
+        
+    }
 }
 
 

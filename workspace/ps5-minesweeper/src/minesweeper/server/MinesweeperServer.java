@@ -80,7 +80,7 @@ public class MinesweeperServer {
     public void setBoard(Board board) {
         this.board = board;
         helloMessage = String.format("Welcome to Minesweeper. Players: %d including you. "
-                + "Board: %d columns by %d rows. Type 'help' for help.\n", playersNum.intValue(), 
+                + "Board: %d columns by %d rows. Type 'help' for help.", playersNum.intValue(), 
                 board.getBoardXSize(), board.getBoardYSize());
     }
 
@@ -297,6 +297,9 @@ public class MinesweeperServer {
         MinesweeperServer server = new MinesweeperServer(port, debug);
         if (!file.isPresent()) {
             server.setBoard(Board.buildRandomBoard(0L));
+        } else {
+            Board board = new Board(file.get().toString());
+            server.setBoard(board);
         }
         server.serve();
     }
