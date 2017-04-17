@@ -50,19 +50,24 @@ public class Board {
         buildBoardUsingSizeAndBombList();
     }
     
-    public static Board buildRandomBoard() {
-        return buildRandomBoard(Instant.now().getEpochSecond());
-    }
-    
     // ----------------- build bomb helpers --------------
     
-    public static Board buildRandomBoard(Long seed) {
-        int defaultSize = MinesweeperServer.DEFAULT_SIZE;
-        Random random = new Random(seed);
-        List<Point> bombsList = IntStream.range(0, defaultSize)
-                .mapToObj(n -> new Point(random.nextInt(defaultSize), random.nextInt(defaultSize)))
-                .collect(Collectors.toList());
-        return new Board(defaultSize, defaultSize, bombsList);
+    public static Board buildRandomBoard(int sizeX, int sizeY) {
+        return new Board(sizeX, sizeY, buildRandomBombList(sizeX, sizeY));
+    }
+    
+    private static List<Point> buildRandomBombList(int sizeX, int sizeY) {
+        Random random = new Random(0);
+        List<Point> bombList = new ArrayList<>();
+        for (int y = 0; y < sizeY; y++)  {
+            for (int x = 0; x < sizeX; x++){
+                double probability = random.nextFloat();
+                if (probability <= BOMB_PROBABILITY) {
+                    bombList.add(new Point(x, y));
+                }   
+            }
+        }
+        return bombList;
     }
     
     private void buildBombsFromList(List<Point> bombsList) {
@@ -143,6 +148,7 @@ public class Board {
     
     public void removeBomb(Point point) {
         board.computeIfPresent(point, (p, s) -> s.removeBomb());
+        bombs.remove(point);
     }
     
     // ------------- calculate number of bombs -----------
@@ -155,7 +161,7 @@ public class Board {
                 .sum();
     }
     
-    private List<Square> getAdjSquares(Point point) {
+    public List<Point> getAdjPoints(Point point) {
         List<Point> adjPoints = new CopyOnWriteArrayList<>();
         for (int i = -1; i <= 1; i++) {
             for (int j = -1; j <= 1; j++) {
@@ -165,6 +171,11 @@ public class Board {
                 }
             }
         }
+        return adjPoints;
+    }
+    
+    public List<Square> getAdjSquares(Point point) {
+        List<Point> adjPoints = getAdjPoints(point);
         return adjPoints.stream().map(p -> board.get(p)).collect(Collectors.toList());
     }
     
@@ -192,7 +203,9 @@ public class Board {
                     boardStrBuf.append(" ");
                 }
             }
-            boardStrBuf.append("\n");
+            if (y < boardYSize - 1) {
+                boardStrBuf.append("\n");
+            }
         }
         return boardStrBuf.toString();
     }

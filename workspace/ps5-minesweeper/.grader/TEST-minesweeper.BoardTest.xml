@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="Ilyas-MacBook-Pro.local" name="minesweeper.BoardTest" skipped="0" tests="7" time="0.191" timestamp="2017-04-17T13:59:00">
+<testsuite errors="0" failures="0" hostname="Ilyas-MacBook-Pro.local" name="minesweeper.BoardTest" skipped="0" tests="5" time="0.147" timestamp="2017-04-17T17:19:54">
   <properties>
     <property name="java.vendor" value="Oracle Corporation" />
     <property name="sun.java.launcher" value="SUN_STANDARD" />
@@ -20,7 +20,6 @@
     <property name="java.version" value="1.8.0_51" />
     <property name="user.timezone" value="Europe/Moscow" />
     <property name="sun.arch.data.model" value="64" />
-    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
     <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/endorsed" />
     <property name="sun.cpu.isalist" value="" />
     <property name="sun.jnu.encoding" value="UTF-8" />
@@ -40,8 +39,6 @@
     <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob" />
     <property name="sun.io.unicode.encoding" value="UnicodeBig" />
     <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit" />
-    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
-    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
     <property name="user.home" value="/Users/ilyarudyak" />
     <property name="java.specification.vendor" value="Oracle Corporation" />
     <property name="which.tests.ran" value="BETA + FINAL" />
@@ -51,7 +48,7 @@
     <property name="gopherProxySet" value="false" />
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
     <property name="beta.grader.jar" value="ps2-beta-grader.jar" />
-    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner minesweeper.BoardTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/TEST-minesweeper.BoardTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junitvmwatcher3059744692660507182.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junit1977143639509422397.properties" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner minesweeper.BoardTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/TEST-minesweeper.BoardTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junitvmwatcher5804274581782484215.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junit6154262759742357949.properties" />
     <property name="java.class.path" value="/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/junit-4.12.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/hamcrest-core-1.3.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/parserlib.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/bin-student:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-launcher.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit4.jar" />
     <property name="ant.version" value="Apache Ant(TM) version 1.9.6 compiled on June 29 2015" />
     <property name="project.name" value="ps2-minesweeper" />
@@ -78,12 +75,10 @@
     <property name="grader.dir" value=".grader" />
     <property name="ant.project.invoked-targets" value="all" />
   </properties>
-  <testcase classname="minesweeper.BoardTest" name="testPoint" time="0.001" />
-  <testcase classname="minesweeper.BoardTest" name="testBuildingRandom" time="0.067" />
-  <testcase classname="minesweeper.BoardTest" name="testAssertionsEnabled" time="0.001" />
-  <testcase classname="minesweeper.BoardTest" name="testBuildBoardFromFile" time="0.029" />
-  <testcase classname="minesweeper.BoardTest" name="testgetNumberOfBombs" time="0.01" />
-  <testcase classname="minesweeper.BoardTest" name="testSquare" time="0.001" />
+  <testcase classname="minesweeper.BoardTest" name="testPoint" time="0.002" />
+  <testcase classname="minesweeper.BoardTest" name="testAssertionsEnabled" time="0.0" />
+  <testcase classname="minesweeper.BoardTest" name="testBuildBoardFromFile" time="0.081" />
+  <testcase classname="minesweeper.BoardTest" name="testSquare" time="0.0" />
   <testcase classname="minesweeper.BoardTest" name="testConstructor" time="0.001" />
   <system-out><![CDATA[6:7
 {(2,1)=-, (4,3)=-, (0,0)=-, (2,2)=-, (4,4)=-, (0,1)=-, (2,3)=-, (4,5)=-, (0,2)=-, (2,4)=-, (4,6)=-, (0,3)=-, (2,5)=-, (0,4)=-, (2,6)=-, (0,5)=-, (0,6)=-, (5,0)=-, (5,1)=-, (3,0)=-, (5,2)=-, (3,1)=-, (5,3)=-, (1,0)=-, (3,2)=-, (5,4)=-, (1,1)=-, (3,3)=-, (5,5)=-, (1,2)=-, (3,4)=-, (5,6)=-, (1,3)=-, (3,5)=-, (1,4)=-, (3,6)=-, (1,5)=-, (1,6)=-, (4,0)=-, (4,1)=-, (2,0)=-, (4,2)=-}
@@ -94,29 +89,6 @@ BB----
 ------
 ------
 BBBBBB
-
-2B2-------
-2B311-----
-112B211---
---113B2-11
----13B2-1B
----1B21-11
----1111121
-11----1B2B
-B1----1121
-11--------
-
-
-FB-------F
--BF-------
----B------
------B----
-----FB---B
-----B-----
-----------
--------BFB
-B---------
-----------
 
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>

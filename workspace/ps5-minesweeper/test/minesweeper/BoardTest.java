@@ -87,48 +87,6 @@ public class BoardTest {
     }
     
     @Test
-    public void testBuildingRandom() {
-        Board board = Board.buildRandomBoard(0L);
-        ConcurrentHashMap<Point, Boolean> bombs = board.getBombs();
-        List<Point> points = Arrays.asList(
-                new Point(3, 2),
-                new Point(5, 4),
-                new Point(1, 0),
-                new Point(1, 1),
-                new Point(7, 7)
-                );
-        
-        assertEquals(10, bombs.size());
-        points.forEach(p -> assertTrue(bombs.get(p)));
-    }
-    
-    @Test
-    public void testgetNumberOfBombs() {
-        Board board = Board.buildRandomBoard(0L);
-        List<Point> points = Arrays.asList(
-                new Point(0, 0),
-                new Point(9, 0),
-                new Point(2, 1),
-                new Point(4, 4),
-                new Point(8, 7)
-        );
-
-        System.out.println(board.printBoardWithBombCount());
-        System.out.println();
-        
-        points.forEach(p -> board.setSquareFlagged(p, true));
-        System.out.println(board.printBoard());
-        
-        
-        assertEquals(2, board.getBombCount(points.get(0)));
-        assertEquals(0, board.getBombCount(points.get(1)));
-        assertEquals(3, board.getBombCount(points.get(2)));
-        assertEquals(3, board.getBombCount(points.get(3)));
-        assertEquals(2, board.getBombCount(points.get(4)));
-
-    }
-    
-    @Test
     public void testBuildBoardFromFile() {
         
         String fileName = "test/resources/boards/board_file_2";

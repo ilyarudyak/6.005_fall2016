@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="1" hostname="Ilyas-MacBook-Pro.local" name="autograder.ExplodeTest" skipped="0" tests="1" time="0.255" timestamp="2017-04-17T13:59:15">
+<testsuite errors="0" failures="1" hostname="Ilyas-MacBook-Pro.local" name="autograder.ExplodeTest" skipped="0" tests="1" time="0.244" timestamp="2017-04-17T17:20:16">
   <properties>
     <property name="java.vendor" value="Oracle Corporation" />
     <property name="sun.java.launcher" value="SUN_STANDARD" />
@@ -20,7 +20,6 @@
     <property name="java.version" value="1.8.0_51" />
     <property name="user.timezone" value="Europe/Moscow" />
     <property name="sun.arch.data.model" value="64" />
-    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
     <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib/endorsed" />
     <property name="sun.cpu.isalist" value="" />
     <property name="sun.jnu.encoding" value="UTF-8" />
@@ -40,8 +39,6 @@
     <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob" />
     <property name="sun.io.unicode.encoding" value="UnicodeBig" />
     <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit" />
-    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
-    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
     <property name="user.home" value="/Users/ilyarudyak" />
     <property name="java.specification.vendor" value="Oracle Corporation" />
     <property name="which.tests.ran" value="BETA + FINAL" />
@@ -51,7 +48,7 @@
     <property name="gopherProxySet" value="false" />
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
     <property name="beta.grader.jar" value="ps2-beta-grader.jar" />
-    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner autograder.ExplodeTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/TEST-autograder.ExplodeTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junitvmwatcher2587793124719871488.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junit5595673094393575977.properties" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner autograder.ExplodeTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/TEST-autograder.ExplodeTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junitvmwatcher6275169854511464501.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junit7881013766356704983.properties" />
     <property name="java.class.path" value="/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/junit-4.12.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/hamcrest-core-1.3.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/parserlib.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/bin-tests-final:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/bin-student:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-launcher.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit4.jar" />
     <property name="ant.version" value="Apache Ant(TM) version 1.9.6 compiled on June 29 2015" />
     <property name="project.name" value="ps2-minesweeper" />
@@ -78,7 +75,7 @@
     <property name="grader.dir" value=".grader" />
     <property name="ant.project.invoked-targets" value="all" />
   </properties>
-  <testcase classname="autograder.ExplodeTest" name="testExplode" time="0.175">
+  <testcase classname="autograder.ExplodeTest" name="testExplode" time="0.177">
     <failure message="(whitespace removed) expected:&lt;[--]----&gt; but was:&lt;[BB]----&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: (whitespace removed) expected:&lt;[--]----&gt; but was:&lt;[BB]----&gt;
 	at autograder.ExplodeTest.testExplode(ExplodeTest.java:51)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
@@ -86,5 +83,22 @@
 </failure>
   </testcase>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
+  <system-err><![CDATA[java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:209)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:284)
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:326)
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:178)
+	at java.io.InputStreamReader.read(InputStreamReader.java:184)
+	at java.io.BufferedReader.fill(BufferedReader.java:161)
+	at java.io.BufferedReader.readLine(BufferedReader.java:324)
+	at java.io.BufferedReader.readLine(BufferedReader.java:389)
+	at minesweeper.server.MinesweeperServer.handleConnection(MinesweeperServer.java:102)
+	at minesweeper.server.MinesweeperServer.serve(MinesweeperServer.java:71)
+	at minesweeper.server.MinesweeperServer.runMinesweeperServer(MinesweeperServer.java:333)
+	at minesweeper.server.MinesweeperServer.main(MinesweeperServer.java:301)
+	at autograder.TestUtil.lambda$startServer$0(TestUtil.java:74)
+	at autograder.TestUtil$$Lambda$1/116783736.run(Unknown Source)
+	at java.lang.Thread.run(Thread.java:745)
+]]></system-err>
 </testsuite>

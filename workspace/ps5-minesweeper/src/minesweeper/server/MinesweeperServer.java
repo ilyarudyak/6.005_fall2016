@@ -105,6 +105,9 @@ public class MinesweeperServer {
                     // TODO: Consider improving spec of handleRequest to avoid use of null
                     if (output.equals(TERMINATE)) {
                         break;
+                    } else if (output.equals(BOOM_MESSAGE) && !debug) {
+                        out.println(output);
+                        break;
                     } else {
                         out.println(output);
                     }
@@ -146,17 +149,7 @@ public class MinesweeperServer {
             Square square = board.getBoard().get(point);
             if (tokens[0].equals("dig")) {
                 // 'dig x y' request
-                if (!board.isOnBoard(point) || !square.isUntouched()) {
-                    return board.toString();
-                } else {
-                    square.setDug();
-                    if (square.isContainBomb()) {
-                        return BOOM_MESSAGE;
-                    } else {
-                        return board.toString();
-                    }
-                }
-                
+                return handleDig(x, y);  
             } else if (tokens[0].equals("flag")) {
                 // 'flag x y' request
                 if (board.isOnBoard(point) && square.isUntouched()) {
@@ -174,6 +167,42 @@ public class MinesweeperServer {
         // TODO: Should never get here, make sure to return in each of the cases above
         throw new UnsupportedOperationException();
     }
+    
+    // see cases in project description 
+    private String handleDig(int x, int y) {
+        Point point = new Point(x, y);
+        Square square = board.getBoard().get(point);
+        if (!board.isOnBoard(point) || !square.isUntouched()) {             // case 1
+            return board.toString();
+        } else if (square.isUntouched()) {                                  // case 2
+            square.setDug();
+            if (square.isContainBomb()) {                                   // case 3
+                board.removeBomb(point);
+                return BOOM_MESSAGE;
+            } else {
+                handleDigNeighbors(point);
+                return board.toString();                                    // case 4                                                 
+            }         
+        } else {
+            return board.toString();
+        } 
+    }
+    
+    private void handleDigNeighbors(Point point) {
+        if (board.getBombCount(point) == 0) {
+            board.getAdjPoints(point)
+                .stream()
+                .filter(p -> board.getBombCount(p) == 0)
+                .forEach(p -> {
+                    Square square = board.getBoard().get(p);
+                    if (square.isUntouched()) {
+                        square.setDug();
+//                        handleDigNeighbors(p);
+                    }
+                });
+        }
+    }
+    
 
     /**
      * Start a MinesweeperServer using the given arguments.
@@ -296,7 +325,7 @@ public class MinesweeperServer {
         
         MinesweeperServer server = new MinesweeperServer(port, debug);
         if (!file.isPresent()) {
-            server.setBoard(Board.buildRandomBoard(0L));
+            server.setBoard(Board.buildRandomBoard(sizeX, sizeY));
         } else {
             Board board = new Board(file.get().toString());
             server.setBoard(board);
