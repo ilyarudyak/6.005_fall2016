@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites>
-  <testsuite errors="0" failures="0" hostname="Ilyas-MacBook-Pro.local" id="0" name="BlankBoardFileTest" package="autograder" skipped="0" tests="1" time="0.256" timestamp="2017-04-17T21:38:22">
+  <testsuite errors="0" failures="0" hostname="Ilyas-MacBook-Pro.local" id="0" name="BlankBoardFileTest" package="autograder" skipped="0" tests="1" time="0.234" timestamp="2017-04-18T11:52:40">
       <properties>
           <property name="java.vendor" value="Oracle Corporation" />
 
@@ -102,7 +102,7 @@
 
           <property name="beta.grader.jar" value="ps2-beta-grader.jar" />
 
-          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner autograder.BlankBoardFileTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/TEST-autograder.BlankBoardFileTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junitvmwatcher7944331671347388737.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junit7485946590896297257.properties" />
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner autograder.BlankBoardFileTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/TEST-autograder.BlankBoardFileTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junitvmwatcher5962560692646828054.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junit7120240736734095527.properties" />
 
           <property name="java.class.path" value="/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/junit-4.12.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/hamcrest-core-1.3.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/parserlib.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/bin-tests-final:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/bin-student:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-launcher.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit4.jar" />
 
@@ -156,14 +156,14 @@
 
       </properties>
 
-      <testcase classname="autograder.BlankBoardFileTest" name="testBlankBoardFile" time="0.187" />
+      <testcase classname="autograder.BlankBoardFileTest" name="testBlankBoardFile" time="0.179" />
 
       <system-out><![CDATA[]]></system-out>
 
       <system-err><![CDATA[]]></system-err>
 
   </testsuite>
-  <testsuite errors="0" failures="0" hostname="Ilyas-MacBook-Pro.local" id="1" name="BlankBoardSizeTest" package="autograder" skipped="0" tests="1" time="0.246" timestamp="2017-04-17T21:38:23">
+  <testsuite errors="0" failures="0" hostname="Ilyas-MacBook-Pro.local" id="1" name="BlankBoardSizeTest" package="autograder" skipped="0" tests="1" time="0.245" timestamp="2017-04-18T11:52:41">
       <properties>
           <property name="java.vendor" value="Oracle Corporation" />
 
@@ -265,7 +265,7 @@
 
           <property name="beta.grader.jar" value="ps2-beta-grader.jar" />
 
-          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner autograder.BlankBoardSizeTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/TEST-autograder.BlankBoardSizeTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junitvmwatcher3317351399941417206.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junit2737108101061953622.properties" />
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner autograder.BlankBoardSizeTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/TEST-autograder.BlankBoardSizeTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junitvmwatcher5395441880404103781.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junit8615224038261654821.properties" />
 
           <property name="java.class.path" value="/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/junit-4.12.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/hamcrest-core-1.3.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/parserlib.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/bin-tests-final:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/bin-student:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-launcher.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit4.jar" />
 
@@ -319,14 +319,14 @@
 
       </properties>
 
-      <testcase classname="autograder.BlankBoardSizeTest" name="testBlankBoardSize" time="0.184" />
+      <testcase classname="autograder.BlankBoardSizeTest" name="testBlankBoardSize" time="0.182" />
 
       <system-out><![CDATA[]]></system-out>
 
       <system-err><![CDATA[]]></system-err>
 
   </testsuite>
-  <testsuite errors="0" failures="0" hostname="Ilyas-MacBook-Pro.local" id="2" name="BlankBoardTest" package="autograder" skipped="0" tests="1" time="0.249" timestamp="2017-04-17T21:38:24">
+  <testsuite errors="0" failures="0" hostname="Ilyas-MacBook-Pro.local" id="2" name="BlankBoardTest" package="autograder" skipped="0" tests="1" time="0.241" timestamp="2017-04-18T11:52:42">
       <properties>
           <property name="java.vendor" value="Oracle Corporation" />
 
@@ -428,7 +428,7 @@
 
           <property name="beta.grader.jar" value="ps2-beta-grader.jar" />
 
-          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner autograder.BlankBoardTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/TEST-autograder.BlankBoardTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junitvmwatcher7358980080092937308.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junit8722633112458169151.properties" />
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner autograder.BlankBoardTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/TEST-autograder.BlankBoardTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junitvmwatcher1636460696308852008.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junit2872903139656640096.properties" />
 
           <property name="java.class.path" value="/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/junit-4.12.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/hamcrest-core-1.3.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/parserlib.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/bin-tests-final:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/bin-student:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-launcher.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit4.jar" />
 
@@ -482,14 +482,14 @@
 
       </properties>
 
-      <testcase classname="autograder.BlankBoardTest" name="testBlankBoard" time="0.182" />
+      <testcase classname="autograder.BlankBoardTest" name="testBlankBoard" time="0.179" />
 
       <system-out><![CDATA[]]></system-out>
 
       <system-err><![CDATA[]]></system-err>
 
   </testsuite>
-  <testsuite errors="0" failures="0" hostname="Ilyas-MacBook-Pro.local" id="3" name="BoomDisconnectTest" package="autograder" skipped="0" tests="1" time="0.253" timestamp="2017-04-17T21:38:25">
+  <testsuite errors="0" failures="0" hostname="Ilyas-MacBook-Pro.local" id="3" name="BoomDisconnectTest" package="autograder" skipped="0" tests="1" time="0.233" timestamp="2017-04-18T11:52:43">
       <properties>
           <property name="java.vendor" value="Oracle Corporation" />
 
@@ -591,7 +591,7 @@
 
           <property name="beta.grader.jar" value="ps2-beta-grader.jar" />
 
-          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner autograder.BoomDisconnectTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/TEST-autograder.BoomDisconnectTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junitvmwatcher9011349853122873356.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junit3962701129344292690.properties" />
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner autograder.BoomDisconnectTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/TEST-autograder.BoomDisconnectTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junitvmwatcher9090635841445825507.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junit894652001761861043.properties" />
 
           <property name="java.class.path" value="/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/junit-4.12.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/hamcrest-core-1.3.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/parserlib.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/bin-tests-final:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/bin-student:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-launcher.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit4.jar" />
 
@@ -645,14 +645,14 @@
 
       </properties>
 
-      <testcase classname="autograder.BoomDisconnectTest" name="testBoomDisconnect" time="0.183" />
+      <testcase classname="autograder.BoomDisconnectTest" name="testBoomDisconnect" time="0.169" />
 
       <system-out><![CDATA[]]></system-out>
 
       <system-err><![CDATA[]]></system-err>
 
   </testsuite>
-  <testsuite errors="0" failures="0" hostname="Ilyas-MacBook-Pro.local" id="4" name="BoomTest" package="autograder" skipped="0" tests="1" time="0.241" timestamp="2017-04-17T21:38:25">
+  <testsuite errors="0" failures="0" hostname="Ilyas-MacBook-Pro.local" id="4" name="BoomTest" package="autograder" skipped="0" tests="1" time="0.232" timestamp="2017-04-18T11:52:43">
       <properties>
           <property name="java.vendor" value="Oracle Corporation" />
 
@@ -754,7 +754,7 @@
 
           <property name="beta.grader.jar" value="ps2-beta-grader.jar" />
 
-          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner autograder.BoomTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/TEST-autograder.BoomTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junitvmwatcher1043959289184597818.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junit4661199928301478033.properties" />
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner autograder.BoomTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/TEST-autograder.BoomTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junitvmwatcher102784415251447050.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junit1231751033300797682.properties" />
 
           <property name="java.class.path" value="/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/junit-4.12.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/hamcrest-core-1.3.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/parserlib.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/bin-tests-final:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/bin-student:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-launcher.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit4.jar" />
 
@@ -808,14 +808,14 @@
 
       </properties>
 
-      <testcase classname="autograder.BoomTest" name="testBoom" time="0.174" />
+      <testcase classname="autograder.BoomTest" name="testBoom" time="0.169" />
 
       <system-out><![CDATA[]]></system-out>
 
       <system-err><![CDATA[]]></system-err>
 
   </testsuite>
-  <testsuite errors="0" failures="0" hostname="Ilyas-MacBook-Pro.local" id="5" name="ByeTest" package="autograder" skipped="0" tests="1" time="0.237" timestamp="2017-04-17T21:38:26">
+  <testsuite errors="0" failures="0" hostname="Ilyas-MacBook-Pro.local" id="5" name="ByeTest" package="autograder" skipped="0" tests="1" time="0.231" timestamp="2017-04-18T11:52:44">
       <properties>
           <property name="java.vendor" value="Oracle Corporation" />
 
@@ -917,7 +917,7 @@
 
           <property name="beta.grader.jar" value="ps2-beta-grader.jar" />
 
-          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner autograder.ByeTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/TEST-autograder.ByeTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junitvmwatcher5829423317737397765.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junit5726169581765976502.properties" />
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner autograder.ByeTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/TEST-autograder.ByeTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junitvmwatcher8743298423619277181.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junit4817631815038320129.properties" />
 
           <property name="java.class.path" value="/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/junit-4.12.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/hamcrest-core-1.3.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/parserlib.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/bin-tests-final:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/bin-student:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-launcher.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit4.jar" />
 
@@ -971,14 +971,14 @@
 
       </properties>
 
-      <testcase classname="autograder.ByeTest" name="testBye" time="0.175" />
+      <testcase classname="autograder.ByeTest" name="testBye" time="0.168" />
 
       <system-out><![CDATA[]]></system-out>
 
       <system-err><![CDATA[]]></system-err>
 
   </testsuite>
-  <testsuite errors="0" failures="0" hostname="Ilyas-MacBook-Pro.local" id="6" name="DigTest" package="autograder" skipped="0" tests="1" time="0.247" timestamp="2017-04-17T21:38:27">
+  <testsuite errors="0" failures="0" hostname="Ilyas-MacBook-Pro.local" id="6" name="DigTest" package="autograder" skipped="0" tests="1" time="0.234" timestamp="2017-04-18T11:52:45">
       <properties>
           <property name="java.vendor" value="Oracle Corporation" />
 
@@ -1080,7 +1080,7 @@
 
           <property name="beta.grader.jar" value="ps2-beta-grader.jar" />
 
-          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner autograder.DigTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/TEST-autograder.DigTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junitvmwatcher6168034216528267691.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junit246304295708599431.properties" />
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner autograder.DigTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/TEST-autograder.DigTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junitvmwatcher2667104262355643150.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junit5198591113184790302.properties" />
 
           <property name="java.class.path" value="/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/junit-4.12.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/hamcrest-core-1.3.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/parserlib.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/bin-tests-final:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/bin-student:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-launcher.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit4.jar" />
 
@@ -1134,14 +1134,14 @@
 
       </properties>
 
-      <testcase classname="autograder.DigTest" name="testBasicDig" time="0.177" />
+      <testcase classname="autograder.DigTest" name="testBasicDig" time="0.172" />
 
       <system-out><![CDATA[]]></system-out>
 
       <system-err><![CDATA[]]></system-err>
 
   </testsuite>
-  <testsuite errors="1" failures="0" hostname="Ilyas-MacBook-Pro.local" id="7" name="DigsByDifferentUserTest" package="autograder" skipped="0" tests="1" time="3.245" timestamp="2017-04-17T21:38:28">
+  <testsuite errors="1" failures="0" hostname="Ilyas-MacBook-Pro.local" id="7" name="DigsByDifferentUserTest" package="autograder" skipped="0" tests="1" time="3.245" timestamp="2017-04-18T11:52:46">
       <properties>
           <property name="java.vendor" value="Oracle Corporation" />
 
@@ -1243,7 +1243,7 @@
 
           <property name="beta.grader.jar" value="ps2-beta-grader.jar" />
 
-          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner autograder.DigsByDifferentUserTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/TEST-autograder.DigsByDifferentUserTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junitvmwatcher6938592814817027819.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junit3939345530117188947.properties" />
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner autograder.DigsByDifferentUserTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/TEST-autograder.DigsByDifferentUserTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junitvmwatcher8533549434033950439.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junit3505980225587575009.properties" />
 
           <property name="java.class.path" value="/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/junit-4.12.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/hamcrest-core-1.3.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/parserlib.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/bin-tests-final:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/bin-student:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-launcher.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit4.jar" />
 
@@ -1297,7 +1297,7 @@
 
       </properties>
 
-      <testcase classname="autograder.DigsByDifferentUserTest" name="testDigsByDifferentUsers" time="3.184">
+      <testcase classname="autograder.DigsByDifferentUserTest" name="testDigsByDifferentUsers" time="3.183">
           <error message="Read timed out" type="java.net.SocketTimeoutException">java.net.SocketTimeoutException: Read timed out
 	at java.net.SocketInputStream.socketRead0(Native Method)
 	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
@@ -1322,7 +1322,7 @@
       <system-err><![CDATA[]]></system-err>
 
   </testsuite>
-  <testsuite errors="0" failures="0" hostname="Ilyas-MacBook-Pro.local" id="8" name="ExplodeTest" package="autograder" skipped="0" tests="1" time="0.239" timestamp="2017-04-17T21:38:32">
+  <testsuite errors="0" failures="0" hostname="Ilyas-MacBook-Pro.local" id="8" name="ExplodeTest" package="autograder" skipped="0" tests="1" time="0.244" timestamp="2017-04-18T11:52:50">
       <properties>
           <property name="java.vendor" value="Oracle Corporation" />
 
@@ -1424,7 +1424,7 @@
 
           <property name="beta.grader.jar" value="ps2-beta-grader.jar" />
 
-          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner autograder.ExplodeTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/TEST-autograder.ExplodeTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junitvmwatcher1085853706542441810.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junit1041517863082241029.properties" />
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner autograder.ExplodeTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/TEST-autograder.ExplodeTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junitvmwatcher1081168422836504473.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junit7919417904332255919.properties" />
 
           <property name="java.class.path" value="/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/junit-4.12.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/hamcrest-core-1.3.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/parserlib.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/bin-tests-final:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/bin-student:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-launcher.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit4.jar" />
 
@@ -1478,14 +1478,14 @@
 
       </properties>
 
-      <testcase classname="autograder.ExplodeTest" name="testExplode" time="0.173" />
+      <testcase classname="autograder.ExplodeTest" name="testExplode" time="0.177" />
 
       <system-out><![CDATA[]]></system-out>
 
       <system-err><![CDATA[]]></system-err>
 
   </testsuite>
-  <testsuite errors="0" failures="0" hostname="Ilyas-MacBook-Pro.local" id="9" name="FlagAndDeFlagTest" package="autograder" skipped="0" tests="1" time="0.245" timestamp="2017-04-17T21:38:33">
+  <testsuite errors="0" failures="0" hostname="Ilyas-MacBook-Pro.local" id="9" name="FlagAndDeFlagTest" package="autograder" skipped="0" tests="1" time="0.243" timestamp="2017-04-18T11:52:51">
       <properties>
           <property name="java.vendor" value="Oracle Corporation" />
 
@@ -1587,7 +1587,7 @@
 
           <property name="beta.grader.jar" value="ps2-beta-grader.jar" />
 
-          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner autograder.FlagAndDeFlagTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/TEST-autograder.FlagAndDeFlagTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junitvmwatcher4349604280349676463.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junit8519391496140208786.properties" />
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner autograder.FlagAndDeFlagTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/TEST-autograder.FlagAndDeFlagTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junitvmwatcher2745856242336411612.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junit8237681479221753963.properties" />
 
           <property name="java.class.path" value="/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/junit-4.12.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/hamcrest-core-1.3.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/parserlib.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/bin-tests-final:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/bin-student:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-launcher.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit4.jar" />
 
@@ -1641,14 +1641,14 @@
 
       </properties>
 
-      <testcase classname="autograder.FlagAndDeFlagTest" name="testFlagThenDeflag" time="0.177" />
+      <testcase classname="autograder.FlagAndDeFlagTest" name="testFlagThenDeflag" time="0.179" />
 
       <system-out><![CDATA[]]></system-out>
 
       <system-err><![CDATA[]]></system-err>
 
   </testsuite>
-  <testsuite errors="0" failures="0" hostname="Ilyas-MacBook-Pro.local" id="10" name="HelloConnectionTest" package="autograder" skipped="0" tests="1" time="0.266" timestamp="2017-04-17T21:38:34">
+  <testsuite errors="0" failures="0" hostname="Ilyas-MacBook-Pro.local" id="10" name="HelloConnectionTest" package="autograder" skipped="0" tests="1" time="0.227" timestamp="2017-04-18T11:52:51">
       <properties>
           <property name="java.vendor" value="Oracle Corporation" />
 
@@ -1750,7 +1750,7 @@
 
           <property name="beta.grader.jar" value="ps2-beta-grader.jar" />
 
-          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner autograder.HelloConnectionTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/TEST-autograder.HelloConnectionTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junitvmwatcher7312419845825721042.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junit2722083891017422299.properties" />
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner autograder.HelloConnectionTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/TEST-autograder.HelloConnectionTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junitvmwatcher9103332424469537971.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junit6540900178255442940.properties" />
 
           <property name="java.class.path" value="/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/junit-4.12.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/hamcrest-core-1.3.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/parserlib.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/bin-tests-final:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/bin-student:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-launcher.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit4.jar" />
 
@@ -1804,14 +1804,14 @@
 
       </properties>
 
-      <testcase classname="autograder.HelloConnectionTest" name="testHelloConnection" time="0.185" />
+      <testcase classname="autograder.HelloConnectionTest" name="testHelloConnection" time="0.166" />
 
       <system-out><![CDATA[]]></system-out>
 
       <system-err><![CDATA[]]></system-err>
 
   </testsuite>
-  <testsuite errors="0" failures="1" hostname="Ilyas-MacBook-Pro.local" id="11" name="HelloCountTest" package="autograder" skipped="0" tests="1" time="5.133" timestamp="2017-04-17T21:38:34">
+  <testsuite errors="0" failures="1" hostname="Ilyas-MacBook-Pro.local" id="11" name="HelloCountTest" package="autograder" skipped="0" tests="1" time="5.133" timestamp="2017-04-18T11:52:52">
       <properties>
           <property name="java.vendor" value="Oracle Corporation" />
 
@@ -1913,7 +1913,7 @@
 
           <property name="beta.grader.jar" value="ps2-beta-grader.jar" />
 
-          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner autograder.HelloCountTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/TEST-autograder.HelloCountTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junitvmwatcher4798745059508179791.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junit2976908604871344312.properties" />
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner autograder.HelloCountTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/TEST-autograder.HelloCountTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junitvmwatcher1585030397458240310.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junit2413674647990374527.properties" />
 
           <property name="java.class.path" value="/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/junit-4.12.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/hamcrest-core-1.3.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/parserlib.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/bin-tests-final:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/bin-student:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-launcher.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit4.jar" />
 
@@ -1967,7 +1967,7 @@
 
       </properties>
 
-      <testcase classname="autograder.HelloCountTest" name="testHelloCount" time="5.065">
+      <testcase classname="autograder.HelloCountTest" name="testHelloCount" time="5.071">
           <failure message="server timeout" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: server timeout
 	at autograder.HelloCountTest.testHelloCount(HelloCountTest.java:58)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
@@ -1981,7 +1981,7 @@
       <system-err><![CDATA[]]></system-err>
 
   </testsuite>
-  <testsuite errors="0" failures="1" hostname="Ilyas-MacBook-Pro.local" id="12" name="HelloMessageTest" package="autograder" skipped="0" tests="1" time="5.146" timestamp="2017-04-17T21:38:40">
+  <testsuite errors="0" failures="1" hostname="Ilyas-MacBook-Pro.local" id="12" name="HelloMessageTest" package="autograder" skipped="0" tests="1" time="5.139" timestamp="2017-04-18T11:52:58">
       <properties>
           <property name="java.vendor" value="Oracle Corporation" />
 
@@ -2083,7 +2083,7 @@
 
           <property name="beta.grader.jar" value="ps2-beta-grader.jar" />
 
-          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner autograder.HelloMessageTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/TEST-autograder.HelloMessageTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junitvmwatcher3593712047161272952.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junit7017812024592644256.properties" />
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner autograder.HelloMessageTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/TEST-autograder.HelloMessageTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junitvmwatcher6486943629227986353.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junit2178996110516012481.properties" />
 
           <property name="java.class.path" value="/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/junit-4.12.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/hamcrest-core-1.3.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/parserlib.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/bin-tests-final:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/bin-student:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-launcher.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit4.jar" />
 
@@ -2151,7 +2151,7 @@
       <system-err><![CDATA[]]></system-err>
 
   </testsuite>
-  <testsuite errors="0" failures="0" hostname="Ilyas-MacBook-Pro.local" id="13" name="HelloMultipleClientsTest" package="autograder" skipped="0" tests="1" time="0.309" timestamp="2017-04-17T21:38:46">
+  <testsuite errors="0" failures="0" hostname="Ilyas-MacBook-Pro.local" id="13" name="HelloMultipleClientsTest" package="autograder" skipped="0" tests="1" time="0.282" timestamp="2017-04-18T11:53:04">
       <properties>
           <property name="java.vendor" value="Oracle Corporation" />
 
@@ -2253,7 +2253,7 @@
 
           <property name="beta.grader.jar" value="ps2-beta-grader.jar" />
 
-          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner autograder.HelloMultipleClientsTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/TEST-autograder.HelloMultipleClientsTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junitvmwatcher8342139279882744794.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junit4772689144912791248.properties" />
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner autograder.HelloMultipleClientsTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/TEST-autograder.HelloMultipleClientsTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junitvmwatcher3076423219017066448.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junit8042379007236339095.properties" />
 
           <property name="java.class.path" value="/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/junit-4.12.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/hamcrest-core-1.3.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/parserlib.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/bin-tests-final:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/bin-student:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-launcher.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit4.jar" />
 
@@ -2307,14 +2307,14 @@
 
       </properties>
 
-      <testcase classname="autograder.HelloMultipleClientsTest" name="testHelloMultipleClients" time="0.203" />
+      <testcase classname="autograder.HelloMultipleClientsTest" name="testHelloMultipleClients" time="0.215" />
 
       <system-out><![CDATA[]]></system-out>
 
       <system-err><![CDATA[]]></system-err>
 
   </testsuite>
-  <testsuite errors="0" failures="1" hostname="Ilyas-MacBook-Pro.local" id="14" name="HelloSizeTest" package="autograder" skipped="0" tests="1" time="3.246" timestamp="2017-04-17T21:38:47">
+  <testsuite errors="0" failures="1" hostname="Ilyas-MacBook-Pro.local" id="14" name="HelloSizeTest" package="autograder" skipped="0" tests="1" time="3.245" timestamp="2017-04-18T11:53:05">
       <properties>
           <property name="java.vendor" value="Oracle Corporation" />
 
@@ -2416,7 +2416,7 @@
 
           <property name="beta.grader.jar" value="ps2-beta-grader.jar" />
 
-          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner autograder.HelloSizeTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/TEST-autograder.HelloSizeTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junitvmwatcher8035062887397007492.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junit4202426958463935669.properties" />
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner autograder.HelloSizeTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/TEST-autograder.HelloSizeTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junitvmwatcher4044592712234392285.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junit7561832369429340727.properties" />
 
           <property name="java.class.path" value="/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/junit-4.12.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/hamcrest-core-1.3.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/parserlib.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/bin-tests-final:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/bin-student:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-launcher.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit4.jar" />
 
@@ -2470,7 +2470,7 @@
 
       </properties>
 
-      <testcase classname="autograder.HelloSizeTest" name="testHelloSize" time="3.181">
+      <testcase classname="autograder.HelloSizeTest" name="testHelloSize" time="3.184">
           <failure message="server timeout" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: server timeout
 	at autograder.HelloSizeTest.testHelloSize(HelloSizeTest.java:58)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
@@ -2484,7 +2484,7 @@
       <system-err><![CDATA[]]></system-err>
 
   </testsuite>
-  <testsuite errors="0" failures="0" hostname="Ilyas-MacBook-Pro.local" id="15" name="MinesweeperSystemTest" package="autograder" skipped="0" tests="1" time="1.271" timestamp="2017-04-17T21:38:51">
+  <testsuite errors="0" failures="0" hostname="Ilyas-MacBook-Pro.local" id="15" name="MinesweeperSystemTest" package="autograder" skipped="0" tests="1" time="1.273" timestamp="2017-04-18T11:53:09">
       <properties>
           <property name="java.vendor" value="Oracle Corporation" />
 
@@ -2586,7 +2586,7 @@
 
           <property name="beta.grader.jar" value="ps2-beta-grader.jar" />
 
-          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner autograder.MinesweeperSystemTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/TEST-autograder.MinesweeperSystemTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junitvmwatcher4953833319395596438.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junit8573401884950016460.properties" />
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner autograder.MinesweeperSystemTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/TEST-autograder.MinesweeperSystemTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junitvmwatcher8560034940058039086.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junit4758922035738606611.properties" />
 
           <property name="java.class.path" value="/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/junit-4.12.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/hamcrest-core-1.3.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/parserlib.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/bin-tests-final:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/bin-student:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-launcher.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit4.jar" />
 
@@ -2640,14 +2640,14 @@
 
       </properties>
 
-      <testcase classname="autograder.MinesweeperSystemTest" name="systemTest" time="1.203" />
+      <testcase classname="autograder.MinesweeperSystemTest" name="systemTest" time="1.205" />
 
       <system-out><![CDATA[]]></system-out>
 
       <system-err><![CDATA[]]></system-err>
 
   </testsuite>
-  <testsuite errors="0" failures="1" hostname="Ilyas-MacBook-Pro.local" id="16" name="NoEffectActionTest" package="autograder" skipped="0" tests="1" time="0.242" timestamp="2017-04-17T21:38:53">
+  <testsuite errors="0" failures="1" hostname="Ilyas-MacBook-Pro.local" id="16" name="NoEffectActionTest" package="autograder" skipped="0" tests="1" time="0.241" timestamp="2017-04-18T11:53:10">
       <properties>
           <property name="java.vendor" value="Oracle Corporation" />
 
@@ -2749,7 +2749,7 @@
 
           <property name="beta.grader.jar" value="ps2-beta-grader.jar" />
 
-          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner autograder.NoEffectActionTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/TEST-autograder.NoEffectActionTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junitvmwatcher4447790634909911678.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junit2127040051917320884.properties" />
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner autograder.NoEffectActionTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/TEST-autograder.NoEffectActionTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junitvmwatcher10110204011676073.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junit2559140734744894226.properties" />
 
           <property name="java.class.path" value="/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/junit-4.12.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/hamcrest-core-1.3.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/parserlib.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/bin-tests-final:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/bin-student:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-launcher.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit4.jar" />
 
@@ -2803,7 +2803,7 @@
 
       </properties>
 
-      <testcase classname="autograder.NoEffectActionTest" name="testDigFlagged" time="0.181">
+      <testcase classname="autograder.NoEffectActionTest" name="testDigFlagged" time="0.179">
           <failure message="(whitespace removed) expected:&lt;--[F]---&gt; but was:&lt;--[1]---&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: (whitespace removed) expected:&lt;--[F]---&gt; but was:&lt;--[1]---&gt;
 	at autograder.NoEffectActionTest.testDigFlagged(NoEffectActionTest.java:48)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
@@ -2817,7 +2817,7 @@
       <system-err><![CDATA[]]></system-err>
 
   </testsuite>
-  <testsuite errors="0" failures="0" hostname="Ilyas-MacBook-Pro.local" id="17" name="OffDiagonalDigTest" package="autograder" skipped="0" tests="1" time="0.26" timestamp="2017-04-17T21:38:54">
+  <testsuite errors="0" failures="0" hostname="Ilyas-MacBook-Pro.local" id="17" name="OffDiagonalDigTest" package="autograder" skipped="0" tests="1" time="0.257" timestamp="2017-04-18T11:53:11">
       <properties>
           <property name="java.vendor" value="Oracle Corporation" />
 
@@ -2919,7 +2919,7 @@
 
           <property name="beta.grader.jar" value="ps2-beta-grader.jar" />
 
-          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner autograder.OffDiagonalDigTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/TEST-autograder.OffDiagonalDigTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junitvmwatcher4715164419355214482.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junit5985312408000024680.properties" />
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner autograder.OffDiagonalDigTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/TEST-autograder.OffDiagonalDigTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junitvmwatcher3604948073177046968.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junit106100830356733911.properties" />
 
           <property name="java.class.path" value="/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/junit-4.12.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/hamcrest-core-1.3.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/parserlib.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/bin-tests-final:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/bin-student:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-launcher.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit4.jar" />
 
@@ -2973,14 +2973,14 @@
 
       </properties>
 
-      <testcase classname="autograder.OffDiagonalDigTest" name="testOffDiagDig" time="0.188" />
+      <testcase classname="autograder.OffDiagonalDigTest" name="testOffDiagDig" time="0.191" />
 
       <system-out><![CDATA[]]></system-out>
 
       <system-err><![CDATA[]]></system-err>
 
   </testsuite>
-  <testsuite errors="0" failures="0" hostname="Ilyas-MacBook-Pro.local" id="18" name="OffDiagonalFlagTest" package="autograder" skipped="0" tests="1" time="0.243" timestamp="2017-04-17T21:38:54">
+  <testsuite errors="0" failures="0" hostname="Ilyas-MacBook-Pro.local" id="18" name="OffDiagonalFlagTest" package="autograder" skipped="0" tests="1" time="0.241" timestamp="2017-04-18T11:53:12">
       <properties>
           <property name="java.vendor" value="Oracle Corporation" />
 
@@ -3082,7 +3082,7 @@
 
           <property name="beta.grader.jar" value="ps2-beta-grader.jar" />
 
-          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner autograder.OffDiagonalFlagTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/TEST-autograder.OffDiagonalFlagTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junitvmwatcher6233795409773758434.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junit6466541995865638557.properties" />
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner autograder.OffDiagonalFlagTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/TEST-autograder.OffDiagonalFlagTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junitvmwatcher5383328376900396886.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junit2602861628270260261.properties" />
 
           <property name="java.class.path" value="/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/junit-4.12.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/hamcrest-core-1.3.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/parserlib.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/bin-tests-final:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/bin-student:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-launcher.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit4.jar" />
 
@@ -3136,14 +3136,14 @@
 
       </properties>
 
-      <testcase classname="autograder.OffDiagonalFlagTest" name="testOffDiagFlag" time="0.177" />
+      <testcase classname="autograder.OffDiagonalFlagTest" name="testOffDiagFlag" time="0.176" />
 
       <system-out><![CDATA[]]></system-out>
 
       <system-err><![CDATA[]]></system-err>
 
   </testsuite>
-  <testsuite errors="0" failures="0" hostname="Ilyas-MacBook-Pro.local" id="19" name="PublishedTest" package="autograder" skipped="0" tests="1" time="0.305" timestamp="2017-04-17T21:38:21">
+  <testsuite errors="0" failures="0" hostname="Ilyas-MacBook-Pro.local" id="19" name="PublishedTest" package="autograder" skipped="0" tests="1" time="0.241" timestamp="2017-04-18T11:52:39">
       <properties>
           <property name="java.vendor" value="Oracle Corporation" />
 
@@ -3245,7 +3245,7 @@
 
           <property name="beta.grader.jar" value="ps2-beta-grader.jar" />
 
-          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner autograder.PublishedTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/TEST-autograder.PublishedTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junitvmwatcher6251341756753358209.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junit6375237162247020352.properties" />
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner autograder.PublishedTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/TEST-autograder.PublishedTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junitvmwatcher6096463514258789900.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junit7054314342639582280.properties" />
 
           <property name="java.class.path" value="/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/junit-4.12.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/hamcrest-core-1.3.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/parserlib.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/bin-student:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-launcher.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit4.jar" />
 
@@ -3299,14 +3299,14 @@
 
       </properties>
 
-      <testcase classname="autograder.PublishedTest" name="publishedTest" time="0.203" />
+      <testcase classname="autograder.PublishedTest" name="publishedTest" time="0.18" />
 
       <system-out><![CDATA[]]></system-out>
 
       <system-err><![CDATA[]]></system-err>
 
   </testsuite>
-  <testsuite errors="0" failures="0" hostname="Ilyas-MacBook-Pro.local" id="20" name="RecursiveDigTest" package="autograder" skipped="0" tests="1" time="0.245" timestamp="2017-04-17T21:38:55">
+  <testsuite errors="0" failures="0" hostname="Ilyas-MacBook-Pro.local" id="20" name="RecursiveDigTest" package="autograder" skipped="0" tests="1" time="0.238" timestamp="2017-04-18T11:53:13">
       <properties>
           <property name="java.vendor" value="Oracle Corporation" />
 
@@ -3408,7 +3408,7 @@
 
           <property name="beta.grader.jar" value="ps2-beta-grader.jar" />
 
-          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner autograder.RecursiveDigTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/TEST-autograder.RecursiveDigTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junitvmwatcher1127011541696864565.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junit276309012068654910.properties" />
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner autograder.RecursiveDigTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/TEST-autograder.RecursiveDigTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junitvmwatcher6845773362443796684.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junit1744060192101791170.properties" />
 
           <property name="java.class.path" value="/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/junit-4.12.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/hamcrest-core-1.3.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/parserlib.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/bin-tests-final:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/bin-student:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-launcher.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit4.jar" />
 
@@ -3462,14 +3462,14 @@
 
       </properties>
 
-      <testcase classname="autograder.RecursiveDigTest" name="testRecursiveDig" time="0.177" />
+      <testcase classname="autograder.RecursiveDigTest" name="testRecursiveDig" time="0.175" />
 
       <system-out><![CDATA[]]></system-out>
 
       <system-err><![CDATA[]]></system-err>
 
   </testsuite>
-  <testsuite errors="0" failures="0" hostname="Ilyas-MacBook-Pro.local" id="21" name="RepeatedActionByDifferentUserTest" package="autograder" skipped="0" tests="1" time="0.243" timestamp="2017-04-17T21:38:56">
+  <testsuite errors="0" failures="0" hostname="Ilyas-MacBook-Pro.local" id="21" name="RepeatedActionByDifferentUserTest" package="autograder" skipped="0" tests="1" time="0.241" timestamp="2017-04-18T11:53:14">
       <properties>
           <property name="java.vendor" value="Oracle Corporation" />
 
@@ -3571,7 +3571,7 @@
 
           <property name="beta.grader.jar" value="ps2-beta-grader.jar" />
 
-          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner autograder.RepeatedActionByDifferentUserTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/TEST-autograder.RepeatedActionByDifferentUserTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junitvmwatcher5135731698374810155.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junit4074736069043381030.properties" />
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner autograder.RepeatedActionByDifferentUserTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/TEST-autograder.RepeatedActionByDifferentUserTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junitvmwatcher199562066860490209.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junit1714816905031458527.properties" />
 
           <property name="java.class.path" value="/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/junit-4.12.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/hamcrest-core-1.3.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/parserlib.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/bin-tests-final:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/bin-student:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-launcher.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit4.jar" />
 
@@ -3632,7 +3632,7 @@
       <system-err><![CDATA[]]></system-err>
 
   </testsuite>
-  <testsuite errors="0" failures="0" hostname="Ilyas-MacBook-Pro.local" id="22" name="RepeatedDigTest" package="autograder" skipped="0" tests="1" time="0.241" timestamp="2017-04-17T21:38:57">
+  <testsuite errors="0" failures="0" hostname="Ilyas-MacBook-Pro.local" id="22" name="RepeatedDigTest" package="autograder" skipped="0" tests="1" time="0.239" timestamp="2017-04-18T11:53:15">
       <properties>
           <property name="java.vendor" value="Oracle Corporation" />
 
@@ -3734,7 +3734,7 @@
 
           <property name="beta.grader.jar" value="ps2-beta-grader.jar" />
 
-          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner autograder.RepeatedDigTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/TEST-autograder.RepeatedDigTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junitvmwatcher319399943164648087.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junit3858163525997153817.properties" />
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner autograder.RepeatedDigTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/TEST-autograder.RepeatedDigTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junitvmwatcher2442346019283697205.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junit4816067205216679601.properties" />
 
           <property name="java.class.path" value="/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/junit-4.12.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/hamcrest-core-1.3.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/parserlib.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/bin-tests-final:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/bin-student:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-launcher.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit4.jar" />
 
@@ -3788,14 +3788,14 @@
 
       </properties>
 
-      <testcase classname="autograder.RepeatedDigTest" name="testRepeatDig" time="0.178" />
+      <testcase classname="autograder.RepeatedDigTest" name="testRepeatDig" time="0.176" />
 
       <system-out><![CDATA[]]></system-out>
 
       <system-err><![CDATA[]]></system-err>
 
   </testsuite>
-  <testsuite errors="0" failures="0" hostname="Ilyas-MacBook-Pro.local" id="23" name="RepeatedFlagTest" package="autograder" skipped="0" tests="1" time="0.23" timestamp="2017-04-17T21:38:58">
+  <testsuite errors="0" failures="0" hostname="Ilyas-MacBook-Pro.local" id="23" name="RepeatedFlagTest" package="autograder" skipped="0" tests="1" time="0.24" timestamp="2017-04-18T11:53:16">
       <properties>
           <property name="java.vendor" value="Oracle Corporation" />
 
@@ -3897,7 +3897,7 @@
 
           <property name="beta.grader.jar" value="ps2-beta-grader.jar" />
 
-          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner autograder.RepeatedFlagTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/TEST-autograder.RepeatedFlagTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junitvmwatcher3863010450551190413.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junit4943996292839540763.properties" />
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner autograder.RepeatedFlagTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/TEST-autograder.RepeatedFlagTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junitvmwatcher8074165078268463435.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junit5498946375205676536.properties" />
 
           <property name="java.class.path" value="/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/junit-4.12.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/hamcrest-core-1.3.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/parserlib.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/bin-tests-final:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/bin-student:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-launcher.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit4.jar" />
 
@@ -3951,14 +3951,14 @@
 
       </properties>
 
-      <testcase classname="autograder.RepeatedFlagTest" name="testRepeatFlag" time="0.175" />
+      <testcase classname="autograder.RepeatedFlagTest" name="testRepeatFlag" time="0.177" />
 
       <system-out><![CDATA[]]></system-out>
 
       <system-err><![CDATA[]]></system-err>
 
   </testsuite>
-  <testsuite errors="1" failures="0" hostname="Ilyas-MacBook-Pro.local" id="24" name="SharedMemoryTest" package="autograder" skipped="0" tests="1" time="7.136" timestamp="2017-04-17T21:38:59">
+  <testsuite errors="1" failures="0" hostname="Ilyas-MacBook-Pro.local" id="24" name="SharedMemoryTest" package="autograder" skipped="0" tests="1" time="7.131" timestamp="2017-04-18T11:53:16">
       <properties>
           <property name="java.vendor" value="Oracle Corporation" />
 
@@ -4060,7 +4060,7 @@
 
           <property name="beta.grader.jar" value="ps2-beta-grader.jar" />
 
-          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner autograder.SharedMemoryTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/TEST-autograder.SharedMemoryTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junitvmwatcher6772196649988844228.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junit5562862376650295813.properties" />
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner autograder.SharedMemoryTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/TEST-autograder.SharedMemoryTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junitvmwatcher4037668431396817137.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junit5835845620428001980.properties" />
 
           <property name="java.class.path" value="/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/junit-4.12.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/hamcrest-core-1.3.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/parserlib.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/bin-tests-final:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/bin-student:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-launcher.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit4.jar" />
 
@@ -4114,7 +4114,7 @@
 
       </properties>
 
-      <testcase classname="autograder.SharedMemoryTest" name="testSharedMemory" time="7.074">
+      <testcase classname="autograder.SharedMemoryTest" name="testSharedMemory" time="7.07">
           <error message="Read timed out" type="java.net.SocketTimeoutException">java.net.SocketTimeoutException: Read timed out
 	at java.net.SocketInputStream.socketRead0(Native Method)
 	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
@@ -4139,7 +4139,7 @@
       <system-err><![CDATA[]]></system-err>
 
   </testsuite>
-  <testsuite errors="0" failures="0" hostname="Ilyas-MacBook-Pro.local" id="25" name="BlankBoardFileTest" package="minesweeper" skipped="0" tests="1" time="0.247" timestamp="2017-04-17T21:38:12">
+  <testsuite errors="0" failures="0" hostname="Ilyas-MacBook-Pro.local" id="25" name="BlankBoardFileTest" package="minesweeper" skipped="0" tests="1" time="0.236" timestamp="2017-04-18T11:52:30">
       <properties>
           <property name="java.vendor" value="Oracle Corporation" />
 
@@ -4241,7 +4241,7 @@
 
           <property name="beta.grader.jar" value="ps2-beta-grader.jar" />
 
-          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner minesweeper.BlankBoardFileTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/TEST-minesweeper.BlankBoardFileTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junitvmwatcher1333541869196871719.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junit4504331998989979399.properties" />
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner minesweeper.BlankBoardFileTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/TEST-minesweeper.BlankBoardFileTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junitvmwatcher5408018234341268541.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junit8721044330201744820.properties" />
 
           <property name="java.class.path" value="/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/junit-4.12.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/hamcrest-core-1.3.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/parserlib.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/bin-student:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-launcher.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit4.jar" />
 
@@ -4295,14 +4295,14 @@
 
       </properties>
 
-      <testcase classname="minesweeper.BlankBoardFileTest" name="testBlankBoardFile" time="0.18" />
+      <testcase classname="minesweeper.BlankBoardFileTest" name="testBlankBoardFile" time="0.178" />
 
       <system-out><![CDATA[]]></system-out>
 
       <system-err><![CDATA[]]></system-err>
 
   </testsuite>
-  <testsuite errors="0" failures="0" hostname="Ilyas-MacBook-Pro.local" id="26" name="BlankBoardSizeTest" package="minesweeper" skipped="0" tests="1" time="0.271" timestamp="2017-04-17T21:38:13">
+  <testsuite errors="0" failures="0" hostname="Ilyas-MacBook-Pro.local" id="26" name="BlankBoardSizeTest" package="minesweeper" skipped="0" tests="1" time="0.276" timestamp="2017-04-18T11:52:31">
       <properties>
           <property name="java.vendor" value="Oracle Corporation" />
 
@@ -4404,7 +4404,7 @@
 
           <property name="beta.grader.jar" value="ps2-beta-grader.jar" />
 
-          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner minesweeper.BlankBoardSizeTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/TEST-minesweeper.BlankBoardSizeTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junitvmwatcher1381242206170097637.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junit1732168569308312989.properties" />
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner minesweeper.BlankBoardSizeTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/TEST-minesweeper.BlankBoardSizeTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junitvmwatcher1804760370492105722.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junit5944555593572568988.properties" />
 
           <property name="java.class.path" value="/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/junit-4.12.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/hamcrest-core-1.3.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/parserlib.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/bin-student:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-launcher.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit4.jar" />
 
@@ -4458,14 +4458,14 @@
 
       </properties>
 
-      <testcase classname="minesweeper.BlankBoardSizeTest" name="testBlankBoardSize" time="0.202" />
+      <testcase classname="minesweeper.BlankBoardSizeTest" name="testBlankBoardSize" time="0.208" />
 
       <system-out><![CDATA[]]></system-out>
 
       <system-err><![CDATA[]]></system-err>
 
   </testsuite>
-  <testsuite errors="0" failures="0" hostname="Ilyas-MacBook-Pro.local" id="27" name="BlankBoardTest" package="minesweeper" skipped="0" tests="1" time="0.257" timestamp="2017-04-17T21:38:13">
+  <testsuite errors="0" failures="0" hostname="Ilyas-MacBook-Pro.local" id="27" name="BlankBoardTest" package="minesweeper" skipped="0" tests="1" time="0.279" timestamp="2017-04-18T11:52:32">
       <properties>
           <property name="java.vendor" value="Oracle Corporation" />
 
@@ -4567,7 +4567,7 @@
 
           <property name="beta.grader.jar" value="ps2-beta-grader.jar" />
 
-          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner minesweeper.BlankBoardTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/TEST-minesweeper.BlankBoardTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junitvmwatcher6989268580029743952.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junit8255150718495115919.properties" />
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner minesweeper.BlankBoardTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/TEST-minesweeper.BlankBoardTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junitvmwatcher7240133173085218957.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junit1461814769300748666.properties" />
 
           <property name="java.class.path" value="/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/junit-4.12.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/hamcrest-core-1.3.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/parserlib.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/bin-student:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-launcher.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit4.jar" />
 
@@ -4621,14 +4621,14 @@
 
       </properties>
 
-      <testcase classname="minesweeper.BlankBoardTest" name="testBlankBoard" time="0.194" />
+      <testcase classname="minesweeper.BlankBoardTest" name="testBlankBoard" time="0.202" />
 
       <system-out><![CDATA[]]></system-out>
 
       <system-err><![CDATA[]]></system-err>
 
   </testsuite>
-  <testsuite errors="0" failures="0" hostname="Ilyas-MacBook-Pro.local" id="28" name="BoardTest" package="minesweeper" skipped="0" tests="5" time="0.147" timestamp="2017-04-17T21:38:14">
+  <testsuite errors="0" failures="0" hostname="Ilyas-MacBook-Pro.local" id="28" name="BoardTest" package="minesweeper" skipped="0" tests="5" time="0.148" timestamp="2017-04-18T11:52:32">
       <properties>
           <property name="java.vendor" value="Oracle Corporation" />
 
@@ -4730,7 +4730,7 @@
 
           <property name="beta.grader.jar" value="ps2-beta-grader.jar" />
 
-          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner minesweeper.BoardTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/TEST-minesweeper.BoardTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junitvmwatcher70235053161836445.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junit635245622060898901.properties" />
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner minesweeper.BoardTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/TEST-minesweeper.BoardTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junitvmwatcher4834852232215990879.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junit2169343078098541052.properties" />
 
           <property name="java.class.path" value="/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/junit-4.12.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/hamcrest-core-1.3.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/parserlib.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/bin-student:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-launcher.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit4.jar" />
 
@@ -4792,7 +4792,7 @@
 
       <testcase classname="minesweeper.BoardTest" name="testSquare" time="0.0" />
 
-      <testcase classname="minesweeper.BoardTest" name="testConstructor" time="0.002" />
+      <testcase classname="minesweeper.BoardTest" name="testConstructor" time="0.001" />
 
       <system-out><![CDATA[6:7
 {(2,1)=-, (4,3)=-, (0,0)=-, (2,2)=-, (4,4)=-, (0,1)=-, (2,3)=-, (4,5)=-, (0,2)=-, (2,4)=-, (4,6)=-, (0,3)=-, (2,5)=-, (0,4)=-, (2,6)=-, (0,5)=-, (0,6)=-, (5,0)=-, (5,1)=-, (3,0)=-, (5,2)=-, (3,1)=-, (5,3)=-, (1,0)=-, (3,2)=-, (5,4)=-, (1,1)=-, (3,3)=-, (5,5)=-, (1,2)=-, (3,4)=-, (5,6)=-, (1,3)=-, (3,5)=-, (1,4)=-, (3,6)=-, (1,5)=-, (1,6)=-, (4,0)=-, (4,1)=-, (2,0)=-, (4,2)=-}
@@ -4809,7 +4809,7 @@ BBBBBB
       <system-err><![CDATA[]]></system-err>
 
   </testsuite>
-  <testsuite errors="0" failures="0" hostname="Ilyas-MacBook-Pro.local" id="29" name="BoomDisconnectTest" package="minesweeper" skipped="0" tests="1" time="0.234" timestamp="2017-04-17T21:38:15">
+  <testsuite errors="0" failures="0" hostname="Ilyas-MacBook-Pro.local" id="29" name="BoomDisconnectTest" package="minesweeper" skipped="0" tests="1" time="0.233" timestamp="2017-04-18T11:52:33">
       <properties>
           <property name="java.vendor" value="Oracle Corporation" />
 
@@ -4911,7 +4911,7 @@ BBBBBB
 
           <property name="beta.grader.jar" value="ps2-beta-grader.jar" />
 
-          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner minesweeper.BoomDisconnectTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/TEST-minesweeper.BoomDisconnectTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junitvmwatcher8882864650329586931.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junit1716845057072208176.properties" />
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner minesweeper.BoomDisconnectTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/TEST-minesweeper.BoomDisconnectTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junitvmwatcher5569048683896655325.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junit940988643481896392.properties" />
 
           <property name="java.class.path" value="/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/junit-4.12.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/hamcrest-core-1.3.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/parserlib.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/bin-student:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-launcher.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit4.jar" />
 
@@ -4965,14 +4965,14 @@ BBBBBB
 
       </properties>
 
-      <testcase classname="minesweeper.BoomDisconnectTest" name="testBoomDisconnect" time="0.171" />
+      <testcase classname="minesweeper.BoomDisconnectTest" name="testBoomDisconnect" time="0.173" />
 
       <system-out><![CDATA[]]></system-out>
 
       <system-err><![CDATA[]]></system-err>
 
   </testsuite>
-  <testsuite errors="0" failures="0" hostname="Ilyas-MacBook-Pro.local" id="30" name="BoomTest" package="minesweeper" skipped="0" tests="1" time="0.235" timestamp="2017-04-17T21:38:16">
+  <testsuite errors="0" failures="0" hostname="Ilyas-MacBook-Pro.local" id="30" name="BoomTest" package="minesweeper" skipped="0" tests="1" time="0.233" timestamp="2017-04-18T11:52:34">
       <properties>
           <property name="java.vendor" value="Oracle Corporation" />
 
@@ -5074,7 +5074,7 @@ BBBBBB
 
           <property name="beta.grader.jar" value="ps2-beta-grader.jar" />
 
-          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner minesweeper.BoomTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/TEST-minesweeper.BoomTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junitvmwatcher5283420979167004457.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junit2135356281615125750.properties" />
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner minesweeper.BoomTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/TEST-minesweeper.BoomTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junitvmwatcher1719697178689565906.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junit4431301124909775828.properties" />
 
           <property name="java.class.path" value="/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/junit-4.12.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/hamcrest-core-1.3.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/parserlib.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/bin-student:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-launcher.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit4.jar" />
 
@@ -5128,14 +5128,14 @@ BBBBBB
 
       </properties>
 
-      <testcase classname="minesweeper.BoomTest" name="testBoom" time="0.174" />
+      <testcase classname="minesweeper.BoomTest" name="testBoom" time="0.172" />
 
       <system-out><![CDATA[]]></system-out>
 
       <system-err><![CDATA[]]></system-err>
 
   </testsuite>
-  <testsuite errors="0" failures="0" hostname="Ilyas-MacBook-Pro.local" id="31" name="ByeTest" package="minesweeper" skipped="0" tests="1" time="0.234" timestamp="2017-04-17T21:38:16">
+  <testsuite errors="0" failures="0" hostname="Ilyas-MacBook-Pro.local" id="31" name="ByeTest" package="minesweeper" skipped="0" tests="1" time="0.231" timestamp="2017-04-18T11:52:35">
       <properties>
           <property name="java.vendor" value="Oracle Corporation" />
 
@@ -5237,7 +5237,7 @@ BBBBBB
 
           <property name="beta.grader.jar" value="ps2-beta-grader.jar" />
 
-          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner minesweeper.ByeTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/TEST-minesweeper.ByeTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junitvmwatcher1713683129247108977.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junit7218009802296353051.properties" />
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner minesweeper.ByeTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/TEST-minesweeper.ByeTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junitvmwatcher8955299632039512861.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junit2546836262971737848.properties" />
 
           <property name="java.class.path" value="/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/junit-4.12.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/hamcrest-core-1.3.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/parserlib.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/bin-student:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-launcher.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit4.jar" />
 
@@ -5291,14 +5291,14 @@ BBBBBB
 
       </properties>
 
-      <testcase classname="minesweeper.ByeTest" name="testBye" time="0.171" />
+      <testcase classname="minesweeper.ByeTest" name="testBye" time="0.17" />
 
       <system-out><![CDATA[]]></system-out>
 
       <system-err><![CDATA[]]></system-err>
 
   </testsuite>
-  <testsuite errors="0" failures="0" hostname="Ilyas-MacBook-Pro.local" id="32" name="DigTest" package="minesweeper" skipped="0" tests="1" time="0.239" timestamp="2017-04-17T21:38:17">
+  <testsuite errors="0" failures="0" hostname="Ilyas-MacBook-Pro.local" id="32" name="DigTest" package="minesweeper" skipped="0" tests="1" time="0.235" timestamp="2017-04-18T11:52:35">
       <properties>
           <property name="java.vendor" value="Oracle Corporation" />
 
@@ -5400,7 +5400,7 @@ BBBBBB
 
           <property name="beta.grader.jar" value="ps2-beta-grader.jar" />
 
-          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner minesweeper.DigTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/TEST-minesweeper.DigTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junitvmwatcher7597698453287863711.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junit148812791054185703.properties" />
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner minesweeper.DigTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/TEST-minesweeper.DigTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junitvmwatcher5055039616195073982.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junit3875065442206030884.properties" />
 
           <property name="java.class.path" value="/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/junit-4.12.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/hamcrest-core-1.3.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/parserlib.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/bin-student:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-launcher.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit4.jar" />
 
@@ -5454,14 +5454,14 @@ BBBBBB
 
       </properties>
 
-      <testcase classname="minesweeper.DigTest" name="testBasicDig" time="0.177" />
+      <testcase classname="minesweeper.DigTest" name="testBasicDig" time="0.175" />
 
       <system-out><![CDATA[]]></system-out>
 
       <system-err><![CDATA[]]></system-err>
 
   </testsuite>
-  <testsuite errors="0" failures="0" hostname="Ilyas-MacBook-Pro.local" id="33" name="FlagAndDeFlagTest" package="minesweeper" skipped="0" tests="1" time="0.24" timestamp="2017-04-17T21:38:18">
+  <testsuite errors="0" failures="0" hostname="Ilyas-MacBook-Pro.local" id="33" name="FlagAndDeFlagTest" package="minesweeper" skipped="0" tests="1" time="0.239" timestamp="2017-04-18T11:52:36">
       <properties>
           <property name="java.vendor" value="Oracle Corporation" />
 
@@ -5563,7 +5563,7 @@ BBBBBB
 
           <property name="beta.grader.jar" value="ps2-beta-grader.jar" />
 
-          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner minesweeper.FlagAndDeFlagTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/TEST-minesweeper.FlagAndDeFlagTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junitvmwatcher2246015706340671687.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junit943815993005140242.properties" />
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner minesweeper.FlagAndDeFlagTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/TEST-minesweeper.FlagAndDeFlagTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junitvmwatcher7053025850932914271.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junit3194965368520751783.properties" />
 
           <property name="java.class.path" value="/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/junit-4.12.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/hamcrest-core-1.3.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/parserlib.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/bin-student:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-launcher.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit4.jar" />
 
@@ -5617,14 +5617,14 @@ BBBBBB
 
       </properties>
 
-      <testcase classname="minesweeper.FlagAndDeFlagTest" name="testFlagThenDeflag" time="0.179" />
+      <testcase classname="minesweeper.FlagAndDeFlagTest" name="testFlagThenDeflag" time="0.174" />
 
       <system-out><![CDATA[]]></system-out>
 
       <system-err><![CDATA[]]></system-err>
 
   </testsuite>
-  <testsuite errors="0" failures="0" hostname="Ilyas-MacBook-Pro.local" id="34" name="PublishedTest" package="minesweeper" skipped="0" tests="1" time="0.277" timestamp="2017-04-17T21:38:19">
+  <testsuite errors="0" failures="0" hostname="Ilyas-MacBook-Pro.local" id="34" name="PublishedTest" package="minesweeper" skipped="0" tests="1" time="0.243" timestamp="2017-04-18T11:52:37">
       <properties>
           <property name="java.vendor" value="Oracle Corporation" />
 
@@ -5726,7 +5726,7 @@ BBBBBB
 
           <property name="beta.grader.jar" value="ps2-beta-grader.jar" />
 
-          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner minesweeper.PublishedTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/TEST-minesweeper.PublishedTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junitvmwatcher9197111780591084619.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junit7471536890735155789.properties" />
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner minesweeper.PublishedTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/TEST-minesweeper.PublishedTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junitvmwatcher6302614693399097773.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junit8674391784813664923.properties" />
 
           <property name="java.class.path" value="/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/junit-4.12.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/hamcrest-core-1.3.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/parserlib.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/bin-student:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-launcher.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit4.jar" />
 
@@ -5780,14 +5780,14 @@ BBBBBB
 
       </properties>
 
-      <testcase classname="minesweeper.PublishedTest" name="publishedTest" time="0.204" />
+      <testcase classname="minesweeper.PublishedTest" name="publishedTest" time="0.18" />
 
       <system-out><![CDATA[]]></system-out>
 
       <system-err><![CDATA[]]></system-err>
 
   </testsuite>
-  <testsuite errors="0" failures="0" hostname="Ilyas-MacBook-Pro.local" id="35" name="RepeatedDigTest" package="minesweeper" skipped="0" tests="1" time="0.241" timestamp="2017-04-17T21:38:20">
+  <testsuite errors="0" failures="0" hostname="Ilyas-MacBook-Pro.local" id="35" name="RepeatedDigTest" package="minesweeper" skipped="0" tests="1" time="0.241" timestamp="2017-04-18T11:52:38">
       <properties>
           <property name="java.vendor" value="Oracle Corporation" />
 
@@ -5889,7 +5889,7 @@ BBBBBB
 
           <property name="beta.grader.jar" value="ps2-beta-grader.jar" />
 
-          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner minesweeper.RepeatedDigTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/TEST-minesweeper.RepeatedDigTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junitvmwatcher450657042358093644.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junit3960591991415276290.properties" />
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner minesweeper.RepeatedDigTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/TEST-minesweeper.RepeatedDigTest.xml crashfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junitvmwatcher5950519886784126253.properties propsfile=/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/junit6648503220502957666.properties" />
 
           <property name="java.class.path" value="/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/junit-4.12.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/hamcrest-core-1.3.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/lib/parserlib.jar:/Users/ilyarudyak/Dropbox/courses/6.005_software_construction/workspace/ps5-minesweeper/.grader/bin-student:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-launcher.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit.jar:/Applications/Eclipse.app/Contents/Eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit4.jar" />
 
@@ -5943,7 +5943,7 @@ BBBBBB
 
       </properties>
 
-      <testcase classname="minesweeper.RepeatedDigTest" name="testRepeatDig" time="0.18" />
+      <testcase classname="minesweeper.RepeatedDigTest" name="testRepeatDig" time="0.181" />
 
       <system-out><![CDATA[]]></system-out>
 
