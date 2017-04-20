@@ -10,10 +10,11 @@ public class GenericCollectionDemo {
         nums.add(3);
         nums.add(1);
         nums.add(4);
-        nums.add("oops");
+        nums.add("oops"); // (1) if we use generics we can't do this - type safety
         System.out.println(nums);
 
         for (Object n : nums) {
+            // (2) we also don't have to cast result
             // Integer val = (Integer) n;  // Ack! ClassCastException
             System.out.println(n);
         }

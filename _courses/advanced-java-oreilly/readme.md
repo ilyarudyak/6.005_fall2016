@@ -181,11 +181,25 @@ public class MyException extends Exception {
 }
 ```  
 ## Part 2. Generics
+### Static methods
+* to use static method with generic types we have to declare this type in the method
+signature:
+```java
+public class Pair<T> {
+    private T first;
+    private T second;
+    
+    // here we declare type T in method signature
+    public static <T> void swap(Pair<T> pair) {
+        T temp = pair.first;
+        pair.first = pair.second;
+        pair.second = temp;
+    }
+}
+```
 ### Wildcards
 * we can not use `List<Salaried>` in the place where `List<Employee>` is required even if 
 `Salaried` is a subclass of `Employee` - this is the reason why we have to use wildcards;
-(why this is not possible for lists is another question - basically we'll break type safety - 
-see interview notes);
 ```java
 public class HR {
     public static void printEmpNames(List<Employee> employees) {
@@ -202,7 +216,8 @@ public class HRDemo {
     }
 }
 ```
-* we have to use `<? extends Employee>` if we want the method to be applicable to subclasses:
+* we have to use `<? extends Employee>` if we want the method to be applicable to subclasses
+(but now we can'y add anything to `employees`):
 ```java
 public class HR {
 
@@ -215,7 +230,8 @@ public class HR {
     }
 }
 ```
-* it turns out that we have to use `super` in other situations:
+* it turns out that we have to use `super` in other situations (PECS --> produces uses extends, 
+consumes uses super):
 ```java
 public class HR {
 
@@ -239,7 +255,16 @@ public class RepairShop {
     }
 }
 ```
+* we can use bounds in static methods as well (in our example we use `Repairables`), but
+more common example - `Comaparable`:
+```java
+public class RepairShop {
 
+    public static <T extends Repairable> void fixAll(List<T> items) {
+        items.forEach(T::fix); // if we don't extends Repairable we can't guarantee that we have `fix` method
+    }
+}
+```
 
 
 
