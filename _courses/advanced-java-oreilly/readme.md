@@ -265,7 +265,9 @@ public class RepairShop {
     }
 }
 ```
-
+## Part 8. Inner classes
+### Static and Anonymous Inner
+* 
 
 
 
