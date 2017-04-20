@@ -28,17 +28,12 @@ public class StringSorter {
     }
 
     public List<String> lengthSort() {
-        Collections.sort(strings, new Comparator<String>() {
-            @Override
-            public int compare(String s1, String s2) {
-                return s1.length() - s2.length();
-            }
-        });
+        Collections.sort(strings, Comparator.comparingInt(String::length));
         return strings;
     }
 
     public List<String> lengthSortWithLambda() {
-        Collections.sort(strings, (s1, s2) -> s1.length() - s2.length());
+        Collections.sort(strings, Comparator.comparingInt(String::length));
         return strings;
     }
 

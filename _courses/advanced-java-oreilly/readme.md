@@ -267,7 +267,22 @@ public class RepairShop {
 ```
 ## Part 8. Inner classes
 ### Static and Anonymous Inner
-* 
+* to sort we may use `sorted()` method on `stream`; we even can provide a comparator:
+```java
+public class StringSorter {
+    public List<String> naturalSortWithStreams() {
+        return strings.stream()
+                .sorted()
+                .collect(Collectors.toList());
+    }
+    
+    public List<String> lengthReverseSortWithStreams() {
+        return strings.stream()
+                .sorted((s1, s2) -> Integer.compare(s2.length(), s1.length()))
+                .collect(Collectors.toList());
+    }
+}
+```
 
 
 
