@@ -370,7 +370,24 @@ public class ProcessDictionary {
     }
 }
 ```
+### New Java date/time 
+* `Instant` is like `Date` - moment in time from `Epoch`; this is **immutable**
+class (like all classes in `java.time` package); we may compare two `Instant`, use 
+with `Duration` to measure time and increment/decrement it;
+```java
+public class JavaTimeDemos {
 
+    public static void instantDemo() {
+        Instant now = Instant.now();
+        System.out.format("Instant.now():%s:%d%n", now, now.getEpochSecond());
+        Instant then = now.plus(1, ChronoUnit.DAYS);
+        Duration elapsed = Duration.between(now, then);
+    }
+}
+```
+* we have `LocalDate` class and can create it with `now()` or using static 
+method `of`; we can measure duration between local dates; we also have time zones 
+and formatter;
 
 
 
