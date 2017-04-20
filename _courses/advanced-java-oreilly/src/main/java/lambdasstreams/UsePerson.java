@@ -20,6 +20,7 @@ public class UsePerson {
 
     public Person[] createPersonArray() {
         return names.stream()
+                // we use here method reference instead of lambda
                 .map(Person::new)
                 .toArray(Person[]::new);
     }
@@ -27,6 +28,7 @@ public class UsePerson {
     public List<Person> createPersonListUsingNew() {
         return names.stream()
                 .map(Person::new)
+                // if we really want to choose what list we need (full form of collect)
                 .collect(ArrayList::new, ArrayList::add, ArrayList::addAll);
     }
 

@@ -283,13 +283,93 @@ public class StringSorter {
     }
 }
 ```
+## Part 8. Lambdas and streams
+### Streams
+* in `Collectors` we have analog of python `join` method - `Collectors.joining(" ")`; we also can 
+get a sum (in a different way than in `IntStream`):
+ ```java
+ public class StreamsDemo {
+     public String joinStream() {
+         return Stream.of("this", "is", "a", "stream", "of", "strings")
+                 .collect(Collectors.joining(" "));
+     }
+     
+     public int getTotalLength() {
+         return strings.stream()
+                 .collect(Collectors.summingInt(String::length));
+     }
+ }
+ ```
+* we can produce sum directly using `reduce`; it will produce an `Optional` and we than use
+`orElse` method on this `Optional`:
+```java
+ public class StreamsDemo {
+    public Double sumRandoms1(int num) {
+        return Stream.generate(Math::random)
+                .limit(num)
+                .reduce(Double::sum)
+                .orElse(0.0);
+    }
+    
+    // full form of reduce
+    public Double sumRandoms2(int num) {
+        return Stream.generate(Math::random)
+                .limit(num)
+                .reduce((acc, n) -> {
+                    System.out.printf("Acc=%s, n=%s%n", acc, n);
+                    return acc + n;
+                })
+                .orElse(0.0);
+    }
+ }
+```
+* if we want to convert stream into array we may use `toArray()` method:
+```java
+public class UsePerson {
+    public Person[] createPersonArray() {
+        return names.stream()
+                .map(Person::new)
+                .toArray(Person[]::new);
+    }
+}
+```
+* to sort we use the following approaches: (a) it's better to use `sorted()` on
+the stream instead of `Collections.sort` - the former doesn't modify list in place;
+(b) in some cases we may use methods of comparator instead of lambdas (IDE can 
+suggest replacement); to get reversed order we chain `reversed()`:
+```java
+ public class SortingDemo {
+        // Sort by length then alpha using sorted
+        public List<String> lengthSortThenAlphaSortUsingSorted() {
+            return sampleStrings.stream()
+                    .sorted( Comparator.comparing(String::length)
+                    // we may even chain some methods of Comparator
+                        .thenComparing(Comparator.naturalOrder()) )
+                    .collect(Collectors.toList());
+        }
+ }
+```
+* to find `max` we may use `findFirst()` method on stream; to deal with `Optional`
+we use `orElse()`, `orElseGet()` etc.:
+```java
+public class ProcessDictionary {
+    public static void main(String[] args) throws Exception {
 
-
-
-
-
-
-
+        Optional<String> max = Files.lines(
+                Paths.get("/", "usr", "share", "dict", "web2"))
+                .filter(s -> s.length() > 10)
+                .map(String::toLowerCase)
+                .sorted(Comparator.comparing(String::length).reversed())
+                .findFirst();
+        
+        System.out.println();
+        System.out.println(max.isPresent() ? max.get() : max.orElse("None found"));
+        System.out.println(max.orElseGet(() -> "nothing"));
+        // most useful method
+        System.out.println(max.orElse("nothing"));
+    }
+}
+```
 
 
 

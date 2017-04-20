@@ -24,6 +24,7 @@ public class ProcessDictionary {
                 .sorted(Comparator.comparing(String::length).reversed())
                 .findFirst();
 
+        System.out.println();
         System.out.println(max.isPresent() ? max.get() : max.orElse("None found"));
         System.out.println(max.orElseGet(() -> "nothing"));
         System.out.println(max.orElse("nothing"));

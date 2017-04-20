@@ -53,6 +53,7 @@ public class StreamsDemo {
                 .orElse(0.0);
     }
 
+    // very elegant way to do the same as before
     public Double sumRandoms3(int num) {
         Random r = new Random();
         return r.doubles()
