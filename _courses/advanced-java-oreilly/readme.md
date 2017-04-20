@@ -122,6 +122,64 @@ class Task {
 * to override `hashCode()` we may again use helper method from `Objects` class rather than
 deal with Bloch's implementation: `return Objects.hash(id, ...)`.
 
+### Exceptions
+* Here is an example of how to close stream prior to Java 7. The only requirement to use 
+`try-with-resources` - class must implement `Autocloseable` interface: 
+```java
+public class Arithmetic {
+
+    public static void finallyExample() {
+        Path dir = Paths.get("src", "main", "java", "exceptions");
+        BufferedReader br = null; // (1) we have declare it outside and assign null
+        try {
+            br = Files.newBufferedReader(dir.resolve("Arithmetic.java"));
+            System.out.println("1st line:" + br.readLine());
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally { // (2) we have to close it
+            if (br != null) { // (3) check for null
+                try {
+                    br.close(); // (4) it also throws an exception 
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+    }
+ }
+```
+* `finally` will be called in any case: (a) if we catch exception; (b) if we don't have
+any exception or (c) if we even don't have `catch` block;
+```java
+public class Arithmetic {
+    public static void finallyExample2() {
+        try {
+//            z = x / y;
+        }
+//        catch (ArithmeticException e) {
+//            e.printStackTrace();
+//        }
+        finally {
+            // works with catch or without
+            // works if no exception
+            System.out.println("this will work in any case");
+        }
+    }
+}
+ ```
+* to create our own exception we have to: (a) extend `Extention` (for checked exceptions) or
+ `RuntimeExceptions` (for unchecked exceptions); (b) create constructor to provide a message;
+```java
+public class MyException extends Exception {
+    public MyException() {
+        this("default message");
+    }
+
+    public MyException(String message) {
+        super(message);
+    }
+}
+```  
 ## Part 2. Generics
 ### Wildcards
 * we can not use `List<Salaried>` in the place where `List<Employee>` is required even if 
